@@ -11,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     background: linear-gradient(#8bc6ec, #9599e2) ;
+    font-family: sans-serif;
 }
 
 #container{
