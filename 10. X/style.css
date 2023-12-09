@@ -30,5 +30,13 @@ body {
 }
 
 .container.content.left-side{
-  flex-direction: row-reverse;
+  width: 75%;
+
+}
+.container.content.left-side.details{
+  margin: 14px;
+  text-align: center;
+}
+.container.content.right-side{
+  
 }
