@@ -32,7 +32,9 @@ body {
 }
 
 .container .content.left-side {
-  width: 75%;
+  width: 25%;
+  height: 100%;
+  position: relative;
 }
 
 .container .content .left-side .details {
@@ -43,4 +45,7 @@ body {
 .container .content .left-side .details i {
   font-size: 30px;
   color: #3e2093;
+}
+.container .content .left-side .topic{
+
 }
