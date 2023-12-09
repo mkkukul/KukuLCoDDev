@@ -36,7 +36,9 @@ body {
   height: 100%;
   position: relative;
 }
-
+.container .content .left-side::before{
+  
+}
 .container .content .left-side .details {
   margin: 14px;
   text-align: center;
@@ -47,6 +49,8 @@ body {
   color: #3e2093;
 }
 .container .content .left-side .topic{
+  font-size: 18px;
+  font-weight: 500 ;
 
 }
 .container .content .right-side{
