@@ -1,5 +1,6 @@
 body {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -11,6 +12,11 @@ body {
 
 .center {
     text-align: center;
+    display: flex;
+}
+
+#sayisal {
+    color: khaki;
 }
 
 .oval-box {
