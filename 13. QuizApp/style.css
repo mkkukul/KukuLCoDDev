@@ -10,9 +10,15 @@ body {
     margin: 0;
 }
 
-.center {
+.header {
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #sayisal {
@@ -20,7 +26,8 @@ body {
     background-color: red; /* Kırmızı arka plan rengi */
     padding: 15px;
     border-radius: 20px;
-    font-size: 36px; /* Yazı boyutunu daha da artır */
+    font-size: 48px; /* Yazı boyutunu daha da artır */
+    margin-bottom: 20px; /* Yazıların altına biraz boşluk bırak */
 }
 
 .oval-box {
@@ -29,9 +36,17 @@ body {
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-    font-size: 24px; /* Yazı boyutunu artır */
+    font-size: 36px; /* Yazı boyutunu artır */
     background-color: red; /* Kırmızı arka plan rengi */
     color: white; /* Beyaz renk */
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    background-color: #2196f3; /* Mavi arka plan rengi */
+    margin-top: 20px;
+    /* Logo stilini ayarlayabilirsiniz */
 }
 
 .ders h1:first-child {
