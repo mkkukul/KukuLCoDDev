@@ -30,6 +30,8 @@ body {
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     font-size: 24px; /* Yazı boyutunu artır */
+    background-color: #2196f3; /* Mavi renk */
+    color: #ffeb3b; /* Sarı renk */
 }
 
 .ders h1:first-child {
