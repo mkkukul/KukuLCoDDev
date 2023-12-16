@@ -1,37 +1,22 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: black;
-    color: khaki;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#sayisal {
-    color: khaki;
-}
+/* ... (Diğer stil kuralları) */
 
 .ders {
     display: flex;
     align-items: center;
 }
 
-.ders h1 {
-    margin: 0 10px; /* Yazılar arasına biraz boşluk ekleyin */
+.oval-box {
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 20px; /* Kenarları oval yapmak için */
+    cursor: pointer; /* Fare imlecini değiştir */
+    transition: background-color 0.3s; /* Arka plan rengindeki geçiş efekti için */
 }
 
 .ders h1:first-child {
-    border-right: 2px solid white; /* İlk
+    border-right: 2px solid white;
+}
+
+.ders h1:last-child {
+    margin-right: 0;
+}
