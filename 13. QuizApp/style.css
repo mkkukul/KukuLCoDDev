@@ -20,7 +20,7 @@ body {
     background-color: #2196f3; /* Mavi renk */
     padding: 15px;
     border-radius: 20px;
-    font-size: 24px; /* Yazı boyutunu artır */
+    font-size: 36px; /* Yazı boyutunu daha da artır */
 }
 
 .oval-box {
@@ -29,6 +29,7 @@ body {
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    font-size: 24px; /* Yazı boyutunu artır */
 }
 
 .ders h1:first-child {
