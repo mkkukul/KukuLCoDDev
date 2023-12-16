@@ -46,8 +46,8 @@ body {
 }
 
 .logo {
-    width: 200px;
-    height: 200px;
+    width: 600px; /* Logoyu 3 kat büyütmek için 200px'yi 600px olarak güncelledik */
+    height: 600px; /* Logoyu 3 kat büyütmek için 200px'yi 600px olarak güncelledik */
     margin-top: 20px;
     display: flex;
     justify-content: center;
