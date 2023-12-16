@@ -48,7 +48,6 @@ body {
 .logo {
     width: 200px;
     height: 200px;
-    background-color: #2196f3; /* Mavi arka plan rengi */
     margin-top: 20px;
     display: flex;
     justify-content: center;
