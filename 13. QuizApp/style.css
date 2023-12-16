@@ -4,7 +4,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: black;
+    background-color: orange; /* Turuncu arka plan rengi */
     color: khaki;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
@@ -16,8 +16,8 @@ body {
 }
 
 #sayisal {
-    color: #ffeb3b; /* Sarı renk */
-    background-color: #2196f3; /* Mavi renk */
+    color: white; /* Beyaz renk */
+    background-color: red; /* Kırmızı arka plan rengi */
     padding: 15px;
     border-radius: 20px;
     font-size: 36px; /* Yazı boyutunu daha da artır */
@@ -30,8 +30,8 @@ body {
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     font-size: 24px; /* Yazı boyutunu artır */
-    background-color: #2196f3; /* Mavi renk */
-    color: #ffeb3b; /* Sarı renk */
+    background-color: red; /* Kırmızı arka plan rengi */
+    color: white; /* Beyaz renk */
 }
 
 .ders h1:first-child {
