@@ -1,16 +1,24 @@
-/* ... (Diğer stil kuralları) */
-
-.ders {
+body {
     display: flex;
     align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+    color: khaki;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+.center {
+    text-align: center;
 }
 
 .oval-box {
-    margin: 0 10px;
-    padding: 10px;
-    border-radius: 20px; /* Kenarları oval yapmak için */
-    cursor: pointer; /* Fare imlecini değiştir */
-    transition: background-color 0.3s; /* Arka plan rengindeki geçiş efekti için */
+    margin: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .ders h1:first-child {
