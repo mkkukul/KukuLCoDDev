@@ -16,7 +16,11 @@ body {
 }
 
 #sayisal {
-    color: khaki;
+    color: #ffeb3b; /* Sarı renk */
+    background-color: #2196f3; /* Mavi renk */
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 24px; /* Yazı boyutunu artır */
 }
 
 .oval-box {
