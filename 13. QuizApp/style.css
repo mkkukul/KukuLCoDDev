@@ -41,8 +41,8 @@ body, html {
 }
 
 .logo {
-    width: 200px;
-    height: 200px;
+    width: 500px; /* 2.5 katı büyüklük */
+    height: 500px; /* 2.5 katı büyüklük */
     margin-bottom: 20px;
 }
 
