@@ -21,13 +21,18 @@
                 </div>
                 <h1 id="sayisal">SAYISAL</h1>
                 <div class="center">
-                    <h1 class="oval-box" onclick="openSubject('fenbilgisi')">Fen Bilgisi</h1>
-                    <h1 class="oval-box" onclick="openSubject('matematik')">Matematik</h1>
+                    <h1 class="oval-box" onclick="openSubject('FenBilgisi')">Fen Bilgisi</h1>
+                    <h1 class="oval-box" onclick="openSubject('Matematik')">Matematik</h1>
                 </div>
             </div>
         </div>
     </div>
 
     <script src="script.js"></script>
+    <script>
+        function openSubject(subject) {
+            window.location.href = subject.toLowerCase() + "/index.html";
+        }
+    </script>
 </body>
 </html>
