@@ -7,16 +7,24 @@
     <title>Quiz</title>
 </head>
 <body>
-    <div class="content">
-        <div class="logo">
-            <img src="./kh.png" alt="Logo"> <!-- Logo eklenmiş -->
-        </div>
-        <div class="header">
-            <h1 id="sayisal">SAYISAL</h1>
-        </div>
-        <div class="center">
-            <h1 class="oval-box" onclick="changeColor(this)">Fen Bilgisi</h1>
-            <h1 class="oval-box" onclick="changeColor(this)">Matematik</h1>
+    <div class="video-container">
+        <video autoplay loop muted class="video-bg">
+            <source src="video (1080p).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay-content">
+            <div class="content">
+                <div class="logo">
+                    <img src="./kh.png" alt="Logo">
+                </div>
+                <div class="header">
+                    <h1 id="sayisal">SAYISAL</h1>
+                </div>
+                <div class="center">
+                    <h1 class="oval-box" onclick="changeColor(this)">Fen Bilgisi</h1>
+                    <h1 class="oval-box" onclick="changeColor(this)">Matematik</h1>
+                </div>
+            </div>
         </div>
     </div>
 
