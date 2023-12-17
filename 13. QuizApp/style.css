@@ -35,8 +35,8 @@ body, html {
 }
 
 .logo {
-    width: 200px;
-    height: 200px;
+    width: 400px; /* Logoyu 2 katı büyüklüğünde ayarladık */
+    height: 400px; /* Logoyu 2 katı büyüklüğünde ayarladık */
     margin-top: 20px;
 }
 
