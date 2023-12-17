@@ -4,23 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Video Background</title>
+    <title>Quiz</title>
 </head>
 <body>
-    <div class="video-container">
-        <video autoplay loop muted class="video-bg">
-            <source src="video (1080p).mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="content">
-            <!-- Diğer içerikleri buraya ekleyebilirsiniz -->
-            <div class="content-overlay">
-                <h1 id="sayisal">SAYISAL</h1>
-                <div class="center">
-                    <h1 class="oval-box" onclick="changeColor(this)">Fen Bilgisi</h1>
-                    <h1 class="oval-box" onclick="changeColor(this)">Matematik</h1>
-                </div>
-            </div>
+    <div class="content">
+        <div class="logo">
+            <img src="./kh.png" alt="Logo"> <!-- Logo eklenmiş -->
+        </div>
+        <div class="header">
+            <h1 id="sayisal">SAYISAL</h1>
+        </div>
+        <div class="center">
+            <h1 class="oval-box" onclick="changeColor(this)">Fen Bilgisi</h1>
+            <h1 class="oval-box" onclick="changeColor(this)">Matematik</h1>
         </div>
     </div>
 
