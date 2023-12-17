@@ -14,3 +14,6 @@ document.querySelectorAll('.oval-box').forEach(item => {
         this.style.color = "khaki";
     });
 });
+function openSubject(subject) {
+    window.location.href = subject + ".html";
+}
