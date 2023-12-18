@@ -1,56 +1,46 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #215966; /* Petrol Yeşil */
+    font-family: Arial, sans-serif;
+    background-color: #34495e; /* Petrol yeşil */
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+.header {
+    text-align: center;
+    padding: 20px;
 }
 
-.oval {
-    width: 200px;
-    height: 80px;
+.grades {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin: 10px;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.grade {
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-.oval:hover {
-    background-color: #7FB7B3; /* Farklı Renk */
+.oval-box {
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .content {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.konular {
-    display: none;
-    flex-direction: column;
-    margin-top: 20px;
-}
-
-.konular .oval {
-    width: 150px;
-    height: 60px;
-    border-radius: 50%;
-    margin: 10px;
+.box {
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-.konular .oval:hover {
-    background-color: #7FB7B3; /* Farklı Renk */
+.oval-box:hover {
+    background-color: lightgreen;
+    color: black;
 }
