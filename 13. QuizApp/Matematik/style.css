@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6511c; /* Turuncu */
+    color: white;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.grades {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.grade {
+    cursor: pointer;
+}
+
+.oval-box {
+    border: 3px solid #f50404; /* Mavi */
+    border-radius: 20px;
+    padding: 5px;
+    margin: 3px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.content {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    cursor: pointer;
+}
+
+.oval-box:hover {
+    background-color: rgb(12, 101, 235);
+    color: black;
+}
