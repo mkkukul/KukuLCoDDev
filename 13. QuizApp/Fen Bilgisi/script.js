@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function() {
+    openContent('7thGrade'); // Sayfa ilk açıldığında 7. sınıf içeriğini göster
+});
+
 function openContent(grade) {
     const contentElements = document.querySelectorAll('.content');
     contentElements.forEach((element) => {
@@ -6,9 +10,4 @@ function openContent(grade) {
 
     const selectedContent = document.getElementById(`${grade}Content`);
     selectedContent.style.display = 'flex';
-}
-
-function openSubContent(subContent) {
-    alert(`Opening ${subContent}`);
-    // Implement the logic to open sub-content here
 }

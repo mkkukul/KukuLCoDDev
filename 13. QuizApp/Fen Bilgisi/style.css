@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #34495e; /* Petrol yeşil */
+    background-color: #e6511c; /* Turuncu */
     color: white;
 }
 
@@ -22,15 +22,15 @@ body {
 }
 
 .oval-box {
-    border: 2px solid white;
+    border: 3px solid #f50404; /* Mavi */
     border-radius: 20px;
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
+    margin: 3px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .content {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -41,6 +41,6 @@ body {
 }
 
 .oval-box:hover {
-    background-color: lightgreen;
+    background-color: rgb(12, 101, 235);
     color: black;
 }
