@@ -43,7 +43,10 @@ body, html {
 .logo {
     width: 500px; /* 2.5 katı büyüklük */
     height: 500px; /* 2.5 katı büyüklük */
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo img {
@@ -77,4 +80,14 @@ body, html {
 
 .ders h1:last-child {
     margin-right: 0;
+}
+
+#sayisal {
+    font-size: 48px; /* Eski büyüklüğe geri döndürüldü */
+    margin-bottom: 10px; /* Altındaki kutularla olan boşluğu eski haline getirir */
+}
+
+.oval-box {
+    font-size: 36px; /* Eski büyüklüğe geri döndürüldü */
+    margin-bottom: 10px; /* Altındaki kutularla olan boşluğu eski haline getirir */
 }

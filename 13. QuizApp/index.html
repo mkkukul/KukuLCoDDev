@@ -32,7 +32,11 @@
     <script src="script.js"></script>
     <script>
         function openSubject(subject) {
-            window.location.href = subject + ".html";
+            if (subject === 'FenBilgisi') {
+                window.location.href = 'Fen Bilgisi/fenbilgisi.html';
+            } else if (subject === 'Matematik') {
+                window.location.href = 'Matematik/matematik.html';
+            }
         }
     </script>
 </body>
