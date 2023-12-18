@@ -4,26 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Matematik</title>
+    <title>Fen Bilgisi</title>
 </head>
 <body>
-    <div class="container">
-        <div class="oval" id="yedinci" onclick="openGrade('yedinci')">7. Sınıf</div>
-        <div class="oval" id="sekizinci" onclick="openGrade('sekizinci')">8. Sınıf</div>
-        <div class="content">
-            <div class="konular" id="konuAnlatimlari">
-                <div class="oval">Konu Anlatımları</div>
-                <div class="oval">Ders Notları</div>
-                <div class="oval">Çıkmış Sorular</div>
-                <div class="oval">Örnek Sorular</div>
+    <div class="header">
+        <h1>Fen ve Matematik</h1>
+    </div>
+    <div class="grades">
+        <div class="grade" onclick="openContent('7thGrade')">
+            <div class="oval-box">
+                <h2>7. Sınıf</h2>
             </div>
-            <div class="konular" id="dersNotlari">
-                <div class="oval">Ders Notları</div>
-                <div class="oval">Çalışma Soruları</div>
+        </div>
+        <div class="grade" onclick="openContent('8thGrade')">
+            <div class="oval-box">
+                <h2>8. Sınıf</h2>
             </div>
         </div>
     </div>
-
+    <div class="content" id="7thGradeContent">
+        <div class="box" onclick="openSubContent('Notes7')">
+            <div class="oval-box">
+                <h3>Ders Notları</h3>
+            </div>
+        </div>
+        <div class="box" onclick="openSubContent('Exercises7')">
+            <div class="oval-box">
+                <h3>Çalışma Soruları</h3>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="8thGradeContent">
+        <div class="box" onclick="openSubContent('Topics8')">
+            <div class="oval-box">
+                <h3>Konu Anlatımları</h3>
+            </div>
+        </div>
+        <div class="box" onclick="openSubContent('Notes8')">
+            <div class="oval-box">
+                <h3>Ders Notları</h3>
+            </div>
+        </div>
+        <div class="box" onclick="openSubContent('Questions8')">
+            <div class="oval-box">
+                <h3>Çıkmış Sorular</h3>
+            </div>
+        </div>
+        <div class="box" onclick="openSubContent('Examples8')">
+            <div class="oval-box">
+                <h3>Örnek Sorular</h3>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
