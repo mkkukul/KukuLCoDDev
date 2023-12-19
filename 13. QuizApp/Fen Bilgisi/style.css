@@ -1,85 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Fen Bilgisi</title>
-</head>
-<body>
-    <div class="header">
-        <h1>Fen ve Matematik</h1>
-    </div>
-    <div class="grades">
-        <!-- 7. Sınıf kutusu -->
-        <div class="grade" onclick="openContent('7thGrade')">
-            <!-- Geniş kutu stili -->
-            <div class="oval-box-wide">
-                <h2>7. Sınıf</h2>
-            </div>
-        </div>
+/* CSS (style.css) */
 
-        <!-- 8. Sınıf kutusu -->
-        <div class="grade" onclick="openContent('8thGrade')">
-            <!-- Geniş kutu stili -->
-            <div class="oval-box-wide">
-                <h2>8. Sınıf</h2>
-            </div>
-        </div>
-    </div>
+/* Temel stil ayarları */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6511c; /* Turuncu arka plan rengi */
+    color: white;
+}
 
-    <div class="content" id="7thGradeContent">
-        <!-- Ders Notları kutusu -->
-        <div class="box" onclick="openSubContent('Notes7')">
-            <!-- Dar kutu stili -->
-            <div class="oval-box-narrow">
-                <h3>Ders Notları</h3>
-            </div>
-        </div>
+/* Başlık alanı */
+.header {
+    text-align: center;
+    padding: 20px;
+}
 
-        <!-- Çalışma Soruları kutusu -->
-        <div class="box" onclick="openSubContent('Exercises7')">
-            <!-- Dar kutu stili -->
-            <div class="oval-box-narrow">
-                <h3>Çalışma Soruları</h3>
-            </div>
-        </div>
-    </div>
+/* Sınıf kutularının bulunduğu alan */
+.grades {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
 
-    <div class="content" id="8thGradeContent">
-        <!-- Konu Anlatımları kutusu -->
-        <div class="box" onclick="openSubContent('Topics8')">
-            <!-- Dar kutu stili -->
-            <div class="oval-box-narrow">
-                <h3>Konu Anlatımları</h3>
-            </div>
-        </div>
+/* Sınıf kutuları */
+.grade {
+    cursor: pointer;
+}
 
-        <!-- Ders Notları kutusu -->
-        <div class="box" onclick="openSubContent('Notes8')">
-            <!-- Dar kutu stili -->
-            <div class="oval-box-narrow">
-                <h3>Ders Notları</h3>
-            </div>
-        </div>
+/* Geniş kutu stili */
+.oval-box-wide {
+    border: 5px solid #f50404; /* Mavi çerçeve rengi */
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
 
-        <!-- Çıkmış Sorular kutusu -->
-        <div class="box" onclick="openSubContent('Questions8')">
-            <!-- Dar kutu stili -->
-            <div class="oval-box-narrow">
-                <h3>Çıkmış Sorular</h3>
-            </div>
-        </div>
+/* Dar kutu stili */
+.oval-box-narrow {
+    border: 3px solid #f50404; /* Mavi çerçeve rengi */
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
 
-        <!-- Örnek Sorular kutusu -->
-        <div class="box" onclick="openSubContent('Examples8')">
-            <!-- Dar kutu stili -->
-            <div class="oval-box-narrow">
-                <h3>Örnek Sorular</h3>
-            </div>
-        </div>
-    </div>
+.content {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+.box {
+    cursor: pointer;
+}
+
+.oval-box-wide:hover,
+.oval-box-narrow:hover {
+    background-color: rgb(12, 101, 235);
+    color: black;
+}
