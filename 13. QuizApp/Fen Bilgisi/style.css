@@ -18,8 +18,8 @@ body {
 /* Sınıf kutularının bulunduğu alan */
 .grades {
     display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
+    justify-content: space-between; /* Updated to space-between */
+    margin: 20px 10%; /* Updated margin for spacing */
 }
 
 /* Sınıf kutuları */
