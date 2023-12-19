@@ -46,7 +46,7 @@ body {
 }
 
 .content {
-    display: none;
+    display: flex; /* Updated to flex for horizontal alignment */
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
