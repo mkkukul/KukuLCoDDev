@@ -22,9 +22,9 @@ body {
 }
 
 .oval-box-wide {
-    border: 3px solid #f50404; /* Mavi */
+    border: 5px solid #f50404; /* Mavi */
     border-radius: 20px;
-    padding: 15px;
+    padding: 20px;
     margin: 10px;
     transition: background-color 0.3s, color 0.3s;
 }
