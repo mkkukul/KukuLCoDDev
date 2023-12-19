@@ -29,14 +29,6 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.oval-box-narrow {
-    border: 3px solid #f50404; /* Mavi */
-    border-radius: 20px;
-    padding: 10px;
-    margin: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
 .content {
     display: none;
     justify-content: center;
@@ -48,8 +40,7 @@ body {
     cursor: pointer;
 }
 
-.oval-box-wide:hover,
-.oval-box-narrow:hover {
+.oval-box-wide:hover {
     background-color: rgb(12, 101, 235);
     color: black;
 }
