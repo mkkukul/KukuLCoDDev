@@ -1,5 +1,3 @@
-/* CSS (style.css) */
-
 /* Temel stil ayarları */
 body {
     margin: 0;
@@ -18,8 +16,8 @@ body {
 /* Sınıf kutularının bulunduğu alan */
 .grades {
     display: flex;
-    justify-content: space-between; /* Updated to space-between */
-    margin: 20px 10%; /* Updated margin for spacing */
+    justify-content: center; /* Ortaya hizalama */
+    margin: 20px 0;
 }
 
 /* Sınıf kutuları */
@@ -41,15 +39,16 @@ body {
     border: 3px solid #f50404; /* Mavi çerçeve rengi */
     border-radius: 20px;
     padding: 10px;
-    margin: 5px;
+    margin: 5px; /* Değiştirildi */
     transition: background-color 0.3s, color 0.3s;
 }
 
 .content {
-    display: flex; /* Updated to flex for horizontal alignment */
+    display: flex; /* Yatay hizalama */
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 20px; /* İçerikler arası boşluk */
 }
 
 .box {
