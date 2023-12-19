@@ -22,10 +22,10 @@ body {
 }
 
 .oval-box-wide {
-    border: 5px solid #f50404; /* Mavi */
+    border: px solid #f50404; /* Mavi */
     border-radius: 20px;
-    padding: 10px;
-    margin: 60px;
+    padding: 20px;
+    margin: 10px;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -42,5 +42,5 @@ body {
 
 .oval-box-wide:hover {
     background-color: rgb(12, 101, 235);
-    color: red;
+    color: black;
 }
