@@ -24,8 +24,8 @@ body {
 .oval-box-wide {
     border: 5px solid #f50404; /* Mavi */
     border-radius: 20px;
-    padding: 20px;
-    margin: 10px;
+    padding: 10px;
+    margin: 60px;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -42,5 +42,5 @@ body {
 
 .oval-box-wide:hover {
     background-color: rgb(12, 101, 235);
-    color: black;
+    color: red;
 }
