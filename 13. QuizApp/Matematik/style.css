@@ -10,7 +10,7 @@ body {
 /* Başlık alanı */
 .header {
     text-align: center;
-    padding: 40px; /* Başlık alanı padding değeri artırıldı */
+    padding: 10px 10px; /* Üst ve alt padding azaltıldı */
     font-size: 2em; /* Font büyütüldü */
 }
 
@@ -18,12 +18,13 @@ body {
 .grades {
     display: flex;
     justify-content: center; /* Ortaya hizalama */
-    margin: 40px 0; /* Üst ve alt margin değeri artırıldı */
+    margin: 5px 5px; /* Üst ve alt margin değeri artırıldı */
 }
 
 /* Sınıf kutuları */
-.grade {
+.grade {damla
     cursor: pointer;
+    margin-top: 20px; /* 7. ve 8. sınıf kutuları arasındaki boşluk artırıldı */
 }
 
 /* Geniş kutu stili */
@@ -49,8 +50,8 @@ body {
 /* 7. Sınıf ve 8. Sınıf yazılarının iç boşluklarını azaltma */
 .oval-box-wide h2, 
 .oval-box-narrow h2 {
-    margin-top: 0%;    /* Üst boşluğu azaltıldı */
-    margin-bottom: 0%; /* Alt boşluğu azaltıldı */
+    margin-top: 5px;    /* Üst boşluğu azaltıldı */
+    margin-bottom: 5px; /* Alt boşluğu azaltıldı */
 }
 
 .content {
