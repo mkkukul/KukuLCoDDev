@@ -49,8 +49,8 @@ body {
 /* 7. Sınıf ve 8. Sınıf yazılarının iç boşluklarını azaltma */
 .oval-box-wide h2, 
 .oval-box-narrow h2 {
-    margin-top: 5px;    /* Üst boşluğu azaltıldı */
-    margin-bottom: 5px; /* Alt boşluğu azaltıldı */
+    margin-top: 0%;    /* Üst boşluğu azaltıldı */
+    margin-bottom: 0%; /* Alt boşluğu azaltıldı */
 }
 
 .content {
