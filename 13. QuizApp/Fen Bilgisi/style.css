@@ -10,14 +10,15 @@ body {
 /* Başlık alanı */
 .header {
     text-align: center;
-    padding: 20px;
+    padding: 40px; /* Başlık alanı padding değeri artırıldı */
+    font-size: 2em; /* Font büyütüldü */
 }
 
 /* Sınıf kutularının bulunduğu alan */
 .grades {
     display: flex;
     justify-content: center; /* Ortaya hizalama */
-    margin: 20px 0;
+    margin: 40px 0; /* Üst ve alt margin değeri artırıldı */
 }
 
 /* Sınıf kutuları */
@@ -27,28 +28,30 @@ body {
 
 /* Geniş kutu stili */
 .oval-box-wide {
-    border: 5px solid #f50404; /* Mavi çerçeve rengi */
+    border: 5px solid #f50404;
     border-radius: 20px;
     padding: 20px;
     margin: 10px;
     transition: background-color 0.3s, color 0.3s;
+    font-size: 1.5em; /* Yazı boyutu büyütüldü */
 }
 
 /* Dar kutu stili */
 .oval-box-narrow {
-    border: 3px solid #f50404; /* Mavi çerçeve rengi */
+    border: 3px solid #f50404;
     border-radius: 20px;
     padding: 10px;
     margin: 5px; /* Değiştirildi */
     transition: background-color 0.3s, color 0.3s;
+    font-size: 1.5em; /* Yazı boyutu büyütüldü */
 }
 
 .content {
-    display: flex; /* Yatay hizalama */
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 20px; /* İçerikler arası boşluk */
+    margin-top: 20px;
 }
 
 .box {
