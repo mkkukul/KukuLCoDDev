@@ -8,54 +8,57 @@
 </head>
 <body>
     <div class="header">
-        <h1>Matematik</h1>
+        <h1>Fen Bilgisi</h1>
     </div>
     <div class="grades">
         <div class="grade" onclick="openContent('7thGrade')">
-            <div class="oval-box">
+            <div class="oval-box-wide">
                 <h2>7. Sınıf</h2>
             </div>
         </div>
         <div class="grade" onclick="openContent('8thGrade')">
-            <div class="oval-box">
+            <div class="oval-box-wide">
                 <h2>8. Sınıf</h2>
             </div>
         </div>
     </div>
+
     <div class="content" id="7thGradeContent">
         <div class="box" onclick="openSubContent('Notes7')">
-            <div class="oval-box">
+            <div class="oval-box-narrow">
                 <h3>Ders Notları</h3>
             </div>
         </div>
         <div class="box" onclick="openSubContent('Exercises7')">
-            <div class="oval-box">
+            <div class="oval-box-narrow">
                 <h3>Çalışma Soruları</h3>
             </div>
         </div>
     </div>
+
     <div class="content" id="8thGradeContent">
         <div class="box" onclick="openSubContent('Topics8')">
-            <div class="oval-box">
+            <div class="oval-box-narrow">
                 <h3>Konu Anlatımları</h3>
             </div>
         </div>
         <div class="box" onclick="openSubContent('Notes8')">
-            <div class="oval-box">
+            <div class="oval-box-narrow">
                 <h3>Ders Notları</h3>
             </div>
         </div>
         <div class="box" onclick="openSubContent('Questions8')">
-            <div class="oval-box">
+            <div class="oval-box-narrow">
                 <h3>Çıkmış Sorular</h3>
             </div>
         </div>
         <div class="box" onclick="openSubContent('Examples8')">
-            <div class="oval-box">
+            <div class="oval-box-narrow">
                 <h3>Örnek Sorular</h3>
             </div>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
