@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #e6511c; /* Turuncu arka plan rengi */
+    background-color: #aa3409; /* Turuncu arka plan rengi */
     color: white;
 }
 
@@ -29,7 +29,7 @@ body {
 
 /* Geniş kutu stili */
 .oval-box-wide {
-    border: 5px solid #f50404;
+    border: 5px solid #fa3301;
     border-radius: 20px;
     padding: 20px;
     margin: 10px;
@@ -39,7 +39,7 @@ body {
 
 /* Dar kutu stili */
 .oval-box-narrow {
-    border: 3px solid #f50404;
+    border: 3px solid #f57804;
     border-radius: 20px;
     padding: 10px;
     margin: 5px; /* Değiştirildi */
