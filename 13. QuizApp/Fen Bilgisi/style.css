@@ -18,7 +18,7 @@ body {
 .grades {
     display: flex;
     justify-content: center; /* Ortaya hizalama */
-    margin: 80px 0; /* Üst ve alt margin değeri artırıldı */
+    margin: 10px 10; /* Üst ve alt margin değeri artırıldı */
 }
 
 /* Sınıf kutuları */
