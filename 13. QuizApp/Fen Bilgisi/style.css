@@ -46,12 +46,19 @@ body {
     font-size: 1.5em; /* Yazı boyutu büyütüldü */
 }
 
+/* 7. Sınıf ve 8. Sınıf yazılarının iç boşluklarını azaltma */
+.oval-box-wide h2, 
+.oval-box-narrow h2 {
+    margin-top: 5px;    /* Üst boşluğu azaltıldı */
+    margin-bottom: 5px; /* Alt boşluğu azaltıldı */
+}
+
 .content {
-    display: flex;
+    display: flex; /* Yatay hizalama */
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 20px; /* İçerikler arası boşluk */
 }
 
 .box {
