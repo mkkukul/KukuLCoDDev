@@ -27,6 +27,7 @@ body {
 
 }
 #newtask{
+    position: relative;
     background-color: #ffffff;
     padding: 30px 20px;
     border-radius: 5px;
