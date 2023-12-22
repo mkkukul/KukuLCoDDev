@@ -47,4 +47,12 @@ body {
     height: 45px;                       /* Yüksekliğini 45px olarak ayarlar */
     border-radius: 5px;                 /* Yuvarlatılmış köşeler ekler */
     font-family: 'poppins', sans-serif; /* Yazı tipini 'poppins' olarak ayarlar */
+    font-weight:500;
+    font-size: 16px;
+    background-color:#8052ec;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+
 }
