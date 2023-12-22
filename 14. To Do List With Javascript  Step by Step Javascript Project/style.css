@@ -1,14 +1,17 @@
+/* Tüm elementler, :before ve :after pseudo-elementler için varsayılan stil ayarları */
 *, *:before, *:after {
     padding: 0;              /* Tüm elementlerin iç padding'ini sıfırlar */
     margin: 0;               /* Tüm elementlerin dış margin'ini sıfırlar */
-    box-sizing: border-box;  /* Elementlerin box modelini (genişlik ve yükseklik dahil) sınır kutusu (border-box) olarak ayarlar */
+    box-sizing: border-box;  /* Elementlerin box modelini sınır kutusu (border-box) olarak ayarlar */
 }
 
+/* Sayfa genel stil ayarları */
 body {
     height: 100vh;                       /* Body elementinin yüksekliğini tam ekran yüksekliği olarak ayarlar */
     background: linear-gradient(135deg, #8052ec, #d161ff); /* Arka plana 135 derece lineer gradyan ekler */
 }
 
+/* Özel bir container stil ayarları */
 .container {
     border: 2px solid white;              /* .container sınıfına beyaz kenarlık ekler */
     width: 40%;                           /* Genişliği %40 olarak ayarlar */
@@ -20,6 +23,7 @@ body {
     padding: 30px 40px;                   /* İçeriği çevreleyen iç boşlukları ayarlar */
 }
 
+/* Özel bir stil ayarları */
 #newtask {
     position: relative;                   /* Göreceli konumlandırma ayarlar */
     background-color: #ffffff;            /* Arka plan rengini beyaz yapar */
@@ -28,6 +32,7 @@ body {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Gölge efekti ekler */
 }
 
+/* Input elementi için özel stil ayarları */
 #newtask input {
     width: 70;                           /* Input genişliğini 70 olarak ayarlar (bu değer px olmalı) */
     height: 45px;                        /* Input yüksekliğini 45px olarak ayarlar */
@@ -40,6 +45,7 @@ body {
     position: relative;                  /* Göreceli konumlandırma ayarlar */
 }
 
+/* Buton elementi için özel stil ayarları */
 #newtask button {
     position: relative;                  /* Göreceli konumlandırma ayarlar */
     float: right;                       /* Sağa yüzer */
@@ -47,12 +53,11 @@ body {
     height: 45px;                       /* Yüksekliğini 45px olarak ayarlar */
     border-radius: 5px;                 /* Yuvarlatılmış köşeler ekler */
     font-family: 'poppins', sans-serif; /* Yazı tipini 'poppins' olarak ayarlar */
-    font-weight:500;
-    font-size: 16px;
-    background-color:#8052ec;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
-    outline: none;
-
+    font-weight: 500;                   /* Yazı kalınlığını ayarlar */
+    font-size: 16px;                    /* Yazı boyutunu 16px olarak ayarlar */
+    background-color: #8052ec;          /* Arka plan rengini belirler */
+    border: none;                       /* Kenarlık olmaması için sıfırlar */
+    color: #ffffff;                     /* Metin rengini ayarlar */
+    cursor: pointer;                    /* İmleci bir el şeklinde yapar */
+    outline: none;                      /* Odaklandığında stil olmasını önler */
 }
