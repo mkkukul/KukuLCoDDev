@@ -1,55 +1,50 @@
-*,
-*:before,
-*:after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-
+*, *:before, *:after {
+    padding: 0;              /* Tüm elementlerin iç padding'ini sıfırlar */
+    margin: 0;               /* Tüm elementlerin dış margin'ini sıfırlar */
+    box-sizing: border-box;  /* Elementlerin box modelini (genişlik ve yükseklik dahil) sınır kutusu (border-box) olarak ayarlar */
 }
+
 body {
-    height: 100vh;
-    background: linear-gradient(
-        135deg,
-        #8052ec,
-        #d161ff
-        );
+    height: 100vh;                       /* Body elementinin yüksekliğini tam ekran yüksekliği olarak ayarlar */
+    background: linear-gradient(135deg, #8052ec, #d161ff); /* Arka plana 135 derece lineer gradyan ekler */
 }
-.container{
-    border:2px solid white;
-    width: 40%;
-    min-width: 450px;
 
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    padding: 30px 40px;
+.container {
+    border: 2px solid white;              /* .container sınıfına beyaz kenarlık ekler */
+    width: 40%;                           /* Genişliği %40 olarak ayarlar */
+    min-width: 450px;                     /* En küçük genişlik 450px olarak ayarlar */
+    position: absolute;                   /* Konumu mutlak olarak ayarlar */
+    transform: translate(-50%, -50%);     /* Konumu yatay ve dikey olarak %50'ye ayarlar */
+    top: 50%;                            /* Yatay pozisyonunu sayfanın yarısına getirir */
+    left: 50%;                           /* Dikey pozisyonunu sayfanın yarısına getirir */
+    padding: 30px 40px;                   /* İçeriği çevreleyen iç boşlukları ayarlar */
+}
 
+#newtask {
+    position: relative;                   /* Göreceli konumlandırma ayarlar */
+    background-color: #ffffff;            /* Arka plan rengini beyaz yapar */
+    padding: 30px 20px;                   /* İçerikle çevrelenen iç boşlukları ayarlar */
+    border-radius: 5px;                  /* Yuvarlatılmış köşeler ekler */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Gölge efekti ekler */
 }
-#newtask{
-    position: relative;
-    background-color: #ffffff;
-    padding: 30px 20px;
-    border-radius: 5px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-}
-#newtask input{
-    width: 70;
-    height: 45px;
-    font-family: 'Poppins',sans-serif;
-    font-size: 15px;
-    border: 2px solid #d1d3d4;
-    padding: 12px;
-    color: #111111;
-    font-weight: 500;
-    position: relative;
 
+#newtask input {
+    width: 70;                           /* Input genişliğini 70 olarak ayarlar (bu değer px olmalı) */
+    height: 45px;                        /* Input yüksekliğini 45px olarak ayarlar */
+    font-family: 'Poppins', sans-serif;  /* Yazı tipini 'Poppins' olarak ayarlar */
+    font-size: 15px;                     /* Yazı boyutunu 15px olarak ayarlar */
+    border: 2px solid #d1d3d4;           /* Kenarlık rengini ayarlar */
+    padding: 12px;                       /* İç boşluğu ayarlar */
+    color: #111111;                      /* Metin rengini ayarlar */
+    font-weight: 500;                    /* Yazı kalınlığını ayarlar */
+    position: relative;                  /* Göreceli konumlandırma ayarlar */
 }
-#newtask button{
-    position: relative;
-    float: right;
-    width: 20%;
-    height: 45px;
-    border-radius: 5px;
-    font-family: 'poppins', sans-serif;
+
+#newtask button {
+    position: relative;                  /* Göreceli konumlandırma ayarlar */
+    float: right;                       /* Sağa yüzer */
+    width: 20%;                         /* Genişliğini %20 olarak ayarlar */
+    height: 45px;                       /* Yüksekliğini 45px olarak ayarlar */
+    border-radius: 5px;                 /* Yuvarlatılmış köşeler ekler */
+    font-family: 'poppins', sans-serif; /* Yazı tipini 'poppins' olarak ayarlar */
 }
