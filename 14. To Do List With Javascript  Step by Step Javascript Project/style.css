@@ -48,5 +48,8 @@ body {
 #newtask button{
     position: relative;
     float: right;
-    width: ;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'poppins', sans-serif;
 }
