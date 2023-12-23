@@ -6,7 +6,8 @@ document.guerySelector('#push').onclick = function
 
     }
     else{
-        document.querySelector('#tasks')
+        document.querySelector('#tasks').innerHTML
+        += 
     }
     
 } 
