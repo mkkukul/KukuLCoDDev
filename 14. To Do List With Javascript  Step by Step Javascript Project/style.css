@@ -23,7 +23,7 @@ body {
     padding: 30px 40px;                   /* İçeriği çevreleyen iç boşlukları ayarlar */
 }
 
-/* Özel bir stil ayarları */
+/* Yeni görev ekleme alanı için stil ayarları */
 #newtask {
     position: relative;                   /* Göreceli konumlandırma ayarlar */
     background-color: #ffffff;            /* Arka plan rengini beyaz yapar */
@@ -32,7 +32,7 @@ body {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Gölge efekti ekler */
 }
 
-/* Input elementi için özel stil ayarları */
+/* Input elementi için stil ayarları */
 #newtask input {
     width: 70;                           /* Input genişliğini 70 olarak ayarlar (bu değer px olmalı) */
     height: 45px;                        /* Input yüksekliğini 45px olarak ayarlar */
@@ -44,12 +44,14 @@ body {
     font-weight: 500;                    /* Yazı kalınlığını ayarlar */
     position: relative;                  /* Göreceli konumlandırma ayarlar */
 }
-#newtask input:focus{
+
+/* Input elementi aktifken stil ayarları */
+#newtask input:focus {
     outline: none;                       /* Seçili metni vurgulamadan kaldırır */   
-    border-color: #8052ec;
+    border-color: #8052ec;               /* Kenarlık rengini aktif hale getirir */
 }
 
-/* Buton elementi için özel stil ayarları */
+/* Buton elementi için stil ayarları */
 #newtask button {
     position: relative;                  /* Göreceli konumlandırma ayarlar */
     float: right;                       /* Sağa yüzer */
@@ -57,20 +59,4 @@ body {
     height: 45px;                       /* Yüksekliğini 45px olarak ayarlar */
     border-radius: 5px;                 /* Yuvarlatılmış köşeler ekler */
     font-family: 'poppins', sans-serif; /* Yazı tipini 'poppins' olarak ayarlar */
-    font-weight: 500;                   /* Yazı kalınlığını ayarlar */
-    font-size: 16px;                    /* Yazı boyutunu 16px olarak ayarlar */
-    background-color: #8052ec;          /* Arka plan rengini belirler */
-    border: none;                       /* Kenarlık olmaması için sıfırlar */
-    color: #ffffff;                     /* Metin rengini ayarlar */
-    cursor: pointer;                    /* İmleci bir el şeklinde yapar */
-    outline: none;                      /* Odaklandığında stil olmasını önler */
-}
-#tasks{
-    background-color: #ffffff;
-    padding: 30px 20px;
-    margin-top: 60px;
-    border-radius: 10px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-    width: 100%;
-    position: relative;
-}
+    font-weight: 500;                   /* Yazı
