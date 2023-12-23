@@ -59,4 +59,22 @@ body {
     height: 45px;                       /* Yüksekliğini 45px olarak ayarlar */
     border-radius: 5px;                 /* Yuvarlatılmış köşeler ekler */
     font-family: 'poppins', sans-serif; /* Yazı tipini 'poppins' olarak ayarlar */
-    font-weight: 500;                   /* Yazı
+    font-weight: 500;                   /* Yazı kalınlığını ayarlar */
+    font-size: 16px;                    /* Yazı boyutunu 16px olarak ayarlar */
+    background-color: #8052ec;          /* Arka plan rengini belirler */
+    border: none;                       /* Kenarlık olmaması için sıfırlar */
+    color: #ffffff;                     /* Metin rengini ayarlar */
+    cursor: pointer;                    /* İmleci bir el şeklinde yapar */
+    outline: none;                      /* Odaklandığında stil olmasını önler */
+}
+
+/* Görevlerin listelendiği alan için stil ayarları */
+#tasks {
+    background-color: #ffffff;           /* Arka plan rengini beyaz yapar */
+    padding: 30px 20px;                  /* İçerikle çevrelenen iç boşlukları ayarlar */
+    margin-top: 60px;                    /* Üst boşluk ekler */
+    border-radius: 10px;                 /* Yuvarlatılmış köşeler ekler */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Gölge efekti ekler */
+    width: 100%;                         /* Genişliği %100 olarak ayarlar */
+    position: relative;                  /* Göreceli konumlandırma ayarlar */
+}
