@@ -7,7 +7,15 @@ document.guerySelector('#push').onclick = function
     }
     else{
         document.querySelector('#tasks').innerHTML
-        += ` 
+        += `
+        <div class="task">
+            <span id="taskname">
+                ${document.querySelector('#newtask input').value}
+            </span>
+            <button class="delete">
+            
+            </button>
+        </div>
     }
     
 } 
