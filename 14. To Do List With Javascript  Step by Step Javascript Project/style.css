@@ -44,6 +44,10 @@ body {
     font-weight: 500;                    /* Yazı kalınlığını ayarlar */
     position: relative;                  /* Göreceli konumlandırma ayarlar */
 }
+#newtask input:focus{
+    outline: none;                       /* Seçili metni vurgulamadan kaldırır */   
+    border-color: #8052ec;
+}
 
 /* Buton elementi için özel stil ayarları */
 #newtask button {
@@ -60,4 +64,13 @@ body {
     color: #ffffff;                     /* Metin rengini ayarlar */
     cursor: pointer;                    /* İmleci bir el şeklinde yapar */
     outline: none;                      /* Odaklandığında stil olmasını önler */
+}
+#tasks{
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    position: relative;
 }
