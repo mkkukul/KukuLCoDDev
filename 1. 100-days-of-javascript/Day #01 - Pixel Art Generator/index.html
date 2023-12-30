@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Day #01 - Pixel Art Generator/ Kukul Js</title>
-
+    <title>Day 01 - Pixel Art Generator/ Kukul Js</title>
 </head>
 <body>
+    <div class="wrapper">
+        <div class="options">
+            <div class="slider">
+                <label for="width-range">Kılavuz Genişliği</label>
+                <input type="range" id="width-range" min="1" max="100"> <!-- min ve max değerleri ayarlandı -->
+                <span id="width-value">00</span> 
+            </div>
+            <div class="slider">
+                <label for="height-range">Kılavuz Yüksekliği</label>
+                <input type="range" id="height-range" min="1" max="100"> <!-- min ve max değerleri ayarlandı -->
+                <span id="height-value">00</span> 
+            </div>
+        </div>
+    </div>
 
-
-    
     <script src="index.js"></script>
-    
 </body>
 </html>
