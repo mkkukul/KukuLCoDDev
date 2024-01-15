@@ -96,5 +96,6 @@ for (let i of products.data) {
     
     // "products" id'li HTML elementine kartı ekle
     document.getElementById("products").appendChild(card);
-  }
+}
+
    
