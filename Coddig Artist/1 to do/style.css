@@ -1,0 +1,80 @@
+/* Tüm elementler, :before ve :after pseudo-elementler için varsayılan stil ayarları */
+*, *:before, *:after {
+    padding: 0;              /* Tüm elementlerin iç padding'ini sıfırlar */
+    margin: 0;               /* Tüm elementlerin dış margin'ini sıfırlar */
+    box-sizing: border-box;  /* Elementlerin box modelini sınır kutusu (border-box) olarak ayarlar */
+}
+
+/* Sayfa genel stil ayarları */
+body {
+    height: 100vh;                       /* Body elementinin yüksekliğini tam ekran yüksekliği olarak ayarlar */
+    background: linear-gradient(135deg, #8052ec, #d161ff); /* Arka plana 135 derece lineer gradyan ekler */
+}
+
+/* Özel bir container stil ayarları */
+.container {
+    border: 2px solid white;              /* .container sınıfına beyaz kenarlık ekler */
+    width: 40%;                           /* Genişliği %40 olarak ayarlar */
+    min-width: 450px;                     /* En küçük genişlik 450px olarak ayarlar */
+    position: absolute;                   /* Konumu mutlak olarak ayarlar */
+    transform: translate(-50%, -50%);     /* Konumu yatay ve dikey olarak %50'ye ayarlar */
+    top: 50%;                            /* Yatay pozisyonunu sayfanın yarısına getirir */
+    left: 50%;                           /* Dikey pozisyonunu sayfanın yarısına getirir */
+    padding: 30px 40px;                   /* İçeriği çevreleyen iç boşlukları ayarlar */
+}
+
+/* Yeni görev ekleme alanı için stil ayarları */
+#newtask {
+    position: relative;                   /* Göreceli konumlandırma ayarlar */
+    background-color: #ffffff;            /* Arka plan rengini beyaz yapar */
+    padding: 30px 20px;                   /* İçerikle çevrelenen iç boşlukları ayarlar */
+    border-radius: 5px;                  /* Yuvarlatılmış köşeler ekler */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Gölge efekti ekler */
+}
+
+/* Input elementi için stil ayarları */
+#newtask input {
+    width: 70;                           /* Input genişliğini 70 olarak ayarlar (bu değer px olmalı) */
+    height: 45px;                        /* Input yüksekliğini 45px olarak ayarlar */
+    font-family: 'Poppins', sans-serif;  /* Yazı tipini 'Poppins' olarak ayarlar */
+    font-size: 15px;                     /* Yazı boyutunu 15px olarak ayarlar */
+    border: 2px solid #d1d3d4;           /* Kenarlık rengini ayarlar */
+    padding: 12px;                       /* İç boşluğu ayarlar */
+    color: #111111;                      /* Metin rengini ayarlar */
+    font-weight: 500;                    /* Yazı kalınlığını ayarlar */
+    position: relative;                  /* Göreceli konumlandırma ayarlar */
+}
+
+/* Input elementi aktifken stil ayarları */
+#newtask input:focus {
+    outline: none;                       /* Seçili metni vurgulamadan kaldırır */   
+    border-color: #8052ec;               /* Kenarlık rengini aktif hale getirir */
+}
+
+/* Buton elementi için stil ayarları */
+#newtask button {
+    position: relative;                  /* Göreceli konumlandırma ayarlar */
+    float: right;                       /* Sağa yüzer */
+    width: 20%;                         /* Genişliğini %20 olarak ayarlar */
+    height: 45px;                       /* Yüksekliğini 45px olarak ayarlar */
+    border-radius: 5px;                 /* Yuvarlatılmış köşeler ekler */
+    font-family: 'poppins', sans-serif; /* Yazı tipini 'poppins' olarak ayarlar */
+    font-weight: 500;                   /* Yazı kalınlığını ayarlar */
+    font-size: 16px;                    /* Yazı boyutunu 16px olarak ayarlar */
+    background-color: #8052ec;          /* Arka plan rengini belirler */
+    border: none;                       /* Kenarlık olmaması için sıfırlar */
+    color: #ffffff;                     /* Metin rengini ayarlar */
+    cursor: pointer;                    /* İmleci bir el şeklinde yapar */
+    outline: none;                      /* Odaklandığında stil olmasını önler */
+}
+
+/* Görevlerin listelendiği alan için stil ayarları */
+#tasks {
+    background-color: #ffffff;           /* Arka plan rengini beyaz yapar */
+    padding: 30px 20px;                  /* İçerikle çevrelenen iç boşlukları ayarlar */
+    margin-top: 60px;                    /* Üst boşluk ekler */
+    border-radius: 10px;                 /* Yuvarlatılmış köşeler ekler */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Gölge efekti ekler */
+    width: 100%;                         /* Genişliği %100 olarak ayarlar */
+    position: relative;                  /* Göreceli konumlandırma ayarlar */
+}
