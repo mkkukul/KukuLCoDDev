@@ -97,5 +97,63 @@ for (let i of products.data) {
     // "products" id'li HTML elementine kartı ekle
     document.getElementById("products").appendChild(card);
 }
-
+// Ürünleri filtrelemek için kullanılan fonksiyon
+function filterProduct(value) {
+    // Buton sınıf kodu
+    let buttons = document.querySelectorAll(".button-value");
+    buttons.forEach((button) => {
+      // Değer, innerText ile eşitse
+      if (value.toUpperCase() == button.innerText.toUpperCase()) {
+        button.classList.add("active");
+      } else {
+        button.classList.remove("active");
+      }
+    });
+  
+    // Tüm kartları seç
+    let elements = document.querySelectorAll(".card");
+  
+    // Tüm kartlar üzerinde döngü yap
+    elements.forEach((element) => {
+      // 'all' butonuna tıklanıldığında tüm kartları göster
+      if (value == "all") {
+        element.classList.remove("hide");
+      } else {
+        // Element kategori sınıfını içeriyorsa
+        if (element.classList.contains(value)) {
+          // Kategoriye göre kartı göster
+          element.classList.remove("hide");
+        } else {
+          // Diğer kartları gizle
+          element.classList.add("hide");
+        }
+      }
+    });
+  }
+  
+  // Arama butonu tıklanıldığında
+  document.getElementById("search").addEventListener("click", () => {
+    // Başlangıç değerleri
+    let searchInput = document.getElementById("search-input").value;
+    let elements = document.querySelectorAll(".product-name");
+    let cards = document.querySelectorAll(".card");
+  
+    // Tüm elementler üzerinde döngü yap
+    elements.forEach((element, index) => {
+      // Eğer metin arama değerini içeriyorsa
+      if (element.innerText.includes(searchInput.toUpperCase())) {
+        // Eşleşen kartı göster
+        cards[index].classList.remove("hide");
+      } else {
+        // Diğer kartları gizle
+        cards[index].classList.add("hide");
+      }
+    });
+  });
+  
+  // Sayfa yüklendiğinde başlangıçta tüm ürünleri göster
+  window.onload = () => {
+    filterProduct("all");
+  };
+  
    
