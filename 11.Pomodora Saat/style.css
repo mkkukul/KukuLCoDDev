@@ -7,22 +7,26 @@
 
 body {
   background-color: #0264f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .container {
- 
   background-color: #cd0c05;
-  width: min(90%, 900px); /* Genişliği 600 piksel veya %90'ı kadar olanı al */
-  height: min(90%, 700px); /* Yüksekliği 400 piksel veya %90'ı kadar olanı al */
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
+  max-width: 90vw; /* Maksimum genişlik 90 viewport genişliği */
+  max-height: 90vh; /* Maksimum yükseklik 90 viewport yüksekliği */
   padding: 4em 2em;
   border-radius: 0.5em;
-  margin-top: 100px; /* Üstte 50 piksel boşluk bırak */
-  margin-bottom: 100px; /* Altta 50 piksel boşluk bırak */
+  margin: 50px; /* Sayfa kenarlarından 50 piksel uzaklık */
+  overflow: auto; /* İçerik sayfaya sığmadığında kaydırma çubuğu göster */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 button {
   border: none;
   outline: none;
@@ -92,9 +96,9 @@ button {
 .show {
   display: block;
 }
+
 .kh {
-  margin: 25px;
-  margin-bottom: 25px;
+  margin: 25px auto; /* Resimlerin üst ve altında 25 piksel boşluk bırakır */
   display: flex;
   flex-direction: column; /* Resimleri sütun olarak yerleştirir */
   align-items: center; /* Yatayda merkezler */
@@ -102,4 +106,5 @@ button {
 
 .kh img {
   max-width: 500px; /* Maksimum genişlik ayarı */
+  height: auto; /* Yüksekliği otomatik olarak ayarla */
 }
