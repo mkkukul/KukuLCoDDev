@@ -7,8 +7,16 @@
   body {
     background-color: #2065cd;
   }
+  #kh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    justify-content: center; /* Yatayda merkezleme */
+    margin-top: 100px; /* Yukarıdan 50px boşluk */
+  }
   .container {
-    background-color: #cd058d;
+    background-color: #cd0c05;
     width: min(90%, 500px);
     position: absolute;
     transform: translate(-50%, -50%);
@@ -24,8 +32,9 @@
   }
   .section-container {
     display: flex;
-    gap: 1em;
+    gap: 1rem;
     justify-content: center;
+    
   }
   .btn {
     padding: 1em 2em;
@@ -73,3 +82,6 @@
   .show {
     display: block;
   }
+  
+  
+  
