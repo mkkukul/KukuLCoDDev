@@ -31,6 +31,7 @@ body {
     
     /* Soldan sağa yüzdeye göre konumlandırır */
     left: 50%;
+    
     /* İçeriği birbirine hizalar */
     display: flex;
 }
