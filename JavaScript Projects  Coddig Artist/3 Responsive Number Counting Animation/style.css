@@ -25,6 +25,7 @@ body {
     
     /* Yatay ve dikey olarak merkeze hizalamayı sağlar */
     transform: translate(-50%, -50%);
+    
     /* Yukarıdan aşağıya yüzdeye göre konumlandırır */
     top: 50%;
     /* Soldan sağa yüzdeye göre konumlandırır */
