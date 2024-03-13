@@ -19,6 +19,7 @@ body {
     
     /* Mutlak konumlandırma kullanarak sarmalayıcıyı (wrapper) merkeze hizalar */
     position: absolute;
+    
     /* Genişliği belirler */
     width: 80vw;
     /* Yatay ve dikey olarak merkeze hizalamayı sağlar */
