@@ -28,6 +28,7 @@ body {
     
     /* Yukarıdan aşağıya yüzdeye göre konumlandırır */
     top: 50%;
+    
     /* Soldan sağa yüzdeye göre konumlandırır */
     left: 50%;
     /* İçeriği birbirine hizalar */
