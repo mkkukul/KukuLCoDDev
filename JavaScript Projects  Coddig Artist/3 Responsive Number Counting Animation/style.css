@@ -1,19 +1,31 @@
- *{
+/* Tüm öğelerin iç boşluğunu ve dış boşluğunu sıfırlar ve kenar kutusunu sınırlar */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* Font ailesini belirtmelisiniz */
     font-family: ;
- }
- body {
+}
+
+/* Body arka plan rengini ayarlar */
+body {
     background-color: #121317;
- }
- .wrapper{
-    
-    border:1px solid white;
+}
+
+/* Dış sarmalayıcıyı (wrapper) stile göre ayarlar */
+.wrapper {
+    /* Beyaz bir kenar sınırı oluşturur */
+    border: 1px solid white;
+    /* Mutlak konumlandırma kullanarak sarmalayıcıyı (wrapper) merkeze hizalar */
     position: absolute;
+    /* Genişliği belirler */
     width: 80vw;
+    /* Yatay ve dikey olarak merkeze hizalamayı sağlar */
     transform: translate(-50%, -50%);
+    /* Yukarıdan aşağıya yüzdeye göre konumlandırır */
     top: 50%;
+    /* Soldan sağa yüzdeye göre konumlandırır */
     left: 50%;
+    /* İçeriği birbirine hizalar */
     display: flex;
- }
+}
