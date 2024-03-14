@@ -77,7 +77,12 @@ span.text{
     .wrapper{
         width: 85vw;
     }
-    .container{}
+    .container{
+        height: 26vmin;
+        width: 26vmin;
+        font-size: 12px;
+    
+    }
 }
     
 }
