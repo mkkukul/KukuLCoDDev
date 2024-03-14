@@ -61,5 +61,10 @@ span.num{
     display: grid;
     place-items: center;
     font-weight: 600;
-    font
+    font-size: 3em;
+
+}
+span.text{
+    color: #e0e0e0;
+    font-size: 1em;
 }
