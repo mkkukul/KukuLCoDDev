@@ -40,5 +40,8 @@ body {
     height: 28vmin;
     border: 1px solid orange;
     display: flex;
-    flex-direction: ;
+    flex-direction: column;
+}
+i{
+    color: red;
 }
