@@ -41,9 +41,15 @@ body {
     border: 1px solid orange;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    po
 }
 i{
     color: #18f98f;
     font-size: 2.5em;
     text-align: center;
+}
+span.num{
+    color: #ffffff;
 }
