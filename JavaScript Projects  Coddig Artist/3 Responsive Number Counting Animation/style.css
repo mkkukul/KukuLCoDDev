@@ -67,4 +67,8 @@ span.num{
 span.text{
     color: #e0e0e0;
     font-size: 1em;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 400;
+    
 }
