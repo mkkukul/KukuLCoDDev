@@ -35,3 +35,6 @@ body {
     /* İçeriği birbirine hizalar */
     display: flex;
 }
+.container{
+    width: 28vmin;
+}
