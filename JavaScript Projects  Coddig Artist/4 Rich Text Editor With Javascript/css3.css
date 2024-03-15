@@ -1,0 +1,100 @@
+/* Tüm HTML elementlerine varsayılan padding, margin ve kutu modeli davranışını belirler */
+* {
+    padding: 0; /* Element içeriği ile kenarları arasındaki boşluğu sıfırlar */
+    margin: 0; /* Elementin etrafındaki boşluğu sıfırlar */
+    box-sizing: border-box; /* Kenar boşluklarını ve kenar çizgilerini (border) elementin genişliği ve yüksekliği içine dahil eder */
+}
+
+/* Sayfanın arka plan rengini ayarlar */
+body {
+    background-color: #338cf4; /* Sayfa arka plan rengini belirler */
+}
+
+/* Bir class adı "container" olan bir elementin stilini tanımlar */
+.container {
+    background-color: #ffffff; /* Elementin arka plan rengini belirler */
+    width: 90vmin; /* Elementin genişliğini belirler */
+    padding: 50px 30px; /* Elementin iç boşluğunu belirler (üst ve alt: 50px, sol ve sağ: 30px) */
+    position: absolute; /* Elementin pozisyonunu mutlak olarak belirler */
+    transform: translate(-50%, -50%); /* Elementi yatay ve dikey olarak ekranda ortalar */
+    left: 50%; /* Sol kenardan yüzde 50 uzaklıkta konumlandırır */
+    top: 50%; /* Üst kenardan yüzde 50 uzaklıkta konumlandırır */
+    border-radius: 10px; /* Kenar yuvarlaklığını belirler */
+    box-shadow: 0 25px 50px rgba(7, 20, 35, 0.2); /* Elemente gölge efekti ekler */
+}
+
+/* Bir class adı "options" olan elementin stilini belirler */
+.options {
+    display: flex; /* Esnek kutu modelini (flexbox) kullanarak elementleri yatay hizalar */
+    flex-wrap: wrap; /* Elementleri sarma (wrap) özelliğini aktive eder */
+    align-items: center; /* Elementleri dikey olarak hizalar */
+    gap: 15px; /* Elementler arasındaki boşluğu belirler */
+}
+
+/* Tüm <button> elementlerine uygulanır */
+button {
+    height: 28px; /* Butonun yüksekliğini belirler */
+    width: 28px; /* Butonun genişliğini belirler */
+    display: grid; /* Grid (ızgara) düzenini aktive eder */
+    place-items: center; /* İçerikleri merkeze hizalar */
+    border-radius: 3px; /* Kenar yuvarlaklığını belirler */
+    border: none; /* Kenar çizgisini (border) kaldırır */
+    background-color: #ffffff; /* Butonun arka plan rengini belirler */
+    outline: none; /* Odaklanıldığında dış hatları kaldırır */
+    color: #020929; /* Metin rengini belirler */
+}
+/* <select> elementlerine uygulanan stiller */
+select {
+    padding: 7px; /* Seçim kutusunun iç boşluğunu belirler */
+    border: 1px solid #020929; /* Kenar çizgisini (border) belirler */
+    border-radius: 3px; /* Kenar yuvarlaklığını belirler */
+}
+
+/* .options label ve .option select elementlerine uygulanan stiller */
+.options label,
+.option select {
+    font-family: "Poppins", sans-serif; /* Metin fontunu belirler */
+}
+
+/* Bir class adı "input-wrapper" olan elementlere uygulanan stiller */
+.input-wrapper {
+    display: flex; /* Esnek kutu modelini (flexbox) kullanarak elementleri yatay hizalar */
+    align-items: center; /* Elementleri dikey olarak hizalar */
+    gap: 8px; /* Elementler arasındaki boşluğu belirler */
+}
+
+/* <input type="color"> elementlerine uygulanan stiller */
+input[type="color"] {
+    -webkit-appearance: none; /* Standart görünümü devre dışı bırakır (Webkit tabanlı tarayıcılarda) */
+    -moz-appearance: none; /* Standart görünümü devre dışı bırakır (Mozilla tabanlı tarayıcılarda) */
+    appearance: none; /* Standart görünümü devre dışı bırakır */
+    background-color: transparent; /* Arka plan rengini saydam yapar */
+    width: 40px; /* Genişliği belirler */
+    height: 28px; /* Yüksekliği belirler */
+    border: none; /* Kenar çizgisini (border) kaldırır */
+    cursor: pointer; /* İmleci gösterge olarak değiştirir */
+}
+
+/* <input type="color"> elementinin renk seçici çemberine uygulanan stiller */
+input[type="color"]::-webkit-color-swatch {
+    border-radius: 15px; /* Kenar yuvarlaklığını belirler */
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929; /* Gölgelendirme efekti ekler */
+}
+
+input[type="color"]::-moz-color-swatch {
+    border-radius: 15px; /* Kenar yuvarlaklığını belirler */
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929; /* Gölgelendirme efekti ekler */
+}
+
+/* ID'si "text-input" olan elemente uygulanan stiller */
+#text-input {
+    margin-top: 10px; /* Üstten boşluk ekler */
+    border: 1px solid #dddddd; /* Kenar çizgisini (border) belirler */
+    padding: 20px; /* Doldurma (padding) miktarını belirler */
+    height: 50vh; /* Yüksekliği belirler */
+}
+
+/* Bir class adı "active" olan elementlere uygulanan stiller */
+.active {
+    background-color: #e0e9ff; /* Arka plan rengini belirler */
+}
