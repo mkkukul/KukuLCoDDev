@@ -37,5 +37,14 @@ button{
 }
 select{
     padding: 7px;
-    border: 1px;
+    border: 1px solid #020929;
+    border-radius: 3px;
 }
+.options label,.option select{font-family: "Poppins", sans-serif;}
+.input-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+in
