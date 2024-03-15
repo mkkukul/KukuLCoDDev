@@ -32,4 +32,6 @@ button{
     border-radius: 3px;
     border: none;
     background-color: #ffffff;
+    outline: none;
+    color: #020929;
 }
