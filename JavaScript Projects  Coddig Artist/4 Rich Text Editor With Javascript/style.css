@@ -16,5 +16,5 @@ body{
     left: 50%;
     top: 50%;
     border-radius: 10px;
-    box-shadow: 0 25px 50px rgba(red, green, blue, alpha);
+    box-shadow: 0 25px 50px rgba(7,20,35,0.2);
 }
