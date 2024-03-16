@@ -18,3 +18,11 @@ body{
     border-radius: 5px;
     box-shadow: 20px 20px 40px rgba(97, 63, 0, 0.4);
 }
+span{
+    display: block;
+    text-align: center;
+    font-size: 100px;
+}
+p{
+    font-size: 16px;
+}
