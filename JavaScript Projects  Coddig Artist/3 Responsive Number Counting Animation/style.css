@@ -1,0 +1,121 @@
+/* Tüm öğelerin iç boşluğunu ve dış boşluğunu sıfırlar ve kenar kutusunu sınırlar */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* Font ailesini belirtmelisiniz */
+    font-family: ;
+}
+
+/* Body arka plan rengini ayarlar */
+body {
+    background-color: #121317;
+}
+
+/* Dış sarmalayıcıyı (wrapper) stile göre ayarlar */
+.wrapper {
+    /* Beyaz bir kenar sınırı oluşturur */
+    /* border: 1px solid white; */
+    
+    /* Mutlak konumlandırma kullanarak sarmalayıcıyı (wrapper) merkeze hizalar */
+    position: absolute;
+    
+    /* Genişliği belirler */
+    width: 80vw;
+    
+    /* Yatay ve dikey olarak merkeze hizalamayı sağlar */
+    transform: translate(-50%, -50%);
+    
+    /* Yukarıdan aşağıya yüzdeye göre konumlandırır */
+    top: 50%;
+    
+    /* Soldan sağa yüzdeye göre konumlandırır */
+    left: 50%;
+    
+    /* İçeriği birbirine hizalar */
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.container{
+    width: 28vmin;
+    height: 28vmin;
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    position: relative;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background-color: #21242b;
+    border-bottom: 10px solid #18f98f;
+    /* Sayaç öğelerinin alt kenarlığını ayarlar */
+
+}
+i{
+    color: #18f98f;
+    font-size: 2.5em;
+    text-align: center;
+    /* İkonların rengini ve boyutunu belirler */
+}
+span.num{
+    color: #ffffff;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3em;
+    /* Sayısal değerlerin rengini ve boyutunu belirler */
+
+}
+span.text{
+    color: #e0e0e0;
+    font-size: 1em;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 400;
+    line-height: 0;
+    /* Metinlerin rengini, boyutunu ve hizalamasını belirler */
+    
+}
+@media screen and (max-width: 1024px){
+    .wrapper{
+        width: 85vw;
+    }
+    .container{
+        height: 26vmin;
+        width: 26vmin;
+        font-size: 12px;
+        /* Ekranın genişliğine göre stil ayarları yapar */
+    
+    }
+}
+@media screen and (max-width: 768px) {
+    .wrapper{
+        width: 90vw;
+        flex-wrap: wrap;
+        gap: 30px;
+        /* Ekranın genişliğine göre stil ayarları yapar */
+    }
+    .container{
+        width: calc(50% - 40px);
+        height: 30vmin;
+        font-size: 14px;
+        /* Ekranın genişliğine göre stil ayarları yapar */
+
+    }    
+}
+@media screen and (max-width: 480px){
+    .wrapper{
+        gap: 15px;
+        /* Ekranın genişliğine göre stil ayarları yapar */
+
+    }
+    .container{
+        width: 100%;
+        height: 25vmin;
+        font-size: 8px;
+        /* Ekranın genişliğine göre stil ayarları yapar */
+    }
+    
+}
