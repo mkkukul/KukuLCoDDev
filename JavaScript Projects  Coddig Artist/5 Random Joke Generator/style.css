@@ -36,6 +36,10 @@ p{
 .fade{
     opacity: 1;
     transition: opacity 1.5s;
+}
+.fade{
+    opacity: 1;
+    transition: opacity 1.5s;
 
 
 }
