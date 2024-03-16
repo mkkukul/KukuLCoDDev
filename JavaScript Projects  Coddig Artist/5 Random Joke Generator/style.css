@@ -7,3 +7,9 @@
 body{
     background-color: #fab22e;
 }
+.wrapper{
+    width: 80vmin;
+    padding: 50px 40px;
+    background-color: #15161a;
+    position: absolute;
+}
