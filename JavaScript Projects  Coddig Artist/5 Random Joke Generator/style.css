@@ -36,14 +36,13 @@ p{
 .fade{
     opacity: 1;
     transition: opacity 1.5s;
-}
-.fade{
-    opacity: 1;
-    transition: opacity 1.5s;
-
 
 }
 button{
     display: block;
     background-color: #fab22e;
+    border: none;
+    padding: 5px;
+    font-size: 18px;
+    
 }
