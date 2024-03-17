@@ -1,2 +1,2 @@
-const jokeContainer = document.getElementById("btn")
-const btn =
+const jokeContainer = document.getElementById("joke")
+const btn = document.getElementById('btn')
