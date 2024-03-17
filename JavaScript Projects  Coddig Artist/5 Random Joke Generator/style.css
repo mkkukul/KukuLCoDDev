@@ -1,57 +1,66 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Rubik", sans-serif;
-}
-body{
-    background-color: #fab22e;
-}
-.wrapper{
-    width: 80vmin;
-    padding: 50px 40px;
-    background-color: #15161a;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    border-radius: 5px;
-    box-shadow: 20px 20px 40px rgba(97, 63, 0, 0.4);
-}
-span{
-    display: block;
-    text-align: center;
-    font-size: 100px;
+/* Tüm HTML elementlerine varsayılan padding, margin, kutu modeli davranışı ve yazı tipini belirler */
+* {
+    padding: 0; /* Tüm elementlerin iç dolgusunu sıfırlar */
+    margin: 0; /* Tüm elementlerin kenar boşluğunu sıfırlar */
+    box-sizing: border-box; /* Kenar boşluklarını ve kenar çizgilerini (border) elementin genişliği ve yüksekliği içine dahil eder */
+    font-family: "Rubik", sans-serif; /* Yazı tipini belirler */
 }
 
-p{
-    font-size: 16px;
-    color: #ffffff;
-    font-weight: 400;
-    text-align: center;
-    word-wrap: break-word;
-    line-height: 35px;
-    margin: 30px 0;
-    opacity: 0;
+/* Sayfanın arka plan rengini ayarlar */
+body {
+    background-color: #fab22e; /* Sayfa arka plan rengini belirler */
 }
 
-.fade{
-    opacity: 1;
-    transition: opacity 1.5s;
-
+/* Bir class adı "wrapper" olan bir elementin stilini tanımlar */
+.wrapper {
+    width: 80vmin; /* Elementin genişliğini belirler */
+    padding: 50px 40px; /* Elementin iç dolgusunu belirler (üst ve alt: 50px, sol ve sağ: 40px) */
+    background-color: #15161a; /* Elementin arka plan rengini belirler */
+    position: absolute; /* Elementin pozisyonunu mutlak olarak belirler */
+    transform: translate(-50%, -50%); /* Elementi yatay ve dikey olarak ekranda ortalar */
+    top: 50%; /* Üst kenardan yüzde 50 uzaklıkta konumlandırır */
+    left: 50%; /* Sol kenardan yüzde 50 uzaklıkta konumlandırır */
+    border-radius: 5px; /* Kenar yuvarlaklığını belirler */
+    box-shadow: 20px 20px 40px rgba(97, 63, 0, 0.4); /* Elemente gölge efekti ekler */
 }
 
-button{
-    display: block;
-    background-color: #fab22e;
-    border: none;
-    padding: 5px;
-    font-size: 18px;
-    color: #171721;
-    font-weight: 600;
-    padding: 12px 25px;
-    margin:0 auto;
-    border-radius: 5px;
-    cursor: pointer;
-    outline: none;
+/* <span> elementlerinin stilini belirler */
+span {
+    display: block; /* Elementi blok düzende gösterir */
+    text-align: center; /* Metni ortalar */
+    font-size: 100px; /* Yazı tipi boyutunu belirler */
+}
+
+/* <p> elementlerinin stilini belirler */
+p {
+    font-size: 16px; /* Yazı tipi boyutunu belirler */
+    color: #ffffff; /* Yazı rengini belirler */
+    font-weight: 400; /* Yazı kalınlığını belirler */
+    text-align: center; /* Metni ortalar */
+    word-wrap: break-word; /* Uzun kelimeleri veya URL'leri kırmak için bir noktada keser */
+    line-height: 35px; /* Satır yüksekliğini belirler */
+    margin: 30px 0; /* Üst ve alt kenar boşluğunu belirler */
+    opacity: 0; /* Saydamlık (opaklık) ayarlar */
+}
+
+/* .fade class'ına sahip elementlerin geçiş efektini belirler */
+.fade {
+    opacity: 1; /* Opaklığı ayarlar */
+    transition: opacity 1.5s; /* Geçiş efektini belirler */
+}
+
+/* <button> elementlerinin stilini belirler */
+button {
+    display: block; /* Elementi blok düzende gösterir */
+    background-color: #fab22e; /* Arka plan rengini belirler */
+    border: none; /* Kenar çizgisini (border) kaldırır */
+    padding: 5px; /* Dolguyu belirler */
+    font-size: 18px; /* Yazı tipi boyutunu belirler */
+    color: #171721; /* Yazı rengini belirler */
+    font-weight: 600; /* Yazı kalınlığını belirler */
+    padding: 12px 25px; /* Dolguyu belirler */
+    margin: 0 auto; /* Otomatik kenar boşluğunu belirler */
+    border-radius: 5px; /* Kenar yuvarlaklığını belirler */
+    cursor: pointer; /* İmleci gösterge olarak değiştirir */
+    outline: none; /* Odaklanıldığında dış hatları kaldırır */
 }
