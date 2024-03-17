@@ -44,12 +44,14 @@ p {
 }
 
 /* .fade class'ına sahip elementlerin geçiş efektini belirler */
+
 .fade {
     opacity: 1; /* Opaklığı ayarlar */
     transition: opacity 1.5s; /* Geçiş efektini belirler */
 }
 
 /* <button> elementlerinin stilini belirler */
+
 button {
     display: block; /* Elementi blok düzende gösterir */
     background-color: #fab22e; /* Arka plan rengini belirler */
