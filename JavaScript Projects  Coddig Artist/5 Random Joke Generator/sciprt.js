@@ -11,3 +11,4 @@ let getJoke = () => {
         jokeContainer.classList.add("fade");
     });
 };
+btn.addEventListener
