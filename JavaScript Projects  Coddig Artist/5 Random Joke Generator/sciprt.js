@@ -7,5 +7,5 @@ let getJoke = () => {
     fetch(url)
     .then(data => data.json())
     .then(item =>{
-        
+        jokeContainer.textContent = `$`
     })
