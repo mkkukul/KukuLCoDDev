@@ -12,3 +12,4 @@ let getJoke = () => {
     });
 };
 btn.addEventListener("click", getJoke);
+getJoke();
