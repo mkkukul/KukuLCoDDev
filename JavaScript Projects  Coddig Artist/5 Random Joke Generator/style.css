@@ -12,6 +12,7 @@ body {
 }
 
 /* Bir class adı "wrapper" olan bir elementin stilini tanımlar */
+
 .wrapper {
     width: 80vmin; /* Elementin genişliğini belirler */
     padding: 50px 40px; /* Elementin iç dolgusunu belirler (üst ve alt: 50px, sol ve sağ: 40px) */
