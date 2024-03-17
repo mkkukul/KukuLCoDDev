@@ -1,1 +1,1 @@
-const jokeContainer = 
+const jokeContainer = document.getElementById("btn")
