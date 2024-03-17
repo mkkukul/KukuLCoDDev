@@ -8,5 +8,6 @@ let getJoke = () => {
     .then(data => data.json())
     .then(item =>{
         jokeContainer.textContent = `${item.joke}`;
-        jokeContainer.classList.add
-    })
+        jokeContainer.classList.add("fade");
+    });
+};
