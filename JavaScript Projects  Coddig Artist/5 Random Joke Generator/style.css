@@ -24,6 +24,7 @@ body {
     box-shadow: 20px 20px 40px rgba(97, 63, 0, 0.4); /* Elemente gölge efekti ekler */
 }
 
+
 /* <span> elementlerinin stilini belirler */
 span {
     display: block; /* Elementi blok düzende gösterir */
@@ -32,6 +33,7 @@ span {
 }
 
 /* <p> elementlerinin stilini belirler */
+
 p {
     font-size: 16px; /* Yazı tipi boyutunu belirler */
     color: #ffffff; /* Yazı rengini belirler */
