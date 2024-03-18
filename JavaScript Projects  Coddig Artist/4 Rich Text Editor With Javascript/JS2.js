@@ -22,7 +22,7 @@ let alignButtons = document.querySelectorAll(".align");
 //! Metin arasındaki boşluğu ayarlamak için kullanılacak butonları seçer ve NodeList'i spacingButtons değişkenine atar
 let spacingButtons = document.querySelectorAll(".spacing");
 
-// Metnin biçimlendirilmesi için kullanılacak butonları seçer ve NodeList'i formatButtons değişkenine atar
+//! Metnin biçimlendirilmesi için kullanılacak butonları seçer ve NodeList'i formatButtons değişkenine atar
 let formatButtons = document.querySelectorAll(".format");
 
 // Metnin stili (örneğin altı çizili) için kullanılacak butonları seçer ve NodeList'i scriptButtons değişkenine atar
