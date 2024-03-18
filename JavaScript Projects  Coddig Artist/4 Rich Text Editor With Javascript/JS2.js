@@ -16,7 +16,7 @@ let writingArea = document.getElementById("text-input");
 //! Bağlantı oluşturmak için kullanılacak butonu seçer ve linkButton değişkenine atar
 let linkButton = document.getElementById("createLink");
 
-// Metnin hizalanacağı butonları seçer ve NodeList'i alignButtons değişkenine atar
+//! Metnin hizalanacağı butonları seçer ve NodeList'i alignButtons değişkenine atar
 let alignButtons = document.querySelectorAll(".align");
 
 // Metin arasındaki boşluğu ayarlamak için kullanılacak butonları seçer ve NodeList'i spacingButtons değişkenine atar
