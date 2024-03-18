@@ -13,7 +13,7 @@ let fontSizeRef = document.getElementById("fontSize");
 //! Metin giriş alanını seçer ve writingArea değişkenine atar
 let writingArea = document.getElementById("text-input");
 
-// Bağlantı oluşturmak için kullanılacak butonu seçer ve linkButton değişkenine atar
+//! Bağlantı oluşturmak için kullanılacak butonu seçer ve linkButton değişkenine atar
 let linkButton = document.getElementById("createLink");
 
 // Metnin hizalanacağı butonları seçer ve NodeList'i alignButtons değişkenine atar
