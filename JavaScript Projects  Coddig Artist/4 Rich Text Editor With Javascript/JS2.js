@@ -4,7 +4,7 @@ let optionsButtons = document.querySelectorAll(".option-button");
 //! .adv-option-button sınıfına sahip tüm öğeleri seçer ve NodeList'i advancedOptionButton değişkenine atar
 let advancedOptionButton = document.querySelectorAll(".adv-option-button");
 
-// Font adını seçmek için kullanılacak select elementini seçer ve fontName değişkenine atar
+//! Font adını seçmek için kullanılacak select elementini seçer ve fontName değişkenine atar
 let fontName = document.getElementById("fontName");
 
 // Font boyutunu seçmek için kullanılacak select elementini seçer ve fontSizeRef değişkenine atar
