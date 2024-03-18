@@ -10,7 +10,7 @@ let fontName = document.getElementById("fontName");
 //! Font boyutunu seçmek için kullanılacak select elementini seçer ve fontSizeRef değişkenine atar
 let fontSizeRef = document.getElementById("fontSize");
 
-// Metin giriş alanını seçer ve writingArea değişkenine atar
+//! Metin giriş alanını seçer ve writingArea değişkenine atar
 let writingArea = document.getElementById("text-input");
 
 // Bağlantı oluşturmak için kullanılacak butonu seçer ve linkButton değişkenine atar
