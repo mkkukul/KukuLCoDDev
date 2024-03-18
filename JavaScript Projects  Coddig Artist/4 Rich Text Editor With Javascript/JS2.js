@@ -72,7 +72,7 @@ const modifyText = (command, defaultUi, value) => {
   document.execCommand(command, defaultUi, value);
 };
 
-// Değer parametresi gerektirmeyen işlemler için buton olay dinleyicilerini ayarlar
+//! Değer parametresi gerektirmeyen işlemler için buton olay dinleyicilerini ayarlar
 optionsButtons.forEach((button) => {
   button.addEventListener("click", () => {
     modifyText(button.id, false, null);
