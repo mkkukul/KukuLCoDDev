@@ -63,7 +63,7 @@ const initializer = () => {
     fontSizeRef.appendChild(option);
   }
 
-  // Varsayılan font boyutunu 3 olarak ayarlar
+  //! Varsayılan font boyutunu 3 olarak ayarlar
   fontSizeRef.value = 3;
 };
 
