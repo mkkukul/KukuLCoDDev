@@ -41,7 +41,7 @@ let fontList = [
 
 //! Sayfa yüklendiğinde başlangıç ayarlarını yapmak için kullanılacak fonksiyon
 const initializer = () => {
-  // Butonları vurgulamak için gerekli fonksiyonları çağırır
+  //! Butonları vurgulamak için gerekli fonksiyonları çağırır
   highlighter(alignButtons, true);
   highlighter(spacingButtons, true);
   highlighter(formatButtons, false);
