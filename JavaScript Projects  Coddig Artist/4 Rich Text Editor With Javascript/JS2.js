@@ -55,7 +55,7 @@ const initializer = () => {
     fontName.appendChild(option);
   });
 
-  // Font boyutları için seçenek listesi oluşturur ve fontSizeRef select elementine ekler
+  //! Font boyutları için seçenek listesi oluşturur ve fontSizeRef select elementine ekler
   for (let i = 1; i <= 7; i++) {
     let option = document.createElement("option");
     option.value = i;
