@@ -79,7 +79,7 @@ optionsButtons.forEach((button) => {
   });
 });
 
-// Değer parametresi gerektiren gelişmiş seçenekler için buton olay dinleyicilerini ayarlar
+//! Değer parametresi gerektiren gelişmiş seçenekler için buton olay dinleyicilerini ayarlar
 advancedOptionButton.forEach((button) => {
   button.addEventListener("change", () => {
     modifyText(button.id, false, button.value);
