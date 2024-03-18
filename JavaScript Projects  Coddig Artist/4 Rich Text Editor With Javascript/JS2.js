@@ -67,7 +67,7 @@ const initializer = () => {
   fontSizeRef.value = 3;
 };
 
-// Metin üzerinde belirli bir komutu uygulamak için kullanılacak fonksiyon
+//! Metin üzerinde belirli bir komutu uygulamak için kullanılacak fonksiyon
 const modifyText = (command, defaultUi, value) => {
   document.execCommand(command, defaultUi, value);
 };
