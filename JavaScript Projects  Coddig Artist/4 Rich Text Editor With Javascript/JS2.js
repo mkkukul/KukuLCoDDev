@@ -97,7 +97,7 @@ linkButton.addEventListener("click", () => {
   }
 });
 
-// Tıklanan butonu vurgular
+//! Tıklanan butonu vurgular
 const highlighter = (className, needsRemoval) => {
   className.forEach((button) => {
     button.addEventListener("click", () => {
