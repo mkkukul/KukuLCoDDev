@@ -47,7 +47,7 @@ const initializer = () => {
   highlighter(formatButtons, false);
   highlighter(scriptButtons, true);
 
-  // Font adları için seçenek listesi oluşturur ve fontName select elementine ekler
+  //! Font adları için seçenek listesi oluşturur ve fontName select elementine ekler
   fontList.map((value) => {
     let option = document.createElement("option");
     option.value = value;
