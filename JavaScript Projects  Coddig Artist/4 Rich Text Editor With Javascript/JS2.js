@@ -1,4 +1,4 @@
-// .option-button sınıfına sahip tüm öğeleri seçer ve NodeList'i optionsButtons değişkenine atar
+//! .option-button sınıfına sahip tüm öğeleri seçer ve NodeList'i optionsButtons değişkenine atar
 let optionsButtons = document.querySelectorAll(".option-button");
 
 // .adv-option-button sınıfına sahip tüm öğeleri seçer ve NodeList'i advancedOptionButton değişkenine atar
