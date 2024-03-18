@@ -25,7 +25,7 @@ let spacingButtons = document.querySelectorAll(".spacing");
 //! Metnin biçimlendirilmesi için kullanılacak butonları seçer ve NodeList'i formatButtons değişkenine atar
 let formatButtons = document.querySelectorAll(".format");
 
-// Metnin stili (örneğin altı çizili) için kullanılacak butonları seçer ve NodeList'i scriptButtons değişkenine atar
+//! Metnin stili (örneğin altı çizili) için kullanılacak butonları seçer ve NodeList'i scriptButtons değişkenine atar
 let scriptButtons = document.querySelectorAll(".script");
 
 // Kullanılabilir font listesi
