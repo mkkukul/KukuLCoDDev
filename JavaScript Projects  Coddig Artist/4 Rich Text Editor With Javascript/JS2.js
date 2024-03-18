@@ -86,7 +86,7 @@ advancedOptionButton.forEach((button) => {
   });
 });
 
-// Link oluşturmak için buton olay dinleyicisini ayarlar
+//! Link oluşturmak için buton olay dinleyicisini ayarlar
 linkButton.addEventListener("click", () => {
   let userLink = prompt("Enter a URL");
   if (/http/i.test(userLink)) {
