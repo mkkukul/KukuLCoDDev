@@ -7,7 +7,7 @@ let advancedOptionButton = document.querySelectorAll(".adv-option-button");
 //! Font adını seçmek için kullanılacak select elementini seçer ve fontName değişkenine atar
 let fontName = document.getElementById("fontName");
 
-// Font boyutunu seçmek için kullanılacak select elementini seçer ve fontSizeRef değişkenine atar
+//! Font boyutunu seçmek için kullanılacak select elementini seçer ve fontSizeRef değişkenine atar
 let fontSizeRef = document.getElementById("fontSize");
 
 // Metin giriş alanını seçer ve writingArea değişkenine atar
