@@ -19,7 +19,7 @@ let linkButton = document.getElementById("createLink");
 //! Metnin hizalanacağı butonları seçer ve NodeList'i alignButtons değişkenine atar
 let alignButtons = document.querySelectorAll(".align");
 
-// Metin arasındaki boşluğu ayarlamak için kullanılacak butonları seçer ve NodeList'i spacingButtons değişkenine atar
+//! Metin arasındaki boşluğu ayarlamak için kullanılacak butonları seçer ve NodeList'i spacingButtons değişkenine atar
 let spacingButtons = document.querySelectorAll(".spacing");
 
 // Metnin biçimlendirilmesi için kullanılacak butonları seçer ve NodeList'i formatButtons değişkenine atar
