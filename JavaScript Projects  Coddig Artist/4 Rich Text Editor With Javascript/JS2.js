@@ -39,7 +39,7 @@ let fontList = [
   "Cursive",
 ];
 
-// Sayfa yüklendiğinde başlangıç ayarlarını yapmak için kullanılacak fonksiyon
+//! Sayfa yüklendiğinde başlangıç ayarlarını yapmak için kullanılacak fonksiyon
 const initializer = () => {
   // Butonları vurgulamak için gerekli fonksiyonları çağırır
   highlighter(alignButtons, true);
