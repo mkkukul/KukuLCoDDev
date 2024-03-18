@@ -117,12 +117,12 @@ const highlighter = (className, needsRemoval) => {
   });
 };
 
-// Vurgulanmış butonları kaldırır
+//! Vurgulanmış butonları kaldırır
 const highlighterRemover = (className) => {
   className.forEach((button) => {
     button.classList.remove("active");
   });
 };
 
-// Sayfa yüklendiğinde initializer fonksiyonunu çağırır
+//! Sayfa yüklendiğinde initializer fonksiyonunu çağırır
 window.onload = initializer();
