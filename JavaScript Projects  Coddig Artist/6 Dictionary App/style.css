@@ -36,3 +36,12 @@ body{
 
 
 }
+.search-box button{
+    padding: 5px 0;
+    width: 25%;
+    background-color: #ae9cff;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    border-radius: 5px;
+}
