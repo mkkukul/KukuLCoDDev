@@ -22,5 +22,6 @@ body{
     box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
 }
 .search-box{
-    
+  width: 100%;
+  display: flex;  
 }
