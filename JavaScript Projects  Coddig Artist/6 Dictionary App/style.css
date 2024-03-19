@@ -28,5 +28,8 @@ body{
 }
 .search-box input{
     padding: 5px;
+    width: 70%;
+    border: none;
     
+
 }
