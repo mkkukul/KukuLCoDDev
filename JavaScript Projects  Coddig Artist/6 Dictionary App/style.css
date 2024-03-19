@@ -14,6 +14,7 @@ body{
     background-color: #ffffff;
     width: 90vmin;
     position: absolute;
-    
+    transform: translate(-50%, -50%);
+
 
 }
