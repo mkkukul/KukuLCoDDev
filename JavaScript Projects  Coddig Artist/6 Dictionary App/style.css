@@ -55,5 +55,8 @@ body{
     
 }
 .result button{
-    background: ;
+    background-color: transparent;
+    color: #ae9cff;
+    border: none;
+    outline: none;
 }
