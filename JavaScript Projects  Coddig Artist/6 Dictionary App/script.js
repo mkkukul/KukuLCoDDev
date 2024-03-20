@@ -14,6 +14,9 @@ btn.addEventListener("click", () => {
                 <i class= "fa fa-volume-up"></i>
             </button>
         </div>
-           
+        <div class="details">
+                    <p>${data[0].meanings[0].partOfSpeech}</p>
+                    <p>/${data[0].phonetic}/</p>
+        </div>   
     }
 }
