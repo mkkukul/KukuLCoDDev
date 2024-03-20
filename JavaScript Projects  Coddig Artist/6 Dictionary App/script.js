@@ -11,6 +11,9 @@ btn.addEventListener("click", () => {
         <div class="word">
             <h3>${inpWord}</h3>
             <button onclick="playSound()">
-            </button><audio
+                <i class= "fa fa-volume-up"></i>
+            </button>
+        </div>
+           
     }
 }
