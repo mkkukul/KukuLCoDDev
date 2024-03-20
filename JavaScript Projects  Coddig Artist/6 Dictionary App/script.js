@@ -9,6 +9,8 @@ btn.addEventListener("click", () => {
         console.log(data);
         result.innerHTML = `
         <div class="word">
-            <h3>${in}
+            <h3>${inpWord}</h3>
+            <button onclick="playSound()">
+            </button><audio
     }
 }
