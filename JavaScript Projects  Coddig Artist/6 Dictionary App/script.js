@@ -22,6 +22,6 @@ btn.addEventListener("click", () => {
             ${data[0].meanings[0].definitions[0].definition}
         </p>
         <p class="word-example"> ${data[0].meanings[0].definitions[0].example || ""} </p>`;
-        sound.setAttribute
+        sound.setAttribute("src", `https:${ data[0].phonetics[0].audio }`);
     }
 }
