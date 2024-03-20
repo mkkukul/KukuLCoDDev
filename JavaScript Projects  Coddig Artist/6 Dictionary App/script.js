@@ -21,6 +21,6 @@ btn.addEventListener("click", () => {
         <p class="word-meaning">
             ${data[0].meanings[0].definitions[0].definition}
         </p>
-        <p class="
+        <p class="word-example" >Example: "${data[0].meanings
     }
 }
