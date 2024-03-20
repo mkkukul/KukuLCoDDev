@@ -37,11 +37,23 @@ body{
 
 }
 .search-box button{
-    padding: 5px 0;
+    padding: 15px 0;
     width: 25%;
     background-color: #ae9cff;
     border: none;
     outline: none;
     color: #ffffff;
     border-radius: 5px;
+}
+.result{
+    position: relative;
+
+}
+.result h3{
+    font-size: 30px;
+    color: #1f194c;
+    
+}
+.result button{
+    background: ;
 }
