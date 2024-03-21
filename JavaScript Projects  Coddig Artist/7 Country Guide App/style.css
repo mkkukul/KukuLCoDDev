@@ -22,5 +22,5 @@ body{
 }
 .search-wrapper{
     display: grid;
-    grid-template-columns: ;
+    grid-template-columns:9fr 3fr ;
 }
