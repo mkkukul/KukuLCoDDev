@@ -39,5 +39,6 @@ body{
 .container .flag-img{
     display: block;
     width: 45%;
-    
+    min-width: ;
+
 }
