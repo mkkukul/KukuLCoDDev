@@ -28,4 +28,6 @@ body{
 .search-wrapper button{
     font-size: 1em;
     padding: 0 0.62em;
+    border: none;
+    border-bottom: 2px solid ;
 }
