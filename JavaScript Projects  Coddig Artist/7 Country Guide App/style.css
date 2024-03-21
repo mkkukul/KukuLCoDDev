@@ -1,77 +1,102 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+/* Tüm HTML elementlerine varsayılan padding, margin ve kutu modeli davranışını belirler */
+* {
+    padding: 0; /* Element içeriği ile kenarları arasındaki boşluğu sıfırlar */
+    margin: 0; /* Elementin etrafındaki boşluğu sıfırlar */
+    box-sizing: border-box; /* Kenar boşluklarını ve kenar çizgilerini (border) elementin genişliği ve yüksekliği içine dahil eder */
+    font-family: "Poppins", sans-serif; /* Tüm elementler için font ailesini belirler */
 }
-body{
-    background-color: #3d64e6;
+
+/* Sayfanın arka plan rengini ayarlar */
+body {
+    background-color: #3d64e6; /* Sayfa arka plan rengini belirler */
 }
-.container{
-    background-color: #ffffff;
-    width: 80vw;
-    max-width: 37.5em;
-    padding: 3em 2.5em;
-    position: absolute;
-    transform: translate(-50%,-50%) ;
-    top: 50%;
-    left: 50%;
-    border-radius: 0.62em;
-    box-shadow: 0 1.25em 1.8em rgba(8, 21, 65, 0.25);
+
+/* Bir class adı "container" olan bir elementin stilini tanımlar */
+.container {
+    background-color: #ffffff; /* Elementin arka plan rengini belirler */
+    width: 80vw; /* Elementin genişliğini belirler (viewport'un yüzde 80'i kadar) */
+    max-width: 37.5em; /* Maksimum genişliği belirler */
+    padding: 3em 2.5em; /* Doldurma (padding) miktarını belirler */
+    position: absolute; /* Elementin pozisyonunu mutlak olarak belirler */
+    transform: translate(-50%,-50%); /* Elementi yatay ve dikey olarak ekranda ortalar */
+    top: 50%; /* Yatay pozisyonu belirler */
+    left: 50%; /* Dikey pozisyonu belirler */
+    border-radius: 0.62em; /* Kenar yuvarlaklığını belirler */
+    box-shadow: 0 1.25em 1.8em rgba(8, 21, 65, 0.25); /* Gölge efekti ekler */
 }
-.search-wrapper{
-    display: grid;
-    grid-template-columns:9fr 3fr ;
-    gap:  1.25em;
+
+/* Bir class adı "search-wrapper" olan elementin stilini belirler */
+.search-wrapper {
+    display: grid; /* Izgara düzenini aktive eder */
+    grid-template-columns: 9fr 3fr; /* Izgara sütunlarını belirler */
+    gap: 1.25em; /* Izgara hücreleri arasındaki boşluğu belirler */
 }
-.search-wrapper button{
-    font-size: 1em;
-    padding: 0 0.62em;
-    border: none;
-    border-bottom: 2px solid #3d64e6;
-    outline: none;
-    color: #222a43;
+
+/* .search-wrapper içindeki butonların stilini belirler */
+.search-wrapper button {
+    font-size: 1em; /* Yazı tipi boyutunu belirler */
+    padding: 0 0.62em; /* Doldurma (padding) miktarını belirler */
+    border: none; /* Kenar çizgisini (border) kaldırır */
+    border-bottom: 2px solid #3d64e6; /* Alt kenar çizgisini belirler */
+    outline: none; /* Odaklanıldığında dış hatları kaldırır */
+    color: #222a43; /* Metin rengini belirler */
 }
+
+/* .search-wrapper içindeki giriş kutularının stilini belirler */
 .search-wrapper input {
-    font-size: 1em;
-    padding: 0 0.62em;
-    border: none;
-    border-bottom: 2px solid #3d64e6;
-    outline: none;
-    color: #222a43;
+    font-size: 1em; /* Yazı tipi boyutunu belirler */
+    padding: 0 0.62em; /* Doldurma (padding) miktarını belirler */
+    border: none; /* Kenar çizgisini (border) kaldırır */
+    border-bottom: 2px solid #3d64e6; /* Alt kenar çizgisini belirler */
+    outline: none; /* Odaklanıldığında dış hatları kaldırır */
+    color: #222a43; /* Metin rengini belirler */
 }
-#result{
-    margin-top: 1.25em;
+
+/* ID'si "result" olan elementin stilini belirler */
+#result {
+    margin-top: 1.25em; /* Üstten boşluğu belirler */
 }
-.container .flag-img{
-    display: block;
-    width: 45%;
-    min-width: 7.5em;
-    margin: 1.8em auto 1.2em auto;
+
+/* .container içindeki bayrak resminin stilini belirler */
+.container .flag-img {
+    display: block; /* Resmi blok öğe olarak görüntüler */
+    width: 45%; /* Genişliği belirler */
+    min-width: 7.5em; /* Minimum genişliği belirler */
+    margin: 1.8em auto 1.2em auto; /* Kenar boşluklarını belirler */
 }
-.container h2{
-    font-weight: 600;
-    color: #222a43;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 1.8em;
+
+/* .container içindeki başlığın stilini belirler */
+.container h2 {
+    font-weight: 600; /* Yazı tipi kalınlığını belirler */
+    color: #222a43; /* Metin rengini belirler */
+    text-align: center; /* Metni ortalar */
+    text-transform: uppercase; /* Metni büyük harfe dönüştürür */
+    letter-spacing: 2px; /* Harf aralığını belirler */
+    margin-bottom: 1.8em; /* Alt boşluğu belirler */
 }
+
+/* .container içindeki veri sarma bölgesinin stilini belirler */
 .data-wrapper {
-    margin-bottom: 1em;
-    letter-spacing: 0.3px;
-  }
-  .container h4 {
-    display: inline;
-    font-weight: 500;
-    color: #222a43;
-  }
-  .container span {
-    color: #5d6274;
-  }
-  .container h3 {
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: 400;
-    color: #ff465a;
-  }
+    margin-bottom: 1em; /* Alt boşluğu belirler */
+    letter-spacing: 0.3px; /* Harf aralığını belirler */
+}
+
+/* .container içindeki alt başlığın stilini belirler */
+.container h4 {
+    display: inline; /* Öğeyi blok dışı (inline) olarak görüntüler */
+    font-weight: 500; /* Yazı tipi kalınlığını belirler */
+    color: #222a43; /* Metin rengini belirler */
+}
+
+/* .container içindeki metin rengi için stil belirler */
+.container span {
+    color: #5d6274; /* Metin rengini belirler */
+}
+
+/* .container içindeki alt başlık için stil belirler */
+.container h3 {
+    text-align: center; /* Metni ortalar */
+    font-size: 1.2em; /* Yazı tipi boyutunu belirler */
+    font-weight: 400; /* Yazı tipi kalınlığını belirler */
+    color: #ff465a; /* Metin rengini belirler */
+}
