@@ -8,4 +8,5 @@ const controls = document.querySelector(".controls-container");
 let cards;
 let interval;
 let firstCard = false;
-
+let secondCard = false;
+ 
