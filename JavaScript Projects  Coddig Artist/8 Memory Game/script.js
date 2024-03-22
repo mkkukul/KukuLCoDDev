@@ -7,4 +7,4 @@ const result = document.getElementById("result");
 const controls = document.querySelector(".controls-container");
 let cards;
 let interval;
-
+let
