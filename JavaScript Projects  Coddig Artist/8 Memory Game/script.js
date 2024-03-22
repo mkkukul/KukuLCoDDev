@@ -3,3 +3,4 @@ const timeValue = document.getElementById("time");
 const startButton = document.getElementById("start");
 const stopButton =  document.getElementById("stop");
 const gameContainer = document.getElementById(".game-container");
+const result = document.getElementById("result");
