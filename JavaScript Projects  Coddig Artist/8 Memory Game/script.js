@@ -1,1 +1,2 @@
-const moves = 
+const moves = document.getElementById( "moves-count" );
+const timeValue
