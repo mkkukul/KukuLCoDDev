@@ -1,0 +1,149 @@
+/* Tüm HTML elementlerine varsayılan padding, margin ve kutu modeli davranışını belirler, font ailesini ayarlar */
+* {
+  padding: 0; /* Padding'i sıfırlar */
+  margin: 0; /* Margin'i sıfırlar */
+  box-sizing: border-box; /* Kenar boşluğunu ve kenar çizgisini (border) elementin genişliği ve yüksekliği içine dahil eder */
+  font-family: "Poppins", sans-serif; /* Tüm elementler için font ailesini belirler */
+}
+
+/* Sayfa arka plan rengini ayarlar */
+body {
+  background-color: #f4c531; /* Arka plan rengini belirler */
+}
+
+/* Bir class adı "wrapper" olan bir elementin stilini tanımlar */
+.wrapper {
+  box-sizing: content-box; /* Kenar boşluğunu (padding ve border) içeriğin dışına dahil etmez */
+  width: 26.87em; /* Genişliği belirler */
+  padding: 2.5em 3em; /* Doldurma (padding) miktarını belirler */
+  background-color: #ffffff; /* Arka plan rengini belirler */
+  position: absolute; /* Elementin pozisyonunu mutlak olarak belirler */
+  transform: translate(-50%, -50%); /* Elementi yatay ve dikey olarak ekranda ortalar */
+  left: 50%; /* Yatay pozisyonu belirler */
+  top: 50%; /* Dikey pozisyonu belirler */
+  border-radius: 0.6em; /* Kenar yuvarlaklığını belirler */
+  box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0.2); /* Gölge efekti ekler */
+}
+
+/* Bir class adı "game-container" olan bir elementin stilini tanımlar */
+.game-container {
+  position: relative; /* Elementin pozisyonunu göreceli olarak belirler */
+  width: 100%; /* Genişliği belirler */
+  display: grid; /* Izgara düzenini aktive eder */
+  gap: 0.6em; /* Izgara hücreleri arasındaki boşluğu belirler */
+}
+
+/* Bir class adı "stats-container" olan bir elementin stilini tanımlar */
+.stats-container {
+  text-align: right; /* Metni sağa hizalar */
+  margin-bottom: 1.2em; /* Alt boşluğu belirler */
+}
+
+/* .stats-container içindeki <span> elementlerinin stilini belirler */
+.stats-container span {
+  font-weight: 600; /* Yazı tipi kalınlığını belirler */
+}
+
+/* Bir class adı "card-container" olan bir elementin stilini tanımlar */
+.card-container {
+  position: relative; /* Elementin pozisyonunu göreceli olarak belirler */
+  width: 6.25em; /* Genişliği belirler */
+  height: 6.25em; /* Yüksekliği belirler */
+  cursor: pointer; /* Fare işaretçisini değiştirir */
+}
+
+/* Bir class adı "card-before" ve "card-after" olan elementlerin stilini belirler */
+.card-before,
+.card-after {
+  position: absolute; /* Elementin pozisyonunu mutlak olarak belirler */
+  border-radius: 5px; /* Kenar yuvarlaklığını belirler */
+  width: 100%; /* Genişliği belirler */
+  height: 100%; /* Yüksekliği belirler */
+  display: flex; /* Elementi blok olarak görüntüler */
+  align-items: center; /* Elementleri dikey olarak hizalar */
+  justify-content: center; /* Elementleri yatay olarak hizalar */
+  border: 4px solid #000000; /* Kenar çizgisini belirler */
+  transition: transform 0.7s ease-out; /* Geçiş efektini belirler */
+  backface-visibility: hidden; /* Yüzeyi gizler */
+}
+
+/* .card-before elementinin stilini belirler */
+.card-before {
+  background-color: #f4c531; /* Arka plan rengini belirler */
+  font-size: 2.8em; /* Yazı tipi boyutunu belirler */
+  font-weight: 600; /* Yazı tipi kalınlığını belirler */
+}
+
+/* .card-after elementinin stilini belirler */
+.card-after {
+  background-color: #ffffff; /* Arka plan rengini belirler */
+  transform: rotateY(180deg); /* Y ekseni etrafında döndürür */
+}
+
+/* .card-container elemanına "flipped" class'ı eklendiğinde stilini belirler */
+.card-container.flipped .card-before {
+  transform: rotateY(180deg); /* Y ekseni etrafında döndürür */
+}
+
+/* .card-container elemanına "flipped" class'ı eklendiğinde stilini belir */
+.card-container.flipped .card-after {
+  transform: rotateY(0deg); /* Y ekseni etrafında döndürür */
+}
+
+/* Bir class adı "controls-container" olan bir elementin stilini tanımlar */
+.controls-container {
+  position: absolute; /* Elementin pozisyonunu mutlak olarak belirler */
+  display: flex; /* Elemanları yatay olarak hizalar */
+  align-items: center; /* Elemanları dikey olarak hizalar */
+  justify-content: center; /* Elemanları yatay olarak hizalar */
+  flex-direction: column; /* Elemanların düzenini dikey olarak ayarlar */
+  width: 100%; /* Genişliği belirler */
+  height: 100%; /* Yüksekliği belirler */
+  background-color: #f4c531; /* Arka plan rengini belirler */
+  top: 0; /* Yatay pozisyonunu belirler */
+}
+
+/* Tüm butonların genel stilini belirler */
+button {
+  border: none; /* Kenar çizgisini kaldırır */
+  border-radius: 0.3em; /* Kenar yuvarlaklığını belirler */
+  padding: 1em 1.5em; /* Doldurma (padding) miktarını belirler */
+  cursor: pointer; /* Fare işaretçisini belirler */
+}
+
+/* #stop id'sine sahip butonun
+/* #stop id'sine sahip butonun özel stilini belirler */
+#stop {
+  font-size: 1.1em; /* Yazı tipi boyutunu belirler */
+  display: block; /* Elemanın blok olarak görüntülenmesini sağlar */
+  margin: 1.1em auto 0 auto; /* Dış boşlukları belirler */
+  background-color: #000000; /* Arka plan rengini belirler */
+  color: #ffffff; /* Yazı rengini belirler */
+}
+
+/* .controls-container içindeki tüm butonların genel stilini belirler */
+.controls-container button {
+  font-size: 1.3em; /* Yazı tipi boyutunu belirler */
+  box-shadow: 0 0.6em 2em rgba(86, 66, 0, 0.2); /* Gölge efekti ekler */
+}
+
+/* .hide class'ına sahip elemanları gizler */
+.hide {
+  display: none; /* Elemanı görünmez yapar */
+}
+
+/* #result id'sine sahip elementin stilini belirler */
+#result {
+  text-align: center; /* Metni ortalar */
+}
+
+/* #result içindeki <h2> elementlerinin stilini belirler */
+#result h2 {
+  font-size: 2.5em; /* Yazı tipi boyutunu belirler */
+}
+
+/* #result içindeki <h4> elementlerinin stilini belirler */
+#result h4 {
+  font-size: 1.8em; /* Yazı tipi boyutunu belirler */
+  margin: 0.6em 0 1em 0; /* Dış boşlukları belirler */
+}
