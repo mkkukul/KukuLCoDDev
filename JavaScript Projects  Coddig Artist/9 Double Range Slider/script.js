@@ -3,3 +3,5 @@ window.onload = function(){
     slideOne();
 }
 
+let sliderOne = document.getElementById( "slider1" );
+let sliderTwo = document.getElementById("slider2");
