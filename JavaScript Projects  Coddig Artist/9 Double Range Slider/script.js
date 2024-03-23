@@ -1,1 +1,4 @@
-window.onload = function
+window.onload = function(){
+    slideOne();
+    slide
+}
