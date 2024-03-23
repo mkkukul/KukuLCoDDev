@@ -12,5 +12,5 @@ let sliderTrack = document.querySelector(".slider-track");
 let sliderMaxValue = document.getElementById("slider-1").max;
 
 function slideOne(){
-    if()
+    if(parseInt(sliderTwo.vlue) - parseInt())
 }
