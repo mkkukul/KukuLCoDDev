@@ -12,5 +12,5 @@ let sliderTrack = document.querySelector(".slider-track");
 let sliderMaxValue = document.getElementById("slider-1").max;
 
 function slideOne(){
-    if(parseInt(sliderTwo.vlue) - parseInt())
+    if(parseInt(sliderTwo.value) - parseInt(sliderOne.value)<= minGap){sliderTwo.value =}
 }
