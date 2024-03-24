@@ -82,3 +82,60 @@ input[type="range"]::-webkit-slider-thumb {
     height: 1.7em; /* Yükseklik belirlenir */
     width: 1.7em; /* Genişlik belirlenir */
     background-color: #3264fe; /* Arka plan rengi belirl
+    cursor: pointer; /* Fare imleci tıklayabilir görünümü alır */
+    margin-top: -9px; /* Üst kenar boşluğu belirlenir */
+    pointer-events: auto; /* Tıklama olaylarını etkinleştirir */
+    border-radius: 50%; /* Kenar yarıçapı belirlenir */
+}
+
+input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none; /* Safari ve Chrome için stil sıfırlanır */
+    height: 1.7em; /* Yükseklik belirlenir */
+    width: 1.7em; /* Genişlik belirlenir */
+    cursor: pointer; /* Fare imleci tıklayabilir görünümü alır */
+    border-radius: 50%; /* Kenar yarıçapı belirlenir */
+    background-color: #3264fe; /* Arka plan rengi belirlenir */
+    pointer-events: auto; /* Tıklama olaylarını etkinleştirir */
+}
+
+input[type="range"]::-ms-thumb {
+    appearance: none; /* Diğer tarayıcılar için stil sıfırlanır */
+    height: 1.7em; /* Yükseklik belirlenir */
+    width: 1.7em; /* Genişlik belirlenir */
+    cursor: pointer; /* Fare imleci tıklayabilir görünümü alır */
+    border-radius: 50%; /* Kenar yarıçapı belirlenir */
+    background-color: #3264fe; /* Arka plan rengi belirlenir */
+    pointer-events: auto; /* Tıklama olaylarını etkinleştirir */
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+    background-color: #ffffff; /* Arka plan rengi belirlenir */
+    border: 3px solid #3264fe; /* Kenarlığın özellikleri belirlenir */
+}
+
+.values {
+    background-color: #3264fe; /* Arka plan rengi belirlenir */
+    width: 32%; /* Genişlik belirlenir */
+    position: relative; /* Pozisyon belirlenir */
+    margin: auto; /* Kenar boşlukları belirlenir */
+    padding: 10px 0; /* İç kenar boşlukları belirlenir */
+    border-radius: 5px; /* Kenar yarıçapı belirlenir */
+    text-align: center; /* Metin hizalaması belirlenir */
+    font-weight: 500; /* Yazı kalınlığı belirlenir */
+    font-size: 25px; /* Yazı boyutu belirlenir */
+    color: #ffffff; /* Metin rengi belirlenir */
+}
+
+.values:before {
+    content: ""; /* İçerik eklenir */
+    position: absolute; /* Pozisyon belirlenir */
+    height: 0; /* Yükseklik belirlenir */
+    width: 0; /* Genişlik belirlenir */
+    border-top: 15px solid #3264fe; /* Üst kenar özellikleri belirlenir */
+    border-left: 15px solid transparent; /* Sol kenar özellikleri belirlenir */
+    border-right: 15px solid transparent; /* Sağ kenar özellikleri belirlenir */
+    margin: auto; /* Kenar boşlukları belirlenir */
+    bottom: -14px; /* Alt kenar boşluğu belirlenir */
+    left: 0; /* Sol kenar boşluğu belirlenir */
+    right: 0; /* Sağ kenar boşluğu belirlenir */
+}
