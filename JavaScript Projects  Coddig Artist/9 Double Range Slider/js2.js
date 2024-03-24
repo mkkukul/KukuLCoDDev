@@ -38,7 +38,7 @@ function slideTwo(){
     fillColor();
 }
 
-// Slider'ların arka plan renklerini güncelleyen fonksiyon
+//! Slider'ların arka plan renklerini güncelleyen fonksiyon
 function fillColor(){
     // Birinci kaydırıcının yüzde cinsinden değerini hesaplar
     percent1 = (sliderOne.value / sliderMaxValue) * 100;
