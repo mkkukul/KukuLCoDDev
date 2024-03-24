@@ -34,7 +34,7 @@ function slideTwo(){
     }
     //! İkinci kaydırıcının değerini gösteren HTML öğesinin içeriğini günceller
     displayValTwo.textContent = sliderTwo.value;
-    // Renk gradyanını güncellemek için fillColor fonksiyonunu çağırır
+    //! Renk gradyanını güncellemek için fillColor fonksiyonunu çağırır
     fillColor();
 }
 
