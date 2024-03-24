@@ -11,8 +11,9 @@ let sliderTwo = document.getElementById("slider-2");
 let displayValOne = document.getElementById("range1");
 let displayValTwo = document.getElementById("range2");
 let minGap = 0; //! İki kaydırıcı arasındaki minimum mesafe
-let sliderTrack = document.querySelector(".slider-track"); //! Renk gradyanını oluşturmak için slider parçası
-let sliderMaxValue = document.getElementById("slider-1").max; // Birinci kaydırıcının maksimum değeri
+let sliderTrack = document.querySelector(".slider-track"); 
+//! Renk gradyanını oluşturmak için slider parçası
+let sliderMaxValue = document.getElementById("slider-1").max; //! Birinci kaydırıcının maksimum değeri
 
 //! İlk kaydırıcıyı kontrol eden fonksiyon
 function slideOne(){
