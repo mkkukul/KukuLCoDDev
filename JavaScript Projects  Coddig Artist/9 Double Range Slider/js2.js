@@ -16,7 +16,7 @@ let sliderMaxValue = document.getElementById("slider-1").max; // Birinci kaydır
 
 //! İlk kaydırıcıyı kontrol eden fonksiyon
 function slideOne(){
-    // İki kaydırıcı arasındaki mesafe minGap'ten küçükse, birinci kaydırıcıyı doğru konuma getirir
+    //! İki kaydırıcı arasındaki mesafe minGap'ten küçükse, birinci kaydırıcıyı doğru konuma getirir
     if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
         sliderOne.value = parseInt(sliderTwo.value) - minGap;
     }
