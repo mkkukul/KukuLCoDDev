@@ -1,6 +1,6 @@
 //! Sayfa yüklendiğinde slider'ları başlatmak için window.onload olayını dinler
 window.onload = function(){
-    // slideOne ve slideTwo fonksiyonlarını çağırarak slider'ları başlatır
+    //! slideOne ve slideTwo fonksiyonlarını çağırarak slider'ları başlatır
     slideOne();
     slideTwo();
 }
