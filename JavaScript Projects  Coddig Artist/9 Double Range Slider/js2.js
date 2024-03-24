@@ -5,7 +5,7 @@ window.onload = function(){
     slideTwo();
 }
 
-// HTML'deki gerekli öğeleri seçer ve değişkenleri tanımlar
+//! HTML'deki gerekli öğeleri seçer ve değişkenleri tanımlar
 let sliderOne = document.getElementById("slider-1");
 let sliderTwo = document.getElementById("slider-2");
 let displayValOne = document.getElementById("range1");
