@@ -22,7 +22,7 @@ function slideOne(){
     }
     //! Birinci kaydırıcının değerini gösteren HTML öğesinin içeriğini günceller
     displayValOne.textContent = sliderOne.value;
-    // Renk gradyanını güncellemek için fillColor fonksiyonunu çağırır
+    //! Renk gradyanını güncellemek için fillColor fonksiyonunu çağırır
     fillColor();
 }
 
