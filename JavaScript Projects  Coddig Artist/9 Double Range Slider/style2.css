@@ -1,0 +1,84 @@
+/* Tüm elementler, ::before ve ::after pseudo-elementler için varsayılan değerler atanır */
+*,
+*:before,
+*:after {
+    padding: 0; /* Padding sıfırlanır */
+    margin: 0; /* Margin sıfırlanır */
+    box-sizing: border-box; /* Kutu modeli belirlenir */
+    font-family: "Poppins", sans-serif; /* Yazı tipi belirlenir */
+}
+
+/* body elementi için stil tanımlamaları */
+body {
+    height: 100vh; /* Sayfa yüksekliği ekran yüksekliğine ayarlanır */
+    display: -ms-grid; /* Microsoft'un eski tarayıcıları için esnek kutu modeli */
+    display: grid; /* Grid konteynerı belirlenir */
+    background-color: #3264fe; /* Arka plan rengi belirlenir */
+    place-items: center; /* İçeriği dikey ve yatayda merkezler */
+}
+
+/* .wrapper sınıfı için stil tanımlamaları */
+.wrapper {
+    position: relative; /* Pozisyon belirlenir */
+    width: 95vmin; /* Genişlik belirlenir */
+    background-color: #ffffff; /* Arka plan rengi belirlenir */
+    padding: 50px 40px 20px 40px; /* Dış kenar boşlukları belirlenir */
+    border-radius: 10px; /* Kenar yarıçapı belirlenir */
+}
+
+/* .container sınıfı için stil tanımlamaları */
+.container {
+    position: relative; /* Pozisyon belirlenir */
+    width: 100%; /* Genişlik belirlenir */
+    height: 100px; /* Yükseklik belirlenir */
+    margin-top: 30px; /* Üst kenar boşluğu belirlenir */
+}
+
+/* input[type="range"] öğesi için stil tanımlamaları */
+input[type="range"] {
+    -webkit-appearance: none; /* Safari ve Chrome için stil sıfırlanır */
+    -moz-appearance: none; /* Firefox için stil sıfırlanır */
+    appearance: none; /* Diğer tarayıcılar için stil sıfırlanır */
+    width: 100%; /* Genişlik belirlenir */
+    outline: none; /* Odaklandığında kenarlığın kaldırılması */
+    position: absolute; /* Pozisyon belirlenir */
+    margin: auto; /* Kenar boşlukları belirlenir */
+    top: 0; /* Üst kenar boşluğu belirlenir */
+    bottom: 0; /* Alt kenar boşluğu belirlenir */
+    background-color: transparent; /* Arka plan rengi belirlenir */
+    pointer-events: none; /* Tıklama olaylarının devre dışı bırakılması */
+}
+
+/* .slider-track sınıfı için stil tanımlamaları */
+.slider-track {
+    width: 100%; /* Genişlik belirlenir */
+    height: 5px; /* Yükseklik belirlenir */
+    position: absolute; /* Pozisyon belirlenir */
+    margin: auto; /* Kenar boşlukları belirlenir */
+    top: 0; /* Üst kenar boşluğu belirlenir */
+    bottom: 0; /* Alt kenar boşluğu belirlenir */
+    border-radius: 5px; /* Kenar yarıçapı belirlenir */
+}
+
+/* Diğer tarayıcılara özgü slider track stilleri */
+input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none; /* Safari ve Chrome için stil sıfırlanır */
+    height: 5px; /* Yükseklik belirlenir */
+}
+
+input[type="range"]::-moz-range-track {
+    -moz-appearance: none; /* Firefox için stil sıfırlanır */
+    height: 5px; /* Yükseklik belirlenir */
+}
+
+input[type="range"]::-ms-track {
+    appearance: none; /* Diğer tarayıcılar için stil sıfırlanır */
+    height: 5px; /* Yükseklik belirlenir */
+}
+
+/* Diğer tarayıcılara özgü slider thumb stilleri */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Safari ve Chrome için stil sıfırlanır */
+    height: 1.7em; /* Yükseklik belirlenir */
+    width: 1.7em; /* Genişlik belirlenir */
+    background-color: #3264fe; /* Arka plan rengi belirl
