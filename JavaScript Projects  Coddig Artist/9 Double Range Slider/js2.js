@@ -42,7 +42,7 @@ function slideTwo(){
 function fillColor(){
     //! Birinci kaydırıcının yüzde cinsinden değerini hesaplar
     percent1 = (sliderOne.value / sliderMaxValue) * 100;
-    // İkinci kaydırıcının yüzde cinsinden değerini hesaplar
+    //1 İkinci kaydırıcının yüzde cinsinden değerini hesaplar
     percent2 = (sliderTwo.value / sliderMaxValue) * 100;
     // Slider parçasının arka plan rengini lineer gradyan ile belirler
     sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #3264fe ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`;
