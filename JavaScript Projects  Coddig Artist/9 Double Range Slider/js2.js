@@ -26,7 +26,7 @@ function slideOne(){
     fillColor();
 }
 
-// İkinci kaydırıcıyı kontrol eden fonksiyon
+//! İkinci kaydırıcıyı kontrol eden fonksiyon
 function slideTwo(){
     // İki kaydırıcı arasındaki mesafe minGap'ten küçükse, ikinci kaydırıcıyı doğru konuma getirir
     if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
