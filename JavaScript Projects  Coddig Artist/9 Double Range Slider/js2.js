@@ -20,7 +20,7 @@ function slideOne(){
     if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
         sliderOne.value = parseInt(sliderTwo.value) - minGap;
     }
-    // Birinci kaydırıcının değerini gösteren HTML öğesinin içeriğini günceller
+    //! Birinci kaydırıcının değerini gösteren HTML öğesinin içeriğini günceller
     displayValOne.textContent = sliderOne.value;
     // Renk gradyanını güncellemek için fillColor fonksiyonunu çağırır
     fillColor();
