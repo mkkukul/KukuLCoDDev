@@ -32,7 +32,7 @@ function slideTwo(){
     if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
         sliderTwo.value = parseInt(sliderOne.value) + minGap;
     }
-    // İkinci kaydırıcının değerini gösteren HTML öğesinin içeriğini günceller
+    //! İkinci kaydırıcının değerini gösteren HTML öğesinin içeriğini günceller
     displayValTwo.textContent = sliderTwo.value;
     // Renk gradyanını güncellemek için fillColor fonksiyonunu çağırır
     fillColor();
