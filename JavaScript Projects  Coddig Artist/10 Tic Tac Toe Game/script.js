@@ -24,6 +24,7 @@ const disableButtons = () => {
     //enable popup
     popupRef.classList.remove("hide");
 };
+
 //Enable all buttons (For New Game and Restart)
 const enableButtons = () => {
     btnRef.forEach((element) => {
@@ -33,3 +34,10 @@ const enableButtons = () => {
     //disable popup
     popupRef.classList.add("hide");
 };
+
+//This function is executed when a player wins
+const winFunction = (letter) => {
+    disableButtons();
+    if (letter == "X"){
+        
+    }
