@@ -13,4 +13,6 @@ let winnigPattern = [
     [1, 4, 7],
     [0, 4, 8],
     [2, 4, 6],
-]
+];
+//Player 'X' plays first
+let xTurn
