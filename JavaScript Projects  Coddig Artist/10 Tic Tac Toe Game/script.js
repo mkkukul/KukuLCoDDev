@@ -77,9 +77,9 @@ const drawFunction = () => {
         }
       }
     }
-  };
-  //Display X/O on click
-  btnRef.forEach((element) => {
+};
+//Display X/O on click
+btnRef.forEach((element) => {
     element.addEventListener("click", () => {
       if (xTurn) {
         xTurn = false;
@@ -102,4 +102,4 @@ const drawFunction = () => {
     });
   });
   //Enable Buttons and disable popup on page load
-  window.onload = enableButtons;
+window.onload = enableButtons;
