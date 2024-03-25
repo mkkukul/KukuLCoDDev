@@ -30,5 +30,6 @@ const enableButtons = () => {
         element.innerText ="";
         element.disabled = false;
     });
+    //disable popup
     popupRef.classList.add("hide");
 };
