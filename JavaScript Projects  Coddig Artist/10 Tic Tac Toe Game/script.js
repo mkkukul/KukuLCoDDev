@@ -18,3 +18,9 @@ let winnigPattern = [
 let xTurn = true;
 let count =  0;
 
+//Disable All Buttons
+const disableButtons = () => {
+    btnRef.forEach((element) => (element.disabled = true));
+    //enable popup
+    popupRef.classList.remove("hide");
+};
