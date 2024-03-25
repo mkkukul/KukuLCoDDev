@@ -1,0 +1,86 @@
+* {
+    padding: 0; /* Tüm öğelerin iç kenar boşluğu sıfırlanır */
+    margin: 0; /* Tüm öğelerin dış kenar boşluğu sıfırlanır */
+    box-sizing: border-box; /* Tüm öğelerin iç kenar kutusu modeli kullanılır */
+    font-family: "Raleway", sans-serif; /* Tüm öğelerin yazı tipi belirlenir */
+}
+
+body {
+    height: 100vh; /* Vücut öğesinin yüksekliği ekran yüksekliği kadar ayarlanır */
+    background: linear-gradient(135deg, #8052ec, #d161ff); /* Arka plan, iki renk arasında 135 derece eğimli bir lineer gradyanla oluşturulur */
+}
+
+html {
+    font-size: 16px; /* Kök öğenin metin boyutu belirlenir */
+}
+
+.wrapper {
+    position: absolute; /* Öğe, belirli konuma göre yerleştirilir */
+    transform: translate(-50%, -50%); /* Öğe, kendi boyutunun yarısı kadar yukarı ve sola kaydırılır */
+    top: 50%; /* Öğenin üst kenarı ekranın yarısına yerleştirilir */
+    left: 50%; /* Öğenin sol kenarı ekranın yarısına yerleştirilir */
+}
+
+.container {
+    width: 70vmin; /* Öğenin genişliği, görünür alanın minimumı olarak ayarlanır */
+    height: 70vmin; /* Öğenin yüksekliği, görünür alanın minimumu olarak ayarlanır */
+    display: flex; /* Öğe içindeki öğeler yatay olarak düzenlenir */
+    flex-wrap: wrap; /* Öğelerin bir satıra sığmaması durumunda yeni satıra geçilir */
+    gap: 2vmin; /* Öğeler arasında dikey ve yatay boşluklar belirlenir */
+}
+
+.button-option {
+    background: #ffffff; /* Arka plan rengi belirlenir */
+    height: 22vmin; /* Yükseklik belirlenir */
+    width: 22vmin; /* Genişlik belirlenir */
+    border: none; /* Kenarlık kaldırılır */
+    border-radius: 8px; /* Kenar yarıçapı belirlenir */
+    font-size: 12vmin; /* Yazı boyutu belirlenir */
+    color: #d161ff; /* Metin rengi belirlenir */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Kutu gölgesi belirlenir */
+}
+
+#restart {
+    font-size: 1.3em; /* Yazı boyutu belirlenir */
+    padding: 1em; /* İç kenar boşluğu belirlenir */
+    border-radius: 8px; /* Kenar yarıçapı belirlenir */
+    background-color: #0a0027; /* Arka plan rengi belirlenir */
+    color: #ffffff; /* Metin rengi belirlenir */
+    border: none; /* Kenarlık kaldırılır */
+    position: relative; /* Pozisyon belirlenir */
+    margin: 1.5em auto 0 auto; /* Kenar boşlukları belirlenir */
+    display: block; /* Öğenin bir blok olarak görüntülenmesi sağlanır */
+}
+
+.popup {
+    background: linear-gradient(135deg, #8052ec, #d161ff); /* Arka plan, iki renk arasında 135 derece eğimli bir lineer gradyanla oluşturulur */
+    height: 100%; /* Yükseklik belirlenir */
+    width: 100%; /* Genişlik belirlenir */
+    position: absolute; /* Öğe, belirli konuma göre yerleştirilir */
+    display: flex; /* Öğe içindeki öğeler yatay olarak düzenlenir */
+    z-index: 2; /* Öğenin yığın sırası belirlenir */
+    align-items: center; /* Öğeler dikey olarak hizalanır */
+    justify-content: center; /* Öğeler yatay olarak hizalanır */
+    flex-direction: column; /* Öğelerin dikey yönde sıralanması sağlanır */
+    gap: 1em; /* Öğeler arasında dikey boşluk belirlenir */
+    font-size: 12vmin; /* Yazı boyutu belirlenir */
+}
+
+#new-game {
+    font-size: 0.6em; /* Yazı boyutu belirlenir */
+    padding: 0.5em 1em; /* İç kenar boşluğu belirlenir */
+    background-color: #0a0027; /* Arka plan rengi belirlenir */
+    color: #ffffff; /* Metin rengi belirlenir */
+    border-radius: 0.2em; /* Kenar yarıçapı belirlenir */
+    border: none; /* Kenarlık kaldırılır */
+}
+
+#message {
+    color: #ffffff; /* Metin rengi belirlenir */
+    text-align: center; /* Metin hizalaması belirlenir */
+    font-size: 1em; /* Yazı boyutu belirlenir */
+}
+
+.popup.hide {
+    display: none; /* Öğe gizlenir */
+}
