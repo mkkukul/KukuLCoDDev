@@ -10,5 +10,7 @@ function roll(){
     dice.forEach(function(die){
         die.classList.add("shake";)
     });
-    setTimeout()
+    setTimeout(function(die){
+        die.classList.remove("shake");
+    });
 }
