@@ -13,4 +13,5 @@ function roll(){
     setTimeout(function(die){
         die.classList.remove("shake");
     });
+    let dieOneValue = mat.floor(math.random()*6);
 }
