@@ -1,0 +1,67 @@
+* {
+    padding: 0; /* Tüm öğelerin iç kenar boşluğu sıfırlanır */
+    margin: 0; /* Tüm öğelerin dış kenar boşluğu sıfırlanır */
+    box-sizing: border-box; /* Tüm öğelerin iç kenar kutusu modeli kullanılır */
+}
+
+body {
+    height: 100vh; /* Vücut öğesinin yüksekliği ekran yüksekliği kadar ayarlanır */
+    background: linear-gradient(#e92e3d, #ff6e6a) 0 100% no-repeat; /* Arka plan, iki renk arasında dikey bir lineer gradyanla oluşturulur */
+    background-size: 100% 50%; /* Arka planın boyutu belirlenir */
+}
+
+.container {
+    width: 400px; /* Genişlik belirlenir */
+    padding: 50px; /* İç kenar boşluğu belirlenir */
+    position: absolute; /* Öğe, belirli konuma göre yerleştirilir */
+    transform: translate(-50%, -50%); /* Öğe, kendi boyutunun yarısı kadar yukarı ve sola kaydırılır */
+    top: 50%; /* Öğenin üst kenarı ekranın yarısına yerleştirilir */
+    left: 50%; /* Öğenin sol kenarı ekranın yarısına yerleştirilir */
+    background-color: #ffffff; /* Arka plan rengi belirlenir */
+    box-shadow: 0 15px 25px rgba(50, 50, 50, 0.15); /* Kutu gölgesi belirlenir */
+    border-radius: 8px; /* Kenar yarıçapı belirlenir */
+    display: flex; /* Öğe içindeki öğeler yatay olarak düzenlenir */
+    flex-direction: column; /* Öğelerin dikey yönde sıralanması sağlanır */
+    align-items: center; /* Öğeler yatay olarak hizalanır */
+    font-family: "Poppins", sans-serif; /* Yazı tipi belirlenir */
+}
+
+.dice-wrapper {
+    width: 90%; /* Genişlik belirlenir */
+    display: flex; /* Öğe içindeki öğeler yatay olarak düzenlenir */
+    justify-content: space-around; /* Öğeler arasında boşluk bırakılarak hizalanır */
+}
+
+p {
+    font-size: 16px; /* Yazı boyutu belirlenir */
+    margin: 30px 0; /* Dış kenar boşlukları belirlenir */
+    font-weight: 500; /* Yazı kalınlığı belirlenir */
+}
+
+button {
+    background-color: #e92e3d; /* Arka plan rengi belirlenir */
+    border: none; /* Kenarlık kaldırılır */
+    outline: none; /* Odak çizgisi kaldırılır */
+    color: #ffffff; /* Metin rengi belirlenir */
+    padding: 15px 0; /* İç kenar boşluğu belirlenir */
+    width: 150px; /* Genişlik belirlenir */
+    letter-spacing: 1px; /* Harf aralığı belirlenir */
+    border-radius: 5px; /* Kenar yarıçapı belirlenir */
+    cursor: pointer; /* İmleç türü belirlenir */
+}
+
+.shake {
+    animation: shake 0.5s infinite; /* Sarsılma animasyonu tanımlanır */
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(8deg); /* Başlangıç durumu belirlenir */
+    }
+    50% {
+        transform: rotate(-8deg); /* Orta nokta durumu belirlenir */
+    }
+    100% {
+        transform: rotate(8deg); /* Bitiş durumu belirlenir */
+    }
+}
