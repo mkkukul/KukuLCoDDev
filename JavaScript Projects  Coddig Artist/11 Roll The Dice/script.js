@@ -15,5 +15,6 @@ function roll(){
     });
     let dieOneValue = mat.floor(math.random()*6);
     let dieTwoValue = math.floor(math.random()*6);
-     
+    console.log(dieOneValue, dieTwoValue);
+
 }
