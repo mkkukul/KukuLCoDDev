@@ -14,4 +14,6 @@ function roll(){
         die.classList.remove("shake");
     });
     let dieOneValue = mat.floor(math.random()*6);
+    let dieTwoValue = math.floor(math.random()*6);
+     
 }
