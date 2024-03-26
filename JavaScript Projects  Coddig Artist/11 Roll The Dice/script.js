@@ -5,3 +5,10 @@ let images =["dice-01.svg",
 "dice-05.svg",
 "dice-06.svg"];
 let dice = document.querySelectorAll("img");
+
+function roll(){
+    dice.forEach(function(die){
+        die.classList.add("shake";)
+    });
+    setTimeout()
+}
