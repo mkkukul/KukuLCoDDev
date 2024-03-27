@@ -16,4 +16,7 @@ const displayTasks= () =>{
     } else{
         tasksDiv.style.display="none"
     }
+    tasksDiv.innerHTML ="";
+    let tasks = Object.keys(localStorage);
+    
 }
