@@ -24,5 +24,6 @@ const displayTasks= () =>{
         let classValue = "";
 
         let value  = localStorage.getItem(key);
+        let taskInnerDiv =  document.createElement("div");
     }
 }
