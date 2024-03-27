@@ -9,3 +9,9 @@ window.onload = () = > {
     count = Object.keys(localStorage).length;
     displayTasks();
 };
+const displayTasks= () =>{
+    if (Object.keys(localStorage).length > 0){
+        tasksDiv.computedStyleMap.display = "inline-block";
+        
+    }
+}
