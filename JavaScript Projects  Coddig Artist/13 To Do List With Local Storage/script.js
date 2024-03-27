@@ -27,5 +27,6 @@ const displayTasks= () =>{
         let taskInnerDiv =  document.createElement("div");
         taskInnerDiv.classList.add("task");
         taskInnerDiv.setAttribute("id", key);
+        taskInnerDiv.innerHTML = `<span id="taskname">${key.split("_")[1]}</span>`;
     }
 }
