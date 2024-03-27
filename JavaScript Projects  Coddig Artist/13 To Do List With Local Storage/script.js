@@ -12,6 +12,8 @@ window.onload = () = > {
 const displayTasks= () =>{
     if (Object.keys(localStorage).length > 0){
         tasksDiv.computedStyleMap.display = "inline-block";
-        
+      
+    } else{
+        tasksDiv.style.display="none"
     }
 }
