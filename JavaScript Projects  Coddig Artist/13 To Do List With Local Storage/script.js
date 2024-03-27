@@ -28,5 +28,7 @@ const displayTasks= () =>{
         taskInnerDiv.classList.add("task");
         taskInnerDiv.setAttribute("id", key);
         taskInnerDiv.innerHTML = `<span id="taskname">${key.split("_")[1]}</span>`;
+        let editButton = document.createElement("button");
+        editButton.classList.add()
     }
 }
