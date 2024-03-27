@@ -25,5 +25,7 @@ const displayTasks= () =>{
 
         let value  = localStorage.getItem(key);
         let taskInnerDiv =  document.createElement("div");
+        taskInnerDiv.classList.add("task");
+        taskInnerDiv.setAttribute("id", key);
     }
 }
