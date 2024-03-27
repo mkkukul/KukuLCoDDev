@@ -22,6 +22,7 @@ const displayTasks= () =>{
     
     for (let key of tasks) {
         let classValue = "";
-        
+
+        let value  = localStorage.getItem(key);
     }
 }
