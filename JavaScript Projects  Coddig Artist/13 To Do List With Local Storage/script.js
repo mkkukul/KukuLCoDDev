@@ -1,0 +1,1 @@
+const newTaskInput = document.querySelector("#new-task input");
