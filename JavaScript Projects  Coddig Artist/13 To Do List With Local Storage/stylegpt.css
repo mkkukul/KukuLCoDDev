@@ -1,0 +1,106 @@
+* {
+    padding: 0; /* Tüm öğelerin iç kenar boşluğu sıfırlanır */
+    margin: 0; /* Tüm öğelerin dış kenar boşluğu sıfırlanır */
+    box-sizing: border-box; /* Tüm öğelerin iç kenar kutusu modeli kullanılır */
+}
+
+body {
+    background-color: #0b87ff; /* Arka plan rengi belirlenir */
+}
+
+.container {
+    width: 90%; /* Genişlik belirlenir */
+    max-width: 34em; /* Maksimum genişlik belirlenir */
+    position: absolute; /* Öğe, belirli konuma göre yerleştirilir */
+    transform: translate(-50%, -50%); /* Öğe, kendi boyutunun yarısı kadar yukarı ve sola kaydırılır */
+    top: 50%; /* Öğenin üst kenarı ekranın yarısına yerleştirilir */
+    left: 50%; /* Öğenin sol kenarı ekranın yarısına yerleştirilir */
+}
+
+#new-task {
+    position: relative; /* Pozisyon belirlenir */
+    background-color: #ffffff; /* Arka plan rengi belirlenir */
+    padding: 1.8em 1.25em; /* İç kenar boşluğu belirlenir */
+    border-radius: 0.3em; /* Kenar yarıçapı belirlenir */
+    box-shadow: 0 1.25em 1.8em rgba(1, 24, 48, 0.15); /* Kutu gölgesi belirlenir */
+    display: grid; /* Öğe içindeki öğeler ızgara düzenine göre yerleştirilir */
+    grid-template-columns: 9fr 3fr; /* Izgara sütunları belirlenir */
+    gap: 1em; /* Izgara aralığı belirlenir */
+}
+
+#new-task input {
+    font-family: "Poppins", sans-serif; /* Yazı tipi belirlenir */
+    font-size: 1em; /* Yazı boyutu belirlenir */
+    border: none; /* Kenarlık kaldırılır */
+    border-bottom: 2px solid #d1d3d4; /* Alt kenarlık belirlenir */
+    padding: 0.8em 0.5em; /* İç kenar boşluğu belirlenir */
+    color: #111111; /* Metin rengi belirlenir */
+    font-weight: 500; /* Yazı kalınlığı belirlenir */
+}
+
+#new-task input:focus {
+    outline: none; /* Odak çizgisi kaldırılır */
+    border-color: #0b87ff; /* Kenarlık rengi belirlenir */
+}
+
+#new-task button {
+    font-family: "Poppins", sans-serif; /* Yazı tipi belirlenir */
+    font-weight: 500; /* Yazı kalınlığı belirlenir */
+    font-size: 1em; /* Yazı boyutu belirlenir */
+    background-color: #0b87ff; /* Arka plan rengi belirlenir */
+    color: #ffffff; /* Metin rengi belirlenir */
+    outline: none; /* Odak çizgisi kaldırılır */
+    border: none; /* Kenarlık kaldırılır */
+    border-radius: 0.3em; /* Kenar yarıçapı belirlenir */
+    cursor: pointer; /* İmleç türü belirlenir */
+}
+
+#tasks {
+    background-color: #ffffff; /* Arka plan rengi belirlenir */
+    position: relative; /* Pozisyon belirlenir */
+    padding: 1.8em 1.25em; /* İç kenar boşluğu belirlenir */
+    margin-top: 3.8em; /* Üst kenar boşluğu belirlenir */
+    width: 100%; /* Genişlik belirlenir */
+    box-shadow: 0 1.25em 1.8em rgba(1, 24, 48, 0.15); /* Kutu gölgesi belirlenir */
+    border-radius: 0.6em; /* Kenar yarıçapı belirlenir */
+}
+
+.task {
+    background-color: #ffffff; /* Arka plan rengi belirlenir */
+    padding: 0.3em 0.6em; /* İç kenar boşluğu belirlenir */
+    margin-top: 0.6em; /* Üst kenar boşluğu belirlenir */
+    display: flex; /* Öğe içindeki öğeler yatay olarak düzenlenir */
+    align-items: center; /* Öğeler dikey olarak hizalanır */
+    border-bottom: 2px solid #d1d3d4; /* Alt kenarlık belirlenir */
+    cursor: pointer; /* İmleç türü belirlenir */
+}
+
+.task span {
+    font-family: "Poppins", sans-serif; /* Yazı tipi belirlenir */
+    font-size: 0.9em; /* Yazı boyutu belirlenir */
+    font-weight: 400; /* Yazı kalınlığı belirlenir */
+}
+
+.task button {
+    color: #ffffff; /* Metin rengi belirlenir */
+    padding: 0.8em 0; /* İç kenar boşluğu belirlenir */
+    width: 2.8em; /* Genişlik belirlenir */
+    border-radius: 0.3em; /* Kenar yarıçapı belirlenir */
+    border: none; /* Kenarlık kaldırılır */
+    outline: none; /* Odak çizgisi kaldırılır */
+    cursor: pointer; /* İmleç türü belirlenir */
+}
+
+.delete {
+    background-color: #fb3b3b; /* Arka plan rengi belirlenir */
+}
+
+.edit {
+    background-color: #0b87ff; /* Arka plan rengi belirlenir */
+    margin-left: auto; /* Sol kenar boşluğu belirlenir */
+    margin-right: 3em; /* Sağ kenar boşluğu belirlenir */
+}
+
+.completed {
+    text-decoration: line-through; /* Metin üzerine çizgi eklenir */
+}

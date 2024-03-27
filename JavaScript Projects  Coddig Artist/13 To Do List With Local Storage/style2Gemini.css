@@ -1,0 +1,189 @@
+/* Sıfırla (reset): Bu blok tüm öğelere varsayılan padding ve margin sıfırlarken box-sizing'i border-box olarak ayarlar, böylece element genişliği ve yüksekliği padding ve border dahil hesaplanır. */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+  /* Sayfa gövdesi: Arka plan rengini açık maviye (#0b87ff) ayarlar. */
+body {
+    background-color: #0b87ff;
+}
+  
+/* Kapsayıcı (.container): Ana içeriği çevreleyen bir kapsayıcı oluşturur.
+    * Genişlik %90 veya maksimum 34em (yaklaşık 544px)
+    * Yatay olarak ortalar (margin: 0 auto) */
+.container {
+    width: 90%;
+    max-width: 34em;
+    margin: 0 auto;
+}
+  
+/* Yeni görev oluşturma formu (#new-task): Yeni görev ekleme işlemi için formu tanımlar.
+    * Beyaz arka plan (#ffffff)
+    * Yuvarlatılmış köşeler (border-radius: 0.3em)
+    * Hafif gölge (box-shadow)
+    * Esnek kutu düzeni (display: flex) ve dikey sıralama (flex-direction: column)
+    * Elemanlar arasında boşluk (gap: 1em)
+    * Üst ve alt kenar boşlukları ayarlanmadı (margin: yok)
+    * Yatay olarak ortalandı (transform: translate(-50%, -50%))
+    * Dikey olarak ekranın ortasına yerleştirildi (top: 50%)
+    * Sol ve sağ kenar boşlukları sıfırlandı (left: 50%) 
+    * İç boşluklar (padding: 1.8em 1.25em)
+    * Tam genişlik (width: 100%) */
+#new-task {
+    background-color: #ffffff;
+    border-radius: 0.3em;
+    box-shadow: 0 1.25em 1.8em rgba(1, 24, 48, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 0; /* Üst ve alt kenar boşluğu sıfırlandı */
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 1.8em 1.25em;
+    width: 100%;
+}
+  
+  /* Yeni görev girişi (#new-task input): Form içindeki metin girişi için stil uygular.
+    * Yazı tipi (font-family) yukarıdan devralınır (inherit)
+    * Yazı tipi boyutu (font-size) 1em (genel yazı tipi boyutuna göre)
+    * Kenarlık yok (border: none)
+    * Alt kenarlık (border-bottom)
+    * İç boşluklar (padding)
+    * Metin rengi siyah (#111111)
+    * Yazı tipi biraz daha kalın (font-weight: 500)
+    * Tam genişlik (width: 100%) */
+#new-task input {
+    font-family: inherit;
+    font-size: 1em;
+    border: none;
+    border-bottom: 2px solid #d1d3d4;
+    padding: 0.8em 0.5em;
+    color: #111111;
+    font-weight: 500;
+    width: 100%;
+}
+  
+/* Giriş üzerine gelindiğinde (#new-task input:focus): Odaklanma çerçevesi kaldırılır ve alt kenarlık rengi maviye (#0b87ff) değiştirilir. */
+#new-task input:focus {
+    outline: none;
+    border-color: #0b87ff;
+}
+  
+/* Görev ekleme butonu (#new-task button): Form içindeki "Görev Ekle" butonu için stil uygular.
+    * Mavi arka plan (#0b87ff)
+    * Kenarlık yok (border: none)
+/* Görev ekleme butonu (#new-task button) ve diğer stil tanımları */
+
+/* Görev Ekleme Butonu (#new-task button) */
+#new-task button {
+    /* Yazı tipi "Poppins" veya herhangi bir sans-serif yazı tipi */
+    font-family: "Poppins", sans-serif;
+    /* Yazı tipi biraz daha kalın */
+    font-weight: 500;
+    /* Yazı tipi boyutu 1em (genel yazı tipi boyutuna göre) */
+    font-size: 1em;
+    /* Arka plan rengi mavi */
+    background-color: #0b87ff;
+    /* Metin rengi beyaz */
+    color: #ffffff;
+    /* Odaklanma çerçevesi yok */
+    outline: none;
+    /* Kenarlık yok */
+    border: none;
+    /* Yuvarlatılmış köşeler */
+    border-radius: 0.3em;
+    /* İmleç "pointer" şekline dönüşür */
+    cursor: pointer;
+}
+  
+  /* Görev Listesi (#tasks) */
+#tasks {
+    /* Beyaz arka plan */
+    background-color: #ffffff;
+    /* Görevleri birbiriyle konumlandırmak için gerekli (örneğin, silme ve düzenleme düğmeleri için) */
+    position: relative;
+    /* İç boşluklar */
+    padding: 1.8em 1.25em;
+    /* Görev listesinin üst kenarından 3.8em boşluk */
+    margin-top: 3.8em;
+    /* Tam genişlik */
+    width: 100%;
+    /* Hafif gölge */
+    box-shadow: 0 1.25em 1.8em rgba(1, 24, 48, 0.15);
+    /* Yuvarlatılmış köşeler */
+    border-radius: 0.6em;
+}
+  
+  /* Görev (.task) */
+.task {
+    /* Beyaz arka plan */
+    background-color: #ffffff;
+    /* İç boşluklar */
+    padding: 0.3em 0.6em;
+    /* Görevler arasında 0.6em boşluk */
+    margin-top: 0.6em;
+    /* Yatay olarak sıralar */
+    display: flex;
+    /* Görev metnini ve düğmeleri dikey olarak ortalar */
+    align-items: center;
+    /* Alt kenarlık */
+    border-bottom: 2px solid #d1d3d4;
+    /* İmleç "pointer" şekline dönüşür */
+    cursor: pointer;
+}
+  
+  /* Görev Metni (.task span) */
+.task span {
+    /* Yazı tipi "Poppins" veya herhangi bir sans-serif yazı tipi */
+    font-family: "Poppins", sans-serif;
+    /* Yazı tipi boyutu biraz küçültülür */
+    font-size: 0.9em;
+    /* Normal yazı tipi ağırlığı */
+    font-weight: 400;
+}
+  
+  /* Görev Düğmeleri (.task button) */
+.task button {
+    /* Beyaz metin rengi */
+    color: #ffffff;
+    /* İç boşluklar */
+    padding: 0.8em 0;
+    /* Düğme genişliği */
+    width: 2.8em;
+    /* Yuvarlatılmış köşeler */
+    border-radius: 0.3em;
+    /* Kenarlık yok */
+    border: none;
+    /* Odaklanma çerçevesi yok */
+    outline: none;
+    /* İmleç "pointer" şekline dönüşür */
+    cursor: pointer;
+}
+  
+  /* Sil Düğmesi (.delete) */
+.delete {
+    /* Kırmızı arka plan */
+    background-color: #fb3b3b;
+}
+  
+  /* Düzenle Düğmesi (.edit) */
+.edit {
+    /* Mavi arka plan */
+    background-color: #0b87ff;
+    /* Düğmeyi sola otomatik olarak yapıştırır */
+    margin-left: auto;
+    /* Düğmenin sağından 3em boşluk */
+    margin-right: 3em;
+}
+  
+  /* Tamamlanmış Görev (.completed) */
+.completed {
+    text-decoration: line-through;
+}
+    /* Tamamlanmış görev
+  
+    
+  
