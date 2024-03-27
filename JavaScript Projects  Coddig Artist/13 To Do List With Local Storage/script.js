@@ -18,5 +18,10 @@ const displayTasks= () =>{
     }
     tasksDiv.innerHTML ="";
     let tasks = Object.keys(localStorage);
+    tasks = tasks.sort();
     
+    for (let key of tasks) {
+        let classValue = "";
+        
+    }
 }
