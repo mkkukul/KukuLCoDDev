@@ -42,6 +42,7 @@ let getMovie =() => {
                 <p>${data.Plot}</p>
                 <h3>Cast:</h3>
                 <p>${data.Actors}</p>
+                
             `;
             }
         }
