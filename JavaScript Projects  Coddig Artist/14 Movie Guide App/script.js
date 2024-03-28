@@ -3,3 +3,6 @@ let searchBtn = document.querySelector("#search-btn");
 let result = document.getElementById("result");
 
 // Function to get the data from API
+let getMovie =() => {
+    
+}
