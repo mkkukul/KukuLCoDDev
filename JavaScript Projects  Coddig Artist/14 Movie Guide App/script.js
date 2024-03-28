@@ -16,7 +16,14 @@ let getMovie =() => {
         .then((resp) => resp.json())
         .then((data) =>{
             //If movie exists in database
-        
+            if(data.Response == "True"){
+                result.innerHTML = `
+                <div class="info">
+                
+                </div>
+                `
+
+            }
         }
 
 }
