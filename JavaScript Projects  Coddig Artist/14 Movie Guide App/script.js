@@ -16,19 +16,7 @@ let getMovie =() => {
         .then((resp) => resp.json())
         .then((data) =>{
             //If movie exists in database
-            if (data.Responce == "True"){
-                result.innerHTML =`
-                <div class="info">
-                <img src=${data.Poster} class="poster>`
-                <div>
-                    <h2>${data.Title}</h2>
-                    <div class="rating">
-                        <img src="star-icon.svg">
-                        <h4>${data.imdbRating}</h4>    
-
-                    </div>
-            }
+        
         }
-    }
 
 }
