@@ -1,0 +1,1 @@
+let movieNameRef = document.getElementById("movie-name");
