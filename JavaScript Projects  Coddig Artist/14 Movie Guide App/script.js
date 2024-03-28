@@ -13,7 +13,11 @@ let getMovie =() => {
     // If input field is NOT empty
     else {
         fetch(url)
-        .then((resp))
+        .then((resp) => resp.json())
+        .then((data) =>{
+            //If movie exists in database
+            if ()
+        }
     }
 
 }
