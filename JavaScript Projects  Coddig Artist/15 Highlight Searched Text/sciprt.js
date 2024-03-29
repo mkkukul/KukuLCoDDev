@@ -1,4 +1,4 @@
 function search(){
     let textToSearch = document.getElementById("text-to-search").value;
-    let paragraph = document
+    let paragraph = document.getElementById
 }
