@@ -1,5 +1,5 @@
 function search(){
     let textToSearch = document.getElementById("text-to-search").value;
     let paragraph = document.getElementById("paragraph");
-    textToSearch =  textToSearch.replace(/[.*])
+    textToSearch =  textToSearch.replace(/[.*+?^${}|[\]\\]/g,"\\$&"); // Escape special characters
 }
