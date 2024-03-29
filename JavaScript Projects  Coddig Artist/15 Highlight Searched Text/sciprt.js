@@ -3,5 +3,5 @@ function search(){
     let paragraph = document.getElementById("paragraph");
     textToSearch =  textToSearch.replace(/[.*+?^${}|[\]\\]/g,"\\$&"); 
     let pattern = new RegExp(`${textToSearch}`,"gi");
-    paragraph 
+    paragraph.innerHTML = paragraph 
 }
