@@ -28,6 +28,8 @@ searchBtn.addEventListener( "click",()=> {
             }
            
         }
-        
+        console.log(ingredients);
+
+        result.innerHTML
     }
 } );
