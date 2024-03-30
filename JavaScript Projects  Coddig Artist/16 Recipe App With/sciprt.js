@@ -10,7 +10,13 @@ searchBtn.addEventListener( "click",()=> {
         .then((responce)=> responce.json())
         .then((data)=>{
             let myMeal  = data.meals[0];
+            console.log(myMeal);
+            console.log(myMeal.strMealThumb);
+            console.log(myMeal.strMealThumb);
+            console.log(myMeal.strMealThumb);
+            console.log(myMeal.strMealThumb);
             
+
         }
     }
 } );
