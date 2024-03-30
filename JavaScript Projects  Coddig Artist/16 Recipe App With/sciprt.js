@@ -9,7 +9,8 @@ searchBtn.addEventListener( "click",()=> {
         fetch(url + userInp)
         .then((responce)=> responce.json())
         .then((data)=>{
-            let
+            let myMeal  = data.meals[0];
+            
         }
     }
 } );
