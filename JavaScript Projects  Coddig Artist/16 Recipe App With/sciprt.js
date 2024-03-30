@@ -12,8 +12,8 @@ searchBtn.addEventListener( "click",()=> {
             let myMeal  = data.meals[0];
             console.log(myMeal);
             console.log(myMeal.strMealThumb);
-            console.log(myMeal.strMealThumb);
-            console.log(myMeal.strMealThumb);
+            console.log(myMeal.strMeal);
+            console.log(myMeal.strArea);
             console.log(myMeal.strMealThumb);
             
 
