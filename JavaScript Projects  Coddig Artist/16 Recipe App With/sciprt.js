@@ -1,1 +1,1 @@
-let 
+let  result = document.getElementById("result");
