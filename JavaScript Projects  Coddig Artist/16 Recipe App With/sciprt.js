@@ -18,10 +18,16 @@ searchBtn.addEventListener( "click",()=> {
             let count = 1;
             let ingredients = [];
             for (let i in myMeal) {
-                
+                let ingredient = "";
+          let measure = "";
+          if (i.startsWith("strIngredient") && myMeal[i]) {
+                ingredient = myMeal[i];
+                measure = myMeal[`strMeasure` + count];
+                count += 1;
+                ingredients.push(`${measure} ${ingredient}`);
             }
-            
-
+           
         }
+        
     }
 } );
