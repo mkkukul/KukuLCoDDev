@@ -14,7 +14,12 @@ searchBtn.addEventListener( "click",()=> {
             console.log(myMeal.strMealThumb);
             console.log(myMeal.strMeal);
             console.log(myMeal.strArea);
-            console.log(myMeal.strMealThumb);
+            console.log(myMeal.strMealInstructions);
+            let count = 1;
+            let ingredients = [];
+            for (let i in myMeal) {
+                
+            }
             
 
         }
