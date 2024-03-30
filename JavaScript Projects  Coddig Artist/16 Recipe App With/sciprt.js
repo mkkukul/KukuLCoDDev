@@ -6,6 +6,10 @@ searchBtn.addEventListener( "click",()=> {
     if(userInp.length == 0){
         result.innerHTML = `<h3>Input Field Cannot Be Empty</h3>`;
     }else {
-        fetch()
+        fetch(url + userInp)
+        .then((responce)=> responce.json())
+        .then((data)=>{
+            let
+        }
     }
 } );
