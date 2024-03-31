@@ -51,5 +51,10 @@ function displayResult(bDAte,bMonth,bYear){
     document.getElementById("days").textContent = bDAte;
 }
 function leapChecker(year){
-    if(year % 4 != 0) return false
+    if(year % 4 == 0 || (year % 100 == 0 && year % 400 == 0)){
+        months[1] = 29;
+    }
+    else{
+        months[1] = 28;
+    }
 }
