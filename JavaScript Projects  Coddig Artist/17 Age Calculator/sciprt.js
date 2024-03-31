@@ -39,7 +39,8 @@ function ageCalculate(){
         let days = months[currentMonth-2];
         birthDate = days + currentDate - birthDetails.date;
         if(birthDate<0){
-            b
+            birthMonth = 11;
+            birthYear--;
         }
 
 }
