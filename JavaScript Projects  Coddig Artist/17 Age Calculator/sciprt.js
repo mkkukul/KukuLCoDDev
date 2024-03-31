@@ -16,6 +16,7 @@ function ageCalculate(){
     leapChecker(currentYear);
     if(
         birthDetails.year >  currentYear ||  
-        (birthDetails.month > currentMonth && birthDetails.year == currentYear
+        (birthDetails.month > currentMonth && birthDetails.year == currentYear) ||
+        (birthDetails.date > )
     )
 }
