@@ -50,4 +50,6 @@ function displayResult(bDAte,bMonth,bYear){
     document.getElementById("months").textContent = bMonth;
     document.getElementById("days").textContent = bDAte;
 }
-fun
+function leapChecker(year){
+    if(year % 4 != 0) return false
+}
