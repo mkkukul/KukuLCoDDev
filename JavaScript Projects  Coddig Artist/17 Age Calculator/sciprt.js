@@ -42,5 +42,7 @@ function ageCalculate(){
             birthMonth = 11;
             birthYear--;
         }
-
+    }
+    displayResult(birthYear,birthMonth,birthDate);
 }
+function displayResult(
