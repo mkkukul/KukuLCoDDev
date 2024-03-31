@@ -23,4 +23,10 @@ function ageCalculate(){
         displayResult("-","-","-");
         return;
     }
+    birthYear = currentYear - birthDetails.year;
+    if(currentMonth >= birthDetails.month){
+        birthMonth= currentMonth - birthDetails.month;
+    }
+    else{
+
 }
