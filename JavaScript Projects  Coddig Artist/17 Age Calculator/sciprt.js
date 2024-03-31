@@ -17,6 +17,6 @@ function ageCalculate(){
     if(
         birthDetails.year >  currentYear ||  
         (birthDetails.month > currentMonth && birthDetails.year == currentYear) ||
-        (birthDetails.date > )
+        (birthDetails.date > currentDate && )
     )
 }
