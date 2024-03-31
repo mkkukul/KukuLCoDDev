@@ -10,5 +10,8 @@ function ageCalculate(){
         year:inputDate.getFullYear()
     }
     let currentYear = today.getFullYear();
-    let currentMonth
+    let currentMonth = today.getMonth()+1;
+    let currentDate =  today.getDate();
+    
+    leapC
 }
