@@ -45,4 +45,6 @@ function ageCalculate(){
     }
     displayResult(birthYear,birthMonth,birthDate);
 }
-function displayResult(
+function displayResult(bDAte,bMonth,bYear){
+    document.getElementById("years").textContent
+}
