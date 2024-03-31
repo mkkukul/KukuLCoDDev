@@ -46,5 +46,8 @@ function ageCalculate(){
     displayResult(birthYear,birthMonth,birthDate);
 }
 function displayResult(bDAte,bMonth,bYear){
-    document.getElementById("years").textContent
+    document.getElementById("years").textContent = bYear;
+    document.getElementById("months").textContent = bMonth;
+    document.getElementById("days").textContent = bDAte;
 }
+fun
