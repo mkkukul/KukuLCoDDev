@@ -28,5 +28,8 @@ function ageCalculate(){
         birthMonth= currentMonth - birthDetails.month;
     }
     else{
+        birthYear--;
+        birthMonth = 12 + currentMonth - birthDetails.month);
+    }
 
 }
