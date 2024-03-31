@@ -29,7 +29,17 @@ function ageCalculate(){
     }
     else{
         birthYear--;
-        birthMonth = 12 + currentMonth - birthDetails.month);
+        birthMonth = 12 + currentMonth - birthDetails.month;
     }
+    if(currentDate >= birthDetails.date){
+        birthDate = currentDate - birthDetails.date;
+    }
+    else{
+        birthMonth --;
+        let days = months[currentMonth-2];
+        birthDate = days + currentDate - birthDetails.date;
+        if(birthDate<0){
+            b
+        }
 
 }
