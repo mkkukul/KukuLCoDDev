@@ -17,6 +17,10 @@ function ageCalculate(){
     if(
         birthDetails.year >  currentYear ||  
         (birthDetails.month > currentMonth && birthDetails.year == currentYear) ||
-        (birthDetails.date > currentDate && )
-    )
+        (birthDetails.date > currentDate && birthDetails.month == currentMonth && birthDetails.year == currentYear )
+    ) {
+        alert("Not Born Yet");
+        displayResult("-","-","-");
+        return;
+    }
 }
