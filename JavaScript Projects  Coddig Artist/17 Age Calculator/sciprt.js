@@ -7,5 +7,8 @@ function ageCalculate(){
     let birthDetails = {
         date:inputDate.getDate(),
         month:inputDate.getMonth()+1,
+        year:inputDate.getFullYear()
     }
+    let currentYear = today.getFullYear();
+    let currentMonth
 }
