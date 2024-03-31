@@ -13,5 +13,9 @@ function ageCalculate(){
     let currentMonth = today.getMonth()+1;
     let currentDate =  today.getDate();
     
-    leapC
+    leapChecker(currentYear);
+    if(
+        birthDetails.year >  currentYear ||  
+        (birthDetails.year ==
+    )
 }
