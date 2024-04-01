@@ -12,7 +12,7 @@ var guessed_nums = []; // Yapılan tahminleri saklar
 
 //! Oyunu başlatan fonksiyon
 function play() {
-    // Kullanıcının tahminini alır
+    //! Kullanıcının tahminini alır
     var user_guess = document.getElementById("guess").value; // Kullanıcının tahminini alır
 
     // Girilen tahminin 1 ile 100 arasında olup olmadığını kontrol eder
