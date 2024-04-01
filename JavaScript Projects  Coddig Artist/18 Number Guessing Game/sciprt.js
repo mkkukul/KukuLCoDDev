@@ -6,7 +6,7 @@ var msg3 = document.getElementById("message3"); // Üçüncü mesajı seçer
 /!/ Rasgele bir sayı seçer (1 ile 100 arasında)
 var answer = Math.floor(Math.random() * 100) + 1; // 1 ile 100 arasında rasgele bir sayı seçer
 
-// Tahmin sayısını ve yapılan tahminleri izlemek için değişkenler oluşturur
+//! Tahmin sayısını ve yapılan tahminleri izlemek için değişkenler oluşturur
 var no_of_guesses = 0; // Tahmin sayısını saklar
 var guessed_nums = []; // Yapılan tahminleri saklar
 
