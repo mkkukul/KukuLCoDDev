@@ -1,4 +1,4 @@
-// Mesajları almak için gerekli elementleri seçer
+//! Mesajları almak için gerekli elementleri seçer
 var msg1 = document.getElementById("message1"); // İlk mesajı seçer
 var msg2 = document.getElementById("message2"); // İkinci mesajı seçer
 var msg3 = document.getElementById("message3"); // Üçüncü mesajı seçer
