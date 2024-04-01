@@ -10,7 +10,7 @@ var answer = Math.floor(Math.random() * 100) + 1; // 1 ile 100 arasında rasgele
 var no_of_guesses = 0; // Tahmin sayısını saklar
 var guessed_nums = []; // Yapılan tahminleri saklar
 
-// Oyunu başlatan fonksiyon
+//! Oyunu başlatan fonksiyon
 function play() {
     // Kullanıcının tahminini alır
     var user_guess = document.getElementById("guess").value; // Kullanıcının tahminini alır
