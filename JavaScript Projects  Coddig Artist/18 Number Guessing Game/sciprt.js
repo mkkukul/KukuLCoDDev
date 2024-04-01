@@ -1,0 +1,1 @@
+var msg1 = document.getElementById("message1");
