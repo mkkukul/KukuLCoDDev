@@ -3,7 +3,7 @@ var msg1 = document.getElementById("message1"); // İlk mesajı seçer
 var msg2 = document.getElementById("message2"); // İkinci mesajı seçer
 var msg3 = document.getElementById("message3"); // Üçüncü mesajı seçer
 
-// Rasgele bir sayı seçer (1 ile 100 arasında)
+/!/ Rasgele bir sayı seçer (1 ile 100 arasında)
 var answer = Math.floor(Math.random() * 100) + 1; // 1 ile 100 arasında rasgele bir sayı seçer
 
 // Tahmin sayısını ve yapılan tahminleri izlemek için değişkenler oluşturur
