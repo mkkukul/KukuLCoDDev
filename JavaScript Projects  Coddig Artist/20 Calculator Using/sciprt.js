@@ -34,5 +34,5 @@ equal.addEventListener("click",()=>{
     }
 });
 clear.addEventListener("click",()=>{
-    alert()
+    input.value = "";
 })
