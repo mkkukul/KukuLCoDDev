@@ -19,3 +19,6 @@ button_input.forEach((button_class)=>{
         input.value += button_class.value;
     });
 });
+equal.addEventListener("click",()=>{
+    equal_area();
+})
