@@ -37,5 +37,5 @@ clear.addEventListener("click",()=>{
     input.value = "";
 });
 erase.addEventListener("click",()=>{
-    
+   input.value = 
 });
