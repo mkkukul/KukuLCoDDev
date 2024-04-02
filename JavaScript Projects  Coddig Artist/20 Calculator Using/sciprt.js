@@ -24,6 +24,8 @@ equal.addEventListener("click",()=>{
     let inp_val = input.value;
     try{
      let solution = eval(inp_val);
-     if ()   
+     if (Number.isInteger(solution)) {
+        input.value = solution;
+     }   
     }
 })
