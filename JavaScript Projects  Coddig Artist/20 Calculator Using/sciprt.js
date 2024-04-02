@@ -23,6 +23,7 @@ equal.addEventListener("click",()=>{
     equal_pressed = 1;
     let inp_val = input.value;
     try{
-        
+     let solution = eval(inp_val);
+     if ()   
     }
 })
