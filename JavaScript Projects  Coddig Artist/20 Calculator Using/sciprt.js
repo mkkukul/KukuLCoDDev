@@ -26,6 +26,10 @@ equal.addEventListener("click",()=>{
      let solution = eval(inp_val);
      if (Number.isInteger(solution)) {
         input.value = solution;
+     } else {
+        input.value = solution.toFixed(2) ;
      }   
+    } catch (err) {
+        alert(" Invalid Input");
     }
-})
+});
