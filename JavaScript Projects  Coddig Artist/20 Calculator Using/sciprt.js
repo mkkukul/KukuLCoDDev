@@ -33,3 +33,6 @@ equal.addEventListener("click",()=>{
         alert(" Invalid Input");
     }
 });
+clear.addEventListener("click",()=>{
+    alert()
+})
