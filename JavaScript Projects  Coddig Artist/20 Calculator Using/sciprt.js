@@ -20,5 +20,9 @@ button_input.forEach((button_class)=>{
     });
 });
 equal.addEventListener("click",()=>{
-    equal_area();
+    equal_pressed = 1;
+    let inp_val = input.value;
+    try{
+        
+    }
 })
