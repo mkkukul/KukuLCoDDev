@@ -9,3 +9,10 @@ window.onload = () =>{
     input.value ="";
 };
 
+button_input.forEach((button_class)=>{
+    button_class.addEventListener("click",() =>{
+        if (equal_pressed ==1){
+            
+        }
+    }
+})
