@@ -16,3 +16,9 @@ let events = {
     },
 };
 let deviceType = "";
+
+const isTouchDevice =() => {
+    try{
+        document.createEvent("TouchEvent");
+    }
+}
