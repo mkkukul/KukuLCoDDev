@@ -13,5 +13,6 @@ let events = {
         down: "touchstart",
         up:   "touchend",
         move: "touchmove"
-    }
-}
+    },
+};
+let
