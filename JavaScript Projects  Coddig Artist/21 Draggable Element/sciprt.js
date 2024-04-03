@@ -55,3 +55,7 @@ draggableElem.addEventListener(
       moveElement = false;
     })
 );
+draggableElem.addEventListener("mouseleave", stopMovement);
+draggableElem.addEventListener(events[deviceType].up, (e) => {
+  moveElement = false;
+});
