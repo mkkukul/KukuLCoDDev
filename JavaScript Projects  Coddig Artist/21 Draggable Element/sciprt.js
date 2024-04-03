@@ -49,9 +49,9 @@ draggableElem.addEventListener(events[deviceType].move, (e) => {
         initialY = newY;
     }
 });
-raggableElem.addEventListener(
+draggableElem.addEventListener(
     events[deviceType].up,
     (stopMovement = (e) => {
       moveElement = false;
     })
-  );
+);
