@@ -48,4 +48,4 @@ draggableElem.addEventListener(events[deviceType].move, (e) => {
         initialX = newX;
         initialY = newY;
     }
-})
+});
