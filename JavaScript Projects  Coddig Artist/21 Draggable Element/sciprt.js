@@ -15,4 +15,4 @@ let events = {
         move: "touchmove"
     },
 };
-let
+let deviceType = "";
