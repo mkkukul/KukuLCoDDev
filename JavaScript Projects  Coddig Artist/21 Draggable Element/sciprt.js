@@ -9,4 +9,9 @@ let events = {
         up:   "mouseup",
         move: "mousemove"
     },
+    touch: {
+        down: "touchstart",
+        up:   "touchend",
+        move: "touchmove"
+    }
 }
