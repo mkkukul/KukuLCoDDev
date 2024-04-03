@@ -1,0 +1,1 @@
+let draggableElem = document.getElementById( "draggable-elem" );
