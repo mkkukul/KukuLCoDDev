@@ -28,3 +28,7 @@ const isTouchDevice =() => {
     }
 };
 isTouchDevice();
+
+draggableElem.addEventListener(events[deviceType].move, (e) => {
+    if (moveElement){}
+})
