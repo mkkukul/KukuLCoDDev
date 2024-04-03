@@ -35,3 +35,10 @@ draggableElem.addEventListener(events[deviceType].down, (e) => {
     initialY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
     moveElement = true;
 });
+
+draggableElem.addEventListener(events[deviceType].move, (e) => {
+    if (moveElement){
+        e.preventDefault();
+        let newX
+    }
+})
