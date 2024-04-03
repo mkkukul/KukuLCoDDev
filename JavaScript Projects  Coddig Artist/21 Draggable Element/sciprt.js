@@ -39,6 +39,13 @@ draggableElem.addEventListener(events[deviceType].down, (e) => {
 draggableElem.addEventListener(events[deviceType].move, (e) => {
     if (moveElement){
         e.preventDefault();
-        let newX
+        let newX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
+        let newY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
+        draggableElem.style.top =
+            draggableElem.offsetTop - (initialY - newY) + "px";
+        draggableElem.style.left =
+            draggableElem.offsetLeft - (initialX - newX) + "px";
+        initialX = newX;
+        initialY = newY;
     }
 })
