@@ -12,7 +12,8 @@ const typeColor = {
     ice:"#74b9ff",
     normal:"#95afc0",
     poison : "#6c5ce7",
-    
+    psychic:"#a29bfe",
+
 
 
 }
