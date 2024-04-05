@@ -11,6 +11,8 @@ const typeColor = {
     ghost: "#a55eea",
     ice:"#74b9ff",
     normal:"#95afc0",
+    poison : "#6c5ce7",
+    
 
 
 }
