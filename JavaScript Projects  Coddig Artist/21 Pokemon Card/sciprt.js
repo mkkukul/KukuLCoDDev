@@ -6,7 +6,7 @@ const typeColor = {
     fighting: "#30336b",
     fire:"#f0932b",
     flying:"#81ecec",
-    grass:"#00b894",
+    grass: "#00b894",
     ground:"#EFB549",
     ghost: "#a55eea",
 
