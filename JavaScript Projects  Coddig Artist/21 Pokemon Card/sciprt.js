@@ -10,6 +10,7 @@ const typeColor = {
     ground:"#EFB549",
     ghost: "#a55eea",
     ice:"#74b9ff",
-    
+    normal:"#95afc0",
+
 
 }
