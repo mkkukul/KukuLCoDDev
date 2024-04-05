@@ -4,5 +4,7 @@ const typeColor = {
     electric:"#fed330",
     fairy:"#FF0069",
     fighting: "#30336b",
+    fire:"#f0932b",
+    flying:"#81ecec",
 
 }
