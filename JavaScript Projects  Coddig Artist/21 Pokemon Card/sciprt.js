@@ -36,7 +36,7 @@ let getPokeData = () => {
 };
 
 
-/Generate Card
+//Generate Card
 let generateCard = (data) => {
   // Get necessary data and assign it to variables
   console.log(data);
@@ -78,18 +78,18 @@ let generateCard = (data) => {
   styleCard(themeColor);
 };
 let appendTypes = (types) => {
-    types.forEach((item) => {
-      let span = document.createElement("SPAN");
-      span.textContent = item.type.name;
-      document.querySelector(".types").appendChild(span);
-    });
-  };
-  let styleCard = (color) => {
-    card.style.background = `radial-gradient(circle at 50% 0%, ${color} 36%, #ffffff 36%)`;
-    card.querySelectorAll(".types span").forEach((typeColor) => {
-      typeColor.style.backgroundColor = color;
-    });
-  };
-  btn.addEventListener("click", getPokeData);
-  window.addEventListener("load", getPokeData);
+  types.forEach((item) => {
+    let span = document.createElement("SPAN");
+    span.textContent = item.type.name;
+    document.querySelector(".types").appendChild(span);
+  });
+};
+let styleCard = (color) => {
+  card.style.background = `radial-gradient(circle at 50% 0%, ${color} 36%, #ffffff 36%)`;
+  card.querySelectorAll(".types span").forEach((typeColor) => {
+    typeColor.style.backgroundColor = color;
+  });
+};
+btn.addEventListener("click", getPokeData);
+window.addEventListener("load", getPokeData);
 
