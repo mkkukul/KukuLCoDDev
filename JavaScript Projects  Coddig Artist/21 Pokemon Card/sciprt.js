@@ -9,5 +9,7 @@ const typeColor = {
     grass: "#00b894",
     ground:"#EFB549",
     ghost: "#a55eea",
+    ice:"#74b9ff",
+    
 
 }
