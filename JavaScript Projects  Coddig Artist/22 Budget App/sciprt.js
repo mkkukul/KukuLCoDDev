@@ -99,4 +99,4 @@ checkAmountButton.addEventListener("click", () => {
     //Empty inputs
     productTitle.value = "";
     userAmount.value = "";
-  });
+});
