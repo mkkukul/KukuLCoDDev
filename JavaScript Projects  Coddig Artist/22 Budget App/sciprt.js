@@ -27,4 +27,4 @@ totalAmountButton.addEventListener("click", () => {
       //Clear Input Box
       totalAmount.value = "";
     }
-  });
+});
