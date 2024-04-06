@@ -26,11 +26,11 @@ body {
     display: flex;
     align-items: center;
 }
-  .flex-space {
+.flex-space {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
   .wrapper h3 {
     color: #363d55;
     font-weight: 500;
