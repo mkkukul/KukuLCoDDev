@@ -35,4 +35,4 @@ const disableButtons = (bool) => {
     Array.from(editButtons).forEach((element) => {
       element.disabled = bool;
     });
-  };
+};
