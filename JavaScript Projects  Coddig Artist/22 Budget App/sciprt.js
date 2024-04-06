@@ -12,3 +12,19 @@ const balanceValue = document.getElementById("balance-amount");
 const list = document.getElementById("list");
 let tempAmount = 0;
 
+//Set Budget Part
+totalAmountButton.addEventListener("click", () => {
+    tempAmount = totalAmount.value;
+    //empty or negative input
+    if (tempAmount === "" || tempAmount < 0) {
+      errorMessage.classList.remove("hide");
+    } else {
+      errorMessage.classList.add("hide");
+      //Set Budget
+      amount.innerHTML = tempAmount;
+      //Set Balance
+      balanceValue.innerText = tempAmount - expenditureValue.innerText;
+      //Clear Input Box
+      totalAmount.value = "";
+    }
+  });
