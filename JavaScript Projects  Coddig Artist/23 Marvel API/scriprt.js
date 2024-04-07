@@ -32,4 +32,4 @@ input.addEventListener("keyup", async () => {
       div.innerHTML = `<p class="item">${word}</p>`;
       listContainer.appendChild(div);
     });
-  });
+});
