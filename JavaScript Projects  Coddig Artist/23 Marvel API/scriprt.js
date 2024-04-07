@@ -54,4 +54,4 @@ button.addEventListener(
           </div>`;
       });
     })
-  );
+);
