@@ -4,10 +4,10 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-  body {
+body {
     background-color: #e01a38;
 }
-  .container {
+.container {
     background-color: #171821;
     width: 90%;
     max-width: 500px;
@@ -19,7 +19,7 @@
     right: 50%;
     top: 1em;
     border-radius: 1em;
-  }
+}
   .input-container {
     display: grid;
     grid-template-columns: 9fr 3fr;
