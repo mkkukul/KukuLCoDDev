@@ -20,20 +20,20 @@ body {
     top: 1em;
     border-radius: 1em;
 }
-  .input-container {
+.input-container {
     display: grid;
     grid-template-columns: 9fr 3fr;
     gap: 1em;
-  }
-  input {
+}
+input {
     padding: 1em 0.5em;
     background-color: #3a3939;
     color: #ffffff;
     border: none;
     border-radius: 0.5em;
     outline: none;
-  }
-  button {
+}
+button {
     outline: none;
     border: none;
     background-color: #e01a38;
