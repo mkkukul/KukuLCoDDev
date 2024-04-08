@@ -29,15 +29,15 @@ body {
     justify-content: space-between;
     margin: 1.2em 0 2.4em 0;
 }
-  #options-container button {
+#options-container button {
     padding: 0.6em 1.2em;
     border: 3px solid #000000;
     background-color: #ffffff;
     color: #000000;
     border-radius: 0.3em;
     text-transform: capitalize;
-  }
-  #options-container button:disabled {
+}
+#options-container button:disabled {
     border: 3px solid #808080;
     color: #808080;
     background-color: #efefef;
@@ -47,7 +47,7 @@ body {
     border: 3px solid #000000;
     color: #000000;
   }
-  .letter-container {
+.letter-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
