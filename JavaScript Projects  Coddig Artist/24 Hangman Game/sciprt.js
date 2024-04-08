@@ -6,3 +6,24 @@ const newGameContainer = document.getElementById("new-game-container");
 const newGameButton = document.getElementById("new-game-button");
 const canvas = document.getElementById("canvas");
 const resultText = document.getElementById("result-text");
+
+//Options values for buttons
+let options = {
+    fruits: [
+      "Apple",
+      "Blueberry",
+      "Mandarin",
+      "Pineapple",
+      "Pomegranate",
+      "Watermelon",
+    ],
+    animals: ["Hedgehog", "Rhinoceros", "Squirrel", "Panther", "Walrus", "Zebra"],
+    countries: [
+      "India",
+      "Hungary",
+      "Kyrgyzstan",
+      "Switzerland",
+      "Zimbabwe",
+      "Dominica",
+    ],
+};
