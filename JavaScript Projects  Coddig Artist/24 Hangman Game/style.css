@@ -53,14 +53,14 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.6em;
-  }
-  #letter-container button {
+}
+#letter-container button {
     height: 2.4em;
     width: 2.4em;
     border-radius: 0.3em;
     background-color: #ffffff;
-  }
-  .new-game-popup {
+}
+.new-game-popup {
     background-color: #ffffff;
     position: absolute;
     left: 0;
@@ -72,44 +72,44 @@ body {
     justify-content: center;
     flex-direction: column;
     border-radius: 0.6em;
-  }
+}
   
-  #user-input-section {
+#user-input-section {
     display: flex;
     justify-content: center;
     font-size: 1.8em;
     margin: 0.6em 0 1.2em 0;
-  }
-  canvas {
+}
+canvas {
     display: block;
     margin: auto;
     border: 1px solid #000000;
-  }
-  .hide {
+}
+.hide {
     display: none;
-  }
-  #result-text h2 {
+}
+#result-text h2 {
     font-size: 1.8em;
     text-align: center;
-  }
-  #result-text p {
+}
+#result-text p {
     font-size: 1.25em;
     margin: 1em 0 2em 0;
-  }
-  #result-text span {
+}
+#result-text span {
     font-weight: 600;
-  }
-  #new-game-button {
+}
+#new-game-button {
     font-size: 1.25em;
     padding: 0.5em 1em;
     background-color: #f4c531;
     border: 3px solid #000000;
     color: #000000;
     border-radius: 0.2em;
-  }
-  .win-msg {
+}
+.win-msg {
     color: #39d78d;
-  }
-  .lose-msg {
+}
+.lose-msg {
     color: #fe5152;
-  }
+}
