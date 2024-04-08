@@ -42,3 +42,4 @@ const displayOptions = () => {
     }
     optionsContainer.appendChild(buttonCon);
 };
+
