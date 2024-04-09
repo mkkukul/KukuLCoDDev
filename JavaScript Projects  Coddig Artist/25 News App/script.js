@@ -34,3 +34,15 @@ const generateUI = (articles) => {
       container.appendChild(card);
     }
 };
+
+//News API Call
+const getNews = async () => {
+    container.innerHTML = "";
+    let response = await fetch(requestURL);
+    if (!response.ok) {
+      alert("Data unavailable at the moment. Please try again later");
+      return false;
+    }
+    let data = await response.json();
+    generateUI(data.articles);
+};
