@@ -66,3 +66,9 @@ const createOptions = () => {
       }" onclick="selectCategory(event,'${i}')">${i}</button>`;
     }
 };
+
+const init = () => {
+    optionsContainer.innerHTML = "";
+    getNews();
+    createOptions();
+};
