@@ -33,11 +33,11 @@
     top: -10%;
     left: 10%;
   }
-  .container p {
+.container p {
     color: #fdd8d8;
     line-height: 2;
     font-size: 18px;
-  }
+}
 .container h3 {
     color: #ffffff;
     margin: 20px 0 60px 0;
