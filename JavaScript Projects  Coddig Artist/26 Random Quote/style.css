@@ -44,7 +44,7 @@
     font-weight: 600;
     text-transform: capitalize;
   }
-  .container button {
+.container button {
     background-color: #ffffff;
     border: none;
     padding: 15px 45px;
@@ -53,4 +53,4 @@
     font-weight: 600;
     color: #f43543;
     cursor: pointer;
-  }
+}
