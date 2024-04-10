@@ -13,4 +13,5 @@ let getQuote = () => {
       });
 };
 
+
 window.addEventListener("load", getQuote);   
