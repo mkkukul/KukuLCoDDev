@@ -11,4 +11,4 @@ let getQuote = () => {
         quote.innerText = item.content;
         author.innerText = item.author;
       });
-  };
+};
