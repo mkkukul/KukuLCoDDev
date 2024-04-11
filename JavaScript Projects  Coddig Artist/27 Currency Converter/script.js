@@ -44,3 +44,4 @@ let convertCurrency = () => {
       alert("Please fill in the amount");
     }
 };
+
