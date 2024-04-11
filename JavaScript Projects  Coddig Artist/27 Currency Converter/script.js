@@ -9,3 +9,5 @@ currencies.forEach((currency) => {
     option.text = currency;
     fromDropDown.add(option);
   });
+
+  
