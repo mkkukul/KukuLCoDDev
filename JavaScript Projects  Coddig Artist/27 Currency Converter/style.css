@@ -1,15 +1,15 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     border: none;
     outline: none;
-  }
-  body {
+}
+body {
     background-color: #9873fe;
-  }
-  .wrapper {
+}
+.wrapper {
     width: 90%;
     max-width: 25em;
     background-color: #ffffff;
@@ -19,25 +19,25 @@
     top: 50%;
     padding: 2em;
     border-radius: 0.8em;
-  }
-  .app-details {
+}
+.app-details {
     display: flex;
     align-items: center;
     flex-direction: column;
-  }
-  .app-icon {
+}
+.app-icon {
     width: 9.37em;
-  }
-  .app-title {
+}
+.app-title {
     font-size: 1.6em;
     text-transform: uppercase;
     margin-bottom: 1em;
-  }
-  label {
+}
+label {
     display: block;
     font-weight: 600;
-  }
-  input#amount {
+}
+input#amount {
     font-weight: 400;
     font-size: 1.2em;
     display: block;
@@ -46,18 +46,18 @@
     color: #7a789d;
     margin-bottom: 2em;
     padding: 0.5em;
-  }
-  input#amount:focus {
+}
+input#amount:focus {
     color: #9873fe;
     border-color: #9873fe;
-  }
-  .dropdowns {
+}
+.dropdowns {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1em;
-  }
-  select {
+}
+select {
     width: 100%;
     padding: 0.6em;
     font-size: 1em;
@@ -71,12 +71,12 @@
     background-size: 20px 20px;
     background-color: #9873fe;
     color: #ffffff;
-  }
+}
   select option {
     background-color: #ffffff;
     color: #02002c;
   }
-  button {
+button {
     font-size: 1em;
     width: 100%;
     background-color: #9873fe;
@@ -85,7 +85,7 @@
     border-radius: 0.3em;
     color: #ffffff;
     font-weight: 600;
-  }
+}
 #result {
     font-size: 1.2em;
     text-align: center;
