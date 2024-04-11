@@ -21,3 +21,4 @@ currencies.forEach((currency) => {
 //Setting default values
 fromDropDown.value = "USD";
 toDropDown.value = "INR";
+
