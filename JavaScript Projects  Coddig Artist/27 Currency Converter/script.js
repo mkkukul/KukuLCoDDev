@@ -50,3 +50,5 @@ document
   .addEventListener("click", convertCurrency);
 window.addEventListener("load", convertCurrency);
 
+//Paste your generated api Key here
+let apiKey = "";
