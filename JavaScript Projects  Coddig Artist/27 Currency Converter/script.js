@@ -22,8 +22,3 @@ currencies.forEach((currency) => {
 fromDropDown.value = "USD";
 toDropDown.value = "INR";
 
-let convertCurrency = () => {
-    //Create References
-    const amount = document.querySelector("#amount").value;
-    const fromCurrency = fromDropDown.value;
-    const toCurrency = toDropDown.value;
