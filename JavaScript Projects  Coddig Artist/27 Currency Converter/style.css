@@ -86,11 +86,11 @@
     color: #ffffff;
     font-weight: 600;
   }
-  #result {
+#result {
     font-size: 1.2em;
     text-align: center;
     margin-top: 1em;
     color: #02002c;
     background-color: #e5dbff;
     padding: 0.8em 0;
-  }
+}
