@@ -16,4 +16,5 @@ currencies.forEach((currency) => {
     option.value = currency;
     option.text = currency;
     toDropDown.add(option);
-  });  
+});  
+
