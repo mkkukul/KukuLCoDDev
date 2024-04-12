@@ -52,3 +52,14 @@ const displayResult = () => {
         ((userInput.value.length - mistakes) / userInput.value.length) * 100
       ) + " %";
 };
+
+//Start Test
+const startTest = () => {
+    mistakes = 0;
+    timer = "";
+    userInput.disabled = false;
+    timeReduce();
+    document.getElementById("start-test").style.display = "none";
+    document.getElementById("stop-test").style.display = "block";
+  };
+  
