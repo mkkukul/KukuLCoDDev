@@ -7,7 +7,7 @@ let time = 60;
 let timer = "";
 let mistakes = 0;
 
-//Display random quotes
+//1Display random quotes
 const renderNewQuote = async () => {
   //Fetch contents from url
   const response = await fetch(quoteApiUrl);
@@ -24,7 +24,7 @@ const renderNewQuote = async () => {
   quoteSection.innerHTML += arr.join("");
 };
 
-//Update Timer on screen
+//!Update Timer on screen
 function updateTimer() {
     if (time == 0) {
       //End test if timer reaches 0
@@ -34,7 +34,7 @@ function updateTimer() {
     }
 }
 
-//End Test
+//!End Test
 const displayResult = () => {
     //display result div
     document.querySelector(".result").style.display = "block";
@@ -53,7 +53,8 @@ const displayResult = () => {
       ) + " %";
 };
 
-//Start Test
+
+//!Start Test
 const startTest = () => {
     mistakes = 0;
     timer = "";
@@ -62,6 +63,7 @@ const startTest = () => {
     document.getElementById("start-test").style.display = "none";
     document.getElementById("stop-test").style.display = "block";
 };
+
 
 window.onload = () => {
     userInput.value = "";
