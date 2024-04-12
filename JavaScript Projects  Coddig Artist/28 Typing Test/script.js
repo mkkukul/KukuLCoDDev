@@ -6,3 +6,4 @@ let quote = "";
 let time = 60;
 let timer = "";
 let mistakes = 0;
+
