@@ -60,13 +60,12 @@
     display: flex;
     justify-content: space-around;
   }
-  .wrapper span {
+.wrapper span {
     font-weight: 600;
-  }
-  .success {
+}
+.success {
     color: #44b267;
-  }
-  .fail {
+}
+.fail {
     color: #e81c4e;
-  }
-  
+}
