@@ -32,4 +32,4 @@ function updateTimer() {
     } else {
       document.getElementById("timer").innerText = --time + "s";
     }
-  }
+}
