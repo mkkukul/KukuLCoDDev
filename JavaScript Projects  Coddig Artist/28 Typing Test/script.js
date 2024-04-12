@@ -68,5 +68,6 @@ window.onload = () => {
     document.getElementById("start-test").style.display = "block";
     document.getElementById("stop-test").style.display = "none";
     userInput.disabled = true;
-    renderNewQuote();};
+    renderNewQuote();
+};
   
