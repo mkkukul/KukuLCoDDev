@@ -24,3 +24,12 @@ const renderNewQuote = async () => {
   quoteSection.innerHTML += arr.join("");
 };
 
+//Update Timer on screen
+function updateTimer() {
+    if (time == 0) {
+      //End test if timer reaches 0
+      displayResult();
+    } else {
+      document.getElementById("timer").innerText = --time + "s";
+    }
+  }
