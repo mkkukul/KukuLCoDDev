@@ -13,8 +13,8 @@ function next(){
 
 function prev(){
     document.getElementById("content" + (i+1)).classList.remove("active"); //! mevcut slaytın aktifliğini kaldır
-    i = (j + i - 1) % j; // bir önceki slaytın indeksini belirle
-    document.getElementById("content" + (i+1)).classList.add("active"); // yeni slaytı aktif hale getir
+    i = (j + i - 1) % j; //! bir önceki slaytın indeksini belirle
+    document.getElementById("content" + (i+1)).classList.add("active"); //! yeni slaytı aktif hale getir
     indicator(i+1); // noktayı güncelle
 }
 
