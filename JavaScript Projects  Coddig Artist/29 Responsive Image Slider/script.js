@@ -24,3 +24,4 @@ function indicator(num){
     });
     document.querySelector(".dot-container button:nth-child(" + num + ")").style.backgroundColor = "#8052ec";
 }
+
