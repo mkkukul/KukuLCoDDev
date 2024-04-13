@@ -15,12 +15,12 @@ function prev(){
     document.getElementById("content" + (i+1)).classList.remove("active"); //! mevcut slaytın aktifliğini kaldır
     i = (j + i - 1) % j; //! bir önceki slaytın indeksini belirle
     document.getElementById("content" + (i+1)).classList.add("active"); //! yeni slaytı aktif hale getir
-    indicator(i+1); // noktayı güncelle
+    indicator(i+1); //! noktayı güncelle
 }
 
 function indicator(num){
     dots.forEach(function(dot){
-        dot.style.backgroundColor = "transparent"; // tüm noktaların arka plan rengini sıfırla
+        dot.style.backgroundColor = "transparent"; //! tüm noktaların arka plan rengini sıfırla
     });
     document.querySelector(".dot-container button:nth-child(" + num + ")").style.backgroundColor = "#8052ec"; // belirli noktanın arka plan rengini ayarla
 }
