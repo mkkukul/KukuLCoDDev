@@ -5,14 +5,14 @@ const dots = document.querySelectorAll(".dot-container button"); //! tüm noktal
 const images = document.querySelectorAll(".image-container img"); //! tüm resimleri seç
 
 function next(){
-    document.getElementById("content" + (i+1)).classList.remove("active"); // mevcut slaytın aktifliğini kaldır
-    i = ( j + i + 1) % j; // bir sonraki slaytın indeksini belirle
-    document.getElementById("content" + (i+1)).classList.add("active"); // yeni slaytı aktif hale getir
-    indicator( i+ 1 ); // noktayı güncelle
+    document.getElementById("content" + (i+1)).classList.remove("active"); //1 mevcut slaytın aktifliğini kaldır
+    i = ( j + i + 1) % j; //! bir sonraki slaytın indeksini belirle
+    document.getElementById("content" + (i+1)).classList.add("active"); //! yeni slaytı aktif hale getir
+    indicator( i+ 1 ); //! noktayı güncelle
 }
 
 function prev(){
-    document.getElementById("content" + (i+1)).classList.remove("active"); // mevcut slaytın aktifliğini kaldır
+    document.getElementById("content" + (i+1)).classList.remove("active"); //! mevcut slaytın aktifliğini kaldır
     i = (j + i - 1) % j; // bir önceki slaytın indeksini belirle
     document.getElementById("content" + (i+1)).classList.add("active"); // yeni slaytı aktif hale getir
     indicator(i+1); // noktayı güncelle
