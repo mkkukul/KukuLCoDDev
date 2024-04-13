@@ -25,3 +25,11 @@ function indicator(num){
     document.querySelector(".dot-container button:nth-child(" + num + ")").style.backgroundColor = "#8052ec";
 }
 
+function dot(index){
+    images.forEach(function(image){
+        image.classList.remove("active");
+    });
+    document.getElementById("content" + index).classList.add("active");
+    i = index - 1;
+    indicator(index);
+}
