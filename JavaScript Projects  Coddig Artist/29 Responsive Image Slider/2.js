@@ -1,8 +1,8 @@
 let i = 0; // mevcut slayt
 let j = 4; // toplam slaytlar
 
-const dots = document.querySelectorAll(".dot-container button"); // tüm noktaları seç
-const images = document.querySelectorAll(".image-container img"); // tüm resimleri seç
+const dots = document.querySelectorAll(".dot-container button"); //! tüm noktaları seç
+const images = document.querySelectorAll(".image-container img"); //! tüm resimleri seç
 
 function next(){
     document.getElementById("content" + (i+1)).classList.remove("active"); // mevcut slaytın aktifliğini kaldır
