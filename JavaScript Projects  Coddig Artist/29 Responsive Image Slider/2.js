@@ -22,7 +22,7 @@ function indicator(num){
     dots.forEach(function(dot){
         dot.style.backgroundColor = "transparent"; //! tüm noktaların arka plan rengini sıfırla
     });
-    document.querySelector(".dot-container button:nth-child(" + num + ")").style.backgroundColor = "#8052ec"; // belirli noktanın arka plan rengini ayarla
+    document.querySelector(".dot-container button:nth-child(" + num + ")").style.backgroundColor = "#8052ec"; //! belirli noktanın arka plan rengini ayarla
 }
 
 function dot(index){
