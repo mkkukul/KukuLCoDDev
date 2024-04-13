@@ -17,3 +17,4 @@ function prev(){
     document.getElementById("content" + (i+1)).classList.add("active");
     indicator(i+1);
 }
+
