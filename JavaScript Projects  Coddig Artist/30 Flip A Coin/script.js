@@ -22,3 +22,4 @@ flipBtn.addEventListener("click", () => {
     setTimeout(updateStats, 3000);
     disableButton();
 });
+
