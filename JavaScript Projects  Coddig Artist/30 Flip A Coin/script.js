@@ -36,3 +36,4 @@ function disableButton(){
         flipBtn.disabled = false;
     },3000);
 }
+
