@@ -34,4 +34,5 @@ function disableButton(){
     flipBtn.disabled = true;
     setTimeout(function(){
         flipBtn.disabled = false;
-    },3000); 
+    },3000);
+ 
