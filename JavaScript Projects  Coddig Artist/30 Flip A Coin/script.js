@@ -37,3 +37,4 @@ function disableButton(){
     },3000);
 }
 
+resetBtn.addEventListener("click",() => {
