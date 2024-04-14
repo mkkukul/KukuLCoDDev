@@ -31,4 +31,7 @@ function updateStats(){
 }
 
 function disableButton(){
-    
+    flipBtn.disabled = true;
+    setTimeout(function(){
+        flipBtn.disabled = false;
+    },3000); 
