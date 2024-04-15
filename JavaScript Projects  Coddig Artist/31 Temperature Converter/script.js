@@ -7,5 +7,5 @@ function celToFar(){
 }
 
 function farToCel(){
-    
+    let output = (parseFloat(fahrenheit.value) - 32) * 5/9;
 }
