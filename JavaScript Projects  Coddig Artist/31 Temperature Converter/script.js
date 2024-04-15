@@ -8,4 +8,5 @@ function celToFar(){
 
 function farToCel(){
     let output = (parseFloat(fahrenheit.value) - 32) * 5/9;
+    celsius.value = parseFloat(output.toFixed(2));
 }
