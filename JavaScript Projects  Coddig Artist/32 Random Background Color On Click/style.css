@@ -8,3 +8,9 @@ body{
     display: grid;
     place-items: center;
 }
+button{
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
+    padding: 20px 45px;
+    background-color: transparent;
+    
