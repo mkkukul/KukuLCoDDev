@@ -15,4 +15,7 @@ button{
     background-color: transparent;
     border: 5px solid #ffffff;
     color: #ffffff;
-    
+    letter-spacing: 1.5px;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
