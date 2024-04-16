@@ -13,4 +13,5 @@ button{
     font-size: 20px;
     padding: 20px 45px;
     background-color: transparent;
-    
+    border: 5px solid #ffffff;
+    color: #ffffff;
