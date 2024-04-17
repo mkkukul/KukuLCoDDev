@@ -20,3 +20,4 @@ const move = (e) => {
     //set left and top of div based on mouse position
     myDiv.style.left = x - 50 + "px";
     myDiv.style.top = y - 50 + "px";
+}
