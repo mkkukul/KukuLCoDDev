@@ -25,3 +25,7 @@ const move = (e) => {
 document.addEventListener("mousemove", (e) => {
     move(e);
 });
+//For touch
+document.addEventListener("touchmove", (e) => {
+    move(e);
+  });
