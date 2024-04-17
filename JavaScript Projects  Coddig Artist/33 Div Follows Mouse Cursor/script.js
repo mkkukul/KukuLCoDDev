@@ -28,4 +28,4 @@ document.addEventListener("mousemove", (e) => {
 //For touch
 document.addEventListener("touchmove", (e) => {
     move(e);
-  });
+});
