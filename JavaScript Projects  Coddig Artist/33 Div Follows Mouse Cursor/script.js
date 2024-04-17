@@ -5,3 +5,7 @@ function isTouchDevice() {
     //We try to create TouchEvent. It would fail for desktops and throw error
     document.createEvent("TouchEvent");
     return true;
+    } catch (e) {
+    return false;
+  }
+}
