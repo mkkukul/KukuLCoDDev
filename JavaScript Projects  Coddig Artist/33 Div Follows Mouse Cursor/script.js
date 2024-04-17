@@ -24,4 +24,4 @@ const move = (e) => {
 //For mouse
 document.addEventListener("mousemove", (e) => {
     move(e);
-  });
+});
