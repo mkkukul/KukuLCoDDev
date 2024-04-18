@@ -5,6 +5,7 @@ var limit = 60;
 result.textContent = 0 + "/" + limit;
 
 myText.addEventListener("input",function(){
+    
     var textLength = myText.value.length;
     result.textContent = textLength + "/" + limit;
 
@@ -17,6 +18,6 @@ myText.addEventListener("input",function(){
         myText.style.borderColor = "#b2b2b2";
         result.style.color = "#737373";
     }
-    
+
 
 });
