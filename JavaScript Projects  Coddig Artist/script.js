@@ -11,6 +11,7 @@ myText.addEventListener("input",function(){
         myText.style.borderColor = "#ff2851";
         result.style.color = "#ff2851";
     }
+    
     else{
         myText.style.borderColor = "#b2b2b2";
         result.style.color = "#737373";
