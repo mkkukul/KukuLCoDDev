@@ -1,0 +1,1 @@
+var myText = document.getElementById("my-text");
