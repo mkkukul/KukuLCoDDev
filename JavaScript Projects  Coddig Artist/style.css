@@ -33,3 +33,9 @@ textarea{
     border-radius: 5px;
     outline: none;
 }
+p{
+    width: 100%;
+    text-align: right;
+    margin-top: 15px;
+    color: #737373;
+}
