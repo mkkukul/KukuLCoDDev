@@ -12,3 +12,9 @@ document.getElementById('startTimer').addEventListener('click', ()=>{
 document.getElementById('pauseTimer').addEventListener('click', ()=>{
     clearInterval(int);
 });
+
+document.getElementById('resetTimer').addEventListener('click', ()=>{
+    clearInterval(int);
+    [milliseconds,seconds,minutes,hours] = [0,0,0,0];
+    timerRef.innerHTML = '00 : 00 : 00 : 000 ';
+});
