@@ -8,3 +8,7 @@ document.getElementById('startTimer').addEventListener('click', ()=>{
     }
     int = setInterval(displayTimer,10);
 });
+
+document.getElementById('pauseTimer').addEventListener('click', ()=>{
+    clearInterval(int);
+});
