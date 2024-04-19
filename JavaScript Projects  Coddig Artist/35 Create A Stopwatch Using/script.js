@@ -18,3 +18,4 @@ document.getElementById('resetTimer').addEventListener('click', ()=>{
     [milliseconds,seconds,minutes,hours] = [0,0,0,0];
     timerRef.innerHTML = '00 : 00 : 00 : 000 ';
 });
+
