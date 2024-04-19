@@ -40,3 +40,4 @@ function displayTimer(){
 
     
     timerRef.innerHTML = ` ${h} : ${m} : ${s} : ${ms}`;
+}
