@@ -157,3 +157,4 @@ function initial() {
     quizCreator();
     quizDisplay(questionCount);
 }
+
