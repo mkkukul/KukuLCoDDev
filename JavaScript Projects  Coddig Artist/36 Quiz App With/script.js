@@ -67,4 +67,4 @@ nextBtn.addEventListener(
         timerDisplay();
       }
     })
-  );
+);
