@@ -13,3 +13,5 @@ let questionCount;
 let scoreCount = 0;
 let count = 11;
 let countdown;
+
+//Questions
