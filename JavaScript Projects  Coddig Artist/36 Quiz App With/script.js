@@ -28,3 +28,10 @@ const quizArray = [
     options: ["North America", "Asia", "Africa", "Europe"],
     correct: "Europe",
   },
+  {
+    id: "2",
+    question: "Who invented Computer?",
+    options: ["Charles Babbage", "Henry Luce", "Henry Babbage", "Charles Luce"],
+    correct: "Charles Babbage",
+  },
+];
