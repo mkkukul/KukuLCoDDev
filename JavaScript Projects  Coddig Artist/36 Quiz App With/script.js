@@ -68,3 +68,26 @@ nextBtn.addEventListener(
       }
     })
 );
+
+//Timer
+const timerDisplay = () => {
+    countdown = setInterval(() => {
+      count--;
+      timeLeft.innerHTML = `${count}s`;
+      if (count == 0) {
+        clearInterval(countdown);
+        displayNext();
+      }
+    }, 1000);
+};
+
+//Display quiz
+const quizDisplay = (questionCount) => {
+    let quizCards = document.querySelectorAll(".container-mid");
+    //Hide other cards
+    quizCards.forEach((card) => {
+      card.classList.add("hide");
+    });
+    //display current question card
+    quizCards[questionCount].classList.remove("hide");
+};
