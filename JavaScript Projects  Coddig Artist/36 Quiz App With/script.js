@@ -146,3 +146,14 @@ function checker(userOption) {
       element.disabled = true;
     });
 }
+//initial setup
+function initial() {
+    quizContainer.innerHTML = "";
+    questionCount = 0;
+    scoreCount = 0;
+    count = 11;
+    clearInterval(countdown);
+    timerDisplay();
+    quizCreator();
+    quizDisplay(questionCount);
+  }
