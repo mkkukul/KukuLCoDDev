@@ -118,4 +118,4 @@ function quizCreator() {
       `;
       quizContainer.appendChild(div);
     }
-  }
+}
