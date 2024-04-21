@@ -158,3 +158,9 @@ function initial() {
     quizDisplay(questionCount);
 }
 
+//when user click on start button
+startButton.addEventListener("click", () => {
+    startScreen.classList.add("hide");
+    displayContainer.classList.remove("hide");
+    initial();
+  });
