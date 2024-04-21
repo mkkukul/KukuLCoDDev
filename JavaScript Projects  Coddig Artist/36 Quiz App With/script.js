@@ -15,3 +15,10 @@ let count = 11;
 let countdown;
 
 //Questions
+const quizArray = [
+    {
+      id: "0",
+      question: "Which is the most widely spoken language in the world?",
+      options: ["Spanish", "Mandarin", "English", "German"],
+      correct: "Mandarin",
+},
