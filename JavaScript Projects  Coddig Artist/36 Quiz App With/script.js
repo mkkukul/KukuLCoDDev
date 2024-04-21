@@ -22,4 +22,9 @@ const quizArray = [
     options: ["Spanish", "Mandarin", "English", "German"],
     correct: "Mandarin",
   },
-  
+  {
+    id: "1",
+    question: "Which is the only continent in the world without a desert?",
+    options: ["North America", "Asia", "Africa", "Europe"],
+    correct: "Europe",
+  },
