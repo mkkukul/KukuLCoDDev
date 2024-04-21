@@ -35,3 +35,10 @@ const quizArray = [
     correct: "Charles Babbage",
   },
 ];
+//Restart Quiz
+restart.addEventListener("click", () => {
+    initial();
+    displayContainer.classList.remove("hide");
+    scoreContainer.classList.add("hide");
+});
+
