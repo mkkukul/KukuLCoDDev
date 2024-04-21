@@ -42,3 +42,29 @@ restart.addEventListener("click", () => {
     scoreContainer.classList.add("hide");
 });
 
+//Next Button
+nextBtn.addEventListener(
+    "click",
+    (displayNext = () => {
+      //increment questionCount
+      questionCount += 1;
+      //if last question
+      if (questionCount == quizArray.length) {
+        //hide question container and display score
+        displayContainer.classList.add("hide");
+        scoreContainer.classList.remove("hide");
+        //user score
+        userScore.innerHTML =
+          "Your score is " + scoreCount + " out of " + questionCount;
+      } else {
+        //display questionCount
+        countOfQuestion.innerHTML =
+          questionCount + 1 + " of " + quizArray.length + " Question";
+        //display quiz
+        quizDisplay(questionCount);
+        count = 11;
+        clearInterval(countdown);
+        timerDisplay();
+      }
+    })
+  );
