@@ -91,6 +91,7 @@ const quizDisplay = (questionCount) => {
     //display current question card
     quizCards[questionCount].classList.remove("hide");
 };
+
 //Quiz Creation
 function quizCreator() {
     //randomly sort questions
