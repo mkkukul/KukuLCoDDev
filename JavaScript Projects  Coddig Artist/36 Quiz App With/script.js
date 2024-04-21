@@ -156,4 +156,4 @@ function initial() {
     timerDisplay();
     quizCreator();
     quizDisplay(questionCount);
-  }
+}
