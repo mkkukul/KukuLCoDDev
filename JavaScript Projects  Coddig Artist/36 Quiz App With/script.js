@@ -164,3 +164,4 @@ startButton.addEventListener("click", () => {
     displayContainer.classList.remove("hide");
     initial();
 });
+
