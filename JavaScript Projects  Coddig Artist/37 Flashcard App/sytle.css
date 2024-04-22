@@ -69,7 +69,7 @@ button {
     color: #ff5353;
     font-weight: 400;
   }
-  .fa-xmark {
+.fa-xmark {
     font-size: 1.4em;
     background-color: #587ef4;
     height: 1.8em;
@@ -80,9 +80,9 @@ button {
     border-radius: 50%;
     cursor: pointer;
     justify-self: flex-end;
-  }
-  label {
+}
+label {
     color: #363d55;
     font-weight: 600;
     margin-bottom: 0.3em;
-  }
+}
