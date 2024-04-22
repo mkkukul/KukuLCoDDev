@@ -28,3 +28,22 @@ closeBtn.addEventListener(
       }
     })
 );
+
+//Submit Question
+cardButton.addEventListener(
+    "click",
+    (submitQuestion = () => {
+      editBool = false;
+      tempQuestion = question.value.trim();
+      tempAnswer = answer.value.trim();
+      if (!tempQuestion || !tempAnswer) {
+        errorMessage.classList.remove("hide");
+      } else {
+        container.classList.remove("hide");
+        errorMessage.classList.add("hide");
+        viewlist();
+        question.value = "";
+        answer.value = "";
+      }
+    })
+  );
