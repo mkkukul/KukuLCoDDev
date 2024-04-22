@@ -55,20 +55,20 @@ button {
     font-weight: 600;
     text-align: center;
     margin-bottom: 2em;
-  }
-  .wrapper {
+}
+.wrapper {
     display: grid;
     grid-template-columns: 11fr 1fr;
     gap: 1em;
     margin-bottom: 1em;
-  }
-  .error-con {
+}
+.error-con {
     align-self: center;
-  }
-  #error {
+}
+#error {
     color: #ff5353;
     font-weight: 400;
-  }
+}
 .fa-xmark {
     font-size: 1.4em;
     background-color: #587ef4;
