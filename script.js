@@ -27,4 +27,4 @@ closeBtn.addEventListener(
         submitQuestion();
       }
     })
-  );
+);
