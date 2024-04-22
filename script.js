@@ -14,4 +14,4 @@ addQuestion.addEventListener("click", () => {
     question.value = "";
     answer.value = "";
     addQuestionCard.classList.remove("hide");
-  });
+});
