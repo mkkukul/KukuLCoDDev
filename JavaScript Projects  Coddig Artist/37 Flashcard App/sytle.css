@@ -18,3 +18,34 @@ body {
     justify-content: flex-end;
     padding: 1.2em 1em;
 }
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.add-flashcard-con button {
+    font-size: 1em;
+    background-color: #587ef4;
+    color: #ffffff;
+    padding: 0.8em 1.2em;
+    font-weight: 500;
+    border-radius: 0.4em;
+}
+#card-con {
+    margin-top: 1em;
+}
+.question-container {
+    width: 90vw;
+    max-width: 34em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 3em 2em;
+    border-radius: 0.6em;
+    box-shadow: 0 1em 2em rgba(28, 0, 80, 0.1);
+}
