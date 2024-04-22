@@ -15,3 +15,16 @@ addQuestion.addEventListener("click", () => {
     answer.value = "";
     addQuestionCard.classList.remove("hide");
 });
+
+//Hide Create flashcard Card
+closeBtn.addEventListener(
+    "click",
+    (hideQuestion = () => {
+      container.classList.remove("hide");
+      addQuestionCard.classList.add("hide");
+      if (editBool) {
+        editBool = false;
+        submitQuestion();
+      }
+    })
+  );
