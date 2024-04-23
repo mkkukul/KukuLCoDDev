@@ -104,6 +104,7 @@ setAlarm.addEventListener("click", () => {
     hourInput.value = appendZero(initialHour);
     minuteInput.value = appendZero(initialMinute);
 });
+
 //Start Alarm
 const startAlarm = (e) => {
     let searchId = e.target.parentElement.getAttribute("data-id");
@@ -111,4 +112,4 @@ const startAlarm = (e) => {
     if (exists) {
       alarmsArray[index].isActive = true;
     }
-  };
+};
