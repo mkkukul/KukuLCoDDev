@@ -133,3 +133,4 @@ const deleteAlarm = (e) => {
       alarmsArray.splice(index, 1);
     }
 };
+
