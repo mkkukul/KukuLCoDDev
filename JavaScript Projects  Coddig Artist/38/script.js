@@ -27,3 +27,23 @@ const searchObject = (parameter, value) => {
   });
   return [exists, alarmObject, objIndex];
 };
+//Display Time
+function displayTimer() {
+    let date = new Date();
+    let [hours, minutes, seconds] = [
+      appendZero(date.getHours()),
+      appendZero(date.getMinutes()),
+      appendZero(date.getSeconds()),
+    ];
+    //Display time
+    timerRef.innerHTML = `${hours}:${minutes}:${seconds}`;
+    //Alarm
+    alarmsArray.forEach((alarm, index) => {
+      if (alarm.isActive) {
+        if (`${alarm.alarmHour}:${alarm.alarmMinute}` === `${hours}:${minutes}`) {
+          alarmSound.play();
+          alarmSound.loop = true;
+        }
+      }
+    });
+}
