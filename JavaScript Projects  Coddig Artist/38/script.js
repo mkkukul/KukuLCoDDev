@@ -123,3 +123,4 @@ const stopAlarm = (e) => {
       alarmSound.pause();
     }
 };
+
