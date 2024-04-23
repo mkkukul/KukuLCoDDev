@@ -142,4 +142,4 @@ window.onload = () => {
     alarmsArray = [];
     hourInput.value = appendZero(initialHour);
     minuteInput.value = appendZero(initialMinute);
-  };
+};
