@@ -6,3 +6,4 @@ const activeAlarms = document.querySelector(".activeAlarms");
 const setAlarm = document.getElementById("set");
 let alarmsArray = [];
 let alarmSound = new Audio("./alarm.mp3");
+
