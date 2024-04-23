@@ -89,3 +89,18 @@ const createAlarm = (alarmObj) => {
     alarmDiv.appendChild(deleteButton);
     activeAlarms.appendChild(alarmDiv);
 };
+//Set Alarm
+setAlarm.addEventListener("click", () => {
+    alarmIndex += 1;
+    //alarmObject
+    let alarmObj = {};
+    alarmObj.id = `${alarmIndex}_${hourInput.value}_${minuteInput.value}`;
+    alarmObj.alarmHour = hourInput.value;
+    alarmObj.alarmMinute = minuteInput.value;
+    alarmObj.isActive = false;
+    console.log(alarmObj);
+    alarmsArray.push(alarmObj);
+    createAlarm(alarmObj);
+    hourInput.value = appendZero(initialHour);
+    minuteInput.value = appendZero(initialMinute);
+});
