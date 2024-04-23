@@ -124,3 +124,12 @@ const stopAlarm = (e) => {
     }
 };
 
+//delete alarm
+const deleteAlarm = (e) => {
+    let searchId = e.target.parentElement.parentElement.getAttribute("data-id");
+    let [exists, obj, index] = searchObject("id", searchId);
+    if (exists) {
+      e.target.parentElement.parentElement.remove();
+      alarmsArray.splice(index, 1);
+    }
+};
