@@ -113,3 +113,13 @@ const startAlarm = (e) => {
       alarmsArray[index].isActive = true;
     }
 };
+
+//Stop alarm
+const stopAlarm = (e) => {
+    let searchId = e.target.parentElement.getAttribute("data-id");
+    let [exists, obj, index] = searchObject("id", searchId);
+    if (exists) {
+      alarmsArray[index].isActive = false;
+      alarmSound.pause();
+    }
+};
