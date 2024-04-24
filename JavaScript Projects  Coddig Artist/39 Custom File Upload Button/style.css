@@ -1,13 +1,13 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-  }
-  body {
+}
+body {
     background-color: #025bee;
-  }
-  .container {
+}
+.container {
     background-color: #ffffff;
     width: 90%;
     max-width: 34.37em;
