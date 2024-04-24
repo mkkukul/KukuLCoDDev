@@ -19,8 +19,8 @@ body {
 }
 input[type="file"] {
     display: none;
-  }
-  label {
+}
+label {
     display: block;
     position: relative;
     background-color: #025bee;
@@ -33,15 +33,15 @@ input[type="file"] {
     margin: auto;
     border-radius: 0.31em;
     cursor: pointer;
-  }
-  #num-of-files {
+}
+#num-of-files {
     font-weight: 400;
     text-align: center;
     margin: 1.25em 0 1.87em 0;
-  }
-  ul {
+}
+ul {
     list-style-type: none;
-  }
+}
 .container li {
     font-weight: 500;
     background-color: #eff5ff;
