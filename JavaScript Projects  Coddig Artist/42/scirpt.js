@@ -73,7 +73,7 @@ startBtn.addEventListener("click", () => {
     errorMessage.innerHTML = "";
     errorMessage.classList.add("hide");
     //Controls and buttons visibility
-  controls.classList.add("hide");
-  startBtn.classList.add("hide");
-  questionGenerator();
+    controls.classList.add("hide");
+    startBtn.classList.add("hide");
+    questionGenerator();
 });
