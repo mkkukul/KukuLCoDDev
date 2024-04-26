@@ -78,11 +78,11 @@ startBtn.addEventListener("click", () => {
     questionGenerator();
 });
     
-    //Stop Game
+//Stop Game
 
-    const stopGame = (resultText) => {
+const stopGame = (resultText) => {
         result.innerHTML = resultText;
         startBtn.innerText = "Restart";
         controls.classList.remove("hide");
         startBtn.classList.remove("hide");
-      };
+};
