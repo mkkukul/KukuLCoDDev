@@ -125,4 +125,26 @@ const drop = (e) => {
         );
         count += 1;
       }
+    } else {
+        //Access data
+        const draggedElementData = e.dataTransfer.getData("text");
+        //Get custom attribute value
+        const droppableElementData = e.target.getAttribute("data-id");
+        if (draggedElementData === droppableElementData) {
+          const draggedElement = document.getElementById(draggedElementData);
+          //dropped class
+          e.target.classList.add("dropped");
+          //hide current img
+          draggedElement.classList.add("hide");
+          //draggable set to false
+          draggedElement.setAttribute("draggable", "false");
+          e.target.innerHTML = ``;
+          //insert new img
+          e.target.insertAdjacentHTML(
+            "afterbegin",
+            `<img src="${draggedElementData}.png">`
+          );
+          count += 1;
+        }
+    }
     
