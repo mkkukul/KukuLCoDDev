@@ -73,3 +73,8 @@ function dragStart(e) {
       e.dataTransfer.setData("text", e.target.id);
     }
 }
+
+//Events fired on the drop target
+function dragOver(e) {
+    e.preventDefault();
+  }
