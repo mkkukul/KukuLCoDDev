@@ -153,3 +153,19 @@ const drop = (e) => {
     stopGame();
   }
 };
+
+//Creates flags and countries
+const creator = () => {
+    dragContainer.innerHTML = "";
+    dropContainer.innerHTML = "";
+    let randomData = [];
+    //for string random values in array
+    for (let i = 1; i <= 3; i++) {
+      let randomValue = randomValueGenerator();
+      if (!randomData.includes(randomValue)) {
+        randomData.push(randomValue);
+      } else {
+        //If value already exists then decrement i by 1
+        i -= 1;
+      }
+    }
