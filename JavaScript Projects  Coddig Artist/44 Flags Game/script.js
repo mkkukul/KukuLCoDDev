@@ -77,4 +77,4 @@ function dragStart(e) {
 //Events fired on the drop target
 function dragOver(e) {
     e.preventDefault();
-  }
+}
