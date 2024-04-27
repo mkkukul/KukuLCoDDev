@@ -46,4 +46,10 @@ const isTouchDevice = () => {
     return false;
   }
 };
+
 let count = 0;
+
+//Random value from Array
+const randomValueGenerator = () => {
+    return data[Math.floor(Math.random() * data.length)];
+};
