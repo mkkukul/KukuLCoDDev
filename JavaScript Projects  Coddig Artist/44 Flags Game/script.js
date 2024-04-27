@@ -191,3 +191,15 @@ const creator = () => {
     }
 };
 
+//Start Game
+startButton.addEventListener(
+    "click",
+    (startGame = async () => {
+      currentElement = "";
+      controls.classList.add("hide");
+      startButton.classList.add("hide");
+      //This will wait for creator to create the images and then move forward
+      await creator();
+      count = 0;
+      dropPoints = document.querySelectorAll(".countries");
+      draggableObjects = document.querySelectorAll(".draggable-image");
