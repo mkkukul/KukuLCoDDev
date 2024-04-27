@@ -33,3 +33,17 @@ let initialX = 0,
   initialY = 0;
 let currentElement = "";
 let moveElement = false;
+
+/Detect touch device
+const isTouchDevice = () => {
+  try {
+    //We try to create Touch Event (It would fail for desktops and throw error)
+    document.createEvent("TouchEvent");
+    deviceType = "touch";
+    return true;
+  } catch (e) {
+    deviceType = "mouse";
+    return false;
+  }
+};
+let count = 0;
