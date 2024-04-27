@@ -34,7 +34,7 @@ let initialX = 0,
 let currentElement = "";
 let moveElement = false;
 
-/Detect touch device
+//Detect touch device
 const isTouchDevice = () => {
   try {
     //We try to create Touch Event (It would fail for desktops and throw error)
