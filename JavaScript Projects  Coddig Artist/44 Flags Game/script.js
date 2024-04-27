@@ -96,3 +96,33 @@ const touchMove = (e) => {
       initialY - newY;
     }
 };
+
+
+const drop = (e) => {
+    e.preventDefault();
+    //For touch screen
+    if (isTouchDevice()) {
+      moveElement = false;
+      //Select country name div using the custom attribute
+      const currentDrop = document.querySelector(`div[data-id='${e.target.id}']`);
+      //Get boundaries of div
+      const currentDropBound = currentDrop.getBoundingClientRect();
+      //if the position of flag falls inside the bounds of the countru name
+      if (
+        initialX >= currentDropBound.left &&
+        initialX <= currentDropBound.right &&
+        initialY >= currentDropBound.top &&
+        initialY <= currentDropBound.bottom
+      ) {
+        currentDrop.classList.add("dropped");
+        //hide actual image
+        currentElement.classList.add("hide");
+        currentDrop.innerHTML = ``;
+        //Insert new img element
+        currentDrop.insertAdjacentHTML(
+          "afterbegin",
+          `<img src= "${currentElement.id}.png">`
+        );
+        count += 1;
+      }
+    
