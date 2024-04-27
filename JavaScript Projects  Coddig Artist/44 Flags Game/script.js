@@ -78,3 +78,21 @@ function dragStart(e) {
 function dragOver(e) {
     e.preventDefault();
 }
+
+//For touchscreen movement
+const touchMove = (e) => {
+    if (moveElement) {
+      e.preventDefault();
+      let newX = e.touches[0].clientX;
+      let newY = e.touches[0].clientY;
+      let currentSelectedElement = document.getElementById(e.target.id);
+      currentSelectedElement.parentElement.style.top =
+        currentSelectedElement.parentElement.offsetTop - (initialY - newY) + "px";
+      currentSelectedElement.parentElement.style.left =
+        currentSelectedElement.parentElement.offsetLeft -
+        (initialX - newX) +
+        "px";
+      initialX = newX;
+      initialY - newY;
+    }
+};
