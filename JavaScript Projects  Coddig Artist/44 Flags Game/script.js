@@ -203,3 +203,18 @@ startButton.addEventListener(
       count = 0;
       dropPoints = document.querySelectorAll(".countries");
       draggableObjects = document.querySelectorAll(".draggable-image");
+
+      //Events
+    draggableObjects.forEach((element) => {
+        element.addEventListener("dragstart", dragStart);
+        //for touch screen
+        element.addEventListener("touchstart", dragStart);
+        element.addEventListener("touchend", drop);
+        element.addEventListener("touchmove", touchMove);
+      });
+      dropPoints.forEach((element) => {
+        element.addEventListener("dragover", dragOver);
+        element.addEventListener("drop", drop);
+      });
+    })
+  );
