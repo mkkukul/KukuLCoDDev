@@ -169,3 +169,24 @@ const creator = () => {
         i -= 1;
       }
     }
+    for (let i of randomData) {
+        const flagDiv = document.createElement("div");
+        flagDiv.classList.add("draggable-image");
+        flagDiv.setAttribute("draggable", true);
+        if (isTouchDevice()) {
+          flagDiv.style.position = "absolute";
+        }
+        flagDiv.innerHTML = `<img src="${i}.png" id="${i}">`;
+        dragContainer.appendChild(flagDiv);
+      }
+      //Sort the array randomly before creating country divs
+      randomData = randomData.sort(() => 0.5 - Math.random());
+      for (let i of randomData) {
+        const countryDiv = document.createElement("div");
+        countryDiv.innerHTML = `<div class='countries' data-id='${i}'>
+        ${i.charAt(0).toUpperCase() + i.slice(1).replace("-", " ")}
+        </div>
+        `;
+        dropContainer.appendChild(countryDiv);
+    }
+    };
