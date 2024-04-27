@@ -59,3 +59,17 @@ const stopGame = () => {
     controls.classList.remove("hide");
     startButton.classList.remove("hide");
 };
+
+//Drag & Drop Functions
+function dragStart(e) {
+    if (isTouchDevice()) {
+      initialX = e.touches[0].clientX;
+      initialY = e.touches[0].clientY;
+      //Start movement for touch
+      moveElement = true;
+      currentElement = e.target;
+    } else {
+      //For non touch devices set data to be transfered
+      e.dataTransfer.setData("text", e.target.id);
+    }
+}
