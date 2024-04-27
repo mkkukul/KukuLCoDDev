@@ -190,3 +190,4 @@ const creator = () => {
         dropContainer.appendChild(countryDiv);
     }
 };
+
