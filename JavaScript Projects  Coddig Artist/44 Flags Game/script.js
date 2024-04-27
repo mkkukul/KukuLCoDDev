@@ -53,3 +53,9 @@ let count = 0;
 const randomValueGenerator = () => {
     return data[Math.floor(Math.random() * data.length)];
 };
+
+//Win Game Display
+const stopGame = () => {
+    controls.classList.remove("hide");
+    startButton.classList.remove("hide");
+  };
