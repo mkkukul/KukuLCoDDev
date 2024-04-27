@@ -58,4 +58,4 @@ const randomValueGenerator = () => {
 const stopGame = () => {
     controls.classList.remove("hide");
     startButton.classList.remove("hide");
-  };
+};
