@@ -147,4 +147,9 @@ const drop = (e) => {
           count += 1;
         }
     }
-    
+    //Win
+  if (count == 3) {
+    result.innerText = `You Won!`;
+    stopGame();
+  }
+};
