@@ -28,6 +28,7 @@ const data = [
   "uruguay",
   "wales",
 ];
+
 let deviceType = "";
 let initialX = 0,
   initialY = 0;
@@ -183,9 +184,9 @@ const creator = () => {
   for (let i of randomData) {
     const countryDiv = document.createElement("div");
     countryDiv.innerHTML = `<div class='countries' data-id='${i}'>
-        ${i.charAt(0).toUpperCase() + i.slice(1).replace("-", " ")}
-        </div>
-        `;
+    ${i.charAt(0).toUpperCase() + i.slice(1).replace("-", " ")}
+    </div>
+    `;
     dropContainer.appendChild(countryDiv);
   }
 };
