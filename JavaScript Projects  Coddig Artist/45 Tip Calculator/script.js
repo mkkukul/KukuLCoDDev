@@ -10,3 +10,5 @@ function calculateTip(){
     let bill = parseFloat(billInput.value);
     let tipPercent = document.getElementById("tip").value;
     let noOfPeople = document.getElementById("no-of-people").value;
+
+    billInput.value = bill.toFixed(2);
