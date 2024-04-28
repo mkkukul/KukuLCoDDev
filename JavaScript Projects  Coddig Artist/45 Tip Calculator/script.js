@@ -23,4 +23,4 @@ function calculateTip(){
     document.getElementById("total-amount").textContent = `\$ ${total}`;
 
     document.getElementById("tip-percent").textContent = `${tipPercent}%`;
-    
+    document.getElementById("split-num").textContent = noOfPeople;
