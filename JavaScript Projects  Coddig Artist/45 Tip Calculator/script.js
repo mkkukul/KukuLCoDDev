@@ -15,3 +15,5 @@ function calculateTip(){
 
     let totalTip = parseFloat((bill * (tipPercent/100)).toFixed(2));
     let total = parseFloat((bill + totalTip).toFixed(2));
+
+    let tipPerPerson = (totalTip / noOfPeople).toFixed(2);
