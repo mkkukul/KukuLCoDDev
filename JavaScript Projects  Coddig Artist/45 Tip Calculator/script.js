@@ -3,3 +3,4 @@ sliders.forEach(function (slider) {
   slider.addEventListener("input", calculateTip);
 });
 const billInput = document.getElementById("bill");
+billInput.addEventListener("change", calculateTip);
