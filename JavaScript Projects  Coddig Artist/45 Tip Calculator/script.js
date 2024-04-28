@@ -20,3 +20,4 @@ function calculateTip(){
     let totalPerPerson = (total / noOfPeople).toFixed(2);
 
     document.getElementById("tip-amount").textContent = `\$ ${totalTip}`;
+    document.getElementById("total-amount").textContent = `\$ ${total}`;
