@@ -37,3 +37,4 @@ function checker(input){
             result_ref.innerHTML = "YOU LOSE";
             computer_score++;
             break;
+            
