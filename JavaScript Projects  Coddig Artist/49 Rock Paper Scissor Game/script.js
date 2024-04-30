@@ -25,3 +25,4 @@ function checker(input){
     ` Computer choose <span> ${choices[num].toUpperCase()} </span>`;
     document.getElementById("user_choice").innerHTML = 
     ` You choose <span> ${input.toUpperCase()} </span>`;
+    let computer_choice = choices[num];
