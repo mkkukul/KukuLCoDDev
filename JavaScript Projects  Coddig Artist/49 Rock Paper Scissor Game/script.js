@@ -17,3 +17,7 @@ let choices_object = {
     paper: "draw",
   },
 };
+
+function checker(input){
+    var choices = ["rock", "paper", "scissor"];
+    var num = Math.floor(Math.random()*3);
