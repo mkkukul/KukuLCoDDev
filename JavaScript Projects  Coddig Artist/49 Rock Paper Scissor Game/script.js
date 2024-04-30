@@ -37,4 +37,7 @@ function checker(input){
             result_ref.innerHTML = "YOU LOSE";
             computer_score++;
             break;
-            
+            default:
+                result_ref.style.cssText = "background-color: #e5e5e5; color: #808080";
+                result_ref.innerHTML = "DRAW";
+                break;
