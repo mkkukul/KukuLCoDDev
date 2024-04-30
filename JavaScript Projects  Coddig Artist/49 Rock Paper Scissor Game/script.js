@@ -26,3 +26,9 @@ function checker(input){
     document.getElementById("user_choice").innerHTML = 
     ` You choose <span> ${input.toUpperCase()} </span>`;
     let computer_choice = choices[num];
+    switch(choices_object[input][computer_choice]){
+        case 'win':
+            result_ref.style.cssText = "background-color: #cefdce; color: #689f38";
+            result_ref.innerHTML = "YOU WIN";
+            user_score++;
+            break;
