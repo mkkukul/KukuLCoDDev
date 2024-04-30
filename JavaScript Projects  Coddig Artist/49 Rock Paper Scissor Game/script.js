@@ -32,3 +32,8 @@ function checker(input){
             result_ref.innerHTML = "YOU WIN";
             user_score++;
             break;
+        case 'lose':
+            result_ref.style.cssText = "background-color: #ffdde0; color: #d32f2f";
+            result_ref.innerHTML = "YOU LOSE";
+            computer_score++;
+            break;
