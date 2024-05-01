@@ -33,3 +33,13 @@ function drawStringOnCanvas(string) {
     //array of text color
     const textColors = ["rgb(0,0,0)", "rgb(130,130,130)"];
     //space between letters
+    const letterSpace = 150 / string.length;
+  //loop through string
+  for (let i = 0; i < string.length; i++) {
+    //Define initial space on X axis
+    const xInitialSpace = 25;
+    //Set font for canvas element
+    ctx.font = "20px Roboto Mono";
+    //set text color
+    ctx.fillStyle = textColors[randomNumber(0, 1)];
+    ctx.fillText(
