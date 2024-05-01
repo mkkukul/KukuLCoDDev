@@ -23,3 +23,13 @@ const textGenerator = () => {
 //Generate random numbers between a given range
 const randomNumber = (min, max) =>
   Math.floor(Math.random() * (max - min + 1) + min);
+
+//Canvas part
+function drawStringOnCanvas(string) {
+    //The getContext() function returns the drawing context that has all the drawing properties and functions needed to draw on canvas
+    let ctx = canvas.getContext("2d");
+    //clear canvas
+    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+    //array of text color
+    const textColors = ["rgb(0,0,0)", "rgb(130,130,130)"];
+    //space between letters
