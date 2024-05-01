@@ -26,14 +26,14 @@ const randomNumber = (min, max) =>
 
 //Canvas part
 function drawStringOnCanvas(string) {
-    //The getContext() function returns the drawing context that has all the drawing properties and functions needed to draw on canvas
-    let ctx = canvas.getContext("2d");
-    //clear canvas
-    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-    //array of text color
-    const textColors = ["rgb(0,0,0)", "rgb(130,130,130)"];
-    //space between letters
-    const letterSpace = 150 / string.length;
+  //The getContext() function returns the drawing context that has all the drawing properties and functions needed to draw on canvas
+  let ctx = canvas.getContext("2d");
+  //clear canvas
+  ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+  //array of text color
+  const textColors = ["rgb(0,0,0)", "rgb(130,130,130)"];
+  //space between letters
+  const letterSpace = 150 / string.length;
   //loop through string
   for (let i = 0; i < string.length; i++) {
     //Define initial space on X axis
@@ -43,3 +43,10 @@ function drawStringOnCanvas(string) {
     //set text color
     ctx.fillStyle = textColors[randomNumber(0, 1)];
     ctx.fillText(
+      string[i],
+      xInitialSpace + i * letterSpace,
+      randomNumber(25, 40),
+      100
+    );
+  }
+}
