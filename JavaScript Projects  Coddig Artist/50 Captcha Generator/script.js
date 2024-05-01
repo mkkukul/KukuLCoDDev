@@ -60,3 +60,6 @@ function triggerFunction() {
   text = [...text].sort(() => Math.random() - 0.5).join("");
   drawStringOnCanvas(text);
 }
+
+//call triggerFunction for reload button
+reloadButton.addEventListener("click", triggerFunction);
