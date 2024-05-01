@@ -63,3 +63,6 @@ function triggerFunction() {
 
 //call triggerFunction for reload button
 reloadButton.addEventListener("click", triggerFunction);
+
+//call triggerFunction when page loads
+window.onload = () => triggerFunction();
