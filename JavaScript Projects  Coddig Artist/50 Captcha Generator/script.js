@@ -69,4 +69,6 @@ window.onload = () => triggerFunction();
 //When user clicks on submit
 submitButton.addEventListener("click", () => {
    //check if user input  == generated text
-  if (userInput.value === text) { 
+  if (userInput.value === text) {
+    alert("Success");
+} else { 
