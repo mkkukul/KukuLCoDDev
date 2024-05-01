@@ -52,7 +52,11 @@ function drawStringOnCanvas(string) {
 }
 //Initial Function
 function triggerFunction() {
-    //clear Input
-    userInput.value = "";
-    text = textGenerator();
-    console.log(text);
+  //clear Input
+  userInput.value = "";
+  text = textGenerator();
+  console.log(text);
+  //Randomize the text so that everytime the position of numbers and small letters is random
+  text = [...text].sort(() => Math.random() - 0.5).join("");
+  drawStringOnCanvas(text);
+}
