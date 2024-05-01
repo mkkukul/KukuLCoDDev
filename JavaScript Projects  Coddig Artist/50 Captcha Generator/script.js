@@ -50,3 +50,9 @@ function drawStringOnCanvas(string) {
     );
   }
 }
+//Initial Function
+function triggerFunction() {
+    //clear Input
+    userInput.value = "";
+    text = textGenerator();
+    console.log(text);
