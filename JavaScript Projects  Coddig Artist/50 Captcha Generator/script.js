@@ -4,6 +4,7 @@ let userInput = document.getElementById("user-input");
 let canvas = document.getElementById("canvas");
 let reloadButton = document.getElementById("reload-button");
 let text = "";
+
 //Generate Text
 const textGenerator = () => {
   let generatedText = "";
@@ -50,6 +51,7 @@ function drawStringOnCanvas(string) {
     );
   }
 }
+
 //Initial Function
 function triggerFunction() {
   //clear Input
@@ -66,6 +68,7 @@ reloadButton.addEventListener("click", triggerFunction);
 
 //call triggerFunction when page loads
 window.onload = () => triggerFunction();
+
 //When user clicks on submit
 submitButton.addEventListener("click", () => {
   //check if user input  == generated text
