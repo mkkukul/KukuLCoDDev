@@ -66,3 +66,5 @@ reloadButton.addEventListener("click", triggerFunction);
 
 //call triggerFunction when page loads
 window.onload = () => triggerFunction();
+//When user clicks on submit
+submitButton.addEventListener("click", () => {
