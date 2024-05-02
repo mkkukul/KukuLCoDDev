@@ -116,3 +116,7 @@ function checker(elementId) {
     }
   });
 }
+//Clear Grid
+clearGridButton.addEventListener("click", () => {
+  container.innerHTML = "";
+});
