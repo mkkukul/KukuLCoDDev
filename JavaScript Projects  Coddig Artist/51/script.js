@@ -9,6 +9,7 @@ let eraseBtn = document.getElementById("erase-btn");
 let paintBtn = document.getElementById("paint-btn");
 let widthValue = document.getElementById("width-value");
 let heightValue = document.getElementById("height-value");
+
 //Events object
 let events = {
   mouse: {
@@ -71,6 +72,7 @@ gridButton.addEventListener("click", () => {
       if deviceType="touch"
       the statement for event would be events[touch].down which equals to touchstart
        */
+
       col.addEventListener(events[deviceType].down, () => {
         //user starts drawing
         draw = true;
@@ -116,13 +118,13 @@ function checker(elementId) {
     }
   });
 }
+
 //Clear Grid
 clearGridButton.addEventListener("click", () => {
   container.innerHTML = "";
 });
-
-//Eraser
-eraserButton.addEventListener("click", () => {
+//Erase Button
+eraseBtn.addEventListener("click", () => {
   erase = true;
 });
 
@@ -136,10 +138,12 @@ gridWidth.addEventListener("input", () => {
   widthValue.innerHTML =
     gridWidth.value < 9 ? `0${gridWidth.value}` : gridWidth.value;
 });
+
 gridHeight.addEventListener("input", () => {
   heightValue.innerHTML =
     gridHeight.value < 9 ? `0${gridHeight.value}` : gridHeight.value;
 });
+
 window.onload = () => {
   gridWidth.value = 0;
   gridHeight.value = 0;
