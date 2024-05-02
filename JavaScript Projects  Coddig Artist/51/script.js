@@ -43,3 +43,24 @@ const isTouchDevice = () => {
 };
 
 isTouchDevice();
+
+//Create Grid
+gridButton.addEventListener("click", () => {
+    //Initially clear the grid (old grids cleared)
+    container.innerHTML = "";
+    //count variable for generating unique ids
+    let count = 0;
+    //loop for creating rows
+    for (let i = 0; i < gridHeight.value; i++) {
+      //incrementing count by 2
+      count += 2;
+      //Create row div
+      let div = document.createElement("div");
+      div.classList.add("gridRow");
+      //Create Columns
+      for (let j = 0; j < gridWidth.value; j++) {
+        count += 2;
+        let col = document.createElement("div");
+        col.classList.add("gridCol");
+        /* We need unique ids for all columns (for touch screen specifically) */
+        col.setAttribute("id", `gridCol${count}`);
