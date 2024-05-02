@@ -11,9 +11,14 @@ let widthValue = document.getElementById("width-value");
 let heightValue = document.getElementById("height-value");
 //Events object
 let events = {
-    mouse: {
-      down: "mousedown",
-      move: "mousemove",
-      up: "mouseup",
-    },
-    
+  mouse: {
+    down: "mousedown",
+    move: "mousemove",
+    up: "mouseup",
+  },
+  touch: {
+    down: "touchstart",
+    move: "touchmove",
+    up: "touchend",
+  },
+};
