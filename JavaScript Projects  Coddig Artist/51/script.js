@@ -16,3 +16,4 @@ let events = {
       move: "mousemove",
       up: "mouseup",
     },
+    
