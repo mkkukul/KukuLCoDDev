@@ -64,3 +64,5 @@ gridButton.addEventListener("click", () => {
         col.classList.add("gridCol");
         /* We need unique ids for all columns (for touch screen specifically) */
         col.setAttribute("id", `gridCol${count}`);
+
+        
