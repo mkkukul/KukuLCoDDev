@@ -24,3 +24,7 @@ let events = {
 };
 
 let deviceType = "";
+
+//Initially draw and erase would be false
+let draw = false;
+let erase = false;
