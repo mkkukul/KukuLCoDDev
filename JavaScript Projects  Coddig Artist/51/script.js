@@ -102,3 +102,17 @@ gridButton.addEventListener("click", () => {
     container.appendChild(div);
   }
 });
+function checker(elementId) {
+  let gridColumns = document.querySelectorAll(".gridCol");
+  //loop through all boxes
+  gridColumns.forEach((element) => {
+    //if id matches then color
+    if (elementId == element.id) {
+      if (draw && !erase) {
+        element.style.backgroundColor = colorButton.value;
+      } else if (draw && erase) {
+        element.style.backgroundColor = "transparent";
+      }
+    }
+  });
+}
