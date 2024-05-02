@@ -41,4 +41,5 @@ const isTouchDevice = () => {
     return false;
   }
 };
+
 isTouchDevice();
