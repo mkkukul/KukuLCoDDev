@@ -120,7 +120,13 @@ function checker(elementId) {
 clearGridButton.addEventListener("click", () => {
   container.innerHTML = "";
 });
+
 //Eraser
 eraserButton.addEventListener("click", () => {
   erase = true;
+});
+
+//Paint button
+paintBtn.addEventListener("click", () => {
+  erase = false;
 });
