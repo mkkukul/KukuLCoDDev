@@ -9,3 +9,10 @@ let eraseBtn = document.getElementById("erase-btn");
 let paintBtn = document.getElementById("paint-btn");
 let widthValue = document.getElementById("width-value");
 let heightValue = document.getElementById("height-value");
+//Events object
+let events = {
+    mouse: {
+      down: "mousedown",
+      move: "mousemove",
+      up: "mouseup",
+    },
