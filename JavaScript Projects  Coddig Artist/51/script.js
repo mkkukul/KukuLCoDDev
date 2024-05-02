@@ -140,3 +140,7 @@ gridHeight.addEventListener("input", () => {
   heightValue.innerHTML =
     gridHeight.value < 9 ? `0${gridHeight.value}` : gridHeight.value;
 });
+window.onload = () => {
+  gridWidth.value = 0;
+  gridHeight.value = 0;
+};
