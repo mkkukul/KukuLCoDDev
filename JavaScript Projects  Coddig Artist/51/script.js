@@ -65,4 +65,21 @@ gridButton.addEventListener("click", () => {
         /* We need unique ids for all columns (for touch screen specifically) */
         col.setAttribute("id", `gridCol${count}`);
 
-        
+       /*
+      For eg if deviceType = "mouse"
+      the statement for the event would be events[mouse].down which equals to mousedown
+      if deviceType="touch"
+      the statement for event would be events[touch].down which equals to touchstart
+       */
+      col.addEventListener(events[deviceType].down, () => {
+        //user starts drawing
+        draw = true;
+        //if erase = true then background = transparent else color
+        if (erase) {
+          col.style.backgroundColor = "transparent";
+        } else {
+          col.style.backgroundColor = colorButton.value;
+        }
+      });
+      
+      
