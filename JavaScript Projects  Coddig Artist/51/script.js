@@ -46,26 +46,26 @@ isTouchDevice();
 
 //Create Grid
 gridButton.addEventListener("click", () => {
-    //Initially clear the grid (old grids cleared)
-    container.innerHTML = "";
-    //count variable for generating unique ids
-    let count = 0;
-    //loop for creating rows
-    for (let i = 0; i < gridHeight.value; i++) {
-      //incrementing count by 2
+  //Initially clear the grid (old grids cleared)
+  container.innerHTML = "";
+  //count variable for generating unique ids
+  let count = 0;
+  //loop for creating rows
+  for (let i = 0; i < gridHeight.value; i++) {
+    //incrementing count by 2
+    count += 2;
+    //Create row div
+    let div = document.createElement("div");
+    div.classList.add("gridRow");
+    //Create Columns
+    for (let j = 0; j < gridWidth.value; j++) {
       count += 2;
-      //Create row div
-      let div = document.createElement("div");
-      div.classList.add("gridRow");
-      //Create Columns
-      for (let j = 0; j < gridWidth.value; j++) {
-        count += 2;
-        let col = document.createElement("div");
-        col.classList.add("gridCol");
-        /* We need unique ids for all columns (for touch screen specifically) */
-        col.setAttribute("id", `gridCol${count}`);
+      let col = document.createElement("div");
+      col.classList.add("gridCol");
+      /* We need unique ids for all columns (for touch screen specifically) */
+      col.setAttribute("id", `gridCol${count}`);
 
-       /*
+      /*
       For eg if deviceType = "mouse"
       the statement for the event would be events[mouse].down which equals to mousedown
       if deviceType="touch"
@@ -81,5 +81,24 @@ gridButton.addEventListener("click", () => {
           col.style.backgroundColor = colorButton.value;
         }
       });
-      
-      
+
+      col.addEventListener(events[deviceType].move, (e) => {
+        /* elementFromPoint returns the element at x,y position of mouse */
+        let elementId = document.elementFromPoint(
+          !isTouchDevice() ? e.clientX : e.touches[0].clientX,
+          !isTouchDevice() ? e.clientY : e.touches[0].clientY
+        ).id;
+        //checker
+        checker(elementId);
+      });
+      //Stop drawing
+      col.addEventListener(events[deviceType].up, () => {
+        draw = false;
+      });
+      //append columns
+      div.appendChild(col);
+    }
+    //append grid to container
+    container.appendChild(div);
+  }
+});
