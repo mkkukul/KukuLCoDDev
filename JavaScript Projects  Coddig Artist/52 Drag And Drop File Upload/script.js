@@ -76,3 +76,6 @@ container.addEventListener(
   },
   false
 );
+window.onload = () => {
+  error.innerText = "";
+};
