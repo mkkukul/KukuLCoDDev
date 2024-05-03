@@ -60,3 +60,14 @@ container.addEventListener(
   },
   false
 );
+
+container.addEventListener(
+    "drop",
+    (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      container.classList.remove("active");
+      let draggedData = e.dataTransfer;
+      let files = draggedData.files;
+      imageDisplay.innerHTML = "";
+      Array.from(files).forEach((file) => {
