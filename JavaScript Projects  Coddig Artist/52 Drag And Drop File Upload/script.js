@@ -32,3 +32,13 @@ uploadButton.addEventListener("change", () => {
     fileHandler(file, file.name, file.type);
   });
 });
+
+container.addEventListener(
+  "dragenter",
+  (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    container.classList.add("active");
+  },
+  false
+);
