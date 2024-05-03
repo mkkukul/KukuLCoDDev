@@ -13,6 +13,6 @@ const fileHandler = (file, name, type) => {
       return false;
     }
     error.innerText = "";
-  let reader = new FileReader();
-  reader.readAsDataURL(file);
-  reader.onloadend = () => {
+    let reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onloadend = () => {
