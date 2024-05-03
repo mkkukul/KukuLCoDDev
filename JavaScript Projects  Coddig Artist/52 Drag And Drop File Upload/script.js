@@ -62,15 +62,17 @@ container.addEventListener(
 );
 
 container.addEventListener(
-    "drop",
-    (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      container.classList.remove("active");
-      let draggedData = e.dataTransfer;
-      let files = draggedData.files;
-      imageDisplay.innerHTML = "";
-      Array.from(files).forEach((file) => {
-        fileHandler(file, file.name, file.type);
+  "drop",
+  (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    container.classList.remove("active");
+    let draggedData = e.dataTransfer;
+    let files = draggedData.files;
+    imageDisplay.innerHTML = "";
+    Array.from(files).forEach((file) => {
+      fileHandler(file, file.name, file.type);
     });
-  }, 
+  },
+  false
+);
