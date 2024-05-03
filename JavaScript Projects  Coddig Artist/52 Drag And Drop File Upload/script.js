@@ -24,3 +24,11 @@ const fileHandler = (file, name, type) => {
     imageDisplay.appendChild(imageContainer);
   };
 };
+
+//Upload Button
+uploadButton.addEventListener("change", () => {
+  imageDisplay.innerHTML = "";
+  Array.from(uploadButton.files).forEach((file) => {
+    fileHandler(file, file.name, file.type);
+  });
+});
