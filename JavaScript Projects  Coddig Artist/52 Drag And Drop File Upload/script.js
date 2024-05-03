@@ -12,3 +12,7 @@ const fileHandler = (file, name, type) => {
       error.innerText = "Please upload an image file";
       return false;
     }
+    error.innerText = "";
+  let reader = new FileReader();
+  reader.readAsDataURL(file);
+  reader.onloadend = () => {
