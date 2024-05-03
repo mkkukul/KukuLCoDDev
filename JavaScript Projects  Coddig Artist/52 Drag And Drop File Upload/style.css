@@ -19,3 +19,6 @@ body {
   box-shadow: 0 1.25em 3.43em rgba(0, 0, 0, 0.08);
   border-radius: 0.5em;
 }
+input[type="file"] {
+  display: none;
+}
