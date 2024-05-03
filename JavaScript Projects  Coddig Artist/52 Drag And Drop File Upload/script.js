@@ -71,3 +71,6 @@ container.addEventListener(
       let files = draggedData.files;
       imageDisplay.innerHTML = "";
       Array.from(files).forEach((file) => {
+        fileHandler(file, file.name, file.type);
+    });
+  }, 
