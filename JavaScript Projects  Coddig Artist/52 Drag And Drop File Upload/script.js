@@ -42,6 +42,7 @@ container.addEventListener(
   },
   false
 );
+
 container.addEventListener(
   "dragleave",
   (e) => {
@@ -51,6 +52,7 @@ container.addEventListener(
   },
   false
 );
+
 container.addEventListener(
   "dragover",
   (e) => {
@@ -76,6 +78,7 @@ container.addEventListener(
   },
   false
 );
+
 window.onload = () => {
   error.innerText = "";
 };
