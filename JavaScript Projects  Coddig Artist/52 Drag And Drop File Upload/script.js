@@ -51,3 +51,12 @@ container.addEventListener(
   },
   false
 );
+container.addEventListener(
+  "dragover",
+  (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    container.classList.add("active");
+  },
+  false
+);
