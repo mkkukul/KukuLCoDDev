@@ -42,3 +42,12 @@ container.addEventListener(
   },
   false
 );
+container.addEventListener(
+  "dragleave",
+  (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    container.classList.remove("active");
+  },
+  false
+);
