@@ -4,3 +4,11 @@ let fileName = document.getElementById("file-name");
 let container = document.querySelector(".container");
 let error = document.getElementById("error");
 let imageDisplay = document.getElementById("image-display");
+
+
+const fileHandler = (file, name, type) => {
+    if (type.split("/")[0] !== "image") {
+      //File Type Error
+      error.innerText = "Please upload an image file";
+      return false;
+    }
