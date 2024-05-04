@@ -26,3 +26,5 @@ const checkError = (error) => {
 };
 const showLocation = async (position) => {
     //We user the NOminatim API for getting actual addres from latitude and longitude
+    let response = await fetch(
+        `https://nominatim.openstreetmap.org/reverse?lat=${position.coords.latitude}&lon=${position.coords.longitude}&format=json`
