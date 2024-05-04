@@ -15,3 +15,5 @@ locationButton.addEventListener("click", () => {
 const checkError = (error) => {
     switch (error.code) {
       case error.PERMISSION_DENIED:
+        locationDiv.innerText = "Please allow access to location";
+        break;
