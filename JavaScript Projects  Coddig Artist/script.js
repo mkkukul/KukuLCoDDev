@@ -24,3 +24,5 @@ const checkError = (error) => {
       locationDiv.innerText = "The request to get user location timed out";
   }
 };
+const showLocation = async (position) => {
+    //We user the NOminatim API for getting actual addres from latitude and longitude
