@@ -11,3 +11,7 @@ locationButton.addEventListener("click", () => {
     locationDiv.innerText = "The browser does not support geolocation";
   }
 });
+//Error Checks
+const checkError = (error) => {
+    switch (error.code) {
+      case error.PERMISSION_DENIED:
