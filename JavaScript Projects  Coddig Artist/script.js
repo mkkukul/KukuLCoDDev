@@ -30,3 +30,4 @@ const showLocation = async (position) => {
         `https://nominatim.openstreetmap.org/reverse?lat=${position.coords.latitude}&lon=${position.coords.longitude}&format=json`
     );
     //store response object
+    let data = await response.json();
