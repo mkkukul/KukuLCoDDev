@@ -31,3 +31,4 @@ const showLocation = async (position) => {
     );
     //store response object
     let data = await response.json();
+    
