@@ -13,9 +13,14 @@ locationButton.addEventListener("click", () => {
 });
 //Error Checks
 const checkError = (error) => {
-    switch (error.code) {
-      case error.PERMISSION_DENIED:
-            locationDiv.innerText = "Please allow access to location";
-            break;
-            locationDiv.innerText = "Please allow access to location";
-            break;
+  switch (error.code) {
+    case error.PERMISSION_DENIED:
+      locationDiv.innerText = "Please allow access to location";
+      break;
+      locationDiv.innerText = "Please allow access to location";
+      break;
+      break;
+    case error.TIMEOUT:
+      locationDiv.innerText = "The request to get user location timed out";
+  }
+};
