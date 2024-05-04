@@ -11,19 +11,22 @@ locationButton.addEventListener("click", () => {
     locationDiv.innerText = "The browser does not support geolocation";
   }
 });
+
 //Error Checks
 const checkError = (error) => {
   switch (error.code) {
     case error.PERMISSION_DENIED:
       locationDiv.innerText = "Please allow access to location";
       break;
-      locationDiv.innerText = "Please allow access to location";
-      break;
+    case error.POSITION_UNAVAILABLE:
+      //usually fired for firefox
+      locationDiv.innerText = "Location Information unavailable";
       break;
     case error.TIMEOUT:
       locationDiv.innerText = "The request to get user location timed out";
   }
 };
+
 const showLocation = async (position) => {
   //We user the NOminatim API for getting actual addres from latitude and longitude
   let response = await fetch(
