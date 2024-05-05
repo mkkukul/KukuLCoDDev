@@ -26,3 +26,10 @@ function strengthChecker(){
     for( let i = 0; i < spanRef.length; i++){
         switch(spanRef.length - 1){
             case 0 :
+                spanRef[i].style.background = "#ff3e36";
+                msg.textContent = "Your password is very weak";
+                break;
+                case 1:
+                    spanRef[i].style.background = "#ff691f";
+                    msg.textContent = "Your password is weak";
+                    break;
