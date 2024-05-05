@@ -44,3 +44,6 @@ function strengthChecker(){
             
     }
 }
+function toggle(){
+    let password = document.getElementById("password");
+    let eye = document.getElementById("toggle");
