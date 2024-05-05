@@ -4,3 +4,5 @@ et parameters = {
     numbers : false,
     special : false
 }
+let strengthBar = document.getElementById("strength-bar");
+let msg = document.getElementById("msg");
