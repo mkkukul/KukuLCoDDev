@@ -22,3 +22,7 @@ function strengthChecker(){
         span.classList.add("strength");
         strengthBar.appendChild(span);
     }
+    let spanRef = document.getElementsByClassName("strength");
+    for( let i = 0; i < spanRef.length; i++){
+        switch(spanRef.length - 1){
+            case 0 :
