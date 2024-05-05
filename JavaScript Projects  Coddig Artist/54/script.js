@@ -41,3 +41,6 @@ function strengthChecker(){
                             spanRef[i].style.background = "#0be881";
                             msg.textContent = "Your password is strong";
                             break;
+            
+    }
+}
