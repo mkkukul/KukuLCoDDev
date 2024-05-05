@@ -6,3 +6,6 @@ et parameters = {
 }
 let strengthBar = document.getElementById("strength-bar");
 let msg = document.getElementById("msg");
+
+function strengthChecker(){
+    let password = document.getElementById("password").value;
