@@ -13,3 +13,4 @@ function strengthChecker(){
     parameters.numbers = (/[0-9]+/.test(password))?
     true:false;
     parameters.special = (/[!\"$%&/()=?@~`\\.\';:+=^*_-]+/.test(password))?true:false;
+    parameters.count = (password.length > 7)?true:false;
