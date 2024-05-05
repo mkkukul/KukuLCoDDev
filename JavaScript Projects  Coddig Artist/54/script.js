@@ -51,3 +51,8 @@ function toggle(){
         password.setAttribute("type","text");
         eye.style.color = "#0be881";
     }
+    else{
+        password.setAttribute("type","password");
+        eye.style.color = "#808080";
+    }
+}
