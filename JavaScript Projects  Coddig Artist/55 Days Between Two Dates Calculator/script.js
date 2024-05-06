@@ -11,3 +11,6 @@ submit.addEventListener("click", () => {
   //Check if the input dates are valid
   //If valid calculate the difference
   if (date1.getTime() && date2.getTime()) {
+    //Calculate difference in time using getTime function
+    //getTime calculates number of years since January 1,1970
+    let timeDifference = date2.getTime() - date1.getTime();
