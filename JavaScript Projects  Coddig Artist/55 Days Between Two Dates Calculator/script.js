@@ -17,3 +17,5 @@ submit.addEventListener("click", () => {
     //Since this value is in milliseconds we need to convert it into days
     //We want the difference to be a non-negative number. Hence we use Math.abs()
     let dayDifference = Math.abs(timeDifference / (1000 * 3600 * 24))
+    output.innerHTML = `Difference between the two dates is <span>${dayDifference}</span> days`;
+  }
