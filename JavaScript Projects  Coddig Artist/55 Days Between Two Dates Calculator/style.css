@@ -18,3 +18,13 @@ body {
   top: 50%;
   left: 50%;
 }
+.inp-wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 1.2em;
+}
+label {
+  color: #d5d5d5;
+  display: block;
+  font-weight: 600;
+}
