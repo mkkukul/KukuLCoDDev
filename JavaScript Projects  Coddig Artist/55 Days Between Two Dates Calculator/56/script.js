@@ -19,3 +19,5 @@ let getMeme = () => {
       //Display meme image and title only after the image loads
       memeImg.onload = () => {
         meme.src = data.url;
+        title.innerHTML = data.title;
+      };
