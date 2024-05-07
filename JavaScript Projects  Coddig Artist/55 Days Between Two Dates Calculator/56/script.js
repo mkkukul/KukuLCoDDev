@@ -16,3 +16,6 @@ let getMeme = () => {
   .then((resp) => resp.json())
     .then((data) => {
       let memeImg = new Image();
+      //Display meme image and title only after the image loads
+      memeImg.onload = () => {
+        meme.src = data.url;
