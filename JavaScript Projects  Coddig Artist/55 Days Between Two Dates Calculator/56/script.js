@@ -24,3 +24,6 @@ let getMeme = () => {
       memeImg.src = data.url;
     });
 };
+
+//Call the getMeme() on button click and on window load
+getMemeBtn.addEventListener("click", getMeme);
