@@ -27,3 +27,4 @@ let getMeme = () => {
 
 //Call the getMeme() on button click and on window load
 getMemeBtn.addEventListener("click", getMeme);
+window.addEventListener("load", getMeme);
