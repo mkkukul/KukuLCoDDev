@@ -10,3 +10,6 @@ let subreddits = ["catmemes", "wholesomemes", "dogmemes", "me_irl"];
 let getMeme = () => {
     //Choose a random subreddit from the subreddits array
     let randomSubreddit =
+    subreddits[Math.floor(Math.random() * subreddits.length)];
+  //Fetch data from the api
+  fetch(url + randomSubreddit)
