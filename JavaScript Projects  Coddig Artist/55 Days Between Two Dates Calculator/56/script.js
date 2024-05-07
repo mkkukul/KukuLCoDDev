@@ -3,3 +3,5 @@ let title = document.getElementById("title");
 let getMemeBtn = document.getElementById("get-meme-btn");
 //API URL
 let url = " https://meme-api.herokuapp.com/gimme/";
+//Array of subreddits of your choice
+let subreddits = ["catmemes", "wholesomemes", "dogmemes", "me_irl"];
