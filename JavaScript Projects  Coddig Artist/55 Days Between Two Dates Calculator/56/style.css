@@ -37,3 +37,20 @@ body {
   color: #737081;
   letter-spacing: 0.03em;
 }
+.container button {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.2em;
+  padding: 0.8em 2em;
+  border-radius: 2em;
+  background-color: #7f5eff;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    font-size: 14px;
+  }
+}
