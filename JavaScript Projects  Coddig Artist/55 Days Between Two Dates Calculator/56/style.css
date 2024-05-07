@@ -26,3 +26,14 @@ body {
   max-width: 80%;
   margin: 0 auto 1em auto;
 }
+.container h3 {
+  display: block;
+  font-size: 1em;
+  margin: 0.5em auto 2em auto;
+  width: 70%;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+  color: #737081;
+  letter-spacing: 0.03em;
+}
