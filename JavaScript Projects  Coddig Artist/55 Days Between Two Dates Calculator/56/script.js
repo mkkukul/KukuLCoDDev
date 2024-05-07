@@ -13,3 +13,6 @@ let getMeme = () => {
     subreddits[Math.floor(Math.random() * subreddits.length)];
   //Fetch data from the api
   fetch(url + randomSubreddit)
+  .then((resp) => resp.json())
+    .then((data) => {
+      let memeImg = new Image();
