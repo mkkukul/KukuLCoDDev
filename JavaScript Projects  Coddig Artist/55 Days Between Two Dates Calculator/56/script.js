@@ -8,12 +8,12 @@ let subreddits = ["catmemes", "wholesomemes", "dogmemes", "me_irl"];
 
 //Function To Get Random Meme
 let getMeme = () => {
-    //Choose a random subreddit from the subreddits array
-    let randomSubreddit =
+  //Choose a random subreddit from the subreddits array
+  let randomSubreddit =
     subreddits[Math.floor(Math.random() * subreddits.length)];
   //Fetch data from the api
   fetch(url + randomSubreddit)
-  .then((resp) => resp.json())
+    .then((resp) => resp.json())
     .then((data) => {
       let memeImg = new Image();
       //Display meme image and title only after the image loads
@@ -21,3 +21,6 @@ let getMeme = () => {
         meme.src = data.url;
         title.innerHTML = data.title;
       };
+      memeImg.src = data.url;
+    });
+};
