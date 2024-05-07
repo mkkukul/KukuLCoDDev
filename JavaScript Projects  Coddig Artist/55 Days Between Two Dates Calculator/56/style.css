@@ -8,3 +8,15 @@ body {
   background-image: url("app-background.png");
   background-size: 3.12em;
 }
+.container {
+  width: 80%;
+  max-width: 37.5em;
+  padding: 3em 1.5em;
+  background-color: #ffffff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 0.6em;
+  box-shadow: 0 1.4em 3em rgba(20, 16, 39, 0.3);
+}
