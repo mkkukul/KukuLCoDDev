@@ -16,3 +16,5 @@ const isTouchDevice = () => {
     return false;
   }
 };
+//Random number for image
+const randomNumber = () => Math.floor(Math.random() * 8) + 1;
