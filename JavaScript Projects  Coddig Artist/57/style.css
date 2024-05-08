@@ -40,3 +40,18 @@ img {
   justify-content: center;
   align-items: center;
 }
+#start-button {
+  font-size: 1.2em;
+  padding: 0.8em 2em;
+  border: none;
+  border-radius: 3em;
+  cursor: pointer;
+}
+#moves {
+  position: relative;
+  margin: 1em;
+  text-align: right;
+}
+.hide {
+  display: none;
+}
