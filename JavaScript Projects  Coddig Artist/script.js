@@ -39,3 +39,13 @@ const checkAdjacent = (row1, row2, col1, col2) => {
   }
   return false;
 };
+//Fill array with random value for images
+const randomImages = () => {
+  while (imagesArr.length < 8) {
+    let randomVal = randomNumber();
+    if (!imagesArr.includes(randomVal)) {
+      imagesArr.push(randomVal);
+    }
+  }
+  imagesArr.push(9);
+};
