@@ -21,3 +21,22 @@ img {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 8em;
 }
+.original-image {
+  width: 25em;
+  height: 25em;
+}
+.image-container {
+  border: 1px solid #ffffff;
+}
+.cover-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #edb506;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
