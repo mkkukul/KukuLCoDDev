@@ -18,3 +18,7 @@ const isTouchDevice = () => {
 };
 //Random number for image
 const randomNumber = () => Math.floor(Math.random() * 8) + 1;
+
+
+//Get row and column value from data-position
+const getCoords = (element) => {
