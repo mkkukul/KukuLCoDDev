@@ -68,3 +68,12 @@ const gridGenerator = () => {
     }
   }
 };
+//Click the image
+const selectImage = (e) => {
+    e.preventDefault();
+    //Set currentElement
+    currentElement = e.target;
+    //target(blank image)
+    let targetElement = document.querySelector(".target");
+    let currentParent = currentElement.parentElement;
+    let targetParent = targetElement.parentElement;
