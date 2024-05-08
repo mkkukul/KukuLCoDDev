@@ -24,6 +24,7 @@ const getCoords = (element) => {
   const [row, col] = element.getAttribute("data-position").split("_");
   return [parseInt(row), parseInt(col)];
 };
+
 //row1, col1 are image co-ordinates while row2 amd col2 are blank image co-ordinates
 const checkAdjacent = (row1, row2, col1, col2) => {
   if (row1 == row2) {
@@ -39,6 +40,7 @@ const checkAdjacent = (row1, row2, col1, col2) => {
   }
   return false;
 };
+
 //Fill array with random value for images
 const randomImages = () => {
   while (imagesArr.length < 8) {
@@ -49,6 +51,7 @@ const randomImages = () => {
   }
   imagesArr.push(9);
 };
+
 //Generate Grid
 const gridGenerator = () => {
   let count = 0;
@@ -68,6 +71,7 @@ const gridGenerator = () => {
     }
   }
 };
+
 //Click the image
 const selectImage = (e) => {
   e.preventDefault();
@@ -77,9 +81,11 @@ const selectImage = (e) => {
   let targetElement = document.querySelector(".target");
   let currentParent = currentElement.parentElement;
   let targetParent = targetElement.parentElement;
+
   //get row and col values for both elements
   const [row1, col1] = getCoords(currentParent);
   const [row2, col2] = getCoords(targetParent);
+
   if (checkAdjacent(row1, row2, col1, col2)) {
     //Swap
     currentElement.remove();
@@ -115,4 +121,22 @@ const selectImage = (e) => {
     movesCount += 1;
     moves.innerText = `Moves: ${movesCount}`;
   }
+};
+
+//Start button click should display the container
+startButton.addEventListener("click", () => {
+  container.classList.remove("hide");
+  coverScreen.classList.add("hide");
+  container.innerHTML = "";
+  imagesArr = [];
+  randomImages();
+  gridGenerator();
+  movesCount = 0;
+  moves.innerText = `Moves: ${movesCount}`;
+});
+
+//Display start screen first
+window.onload = () => {
+  coverScreen.classList.remove("hide");
+  container.classList.add("hide");
 };
