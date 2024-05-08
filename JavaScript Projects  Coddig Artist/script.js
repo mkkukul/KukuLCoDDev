@@ -70,14 +70,14 @@ const gridGenerator = () => {
 };
 //Click the image
 const selectImage = (e) => {
-    e.preventDefault();
-    //Set currentElement
-    currentElement = e.target;
-    //target(blank image)
-    let targetElement = document.querySelector(".target");
-    let currentParent = currentElement.parentElement;
-    let targetParent = targetElement.parentElement;
-    //get row and col values for both elements
+  e.preventDefault();
+  //Set currentElement
+  currentElement = e.target;
+  //target(blank image)
+  let targetElement = document.querySelector(".target");
+  let currentParent = currentElement.parentElement;
+  let targetParent = targetElement.parentElement;
+  //get row and col values for both elements
   const [row1, col1] = getCoords(currentParent);
   const [row2, col2] = getCoords(targetParent);
   if (checkAdjacent(row1, row2, col1, col2)) {
@@ -100,3 +100,19 @@ const selectImage = (e) => {
       imagesArr[targetArrIndex],
       imagesArr[currentArrIndex],
     ];
+
+    //Win condition
+    if (imagesArr.join("") == "123456789") {
+      setTimeout(() => {
+        //When games ends display the cover screen again
+        coverScreen.classList.remove("hide");
+        container.classList.add("hide");
+        result.innerText = `Total Moves: ${movesCount}`;
+        startButton.innerText = "RestartGame";
+      }, 1000);
+    }
+    //Increment a display move
+    movesCount += 1;
+    moves.innerText = `Moves: ${movesCount}`;
+  }
+};
