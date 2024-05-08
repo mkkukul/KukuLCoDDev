@@ -77,3 +77,6 @@ const selectImage = (e) => {
     let targetElement = document.querySelector(".target");
     let currentParent = currentElement.parentElement;
     let targetParent = targetElement.parentElement;
+    //get row and col values for both elements
+  const [row1, col1] = getCoords(currentParent);
+  const [row2, col2] = getCoords(targetParent);
