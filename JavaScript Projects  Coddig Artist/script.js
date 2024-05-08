@@ -24,3 +24,7 @@ const getCoords = (element) => {
   const [row, col] = element.getAttribute("data-position").split("_");
   return [parseInt(row), parseInt(col)];
 };
+//row1, col1 are image co-ordinates while row2 amd col2 are blank image co-ordinates
+const checkAdjacent = (row1, row2, col1, col2) => {
+    if (row1 == row2) {
+      //left/right
