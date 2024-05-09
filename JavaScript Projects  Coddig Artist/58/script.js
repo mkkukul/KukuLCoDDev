@@ -38,6 +38,7 @@ let generateGif = () => {
           }
         };
         container.append(iframe);
+
         //Copy link button
         let copyBtn = document.createElement("button");
         copyBtn.innerText = "Copy Link";
@@ -71,3 +72,7 @@ let generateGif = () => {
       });
     });
 };
+
+//Generate Gifs on screen load or when user clicks on submit
+submitBtn.addEventListener("click", generateGif);
+window.addEventListener("load", generateGif);
