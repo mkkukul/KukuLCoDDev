@@ -19,3 +19,6 @@ let generateGif = () => {
     .then((resp) => resp.json())
     .then((info) => {
     console.log(info.data);
+    //All gifs
+    let gifsData = info.data;
+    gifsData.forEach((gif) => {
