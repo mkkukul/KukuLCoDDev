@@ -1,3 +1,6 @@
+//Paste the generated API Key here
+let apiKey = "";
+
 let submitBtn = document.getElementById("submit-btn");
 
 let generateGif = () => {
