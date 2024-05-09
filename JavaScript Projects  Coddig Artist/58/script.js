@@ -38,3 +38,7 @@ let generateGif = () => {
           }
         };
         container.append(iframe);
+        //Copy link button
+        let copyBtn = document.createElement("button");
+        copyBtn.innerText = "Copy Link";
+        copyBtn.onclick = () => {
