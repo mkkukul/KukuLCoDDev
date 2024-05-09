@@ -22,3 +22,8 @@ let generateGif = () => {
     //All gifs
     let gifsData = info.data;
     gifsData.forEach((gif) => {
+        //Generate cards for every gif
+        let container = document.createElement("div");
+        container.classList.add("container");
+        let iframe = document.createElement("img");
+        console.log(gif);
