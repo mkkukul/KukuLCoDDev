@@ -60,3 +60,7 @@ let generateGif = () => {
                 hiddenInput.value = copyLink;
                  //Select input
                 hiddenInput.select();
+                //Copy the value
+              document.execCommand("copy");
+              //remove the input
+              document.body.removeChild(hiddenInput);
