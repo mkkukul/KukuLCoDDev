@@ -42,3 +42,11 @@ let generateGif = () => {
         let copyBtn = document.createElement("button");
         copyBtn.innerText = "Copy Link";
         copyBtn.onclick = () => {
+            //Append the obtained ID to default URL
+          let copyLink = `https://media4.giphy.com/media/${gif.id}/giphy.mp4`;
+          //Copy text inside the text field
+          navigator.clipboard
+            .writeText(copyLink)
+            .then(() => {
+              alert("GIF copied to clipboard");
+            })
