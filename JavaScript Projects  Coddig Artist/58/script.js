@@ -4,3 +4,4 @@ let generateGif = () => {
     //display loader until gif load
     let loader = document.querySelector(".loader");
     loader.style.display = "block";
+    document.querySelector(".wrapper").style.display = "none";
