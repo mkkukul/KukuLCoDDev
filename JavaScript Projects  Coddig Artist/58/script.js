@@ -27,3 +27,14 @@ let generateGif = () => {
         container.classList.add("container");
         let iframe = document.createElement("img");
         console.log(gif);
+        iframe.setAttribute("src", gif.images.downsized_medium.url);
+        iframe.onload = () => {
+          //if iframes has loaded correctly reduce the count when each gif loads
+          gifCount--;
+          if (gifCount == 0) {
+            //If all gifs have loaded then hide loader and display gifs UI
+            loader.style.display = "none";
+            document.querySelector(".wrapper").style.display = "grid";
+          }
+        };
+        container.append(iframe);
