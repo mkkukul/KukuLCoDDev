@@ -13,3 +13,9 @@ let generateGif = () => {
     //API URL =
     let finalURL = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${q}&limit=${gifCount}&offset=0&rating=g&lang=en`;
     document.querySelector(".wrapper").innerHTML = "";
+
+    //Make a call to API
+    fetch(finalURL)
+    .then((resp) => resp.json())
+    .then((info) => {
+    console.log(info.data);
