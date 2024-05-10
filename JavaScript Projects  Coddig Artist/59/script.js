@@ -38,3 +38,6 @@ sliders.forEach((slider) => {
 function addFilter() {
   image.style.filter = `blur(${filterA.value}px) contrast(${filterB.value}%) hue-rotate(${filterC.value}deg) sepia(${filterD.value}%)`;
 }
+
+let radioBtns = document.querySelectorAll(".flip-option input[type='radio']");
+radioBtns.forEach( radioBtn => {
