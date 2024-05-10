@@ -7,3 +7,29 @@
 body {
   background-color: #d3e8f5;
 }
+.wrapper {
+  width: 85vw;
+  min-height: 50vmin;
+  padding: 50px 30px;
+  background-color: #ffffff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+.editor {
+  min-height: 35vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}
+.editor label {
+  font-size: 2.8vmin;
+  color: #2a292a;
+  font-weight: 400;
+}
