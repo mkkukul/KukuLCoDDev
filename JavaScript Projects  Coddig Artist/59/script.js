@@ -43,7 +43,12 @@ let radioBtns = document.querySelectorAll(".flip-option input[type='radio']");
 radioBtns.forEach((radioBtn) => {
   radioBtn.addEventListener("click", flipImage);
 });
-function flipImage(){
-    if(flipXBtn.checked){
-        image.style.transform = "scaleX(-1)";
-    }
+function flipImage() {
+  if (flipXBtn.checked) {
+    image.style.transform = "scaleX(-1)";
+  } else if (flipYBtn.checked) {
+    image.style.transform = "scaleY(-1)";
+  } else {
+    image.style.transform = "scale(1,1)";
+  }
+}
