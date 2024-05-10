@@ -33,3 +33,24 @@ body {
   color: #2a292a;
   font-weight: 400;
 }
+.editor input[type="range"] {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-top: 5px;
+}
+.flip-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.flip-buttons .flip-option {
+  margin-top: 10px;
+}
+.result {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
