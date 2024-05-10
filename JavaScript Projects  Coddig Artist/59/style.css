@@ -54,3 +54,30 @@ body {
   justify-content: center;
   gap: 20px;
 }
+.result img {
+  display: block;
+  position: relative;
+  max-width: calc(100% - 4vmin);
+  max-height: 45vmin;
+  margin: auto;
+}
+.image-container {
+  display: none;
+}
+input[type="file"] {
+  display: none;
+}
+.result label {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 220px;
+  background-color: #025bee;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px 0;
+  border-radius: 5px;
+  font-size: 2.8vmin;
+  font-weight: 400;
+  cursor: pointer;
+}
