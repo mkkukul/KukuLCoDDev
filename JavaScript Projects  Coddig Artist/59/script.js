@@ -34,3 +34,7 @@ let sliders = document.querySelectorAll(".filter input[type='range']");
 sliders.forEach((slider) => {
   slider.addEventListener("input", addFilter);
 });
+
+function addFilter() {
+  image.style.filter = `blur(${filterA.value}px) contrast(${filterB.value}%) hue-rotate(${filterC.value}deg) sepia(${filterD.value}%)`;
+}
