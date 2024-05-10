@@ -29,3 +29,8 @@ uploadButton.onchange = () => {
     image.setAttribute("src", reader.result);
   };
 };
+
+let sliders = document.querySelectorAll(".filter input[type='range']");
+sliders.forEach((slider) => {
+  slider.addEventListener("input", addFilter);
+});
