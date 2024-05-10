@@ -5,3 +5,4 @@ let filterD = document.getElementById("sepia");
 
 let noFlipBtn = document.getElementById("no-flip");
 let flipXBtn = document.getElementById("flip-x");
+let flipYBtn = document.getElementById("flip-y");
