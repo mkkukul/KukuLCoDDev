@@ -40,4 +40,6 @@ function addFilter() {
 }
 
 let radioBtns = document.querySelectorAll(".flip-option input[type='radio']");
-radioBtns.forEach( radioBtn => {
+radioBtns.forEach((radioBtn) => {
+  radioBtn.addEventListener("click", flipImage);
+});
