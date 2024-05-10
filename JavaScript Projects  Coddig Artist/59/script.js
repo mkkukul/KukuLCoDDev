@@ -9,3 +9,13 @@ let flipYBtn = document.getElementById("flip-y");
 
 let uploadButton = document.getElementById("upload-button");
 let image = document.getElementById("chosen-image");
+
+function resetFilter() {
+  filterA.value = "0";
+  filterB.value = "100";
+  filterC.value = "0";
+  filterD.value = "0";
+  noFlipBtn.checked = true;
+  addFilter();
+  flipImage();
+}
