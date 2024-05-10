@@ -19,3 +19,13 @@ function resetFilter() {
   addFilter();
   flipImage();
 }
+
+uploadButton.onchange = () => {
+  resetFilter();
+  document.querySelector(".image-container").style.display = "block";
+  let reader = new FileReader();
+  reader.readAsDataURL(uploadButton.files[0]);
+  reader.onload = () => {
+    image.setAttribute("src", reader.result);
+  };
+};
