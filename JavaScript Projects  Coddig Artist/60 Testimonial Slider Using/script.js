@@ -39,4 +39,6 @@ let nextBtn = document.getElementById("next");
 let prevBtn = document.getElementById("prev");
 
 nextBtn.addEventListener("click", () => {
-    i = (j + i + 1) % j;
+  i = (j + i + 1) % j;
+  displayTestimonial();
+});
