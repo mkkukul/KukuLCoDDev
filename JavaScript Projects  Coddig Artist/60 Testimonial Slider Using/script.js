@@ -47,6 +47,10 @@ prevBtn.addEventListener("click", () => {
   displayTestimonial();
 });
 let displayTestimonial = () => {
-    testimonialContainer.innerHTML = `
+  testimonialContainer.innerHTML = `
       <p>${testimonials[i].testimonial}</p>
       <img src=${testimonials[i].image}>
+      <h3>${testimonials[i].name}</h3>
+    <h6>${testimonials[i].job}</h6>
+  `;
+};
