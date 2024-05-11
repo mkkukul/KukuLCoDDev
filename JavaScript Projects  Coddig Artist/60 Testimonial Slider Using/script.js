@@ -37,3 +37,6 @@ let j = testimonials.length;
 let testimonialContainer = document.getElementById("testimonial-container");
 let nextBtn = document.getElementById("next");
 let prevBtn = document.getElementById("prev");
+
+nextBtn.addEventListener("click", () => {
+    i = (j + i + 1) % j;
