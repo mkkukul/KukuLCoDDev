@@ -61,3 +61,8 @@ button#prev {
   border-radius: 50%;
   width: 4.4em;
 }
+.testimonial-container h3 {
+  color: #2d3d67;
+  font-size: 1em;
+  text-align: center;
+}
