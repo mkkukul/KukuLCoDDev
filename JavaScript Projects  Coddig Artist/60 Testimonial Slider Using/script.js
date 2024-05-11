@@ -33,3 +33,7 @@ const testimonials = [
 let i = 0;
 //Total Slides
 let j = testimonials.length;
+
+let testimonialContainer = document.getElementById("testimonial-container");
+let nextBtn = document.getElementById("next");
+let prevBtn = document.getElementById("prev");
