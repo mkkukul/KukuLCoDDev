@@ -10,3 +10,6 @@ const testimonials = [
     {
         name: "Katey Topaz",
         job: "Developer, TechCrew",
+        {
+            name: "Katey Topaz",
+            job: "Developer, TechCrew",
