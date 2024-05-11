@@ -29,6 +29,7 @@ const testimonials = [
       "Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit",
   },
 ];
+
 //Current Slide
 let i = 0;
 //Total Slides
@@ -46,12 +47,13 @@ prevBtn.addEventListener("click", () => {
   i = (j + i - 1) % j;
   displayTestimonial();
 });
+
 let displayTestimonial = () => {
   testimonialContainer.innerHTML = `
       <p>${testimonials[i].testimonial}</p>
       <img src=${testimonials[i].image}>
       <h3>${testimonials[i].name}</h3>
-    <h6>${testimonials[i].job}</h6>
-  `;
+      <h6>${testimonials[i].job}</h6>
+    `;
 };
 window.onload = displayTestimonial;
