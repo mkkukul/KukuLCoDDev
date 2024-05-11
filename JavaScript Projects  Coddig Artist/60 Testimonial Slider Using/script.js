@@ -54,3 +54,4 @@ let displayTestimonial = () => {
     <h6>${testimonials[i].job}</h6>
   `;
 };
+window.onload = displayTestimonial;
