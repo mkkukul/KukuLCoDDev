@@ -43,4 +43,10 @@ nextBtn.addEventListener("click", () => {
   displayTestimonial();
 });
 prevBtn.addEventListener("click", () => {
-    i = (j + i - 1) % j;
+  i = (j + i - 1) % j;
+  displayTestimonial();
+});
+let displayTestimonial = () => {
+    testimonialContainer.innerHTML = `
+      <p>${testimonials[i].testimonial}</p>
+      <img src=${testimonials[i].image}>
