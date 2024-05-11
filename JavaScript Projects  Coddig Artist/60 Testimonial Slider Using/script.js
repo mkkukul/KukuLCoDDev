@@ -42,3 +42,5 @@ nextBtn.addEventListener("click", () => {
   i = (j + i + 1) % j;
   displayTestimonial();
 });
+prevBtn.addEventListener("click", () => {
+    i = (j + i - 1) % j;
