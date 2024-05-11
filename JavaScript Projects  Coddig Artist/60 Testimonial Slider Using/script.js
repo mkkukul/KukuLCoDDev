@@ -14,3 +14,10 @@ const testimonials = [
       testimonial:
         "Elementum tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse in est ante in nibh mauris cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet nulla",
     },
+    {
+        name: "Jae Robin",
+        job: "UI Designer, Affinity Agency",
+        image: "profile-image-3.png",
+        testimonial:
+          "Orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat duis ultricies lacus sed turpis",
+      },
