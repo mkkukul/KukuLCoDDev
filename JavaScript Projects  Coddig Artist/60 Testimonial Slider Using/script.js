@@ -31,3 +31,5 @@ const testimonials = [
 ];
 //Current Slide
 let i = 0;
+//Total Slides
+let j = testimonials.length;
