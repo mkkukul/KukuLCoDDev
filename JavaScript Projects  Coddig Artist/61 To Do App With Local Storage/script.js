@@ -32,3 +32,8 @@ const displayTasks = () => {
     taskInnerDiv.classList.add("task");
     taskInnerDiv.setAttribute("id", key);
     taskInnerDiv.innerHTML = `<span id="taskname">${key.split("_")[1]}</span>`;
+    //localstorage would store boolean as string so we parse it to boolean back
+    let editButton = document.createElement("button");
+    editButton.classList.add("edit");
+    editButton.innerHTML = `<i class="fa-solid fa-pen-to-square"></i>`;
+    if (!JSON.parse(value)) {
