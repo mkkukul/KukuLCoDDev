@@ -20,4 +20,7 @@ const displayTasks = () => {
       tasksDiv.style.display = "none";
     }
      //Clear the tasks
-  tasksDiv.innerHTML = "";
+    tasksDiv.innerHTML = "";
+    //Fetch All The Keys in local storage
+    let tasks = Object.keys(localStorage);
+    tasks = tasks.sort();
