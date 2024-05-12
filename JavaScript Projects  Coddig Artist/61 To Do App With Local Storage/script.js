@@ -19,3 +19,5 @@ const displayTasks = () => {
     } else {
       tasksDiv.style.display = "none";
     }
+     //Clear the tasks
+  tasksDiv.innerHTML = "";
