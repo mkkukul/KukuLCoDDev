@@ -46,3 +46,8 @@ const displayTasks = () => {
     taskInnerDiv.innerHTML += `<button class="delete"><i class="fa-solid fa-trash"></i></button>`;
     tasksDiv.appendChild(taskInnerDiv);
   }
+  //tasks completed
+  tasks = document.querySelectorAll(".task");
+  tasks.forEach((element, index) => {
+    element.onclick = () => {
+      //local storage update
