@@ -19,13 +19,17 @@ const displayTasks = () => {
   } else {
     tasksDiv.style.display = "none";
   }
+
   //Clear the tasks
   tasksDiv.innerHTML = "";
+
   //Fetch All The Keys in local storage
   let tasks = Object.keys(localStorage);
   tasks = tasks.sort();
+
   for (let key of tasks) {
     let classValue = "";
+
     //Get all values
     let value = localStorage.getItem(key);
     let taskInnerDiv = document.createElement("div");
@@ -46,6 +50,7 @@ const displayTasks = () => {
     taskInnerDiv.innerHTML += `<button class="delete"><i class="fa-solid fa-trash"></i></button>`;
     tasksDiv.appendChild(taskInnerDiv);
   }
+
   //tasks completed
   tasks = document.querySelectorAll(".task");
   tasks.forEach((element, index) => {
@@ -58,6 +63,7 @@ const displayTasks = () => {
       }
     };
   });
+
   //Edit Tasks
   editTasks = document.getElementsByClassName("edit");
   Array.from(editTasks).forEach((element, index) => {
@@ -75,6 +81,7 @@ const displayTasks = () => {
       parent.remove();
     });
   });
+
   //Delete Tasks
   deleteTasks = document.getElementsByClassName("delete");
   Array.from(deleteTasks).forEach((element, index) => {
@@ -88,6 +95,7 @@ const displayTasks = () => {
     });
   });
 };
+
 //Disable Edit Button
 const disableButtons = (bool) => {
   let editButtons = document.getElementsByClassName("edit");
@@ -95,16 +103,19 @@ const disableButtons = (bool) => {
     element.disabled = bool;
   });
 };
+
 //Remove Task from local storage
 const removeTask = (taskValue) => {
   localStorage.removeItem(taskValue);
   displayTasks();
 };
+
 //Add tasks to local storage
 const updateStorage = (index, taskValue, completed) => {
   localStorage.setItem(`${index}_${taskValue}`, completed);
   displayTasks();
 };
+
 //Function To Add New Task
 document.querySelector("#push").addEventListener("click", () => {
   //Enable the edit button
