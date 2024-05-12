@@ -26,3 +26,9 @@ const displayTasks = () => {
     tasks = tasks.sort();
     for (let key of tasks) {
         let classValue = "";
+        //Get all values
+    let value = localStorage.getItem(key);
+    let taskInnerDiv = document.createElement("div");
+    taskInnerDiv.classList.add("task");
+    taskInnerDiv.setAttribute("id", key);
+    taskInnerDiv.innerHTML = `<span id="taskname">${key.split("_")[1]}</span>`;
