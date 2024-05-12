@@ -37,3 +37,8 @@ const displayTasks = () => {
     editButton.classList.add("edit");
     editButton.innerHTML = `<i class="fa-solid fa-pen-to-square"></i>`;
     if (!JSON.parse(value)) {
+        editButton.style.visibility = "visible";
+    } else {
+      editButton.style.visibility = "hidden";
+      taskInnerDiv.classList.add("completed");
+    }
