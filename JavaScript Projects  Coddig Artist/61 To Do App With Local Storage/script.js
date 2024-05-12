@@ -62,3 +62,16 @@ const displayTasks = () => {
   editTasks = document.getElementsByClassName("edit");
   Array.from(editTasks).forEach((element, index) => {
     element.addEventListener("click", (e) => {
+        //Stop propogation to outer elements (if removed when we click delete eventually rhw click will move to parent)
+      e.stopPropagation();
+      //disable other edit buttons when one task is being edited
+      disableButtons(true);
+      //update input value and remove div
+      let parent = element.parentElement;
+      newTaskInput.value = parent.querySelector("#taskname").innerText;
+      //set updateNote to the task that is being edited
+      updateNote = parent.id;
+      //remove task
+      parent.remove();
+    });
+  });
