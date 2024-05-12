@@ -11,3 +11,11 @@ window.onload = () => {
   count = Object.keys(localStorage).length;
   displayTasks();
 };
+
+//Function to Display The Tasks
+const displayTasks = () => {
+    if (Object.keys(localStorage).length > 0) {
+      tasksDiv.style.display = "inline-block";
+    } else {
+      tasksDiv.style.display = "none";
+    }
