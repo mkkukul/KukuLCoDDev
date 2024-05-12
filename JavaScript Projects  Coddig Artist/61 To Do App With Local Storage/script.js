@@ -42,3 +42,7 @@ const displayTasks = () => {
       editButton.style.visibility = "hidden";
       taskInnerDiv.classList.add("completed");
     }
+    taskInnerDiv.appendChild(editButton);
+    taskInnerDiv.innerHTML += `<button class="delete"><i class="fa-solid fa-trash"></i></button>`;
+    tasksDiv.appendChild(taskInnerDiv);
+  }
