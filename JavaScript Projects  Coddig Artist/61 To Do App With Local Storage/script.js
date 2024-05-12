@@ -58,3 +58,7 @@ const displayTasks = () => {
       }
     };
   });
+  //Edit Tasks
+  editTasks = document.getElementsByClassName("edit");
+  Array.from(editTasks).forEach((element, index) => {
+    element.addEventListener("click", (e) => {
