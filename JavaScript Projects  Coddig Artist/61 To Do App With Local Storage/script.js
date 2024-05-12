@@ -51,3 +51,10 @@ const displayTasks = () => {
   tasks.forEach((element, index) => {
     element.onclick = () => {
       //local storage update
+      if (element.classList.contains("completed")) {
+        updateStorage(element.id.split("_")[0], element.innerText, false);
+      } else {
+        updateStorage(element.id.split("_")[0], element.innerText, true);
+      }
+    };
+  });
