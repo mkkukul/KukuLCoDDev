@@ -61,3 +61,12 @@ img {
   display: flex;
   justify-content: space-between;
 }
+.btns button {
+  background-color: transparent;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  padding: 8px 40px;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
