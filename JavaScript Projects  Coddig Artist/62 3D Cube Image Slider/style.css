@@ -49,3 +49,10 @@ img {
   transform: rotateY(-270deg) translateX(150px);
   transform-origin: 100% 0;
 }
+.back {
+  transform: translateZ(-150px) rotateY(180deg);
+}
+.left {
+  transform: rotateY(270deg) translateX(-150px);
+  transform-origin: 0 50%;
+}
