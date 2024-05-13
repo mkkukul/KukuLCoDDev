@@ -26,3 +26,15 @@ body {
   perspective: 800px;
   perspective-origin: 50%;
 }
+.image-cube {
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  position: relative;
+  transition: 2s;
+}
+.image-cube div {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+}
