@@ -38,3 +38,14 @@ body {
   width: 300px;
   position: absolute;
 }
+img {
+  width: 100%;
+  transform: translateZ(0);
+}
+.front {
+  transform: translateZ(150px);
+}
+.right {
+  transform: rotateY(-270deg) translateX(150px);
+  transform-origin: 100% 0;
+}
