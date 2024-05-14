@@ -12,3 +12,10 @@ const init = () => {
 let mouseX = 0;
 let mouseY = 0;
 let isDragged = false;
+//Events for touch and mouse
+let events = {
+    mouse: {
+      down: "mousedown",
+      move: "mousemove",
+      up: "mouseup",
+    },
