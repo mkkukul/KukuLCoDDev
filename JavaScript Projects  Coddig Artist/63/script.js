@@ -41,3 +41,8 @@ const isTouchDevice = () => {
 //Get left and top of canvas
 let rectLeft = canvas.getBoundingClientRect().left;
 let rectTop = canvas.getBoundingClientRect().top;
+//Exact x and y position of mouse/touch
+const getXY = (e) => {
+  mouseX = (!isTouchDevice() ? e.pageX : e.touches[0].pageX) - rectLeft;
+  mouseY = (!isTouchDevice() ? e.pageY : e.touches[0].pageY) - rectTop;
+};
