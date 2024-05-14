@@ -14,8 +14,14 @@ let mouseY = 0;
 let isDragged = false;
 //Events for touch and mouse
 let events = {
-    mouse: {
-      down: "mousedown",
-      move: "mousemove",
-      up: "mouseup",
-    },
+  mouse: {
+    down: "mousedown",
+    move: "mousemove",
+    up: "mouseup",
+  },
+  touch: {
+    down: "touchstart",
+    move: "touchmove",
+    up: "touchend",
+  },
+};
