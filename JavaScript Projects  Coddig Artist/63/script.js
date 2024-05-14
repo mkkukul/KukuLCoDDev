@@ -38,3 +38,6 @@ const isTouchDevice = () => {
     return false;
   }
 };
+//Get left and top of canvas
+let rectLeft = canvas.getBoundingClientRect().left;
+let rectTop = canvas.getBoundingClientRect().top;
