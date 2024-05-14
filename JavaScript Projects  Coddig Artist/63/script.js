@@ -64,3 +64,20 @@ canvas.addEventListener(events[deviceType].move, (event) => {
       scratch(mouseX, mouseY);
     }
   });
+  //stop drawing
+canvas.addEventListener(events[deviceType].up, () => {
+    isDragged = false;
+  });
+  //If mouse leaves the square
+  canvas.addEventListener("mouseleave", () => {
+    isDragged = false;
+  });
+  const scratch = (x, y) => {
+    //destination-out draws new shapes behind the existing canvas content
+    context.globalCompositeOperation = "destination-out";
+    context.beginPath();
+    //arc makes circle - x,y,radius,start angle,end angle
+    context.arc(x, y, 12, 0, 2 * Math.PI);
+    context.fill();
+  };
+  window.onload = init();
