@@ -50,3 +50,7 @@ isTouchDevice();
 //Start Scratch
 canvas.addEventListener(events[deviceType].down, (event) => {
   isDragged = true;
+  /Get x and y position
+  getXY(event);
+  scratch(mouseX, mouseY);
+});
