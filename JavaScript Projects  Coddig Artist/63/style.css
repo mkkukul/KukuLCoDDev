@@ -29,3 +29,12 @@ body {
   cursor: grabbing;
   border-radius: 0.3em;
 }
+.base {
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1.2em 2.5em rgba(16, 2, 96, 0.15);
+}
