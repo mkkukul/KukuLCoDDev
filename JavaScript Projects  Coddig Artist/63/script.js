@@ -54,3 +54,13 @@ canvas.addEventListener(events[deviceType].down, (event) => {
   getXY(event);
   scratch(mouseX, mouseY);
 });
+//mousemove/touchmove
+canvas.addEventListener(events[deviceType].move, (event) => {
+    if (!isTouchDevice()) {
+      event.preventDefault();
+    }
+    if (isDragged) {
+      getXY(event);
+      scratch(mouseX, mouseY);
+    }
+  });
