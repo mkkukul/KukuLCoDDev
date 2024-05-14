@@ -26,3 +26,10 @@ let events = {
   },
 };
 let deviceType = "";
+//Detech touch device
+const isTouchDevice = () => {
+    try {
+      //We try to create TouchEvent. It would fail for desktops and throw error.
+      document.createEvent("TouchEvent");
+      deviceType = "touch";
+      return true;
