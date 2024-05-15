@@ -21,3 +21,26 @@ body {
   left: 50%;
   z-index: -1;
 }
+.eyes-wrapper {
+  display: flex;
+}
+.eyes-wrapper:before {
+  content: "";
+  position: absolute;
+  width: 26em;
+  height: 6em;
+  background-color: #a8a7ac;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.eye {
+  width: 10em;
+  height: 10em;
+  border: 15px solid #a6a4ad;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
