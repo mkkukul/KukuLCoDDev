@@ -17,4 +17,6 @@ events.forEach((eventType) => {
     document.body.addEventListener(eventType, (event) => {
         eye_ref.forEach((eye) => {
             /* getBoundingClientRect() method returns the position relative to the viewport */
-            
+            let eyeX = eye.getBoundingClientRect().left + eye.clientWidth / 2;
+            let eyeY = eye.getBoundingClientRect().top + eye.clientHeight / 2;
+
