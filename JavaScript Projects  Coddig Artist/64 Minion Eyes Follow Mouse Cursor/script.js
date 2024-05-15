@@ -27,5 +27,6 @@ events.forEach((eventType) => {
     Use atan2(returns angle in radians)
     */
       let radian = Math.atan2(x - eyeX, y - eyeY);
-      
+       //Convert Radians to Degrees
+       let rotationDegrees = radian * (180 / Math.PI) * -1 + 180;
 
