@@ -15,3 +15,6 @@ function isTouchDevice() {
 //Same function for both events
 events.forEach((eventType) => {
     document.body.addEventListener(eventType, (event) => {
+        eye_ref.forEach((eye) => {
+            /* getBoundingClientRect() method returns the position relative to the viewport */
+            
