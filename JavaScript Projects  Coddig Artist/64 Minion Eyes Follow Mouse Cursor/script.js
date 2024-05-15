@@ -12,3 +12,6 @@ function isTouchDevice() {
     return false;
   }
 }
+//Same function for both events
+events.forEach((eventType) => {
+    document.body.addEventListener(eventType, (event) => {
