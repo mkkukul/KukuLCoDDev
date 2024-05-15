@@ -5,5 +5,10 @@ let eye_ref = document.querySelectorAll(".eye");
 let events = ["mousemove", "touchmove"];
 //Check for touch screen
 function isTouchDevice() {
-    try {
-      document.createEvent("TouchEvent");
+  try {
+    document.createEvent("TouchEvent");
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
