@@ -12,3 +12,4 @@ let calculate = () => {
     <div>Total Interest: <span>${simpleInterest.toFixed(2)}</span></div>
     <div>Total Amount: <span>${amount.toFixed(2)}</span></div>`;
 };
+calculateBtn.addEventListener("click", calculate);
