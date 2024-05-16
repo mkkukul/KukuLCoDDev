@@ -27,3 +27,11 @@ label {
   margin-bottom: 10px;
   font-weight: 500;
 }
+input {
+  margin-bottom: 20px;
+  border: none;
+  font-size: 20px;
+  border-bottom: 2px solid #585858;
+  color: #585858;
+  padding: 2px 15px;
+}
