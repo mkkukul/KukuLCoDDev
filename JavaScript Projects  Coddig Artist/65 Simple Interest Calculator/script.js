@@ -5,3 +5,6 @@ let calculate = () => {
     let r = Number(document.getElementById("rate").value);
     let t = Number(document.getElementById("time").value);
     let duration = document.getElementById("duration").value;
+    let simpleInterest =
+        duration == "year" ? (p * r * t) / 100 : (p * r * t) / 1200;
+    let amount = p + simpleInterest;
