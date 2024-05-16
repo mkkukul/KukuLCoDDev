@@ -10,4 +10,5 @@ let calculate = () => {
     let amount = p + simpleInterest;
     result.innerHTML = `<div>Principal Amount: <span>${p.toFixed(2)}</span></div>
     <div>Total Interest: <span>${simpleInterest.toFixed(2)}</span></div>
+    <div>Total Amount: <span>${amount.toFixed(2)}</span></div>`;
 
