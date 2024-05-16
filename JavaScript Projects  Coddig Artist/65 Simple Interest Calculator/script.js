@@ -9,3 +9,5 @@ let calculate = () => {
         duration == "year" ? (p * r * t) / 100 : (p * r * t) / 1200;
     let amount = p + simpleInterest;
     result.innerHTML = `<div>Principal Amount: <span>${p.toFixed(2)}</span></div>
+    <div>Total Interest: <span>${simpleInterest.toFixed(2)}</span></div>
+
