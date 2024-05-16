@@ -13,3 +13,4 @@ let calculate = () => {
     <div>Total Amount: <span>${amount.toFixed(2)}</span></div>`;
 };
 calculateBtn.addEventListener("click", calculate);
+window.addEventListener("load", calculate);
