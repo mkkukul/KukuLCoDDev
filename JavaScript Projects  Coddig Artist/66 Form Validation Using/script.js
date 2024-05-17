@@ -89,3 +89,81 @@ const validInput = (inputReference) => {
   inputReference.classList.remove("error");
   inputReference.classList.add("valid");
 };
+
+//First name
+firstNameInput.addEventListener("input", () => {
+  if (textVerify(firstNameInput.value)) {
+    //If verification returns true
+    firstNameError.classList.add("hide");
+    validInput(firstNameInput);
+  } else {
+    //for false
+    errorUpdate(firstNameInput, firstNameError);
+    //empty checker
+    emptyUpdate(firstNameInput, emptyFirstNameError, firstNameError);
+  }
+});
+
+//Last name
+lastNameInput.addEventListener("input", () => {
+  if (textVerify(lastNameInput.value)) {
+    lastNameError.classList.add("hide");
+    validInput(lastNameInput);
+  } else {
+    errorUpdate(lastNameInput, lastNameError);
+    emptyUpdate(lastNameInput, emptyLastNameError, lastNameError);
+  }
+});
+
+//Phone
+phoneInput.addEventListener("input", () => {
+  if (phoneVerify(phoneInput.value)) {
+    phoneError.classList.add("hide");
+    validInput(phoneInput);
+  } else {
+    errorUpdate(phoneInput, phoneError);
+    emptyUpdate(phoneInput, emptyPhoneError, phoneError);
+  }
+});
+
+//Email
+emailInput.addEventListener("input", () => {
+  if (emailVerify(emailInput.value)) {
+    emailError.classList.add("hide");
+    validInput(emailInput);
+  } else {
+    errorUpdate(emailInput, emailError);
+    emptyUpdate(emailInput, emptyEmailError, emailError);
+  }
+});
+
+//Password
+passwordInput.addEventListener("input", () => {
+  if (passwordVerify(passwordInput.value)) {
+    passwordError.classList.add("hide");
+    validInput(passwordInput);
+  } else {
+    errorUpdate(passwordInput, passwordError);
+    emptyUpdate(passwordInput, emptyPasswordError, passwordError);
+  }
+});
+
+//Verify password
+verifyPasswordInput.addEventListener("input", () => {
+  if (verifyPasswordInput.value === passwordInput.value) {
+    verifyPasswordError.classList.add("hide");
+    validInput(verifyPasswordInput);
+  } else {
+    errorUpdate(verifyPasswordInput, verifyPasswordError);
+    emptyUpdate(passwordInput, emptyVerifyPasswordError, verifyPasswordError);
+  }
+});
+
+//Submit button
+submitButton.addEventListener("click", () => {
+  if (validClasses.length == 6 && invalidClasses.length == 0) {
+    alert("Success");
+  } else {
+    alert("Error");
+  }
+});
