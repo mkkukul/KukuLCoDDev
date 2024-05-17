@@ -53,3 +53,9 @@ const phoneVerify = (number) => {
   const regex = /^[0-9]{10}$/;
   return regex.test(number);
 };
+
+//Email verification
+const emailVerify = (input) => {
+  const regex = /^[a-z0-9_]+@[a-z]{3,}\.[a-z\.]{3,}$/;
+  return regex.test(input);
+};
