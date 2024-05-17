@@ -17,3 +17,8 @@ let emptyPhoneError = document.getElementById("empty-phone");
 let emailInput = document.getElementById("email");
 let emailError = document.getElementById("email-error");
 let emptyEmailError = document.getElementById("empty-email");
+
+//Password
+let passwordInput = document.getElementById("password");
+let passwordError = document.getElementById("password-error");
+let emptyPasswordError = document.getElementById("empty-password");
