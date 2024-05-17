@@ -76,3 +76,10 @@ const emptyUpdate = (
     emptyErrorReference.classList.add("hide");
   }
 };
+
+//For error styling and displaying error message
+const errorUpdate = (inputReference, errorReference) => {
+  errorReference.classList.remove("hide");
+  inputReference.classList.remove("valid");
+  inputReference.classList.add("error");
+};
