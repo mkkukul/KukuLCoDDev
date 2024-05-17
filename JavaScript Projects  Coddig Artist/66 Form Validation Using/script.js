@@ -22,3 +22,8 @@ let emptyEmailError = document.getElementById("empty-email");
 let passwordInput = document.getElementById("password");
 let passwordError = document.getElementById("password-error");
 let emptyPasswordError = document.getElementById("empty-password");
+
+//Verify Password
+let verifyPasswordInput = document.getElementById("verify-password");
+let verifyPasswordError = document.getElementById("verify-password-error");
+let emptyVerifyPasswordError = document.getElementById("empty-verify-password");
