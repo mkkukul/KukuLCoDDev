@@ -59,3 +59,20 @@ const emailVerify = (input) => {
   const regex = /^[a-z0-9_]+@[a-z]{3,}\.[a-z\.]{3,}$/;
   return regex.test(input);
 };
+
+//For empty input - accepts(input,empty error for that input and other errors)
+const emptyUpdate = (
+  inputReference,
+  emptyErrorReference,
+  otherErrorReference
+) => {
+  if (!inputReference.value) {
+    //input is null/empty
+    emptyErrorReference.classList.remove("hide");
+    otherErrorReference.classList.add("hide");
+    inputReference.classList.add("error");
+  } else {
+    //input has some content
+    emptyErrorReference.classList.add("hide");
+  }
+};
