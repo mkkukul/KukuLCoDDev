@@ -7,3 +7,12 @@
 body {
   background-color: #3164ff;
 }
+label,
+.error-message {
+  display: block;
+  font-size: 1em;
+}
+label {
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
