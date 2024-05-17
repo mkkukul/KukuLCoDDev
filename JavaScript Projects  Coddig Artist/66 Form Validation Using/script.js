@@ -41,3 +41,9 @@ const passwordVerify = (password) => {
     /^(?=.+[a-z])(?=.+[A-Z])(?=.+[0-9])(?=.+[\$\%\^\&\!@\#\*\(\)\+\=`~\?\>\<])/;
   return regex.test(password) && password.length >= 8;
 };
+
+//Text verification (if input contains only text)
+const textVerify = (text) => {
+  const regex = /^[a-zA-Z]{3,}$/;
+  return regex.test(text);
+};
