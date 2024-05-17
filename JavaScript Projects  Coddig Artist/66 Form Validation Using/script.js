@@ -34,3 +34,10 @@ let submitButton = document.getElementById("submit-button");
 //Valid
 let validClasses = document.getElementsByClassName("valid");
 let invalidClasses = document.getElementsByClassName("error");
+
+//Password Verification
+const passwordVerify = (password) => {
+  const regex =
+    /^(?=.+[a-z])(?=.+[A-Z])(?=.+[0-9])(?=.+[\$\%\^\&\!@\#\*\(\)\+\=`~\?\>\<])/;
+  return regex.test(password) && password.length >= 8;
+};
