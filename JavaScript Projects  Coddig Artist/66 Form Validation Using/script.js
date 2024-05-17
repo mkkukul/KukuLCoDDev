@@ -12,3 +12,8 @@ let emptyLastNameError = document.getElementById("empty-last-name");
 let phoneInput = document.getElementById("phone");
 let phoneError = document.getElementById("phone-error");
 let emptyPhoneError = document.getElementById("empty-phone");
+
+//Email
+let emailInput = document.getElementById("email");
+let emailError = document.getElementById("email-error");
+let emptyEmailError = document.getElementById("empty-email");
