@@ -47,3 +47,9 @@ const textVerify = (text) => {
   const regex = /^[a-zA-Z]{3,}$/;
   return regex.test(text);
 };
+
+//Phone number verification
+const phoneVerify = (number) => {
+  const regex = /^[0-9]{10}$/;
+  return regex.test(number);
+};
