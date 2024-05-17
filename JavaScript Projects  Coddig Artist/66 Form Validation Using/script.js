@@ -83,3 +83,9 @@ const errorUpdate = (inputReference, errorReference) => {
   inputReference.classList.remove("valid");
   inputReference.classList.add("error");
 };
+
+//For no errors
+const validInput = (inputReference) => {
+  inputReference.classList.remove("error");
+  inputReference.classList.add("valid");
+};
