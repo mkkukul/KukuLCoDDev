@@ -27,3 +27,6 @@ let emptyPasswordError = document.getElementById("empty-password");
 let verifyPasswordInput = document.getElementById("verify-password");
 let verifyPasswordError = document.getElementById("verify-password-error");
 let emptyVerifyPasswordError = document.getElementById("empty-verify-password");
+
+//Submit
+let submitButton = document.getElementById("submit-button");
