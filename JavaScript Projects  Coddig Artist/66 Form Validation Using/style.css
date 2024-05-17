@@ -7,6 +7,20 @@
 body {
   background-color: #3164ff;
 }
+.container {
+  width: 90vw;
+  max-width: 600px;
+  padding: 2em 1.5em;
+  background-color: #ffffff;
+  margin: 1em auto;
+  border-radius: 0.5em;
+}
+h4 {
+  font-size: 1.5em;
+}
+.input-section {
+  margin: 0.5em 0;
+}
 label,
 .error-message {
   display: block;
@@ -38,4 +52,21 @@ button {
   color: #ffffff;
   padding: 0.8em 0;
   margin-top: 2em;
+}
+.required-color {
+  color: #ff4747;
+}
+.error {
+  border-color: #ff4747;
+}
+.valid {
+  border-color: #37a137;
+}
+.hide {
+  display: none;
+}
+@media only screen and (max-width: 450px) {
+  .container {
+    font-size: 14px;
+  }
 }
