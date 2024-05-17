@@ -30,3 +30,7 @@ let emptyVerifyPasswordError = document.getElementById("empty-verify-password");
 
 //Submit
 let submitButton = document.getElementById("submit-button");
+
+//Valid
+let validClasses = document.getElementsByClassName("valid");
+let invalidClasses = document.getElementsByClassName("error");
