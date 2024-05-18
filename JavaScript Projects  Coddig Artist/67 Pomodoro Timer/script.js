@@ -77,17 +77,24 @@ pause.addEventListener(
   })
 );
 startBtn.addEventListener("click", () => {
-    reset.classList.add("show");
-    pause.classList.add("show");
-    startBtn.classList.add("hide");
-    startBtn.classList.remove("show");
-    if (paused) {
-        paused = false;
-        time.textContent = `${appendZero(minCount)}:${appendZero(count)}`;
-        set = setInterval(() => {
-          count--;
-          time.textContent = `${appendZero(minCount)}:${appendZero(count)}`;
+  reset.classList.add("show");
+  pause.classList.add("show");
+  startBtn.classList.add("hide");
+  startBtn.classList.remove("show");
+  if (paused) {
+    paused = false;
+    time.textContent = `${appendZero(minCount)}:${appendZero(count)}`;
+    set = setInterval(() => {
+      count--;
+      time.textContent = `${appendZero(minCount)}:${appendZero(count)}`;
       if (count == 0) {
         if (minCount != 0) {
           minCount--;
           count = 60;
+        } else {
+          clearInterval(set);
+        }
+      }
+    }, 1000);
+  }
+});
