@@ -12,10 +12,12 @@ let count = 59;
 let paused = true;
 let minCount = 24;
 time.textContent = `${minCount + 1}:00`;
+
 const appendZero = (value) => {
   value = value < 10 ? `0${value}` : value;
   return value;
 };
+
 reset.addEventListener(
   "click",
   (resetTime = () => {
@@ -35,11 +37,13 @@ reset.addEventListener(
     time.textContent = `${minCount + 1}:00`;
   })
 );
+
 const removeFocus = () => {
   buttons.forEach((btn) => {
     btn.classList.remove("btn-focus");
   });
 };
+
 focusButton.addEventListener("click", () => {
   removeFocus();
   focusButton.classList.add("btn-focus");
@@ -48,6 +52,7 @@ focusButton.addEventListener("click", () => {
   count = 59;
   time.textContent = `${minCount + 1}:00`;
 });
+
 shortBreakButton.addEventListener("click", () => {
   active = "short";
   removeFocus();
@@ -57,6 +62,7 @@ shortBreakButton.addEventListener("click", () => {
   count = 59;
   time.textContent = `${appendZero(minCount + 1)}:00`;
 });
+
 longBreakButton.addEventListener("click", () => {
   active = "long";
   removeFocus();
@@ -66,6 +72,7 @@ longBreakButton.addEventListener("click", () => {
   count = 59;
   time.textContent = `${minCount + 1}:00`;
 });
+
 pause.addEventListener(
   "click",
   (pauseTimer = () => {
@@ -76,6 +83,7 @@ pause.addEventListener(
     reset.classList.remove("show");
   })
 );
+
 startBtn.addEventListener("click", () => {
   reset.classList.add("show");
   pause.classList.add("show");
