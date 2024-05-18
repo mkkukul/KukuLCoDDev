@@ -12,3 +12,7 @@ let count = 59;
 let paused = true;
 let minCount = 24;
 time.textContent = `${minCount + 1}:00`;
+const appendZero = (value) => {
+  value = value < 10 ? `0${value}` : value;
+  return value;
+};
