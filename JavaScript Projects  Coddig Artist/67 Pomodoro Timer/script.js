@@ -57,3 +57,12 @@ shortBreakButton.addEventListener("click", () => {
   count = 59;
   time.textContent = `${appendZero(minCount + 1)}:00`;
 });
+longBreakButton.addEventListener("click", () => {
+  active = "long";
+  removeFocus();
+  longBreakButton.classList.add("btn-focus");
+  pauseTimer();
+  minCount = 14;
+  count = 59;
+  time.textContent = `${minCount + 1}:00`;
+});
