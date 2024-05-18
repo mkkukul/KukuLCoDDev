@@ -40,3 +40,11 @@ const removeFocus = () => {
     btn.classList.remove("btn-focus");
   });
 };
+focusButton.addEventListener("click", () => {
+  removeFocus();
+  focusButton.classList.add("btn-focus");
+  pauseTimer();
+  minCount = 24;
+  count = 59;
+  time.textContent = `${minCount + 1}:00`;
+});
