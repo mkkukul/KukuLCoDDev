@@ -17,3 +17,23 @@ body {
   padding: 4em 2em;
   border-radius: 0.5em;
 }
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.section-container {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+.btn {
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  background-color: #3e3f43;
+  color: #a9a7a7;
+}
+.btn-focus {
+  background-color: #cb202d;
+  color: #ffffff;
+}
