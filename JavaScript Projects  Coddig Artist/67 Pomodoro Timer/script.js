@@ -16,3 +16,22 @@ const appendZero = (value) => {
   value = value < 10 ? `0${value}` : value;
   return value;
 };
+reset.addEventListener(
+  "click",
+  (resetTime = () => {
+    pauseTimer();
+    switch (active) {
+      case "long":
+        minCount = 14;
+        break;
+      case "short":
+        minCount = 4;
+        break;
+      default:
+        minCount = 24;
+        break;
+    }
+    count = 59;
+    time.textContent = `${minCount + 1}:00`;
+  })
+);
