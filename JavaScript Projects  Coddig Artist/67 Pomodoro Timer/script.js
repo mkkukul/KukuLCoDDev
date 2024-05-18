@@ -48,3 +48,12 @@ focusButton.addEventListener("click", () => {
   count = 59;
   time.textContent = `${minCount + 1}:00`;
 });
+shortBreakButton.addEventListener("click", () => {
+  active = "short";
+  removeFocus();
+  shortBreakButton.classList.add("btn-focus");
+  pauseTimer();
+  minCount = 4;
+  count = 59;
+  time.textContent = `${appendZero(minCount + 1)}:00`;
+});
