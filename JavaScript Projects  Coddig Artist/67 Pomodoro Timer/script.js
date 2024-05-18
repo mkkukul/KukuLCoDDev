@@ -76,3 +76,13 @@ pause.addEventListener(
     reset.classList.remove("show");
   })
 );
+startBtn.addEventListener("click", () => {
+    reset.classList.add("show");
+    pause.classList.add("show");
+    startBtn.classList.add("hide");
+    startBtn.classList.remove("show");
+    if (paused) {
+        paused = false;
+        time.textContent = `${appendZero(minCount)}:${appendZero(count)}`;
+        set = setInterval(() => {
+          count--;
