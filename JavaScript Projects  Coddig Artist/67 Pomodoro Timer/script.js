@@ -66,3 +66,13 @@ longBreakButton.addEventListener("click", () => {
   count = 59;
   time.textContent = `${minCount + 1}:00`;
 });
+pause.addEventListener(
+  "click",
+  (pauseTimer = () => {
+    paused = true;
+    clearInterval(set);
+    startBtn.classList.remove("hide");
+    pause.classList.remove("show");
+    reset.classList.remove("show");
+  })
+);
