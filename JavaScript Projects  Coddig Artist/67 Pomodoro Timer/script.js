@@ -86,3 +86,8 @@ startBtn.addEventListener("click", () => {
         time.textContent = `${appendZero(minCount)}:${appendZero(count)}`;
         set = setInterval(() => {
           count--;
+          time.textContent = `${appendZero(minCount)}:${appendZero(count)}`;
+      if (count == 0) {
+        if (minCount != 0) {
+          minCount--;
+          count = 60;
