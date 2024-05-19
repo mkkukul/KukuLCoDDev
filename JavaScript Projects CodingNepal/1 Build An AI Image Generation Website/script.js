@@ -6,3 +6,6 @@ onst OPENAI_API_KEY = "YOUR-OPENAI-API-KEY-HERE"; // Your OpenAI API key here
 let isImageGenerating = false;
 const updateImageCard = (imgDataArray) => {
     imgDataArray.forEach((imgObject, index) => {
+        const imgCard = imageGallery.querySelectorAll(".img-card")[index];
+    const imgElement = imgCard.querySelector("img");
+    const downloadBtn = imgCard.querySelector(".download-btn");
