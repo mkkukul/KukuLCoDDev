@@ -9,3 +9,6 @@ const updateImageCard = (imgDataArray) => {
         const imgCard = imageGallery.querySelectorAll(".img-card")[index];
     const imgElement = imgCard.querySelector("img");
     const downloadBtn = imgCard.querySelector(".download-btn");
+    // Set the image source to the AI-generated image data
+    const aiGeneratedImage = `data:image/jpeg;base64,${imgObject.b64_json}`;
+    imgElement.src = aiGeneratedImage;
