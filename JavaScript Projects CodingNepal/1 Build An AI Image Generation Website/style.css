@@ -7,3 +7,14 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+.image-generator {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: url("images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
