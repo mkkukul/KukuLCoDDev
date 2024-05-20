@@ -13,3 +13,5 @@ const initSlider = () => {
 
         // Update thumb position on mouse move
         const handleMouseMove = (e) => {
+            const deltaX = e.clientX - startX;
+            const newThumbPosition = thumbPosition + deltaX;
