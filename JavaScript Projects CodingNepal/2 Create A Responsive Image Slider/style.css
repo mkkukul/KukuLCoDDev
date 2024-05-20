@@ -55,3 +55,11 @@ body {
   overflow-x: auto;
   scrollbar-width: none;
 }
+.slider-wrapper .image-list::-webkit-scrollbar {
+  display: none;
+}
+.slider-wrapper .image-list .image-item {
+  width: 325px;
+  height: 400px;
+  object-fit: cover;
+}
