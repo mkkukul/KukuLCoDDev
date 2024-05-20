@@ -10,3 +10,6 @@ const initSlider = () => {
         const startX = e.clientX;
         const thumbPosition = scrollbarThumb.offsetLeft;
         const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
+
+        // Update thumb position on mouse move
+        const handleMouseMove = (e) => {
