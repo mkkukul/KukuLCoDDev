@@ -300,4 +300,152 @@ const kelimeListesi = [
     word: "uzay",
     türk: "Dünya atmosferinin ötesindeki boşluk.",
   },
+  {
+    word: "gitar",
+    türk: "Tellerle çalınan bir müzik aleti.",
+  },
+  {
+    word: "oksijen",
+    türk: "Hayat için gerekli renksiz, kokusuz bir gaz.",
+  },
+  {
+    word: "dağ",
+    türk: "Yer yüzeyinde büyük doğal yükselti.",
+  },
+  {
+    word: "resim",
+    türk: "Bir yüzeye renklerle yapılan sanat formu.",
+  },
+  {
+    word: "astronomi",
+    türk: "Göksel cisimlerin ve olayların bilimsel incelenmesi.",
+  },
+  {
+    word: "futbol",
+    türk: "Yuvarlak bir top ile oynanan popüler spor.",
+  },
+  {
+    word: "çikolata",
+    türk: "Kakao çekirdeklerinden yapılan tatlı bir yiyecek.",
+  },
+  {
+    word: "kelebek",
+    türk: "Renkli kanatları ve ince bir vücudu olan bir böcek.",
+  },
+  {
+    word: "tarih",
+    türk: "Geçmiş olayların ve insan uygarlığının incelenmesi.",
+  },
+  {
+    word: "pizza",
+    türk: "Yuvarlak, yassı bir taban üzerine malzemeler eklenmiş bir yemek.",
+  },
+  {
+    word: "caz",
+    türk: "Doğaçlama ve senkopasyon ile karakterize edilen bir müzik türü.",
+  },
+  {
+    word: "kamera",
+    türk: "Görüntü veya video kaydetmek için kullanılan bir cihaz.",
+  },
+  {
+    word: "elmas",
+    türk: "Parlaklığı ve sertliği ile bilinen değerli bir taş.",
+  },
+  {
+    word: "macera",
+    türk: "Heyecan verici veya cesur bir deneyim.",
+  },
+  {
+    word: "bilim",
+    türk: "Fiziksel ve doğal dünyanın yapısının ve davranışının sistematik olarak incelenmesi.",
+  },
+  {
+    word: "bisiklet",
+    türk: "İki tekerlekli, insan gücüyle çalışan bir araç.",
+  },
+  {
+    word: "günbatımı",
+    türk: "Güneşin ufuk altında kaybolduğu günlük olay.",
+  },
+  {
+    word: "kahve",
+    türk: "Kavrulmuş kahve çekirdeklerinden yapılan popüler kafeinli içecek.",
+  },
+  {
+    word: "dans",
+    türk: "Genellikle müzikle yapılan ritmik vücut hareketi.",
+  },
+  {
+    word: "galaksi",
+    türk: "Yer çekimi ile bir arada tutulan yıldızlar, gaz ve tozdan oluşan büyük sistem.",
+  },
+  {
+    word: "orkestra",
+    türk: "Çeşitli enstrümanları çalan büyük bir müzisyen topluluğu.",
+  },
+  {
+    word: "volkan",
+    türk: "Lava, kaya parçaları, sıcak buhar ve gazların püskürdüğü dağ veya tepe.",
+  },
+  {
+    word: "roman",
+    türk: "Genellikle karmaşık bir olay örgüsü ve karakterlerle uzun bir kurgu eseri.",
+  },
+  {
+    word: "heykel",
+    türk: "Malzemeleri şekillendirerek veya birleştirerek oluşturulan üç boyutlu sanat formu.",
+  },
+  {
+    word: "senfoni",
+    türk: "Tam orkestra için, genellikle çok bölümlü uzun bir müzik bestesi.",
+  },
+  {
+    word: "mimari",
+    türk: "Binaların tasarlanması ve inşa edilmesi sanatı ve bilimi.",
+  },
+  {
+    word: "bale",
+    türk: "Kesin ve zarif hareketlerle karakterize edilen klasik dans formu.",
+  },
+  {
+    word: "astronot",
+    türk: "Uzayda seyahat etmek ve çalışmak üzere eğitilmiş kişi.",
+  },
+  {
+    word: "şelale",
+    türk: "Yüksekten düşen su kütlesi.",
+  },
+  {
+    word: "teknoloji",
+    türk: "Bilimsel bilginin pratik amaçlar için uygulanması.",
+  },
+  {
+    word: "gökkuşağı",
+    türk: "Işığın yansıması, kırılması ve dağılması ile oluşan meteorolojik olay.",
+  },
+  {
+    word: "evren",
+    türk: "Var olan tüm madde, uzay ve zamanın bütünü.",
+  },
+  {
+    word: "piyano",
+    türk: "Tuşlara basılarak çalınan, tellerin çekiçlerle vurulmasıyla ses çıkaran bir müzik aleti.",
+  },
+  {
+    word: "tatil",
+    türk: "Eğlence, dinlenme veya rahatlama için ayrılmış zaman.",
+  },
+  {
+    word: "yağmur ormanı",
+    türk: "Yüksek yağış ve biyolojik çeşitlilik ile karakterize edilen yoğun orman.",
+  },
+  {
+    word: "tiyatro",
+    türk: "Oyunlar, filmler veya diğer gösterilerin sahnelendiği bina veya açık alan.",
+  },
+  {
+    word: "telefon",
+    türk: "Uzun mesafelerde ses iletimi için kullanılan cihaz.",
+  },
 ];
