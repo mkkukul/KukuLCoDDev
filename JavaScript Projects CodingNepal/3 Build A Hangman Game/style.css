@@ -149,6 +149,7 @@ body {
 .game-modal button {
   padding: 12px 23px;
 }
+
 @media (max-width: 782px) {
   .container {
     flex-direction: column;
