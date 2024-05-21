@@ -259,7 +259,7 @@ const wordList = [
     word: "parlak",
     türk: "Olağanüstü zeki, yetenekli veya etkileyici.",
   },
-  // Yeni kelimeler
+
   {
     word: "müzik",
     türk: "Melodi, ritim ve harmoni ile yapılan sanat formu.",

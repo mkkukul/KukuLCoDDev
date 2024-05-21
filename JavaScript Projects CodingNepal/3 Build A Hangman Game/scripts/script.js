@@ -27,7 +27,8 @@ const resetGame = () => {
 
 const getRandomWord = () => {
   // Selecting a random word and hint from the wordList
-  const { word, hint } = wordList[Math.floor(Math.random() * wordList.length)];
+  const { word, türk } =
+    kelimeListesi[Math.floor(Math.random() * kelimeListesi.length)];
   currentWord = word; // Making currentWord as random word
   document.querySelector(".hint-text b").innerText = türk;
   resetGame();
@@ -35,13 +36,13 @@ const getRandomWord = () => {
 
 const gameOver = (isVictory) => {
   // After game complete.. showing modal with relevant details
-  const modalText = isVictory ? `You found the word:` : "The correct word was:";
+  const modalText = isVictory ? `Kelimeyi buldunuz:` : "Doğru kelime:";
   gameModal.querySelector("img").src = `images/${
     isVictory ? "victory" : "lost"
   }.gif`;
   gameModal.querySelector("h4").innerText = isVictory
-    ? "Congrats!"
-    : "Game Over!";
+    ? "Tebrikler!"
+    : "Oyun Bitti!";
   gameModal.querySelector("p").innerHTML = `${modalText} <b>${currentWord}</b>`;
   gameModal.classList.add("show");
 };
@@ -71,12 +72,13 @@ const initGame = (button, clickedLetter) => {
 };
 
 // Creating keyboard buttons and adding event listeners
-for (let i = 97; i <= 122; i++) {
+const turkishAlphabet = "abcçdefgğhıijklmnoöprsştuüvyz";
+for (let i = 0; i < turkishAlphabet.length; i++) {
   const button = document.createElement("button");
-  button.innerText = String.fromCharCode(i);
+  button.innerText = turkishAlphabet[i];
   keyboardDiv.appendChild(button);
   button.addEventListener("click", (e) =>
-    initGame(e.target, String.fromCharCode(i))
+    initGame(e.target, turkishAlphabet[i])
   );
 }
 
