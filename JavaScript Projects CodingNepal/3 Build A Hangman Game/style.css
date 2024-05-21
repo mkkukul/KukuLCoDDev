@@ -86,3 +86,14 @@ body {
   text-transform: uppercase;
   background: #5e63ba;
 }
+.keyboard button {
+  padding: 7px;
+  width: calc(100% / 9 - 5px);
+}
+.keyboard button[disabled] {
+  pointer-events: none;
+  opacity: 0.6;
+}
+:where(.game-modal, .keyboard) button:hover {
+  background: #8286c9;
+}
