@@ -35,3 +35,20 @@ body {
   margin-top: 20px;
   text-transform: uppercase;
 }
+.game-box .word-display {
+  gap: 10px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.word-display .letter {
+  width: 28px;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  border-bottom: 3px solid #000;
+}
