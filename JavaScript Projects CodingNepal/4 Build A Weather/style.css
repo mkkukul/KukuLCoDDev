@@ -79,3 +79,15 @@ h1 {
 .weather-data {
   width: 100%;
 }
+.weather-data .current-weather {
+  color: #fff;
+  background: #5372f0;
+  border-radius: 5px;
+  padding: 20px 70px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.current-weather h2 {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
