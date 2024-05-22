@@ -131,6 +131,7 @@ h1 {
   max-width: 70px;
   margin: 5px 0 -12px 0;
 }
+
 @media (max-width: 1400px) {
   .weather-data .current-weather {
     padding: 20px;
@@ -156,19 +157,18 @@ h1 {
   }
 }
 @media (max-width: 750px) {
-    h1 {
-      font-size: 1.45rem;
-      padding: 16px 0;
-    }
-    .container {
-      flex-wrap: wrap;
-      padding: 15px;
-    }
-    .weather-input {
-      width: 100%;
-    }
-    .weather-data h2 {
-      font-size: 1.35rem;
-    }
+  h1 {
+    font-size: 1.45rem;
+    padding: 16px 0;
   }
-  Finally, add the following JavaScript code to your script.js file. This scr
+  .container {
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+  .weather-input {
+    width: 100%;
+  }
+  .weather-data h2 {
+    font-size: 1.35rem;
+  }
+}
