@@ -47,4 +47,9 @@ const getWeatherDetails = (cityName, latitude, longitude) => {
                 return uniqueForecastDays.push(forecastDate);
             }
         });
+        / Clearing previous weather data
+        cityInput.value = "";
+        currentWeatherDiv.innerHTML = "";
+        weatherCardsDiv.innerHTML = "";
+
 
