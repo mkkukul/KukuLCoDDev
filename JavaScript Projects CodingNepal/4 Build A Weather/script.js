@@ -36,3 +36,5 @@ const createWeatherCard = (cityName, weatherItem, index) => {
                         </li>`;
   }
 };
+const getWeatherDetails = (cityName, latitude, longitude) => {
+    const WEATHER_API_URL = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`;
