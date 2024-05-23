@@ -65,11 +65,13 @@ const handleChat = () => {
     generateResponse(incomingChatLi);
   }, 600);
 };
+
 chatInput.addEventListener("input", () => {
   // Adjust the height of the input textarea based on its content
   chatInput.style.height = `${inputInitHeight}px`;
   chatInput.style.height = `${chatInput.scrollHeight}px`;
 });
+
 chatInput.addEventListener("keydown", (e) => {
   // If Enter key is pressed without Shift key and the window
   // width is greater than 800px, handle the chat
