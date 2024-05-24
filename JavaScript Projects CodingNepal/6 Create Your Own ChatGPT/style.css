@@ -88,3 +88,12 @@ span.material-symbols-rounded {
   user-select: none;
   cursor: pointer;
 }
+.chat .chat-content span {
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: var(--icon-color);
+  visibility: hidden;
+}
+.chat:hover .chat-content:not(:has(.typing-animation), :has(.error)) span {
+  visibility: visible;
+}
