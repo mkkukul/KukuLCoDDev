@@ -6,13 +6,16 @@ const deleteButton = document.querySelector("#delete-btn");
 
 let userText = null;
 const API_KEY = "PASTE-YOUR-API-KEY-HERE"; // Paste your API key here
+
 const loadDataFromLocalstorage = () => {
   // Load saved chats and theme from local storage and apply/add on the page
   const themeColor = localStorage.getItem("themeColor");
+
   document.body.classList.toggle("light-mode", themeColor === "light_mode");
   themeButton.innerText = document.body.classList.contains("light-mode")
     ? "dark_mode"
     : "light_mode";
+
   const defaultText = `<div class="default-text">
                             <h1>ChatGPT Clone</h1>
                             <p>Start a conversation and explore the power of AI.<br> Your chat history will be displayed here.</p>
@@ -21,6 +24,7 @@ const loadDataFromLocalstorage = () => {
   chatContainer.innerHTML = localStorage.getItem("all-chats") || defaultText;
   chatContainer.scrollTo(0, chatContainer.scrollHeight); // Scroll to bottom of the chat container
 };
+
 const createChatElement = (content, className) => {
   // Create new div and apply chat, specified class and set html content of div
   const chatDiv = document.createElement("div");
@@ -28,6 +32,7 @@ const createChatElement = (content, className) => {
   chatDiv.innerHTML = content;
   return chatDiv; // Return the created chat div
 };
+
 const getChatResponse = async (incomingChatDiv) => {
   const API_URL = "https://api.openai.com/v1/completions";
   const pElement = document.createElement("p");
@@ -48,6 +53,7 @@ const getChatResponse = async (incomingChatDiv) => {
       stop: null,
     }),
   };
+
   // Send POST request to API, get response and set the reponse as paragraph element text
   try {
     const response = await (await fetch(API_URL, requestOptions)).json();
@@ -58,6 +64,7 @@ const getChatResponse = async (incomingChatDiv) => {
     pElement.textContent =
       "Oops! Something went wrong while retrieving the response. Please try again.";
   }
+
   // Remove the typing animation, append the paragraph element and save the chats to local storage
   incomingChatDiv.querySelector(".typing-animation").remove();
   incomingChatDiv.querySelector(".chat-details").appendChild(pElement);
@@ -92,6 +99,7 @@ const showTypingAnimation = () => {
   chatContainer.scrollTo(0, chatContainer.scrollHeight);
   getChatResponse(incomingChatDiv);
 };
+
 const handleOutgoingChat = () => {
   userText = chatInput.value.trim(); // Get chatInput value and remove extra spaces
   if (!userText) return; // If chatInput is empty return from here
@@ -122,6 +130,7 @@ deleteButton.addEventListener("click", () => {
     loadDataFromLocalstorage();
   }
 });
+
 themeButton.addEventListener("click", () => {
   // Toggle body's class for the theme mode and save the updated theme to the local storage
   document.body.classList.toggle("light-mode");
@@ -149,3 +158,4 @@ chatInput.addEventListener("keydown", (e) => {
 });
 
 loadDataFromLocalstorage();
+sendButton.addEventListener("click", handleOutgoingChat);
