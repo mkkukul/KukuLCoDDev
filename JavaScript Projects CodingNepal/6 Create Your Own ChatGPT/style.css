@@ -77,3 +77,14 @@ body {
   background: var(--incoming-chat-bg);
   border: 1px solid var(--incoming-chat-border);
 }
+.chat .chat-content {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+span.material-symbols-rounded {
+  user-select: none;
+  cursor: pointer;
+}
