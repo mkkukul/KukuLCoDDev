@@ -21,3 +21,10 @@ const loadDataFromLocalstorage = () => {
   chatContainer.innerHTML = localStorage.getItem("all-chats") || defaultText;
   chatContainer.scrollTo(0, chatContainer.scrollHeight); // Scroll to bottom of the chat container
 };
+const createChatElement = (content, className) => {
+  // Create new div and apply chat, specified class and set html content of div
+  const chatDiv = document.createElement("div");
+  chatDiv.classList.add("chat", className);
+  chatDiv.innerHTML = content;
+  return chatDiv; // Return the created chat div
+};
