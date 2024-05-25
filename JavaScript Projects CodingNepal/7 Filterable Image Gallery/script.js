@@ -8,3 +8,6 @@ const filterCards = (e) => {
     e.target.classList.add("active");
     filterableCards.forEach(card => {
         // show the card if it matches the clicked filter or show all cards if "all" filter is clicked
+        if(card.dataset.name === e.target.dataset.filter || e.target.dataset.filter === "all") {
+            return card.classList.replace("hide", "show");
+        }
