@@ -9,3 +9,19 @@ body {
 body .container {
   max-width: 1100px;
 }
+#filter-buttons button {
+  border-radius: 3px;
+  background: #fff;
+  border-color: transparent;
+}
+#filter-buttons button:hover {
+  background: #ddd;
+}
+#filter-buttons button.active {
+  color: #fff;
+  background: #6c757d;
+}
+#filterable-cards .card {
+  width: 15rem;
+  border: 2px solid transparent;
+}
