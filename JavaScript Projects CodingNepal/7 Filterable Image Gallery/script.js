@@ -17,3 +17,7 @@ const filterCards = (e) => {
     card.classList.add("hide");
   });
 };
+
+filterButtons.forEach((button) =>
+  button.addEventListener("click", filterCards)
+);
