@@ -6,3 +6,5 @@ const filterableCards = document.querySelectorAll("#filterable-cards .card");
 const filterCards = (e) => {
     document.querySelector("#filter-buttons .active").classList.remove("active");
     e.target.classList.add("active");
+    filterableCards.forEach(card => {
+        // show the card if it matches the clicked filter or show all cards if "all" filter is clicked
