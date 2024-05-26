@@ -47,3 +47,7 @@ const dragging = (e) => {
   // Updates the scroll position of the carousel based on the cursor movement
   carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
 };
+const dragStop = () => {
+  isDragging = false;
+  carousel.classList.remove("dragging");
+};
