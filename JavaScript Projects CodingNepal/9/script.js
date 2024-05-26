@@ -35,3 +35,10 @@ arrowBtns.forEach((btn) => {
     carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
   });
 });
+const dragStart = (e) => {
+  isDragging = true;
+  carousel.classList.add("dragging");
+  // Records the initial cursor and scroll position of the carousel
+  startX = e.pageX;
+  startScrollLeft = carousel.scrollLeft;
+};
