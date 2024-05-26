@@ -19,3 +19,8 @@ carouselChildrens
   .forEach((card) => {
     carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
   });
+
+// Insert copies of the first few cards to end of carousel for infinite scrolling
+carouselChildrens.slice(0, cardPerView).forEach((card) => {
+  carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+});
