@@ -9,6 +9,7 @@ let isDragging = false,
   startX,
   startScrollLeft,
   timeoutId;
+
 // Get the number of cards that can fit in the carousel at once
 let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
 
@@ -24,6 +25,7 @@ carouselChildrens
 carouselChildrens.slice(0, cardPerView).forEach((card) => {
   carousel.insertAdjacentHTML("beforeend", card.outerHTML);
 });
+
 // Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
 carousel.classList.add("no-transition");
 carousel.scrollLeft = carousel.offsetWidth;
@@ -35,6 +37,7 @@ arrowBtns.forEach((btn) => {
     carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
   });
 });
+
 const dragStart = (e) => {
   isDragging = true;
   carousel.classList.add("dragging");
@@ -42,15 +45,18 @@ const dragStart = (e) => {
   startX = e.pageX;
   startScrollLeft = carousel.scrollLeft;
 };
+
 const dragging = (e) => {
   if (!isDragging) return; // if isDragging is false return from here
   // Updates the scroll position of the carousel based on the cursor movement
   carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
 };
+
 const dragStop = () => {
   isDragging = false;
   carousel.classList.remove("dragging");
 };
+
 const infiniteScroll = () => {
   // If the carousel is at the beginning, scroll to the end
   if (carousel.scrollLeft === 0) {
@@ -67,16 +73,19 @@ const infiniteScroll = () => {
     carousel.scrollLeft = carousel.offsetWidth;
     carousel.classList.remove("no-transition");
   }
+
   // Clear existing timeout & start autoplay if mouse is not hovering over carousel
   clearTimeout(timeoutId);
   if (!wrapper.matches(":hover")) autoPlay();
 };
+
 const autoPlay = () => {
   if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
   // Autoplay the carousel after every 2500 ms
   timeoutId = setTimeout(() => (carousel.scrollLeft += firstCardWidth), 2500);
 };
 autoPlay();
+
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
