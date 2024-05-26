@@ -24,3 +24,7 @@ carouselChildrens
 carouselChildrens.slice(0, cardPerView).forEach((card) => {
   carousel.insertAdjacentHTML("beforeend", card.outerHTML);
 });
+// Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
+carousel.classList.add("no-transition");
+carousel.scrollLeft = carousel.offsetWidth;
+carousel.classList.remove("no-transition");
