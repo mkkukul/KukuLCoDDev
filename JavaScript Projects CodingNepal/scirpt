@@ -13,11 +13,17 @@ const requirements = [
 ];
 
 passwordInput.addEventListener("keyup", (e) => {
-    requirements.forEach(item => {
-        // Check if the password matches the requirement regex
-        const isValid = item.regex.test(e.target.value);
-        const requirementItem = requirementList[item.index];
-        // Updating class and icon of requirement item if requirement matched or not
-        if (isValid) {
-            requirementItem.classList.add("valid");
-            
+  requirements.forEach((item) => {
+    // Check if the password matches the requirement regex
+    const isValid = item.regex.test(e.target.value);
+    const requirementItem = requirementList[item.index];
+    // Updating class and icon of requirement item if requirement matched or not
+    if (isValid) {
+      requirementItem.classList.add("valid");
+      requirementItem.firstElementChild.className = "fa-solid fa-check";
+    } else {
+      requirementItem.classList.remove("valid");
+      requirementItem.firstElementChild.className = "fa-solid fa-circle";
+    }
+  });
+});
