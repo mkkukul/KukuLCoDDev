@@ -1,0 +1,3 @@
+const passwordInput = document.querySelector(".pass-field input");
+const eyeIcon = document.querySelector(".pass-field i");
+const requirementList = document.querySelectorAll(".requirement-list li");
