@@ -27,3 +27,4 @@ passwordInput.addEventListener("keyup", (e) => {
     }
   });
 });
+eyeIcon.addEventListener("click", () => {
