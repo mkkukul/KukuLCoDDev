@@ -14,3 +14,6 @@ const requirements = [
 
 passwordInput.addEventListener("keyup", (e) => {
     requirements.forEach(item => {
+        // Check if the password matches the requirement regex
+        const isValid = item.regex.test(e.target.value);
+        const requirementItem = requirementList[item.index];
