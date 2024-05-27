@@ -39,3 +39,34 @@ body {
   padding: 0 16px;
   border: 2px solid #4285f4;
 }
+.pass-field i {
+  right: 18px;
+  top: 50%;
+  font-size: 1.2rem;
+  color: #999;
+  cursor: pointer;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.wrapper .content {
+  margin: 20px 0 10px;
+}
+.content p {
+  color: #333;
+  font-size: 1.3rem;
+}
+.content .requirement-list {
+  margin-top: 20px;
+}
+.requirement-list li {
+  font-size: 1.3rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.requirement-list li i {
+  width: 20px;
+  color: #aaa;
+  font-size: 0.6rem;
+}
