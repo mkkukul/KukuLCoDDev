@@ -70,3 +70,14 @@ body {
   color: #aaa;
   font-size: 0.6rem;
 }
+.requirement-list li.valid i {
+  font-size: 1.2rem;
+  color: #4285f4;
+}
+.requirement-list li span {
+  margin-left: 12px;
+  color: #333;
+}
+.requirement-list li.valid span {
+  color: #999;
+}
