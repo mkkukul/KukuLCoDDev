@@ -11,3 +11,6 @@ const requirements = [
   { regex: /[^A-Za-z0-9]/, index: 3 }, // At least one special character
   { regex: /[A-Z]/, index: 4 }, // At least one uppercase letter
 ];
+
+passwordInput.addEventListener("keyup", (e) => {
+    requirements.forEach(item => {
