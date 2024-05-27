@@ -17,6 +17,7 @@ passwordInput.addEventListener("keyup", (e) => {
     // Check if the password matches the requirement regex
     const isValid = item.regex.test(e.target.value);
     const requirementItem = requirementList[item.index];
+
     // Updating class and icon of requirement item if requirement matched or not
     if (isValid) {
       requirementItem.classList.add("valid");
@@ -27,6 +28,7 @@ passwordInput.addEventListener("keyup", (e) => {
     }
   });
 });
+
 eyeIcon.addEventListener("click", () => {
   // Toggle the password input type between "password" and "text"
   passwordInput.type = passwordInput.type === "password" ? "text" : "password";
