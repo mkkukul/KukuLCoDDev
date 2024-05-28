@@ -12,3 +12,6 @@ pwShowHide.forEach((icon) => {
     icon.addEventListener("click", () => {
         let getPwInput = icon.parentElement.querySelector("input");
     if (getPwInput.type === "password") {
+        getPwInput.type = "text";
+      icon.classList.replace("uil-eye-slash", "uil-eye");
+    } else {
