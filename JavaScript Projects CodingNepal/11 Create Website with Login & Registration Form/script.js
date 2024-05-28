@@ -8,3 +8,5 @@ const formOpenBtn = document.querySelector("#form-open"),
 
 formOpenBtn.addEventListener("click", () => home.classList.add("show"));
 formCloseBtn.addEventListener("click", () => home.classList.remove("show"));
+pwShowHide.forEach((icon) => {
+    icon.addEventListener("click", () => {
