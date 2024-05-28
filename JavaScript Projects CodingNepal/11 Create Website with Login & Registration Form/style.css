@@ -28,3 +28,17 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+.nav_logo,
+.nav_link,
+.button {
+  color: #fff;
+}
+.nav_logo {
+  font-size: 25px;
+}
+.nav_item {
+  column-gap: 25px;
+}
+.nav_link:hover {
+  color: #d9d9d9;
+}
