@@ -55,3 +55,10 @@ body {
   padding: 0 20px;
   border-radius: 50px;
 }
+.pagination li.active,
+.pagination ul li.numb:hover,
+.pagination ul li:first-child:hover,
+.pagination ul li:last-child:hover {
+  color: #fff;
+  background: #20b2aa;
+}
