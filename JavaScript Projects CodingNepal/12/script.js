@@ -15,3 +15,7 @@ function createPagination(totalPages, page){
 }
 if(page > 2){ //if page value is less than 2 then add 1 after the previous button
     liTag += `<li class="first numb" onclick="createPagination(totalPages, 1)"><span>1</span></li>`;
+    if(page > 3){ //if page value is greater than 3 then add this (...) after the first li or page
+        liTag += `<li class="dots"><span>...</span></li>`;
+      }
+    }
