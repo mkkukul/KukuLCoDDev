@@ -13,3 +13,5 @@ function createPagination(totalPages, page){
   if(page > 1){ //show the next button if the page value is greater than 1
     liTag += `<li class="btn prev" onclick="createPagination(totalPages, ${page - 1})"><span><i class="fas fa-angle-left"></i> Prev</span></li>`;
 }
+if(page > 2){ //if page value is less than 2 then add 1 after the previous button
+    liTag += `<li class="first numb" onclick="createPagination(totalPages, 1)"><span>1</span></li>`;
