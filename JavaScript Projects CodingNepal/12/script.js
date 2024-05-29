@@ -25,3 +25,7 @@ if(page > 2){ //if page value is less than 2 then add 1 after the previous butto
 } else if (page == totalPages - 1) {
     beforePage = beforePage - 1;
   }
+  // how many pages or li show after the current li
+  if (page == 1) {
+    afterPage = afterPage + 2;
+  } else if (page == 2) {
