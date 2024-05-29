@@ -38,3 +38,5 @@ for (var plength = beforePage; plength <= afterPage; plength++) {
     if (plength == 0) { //if plength is 0 than add +1 in plength value
         plength = plength + 1;
       }
+      if(page == plength){ //if page is equal to plength than assign active string in the active variable
+        active = "active";
