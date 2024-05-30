@@ -4,3 +4,9 @@ const colorInputs = document.querySelectorAll(".colors input");
 const textarea = document.querySelector("textarea");
 const refreshBtn = document.querySelector(".refresh");
 const copyBtn = document.querySelector(".copy");
+
+const getRandomColor = () => {
+  // Generating a random color in hexadecimal format. Example: #5665E9
+  const randomHex = Math.floor(Math.random() * 0xffffff).toString(16);
+  return `#${randomHex}`;
+};
