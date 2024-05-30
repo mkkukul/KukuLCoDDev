@@ -31,3 +31,6 @@ colorInputs.forEach((input) => {
   // Calling generateGradient function on each color input clicks
   input.addEventListener("input", () => generateGradient(false));
 });
+selectMenu.addEventListener("change", () => generateGradient(false));
+refreshBtn.addEventListener("click", () => generateGradient(true));
+copyBtn.addEventListener("click", copyCode);
