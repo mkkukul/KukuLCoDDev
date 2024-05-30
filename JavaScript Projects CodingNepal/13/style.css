@@ -32,3 +32,15 @@ body {
   margin: 20px 0;
   justify-content: space-between;
 }
+.options p {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.row :where(.column, button) {
+  width: calc(100% / 2 - 12px);
+}
+.options .select-box {
+  border-radius: 5px;
+  padding: 10px 15px;
+  border: 1px solid #aaa;
+}
