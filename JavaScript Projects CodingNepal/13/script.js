@@ -21,3 +21,9 @@ const generateGradient = (isRandom) => {
   gradientBox.style.background = gradient;
   textarea.value = `background: ${gradient};`;
 };
+const copyCode = () => {
+  // Copying textarea value and updating the copy button text
+  navigator.clipboard.writeText(textarea.value);
+  copyBtn.innerText = "Code Copied";
+  setTimeout(() => (copyBtn.innerText = "Copy Code"), 1600);
+};
