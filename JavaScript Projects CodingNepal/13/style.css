@@ -14,3 +14,10 @@ body {
   min-height: 100vh;
   background: #8a6cff;
 }
+.wrapper {
+  width: 450px;
+  padding: 25px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.06);
+}
