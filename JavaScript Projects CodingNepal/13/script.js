@@ -27,3 +27,7 @@ const copyCode = () => {
   copyBtn.innerText = "Code Copied";
   setTimeout(() => (copyBtn.innerText = "Copy Code"), 1600);
 };
+colorInputs.forEach((input) => {
+  // Calling generateGradient function on each color input clicks
+  input.addEventListener("input", () => generateGradient(false));
+});
