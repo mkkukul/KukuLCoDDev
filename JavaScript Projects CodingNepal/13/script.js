@@ -10,3 +10,8 @@ const getRandomColor = () => {
   const randomHex = Math.floor(Math.random() * 0xffffff).toString(16);
   return `#${randomHex}`;
 };
+const generateGradient = (isRandom) => {
+    if(isRandom) { // If isRandom is true, update the colors inputs value with random color
+        colorInputs[0].value = getRandomColor();
+        colorInputs[1].value = getRandomColor();
+    }
