@@ -21,3 +21,14 @@ body {
   border-radius: 7px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.06);
 }
+.wrapper .gradient-box {
+  height: 220px;
+  width: 100%;
+  border-radius: 7px;
+  background: linear-gradient(to left top, #5665e9, #a271f8);
+}
+.wrapper .row {
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-between;
+}
