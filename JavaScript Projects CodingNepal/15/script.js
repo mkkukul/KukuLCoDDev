@@ -13,4 +13,6 @@ if (localStorage.getItem("mode") === "Dark Mode") {
 // add a click event listener to modeSwitch
 modeSwitch.addEventListener("click", () => {
     // toggle the "dark" class on the body element
-    
+    body.classList.toggle("dark");
+  // check if the "dark" class is currently present on the body element
+  const isDarkMode = body.classList.contains("dark");
