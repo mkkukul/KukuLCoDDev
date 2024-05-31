@@ -29,3 +29,4 @@ const updateTime = () => {
     hrToDeg = (date.getHours() / 12) * 360;
     minToDeg = (date.getMinutes() / 60) * 360,
     hrToDeg = (date.getHours() / 12) * 360;
+    
