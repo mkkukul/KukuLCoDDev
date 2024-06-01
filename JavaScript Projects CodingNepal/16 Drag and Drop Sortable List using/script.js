@@ -20,3 +20,4 @@ const initSortableList = (e) => {
   // Inserting the dragging item before the found sibling
   sortableList.insertBefore(draggingItem, nextSibling);
 };
+sortableList.addEventListener("dragover", initSortableList);
