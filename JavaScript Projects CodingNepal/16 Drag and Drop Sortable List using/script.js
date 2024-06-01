@@ -8,3 +8,6 @@ items.forEach((item) => {
   // Removing dragging class from item on dragend event
   item.addEventListener("dragend", () => item.classList.remove("dragging"));
 });
+const initSortableList = (e) => {
+    e.preventDefault();
+    const draggingItem = document.querySelector(".dragging");
