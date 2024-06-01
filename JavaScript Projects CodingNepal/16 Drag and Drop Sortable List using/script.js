@@ -11,3 +11,6 @@ items.forEach((item) => {
 const initSortableList = (e) => {
     e.preventDefault();
     const draggingItem = document.querySelector(".dragging");
+    // Getting all items except currently dragging and making array of them
+    let siblings = [...sortableList.querySelectorAll(".item:not(.dragging)")];
+
