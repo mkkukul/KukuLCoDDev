@@ -21,3 +21,4 @@ const initSortableList = (e) => {
   sortableList.insertBefore(draggingItem, nextSibling);
 };
 sortableList.addEventListener("dragover", initSortableList);
+sortableList.addEventListener("dragenter", (e) => e.preventDefault());
