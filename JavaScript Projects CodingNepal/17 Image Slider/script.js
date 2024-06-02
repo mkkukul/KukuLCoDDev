@@ -24,3 +24,9 @@ const slideImage = () => {
 const updateClick = (e) => {
     // Stop the automatic slideshow
   clearInterval(intervalId);
+  // Calculate the updated image index based on the button clicked
+  imageIndex += e.target.id === "next" ? 1 : -1;
+  slideImage(imageIndex);
+  // Restart the automatic slideshow
+  autoSlide();
+};
