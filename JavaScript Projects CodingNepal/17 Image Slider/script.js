@@ -13,3 +13,6 @@ const autoSlide = () => {
   };
 // Call autoSlide function on page load
 autoSlide();
+// A function that updates the carousel display to show the specified image
+const slideImage = () => {
+    // Calculate the updated image index
