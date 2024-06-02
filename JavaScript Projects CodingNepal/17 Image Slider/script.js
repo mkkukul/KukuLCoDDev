@@ -30,3 +30,5 @@ const updateClick = (e) => {
   // Restart the automatic slideshow
   autoSlide();
 };
+// Add event listeners to the navigation buttons
+buttons.forEach((button) => button.addEventListener("click", updateClick));
