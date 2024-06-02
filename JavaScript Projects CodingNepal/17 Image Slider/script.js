@@ -11,3 +11,5 @@ const autoSlide = () => {
     // Start the slideshow by calling slideImage() every 2 seconds
     intervalId = setInterval(() => slideImage(++imageIndex), 2000);
   };
+// Call autoSlide function on page load
+autoSlide();
