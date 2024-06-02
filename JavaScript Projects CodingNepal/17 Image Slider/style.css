@@ -59,3 +59,10 @@ i#next {
   width: 100%;
   transition: all 0.4s ease;
 }
+.carousel img {
+  height: 100%;
+  width: 100%;
+  border-radius: 18px;
+  border: 10px solid #fff;
+  object-fit: cover;
+}
