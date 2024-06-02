@@ -20,3 +20,5 @@ const slideImage = () => {
   // Update the carousel display to show the specified image
   carousel.style.transform = `translate(-${imageIndex * 100}%)`;
 };
+// A function that updates the carousel display to show the next or previous image
+const updateClick = (e) => {
