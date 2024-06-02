@@ -32,3 +32,5 @@ const updateClick = (e) => {
 };
 // Add event listeners to the navigation buttons
 buttons.forEach((button) => button.addEventListener("click", updateClick));
+// Add mouseover event listener to wrapper element to stop auto sliding
+wrapper.addEventListener("mouseover", () => clearInterval(intervalId));
