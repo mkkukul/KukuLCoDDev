@@ -22,3 +22,5 @@ const slideImage = () => {
 };
 // A function that updates the carousel display to show the next or previous image
 const updateClick = (e) => {
+    // Stop the automatic slideshow
+  clearInterval(intervalId);
