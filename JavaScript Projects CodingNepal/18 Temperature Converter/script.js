@@ -48,3 +48,6 @@ const getWeatherDetails = (cityName, latitude, longitude) => {
             }
             return false;
         });
+        cityInput.value = "";
+        currentWeatherDiv.innerHTML = "";
+        daysForecastDiv.innerHTML = "";
