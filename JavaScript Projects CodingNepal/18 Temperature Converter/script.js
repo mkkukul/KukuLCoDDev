@@ -19,3 +19,5 @@ const createWeatherCard = (cityName, weatherItem, index) => {
         <h6>${weatherItem.weather[0].description}</h6>
     </div>
 </div>`;
+} else {
+    return `<div class="col mb-3">
