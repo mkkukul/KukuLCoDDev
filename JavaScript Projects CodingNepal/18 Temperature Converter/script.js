@@ -10,7 +10,7 @@ const createWeatherCard = (cityName, weatherItem, index) => {
         return `<div class="mt-3 d-flex justify-content-between">
         <div>
             <h3 class="fw-bold">${cityName} (${weatherItem.dt_txt.split(" ")[0]})</h3>
-                        <h6 class="my-3 mt-3">Temperature: ${((weatherItem.main.temp - 273.15).toFixed(2))}°C</h6>
-                        <h6 class="my-3">Wind: ${weatherItem.wind.speed} M/S</h6>
-                        <h6 class="my-3">Humidity: ${weatherItem.main.humidity}%</h6>
+            <h6 class="my-3 mt-3">Temperature: ${((weatherItem.main.temp - 273.15).toFixed(2))}°C</h6>
+            <h6 class="my-3">Wind: ${weatherItem.wind.speed} M/S</h6>
+            <h6 class="my-3">Humidity: ${weatherItem.main.humidity}%</h6>
         </div>
