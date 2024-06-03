@@ -14,3 +14,8 @@ const createWeatherCard = (cityName, weatherItem, index) => {
             <h6 class="my-3">Wind: ${weatherItem.wind.speed} M/S</h6>
             <h6 class="my-3">Humidity: ${weatherItem.main.humidity}%</h6>
         </div>
+        <div class="text-center me-lg-5">
+        <img src="https://openweathermap.org/img/wn/${weatherItem.weather[0].icon}@4x.png" alt="weather icon">
+        <h6>${weatherItem.weather[0].description}</h6>
+    </div>
+</div>`;
