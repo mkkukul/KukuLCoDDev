@@ -21,3 +21,5 @@ const createWeatherCard = (cityName, weatherItem, index) => {
 </div>`;
 } else {
     return `<div class="col mb-3">
+    <div class="card border-0 bg-secondary text-white">
+                        <div class="card-body p-3 text-white">
