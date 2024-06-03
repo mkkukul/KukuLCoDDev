@@ -85,3 +85,8 @@ const getWeatherDetails = (cityName, latitude, longitude) => {
       alert("An error occurred while fetching the weather forecast!");
     });
 };
+// Get coordinates of entered city name
+const getCityCoordinates = () => {
+    const cityName = cityInput.value.trim();
+    if (cityName === "") return;
+    const API_URL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${API_KEY}`;
