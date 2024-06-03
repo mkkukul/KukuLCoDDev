@@ -40,3 +40,11 @@ const getWeatherDetails = (cityName, latitude, longitude) => {
     fetch(WEATHER_API_URL).then(response => response.json()).then(data => {
         const forecastArray = data.list;
         const uniqueForecastDays = new Set();
+        const fiveDaysForecast = forecastArray.filter(forecast => {
+            const forecastDate = new Date(forecast.dt_txt).getDate();
+            if (!uniqueForecastDays.has(forecastDate) && uniqueForecastDays.size < 6) {
+                uniqueForecastDays.add(forecastDate);
+                return true;
+            }
+            return false;
+        });
