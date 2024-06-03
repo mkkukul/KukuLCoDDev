@@ -51,3 +51,11 @@ const getWeatherDetails = (cityName, latitude, longitude) => {
         cityInput.value = "";
         currentWeatherDiv.innerHTML = "";
         daysForecastDiv.innerHTML = "";
+        fiveDaysForecast.forEach((weatherItem, index) => {
+            const html = createWeatherCard(cityName, weatherItem, index);
+            if (index === 0) {
+                currentWeatherDiv.insertAdjacentHTML("beforeend", html);
+            } else {
+                daysForecastDiv.insertAdjacentHTML("beforeend", html);
+            }
+        });        
