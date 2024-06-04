@@ -9,3 +9,5 @@ container.addEventListener("dblclick", (e) => {
 // Set the position of the heart element using the x and y values
 heart.style.left = `${xValue}px`;
 heart.style.top = `${yValue}px`;
+// Add the active class to the heart element to animate it
+heart.classList.add("active");
