@@ -5,3 +5,4 @@ const container = document.querySelector(".container"),
 container.addEventListener("dblclick", (e) => {
     // Calculate the x and y position of the double-click event
   let xValue = e.clientX - e.target.offsetLeft,
+  yValue = e.clientY - e.target.offsetTop;
