@@ -13,3 +13,4 @@ heart.style.top = `${yValue}px`;
 heart.classList.add("active");
 // Remove the active class after 1 second
 setTimeout(() => {
+    heart.classList.remove("active");
