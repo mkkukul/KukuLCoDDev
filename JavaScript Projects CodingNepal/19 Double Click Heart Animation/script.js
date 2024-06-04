@@ -6,3 +6,5 @@ container.addEventListener("dblclick", (e) => {
     // Calculate the x and y position of the double-click event
   let xValue = e.clientX - e.target.offsetLeft,
   yValue = e.clientY - e.target.offsetTop;
+// Set the position of the heart element using the x and y values
+heart.style.left = `${xValue}px`;
