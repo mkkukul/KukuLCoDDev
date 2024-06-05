@@ -49,3 +49,6 @@ controls.forEach((button) =>
     changeDirection({ key: button.dataset.key })
   )
 );
+const initGame = () => {
+    if(gameOver) return handleGameOver();
+    let html = `<div class="food" style="grid-area: ${foodY} / ${foodX}"></div>`;
