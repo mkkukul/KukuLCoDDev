@@ -16,17 +16,20 @@ let score = 0;
 // Getting high score from the local storage
 let highScore = localStorage.getItem("high-score") || 0;
 highScoreElement.innerText = `High Score: ${highScore}`;
+
 const updateFoodPosition = () => {
   // Passing a random 1 - 30 value as food position
   foodX = Math.floor(Math.random() * 30) + 1;
   foodY = Math.floor(Math.random() * 30) + 1;
 };
+
 const handleGameOver = () => {
   // Clearing the timer and reloading the page on game over
   clearInterval(setIntervalId);
   alert("Game Over! Press OK to replay...");
   location.reload();
 };
+
 const changeDirection = (e) => {
   // Changing velocity value based on key press
   if (e.key === "ArrowUp" && velocityY != 1) {
@@ -43,15 +46,18 @@ const changeDirection = (e) => {
     velocityY = 0;
   }
 };
+
 // Calling changeDirection on each key click and passing key dataset value as an object
 controls.forEach((button) =>
   button.addEventListener("click", () =>
     changeDirection({ key: button.dataset.key })
   )
 );
+
 const initGame = () => {
   if (gameOver) return handleGameOver();
   let html = `<div class="food" style="grid-area: ${foodY} / ${foodX}"></div>`;
+
   // Checking if the snake hit the food
   if (snakeX === foodX && snakeY === foodY) {
     updateFoodPosition();
@@ -71,10 +77,12 @@ const initGame = () => {
     snakeBody[i] = snakeBody[i - 1];
   }
   snakeBody[0] = [snakeX, snakeY]; // Setting first element of snake body to current snake position
+
   // Checking if the snake's head is out of wall, if so setting gameOver to true
   if (snakeX <= 0 || snakeX > 30 || snakeY <= 0 || snakeY > 30) {
     return (gameOver = true);
   }
+
   for (let i = 0; i < snakeBody.length; i++) {
     // Adding a div for each part of the snake's body
     html += `<div class="head" style="grid-area: ${snakeBody[i][1]} / ${snakeBody[i][0]}"></div>`;
@@ -89,3 +97,7 @@ const initGame = () => {
   }
   playBoard.innerHTML = html;
 };
+
+updateFoodPosition();
+setIntervalId = setInterval(initGame, 100);
+document.addEventListener("keyup", changeDirection);
