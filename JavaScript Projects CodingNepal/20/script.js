@@ -43,3 +43,9 @@ const changeDirection = (e) => {
     velocityY = 0;
   }
 };
+// Calling changeDirection on each key click and passing key dataset value as an object
+controls.forEach((button) =>
+  button.addEventListener("click", () =>
+    changeDirection({ key: button.dataset.key })
+  )
+);
