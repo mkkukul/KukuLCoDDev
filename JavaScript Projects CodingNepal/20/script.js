@@ -16,3 +16,8 @@ let score = 0;
 // Getting high score from the local storage
 let highScore = localStorage.getItem("high-score") || 0;
 highScoreElement.innerText = `High Score: ${highScore}`;
+const updateFoodPosition = () => {
+  // Passing a random 1 - 30 value as food position
+  foodX = Math.floor(Math.random() * 30) + 1;
+  foodY = Math.floor(Math.random() * 30) + 1;
+};
