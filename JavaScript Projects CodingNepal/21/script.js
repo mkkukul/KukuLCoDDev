@@ -11,4 +11,10 @@ boxes.forEach((box) => {
   //When a draggable element leaves box element
   box.addEventListener("dragleave", () => {
     box.classList.remove("hovered");
-  }); 
+  });
+  //When a draggable element is dropped on a box elemen
+  box.addEventListener("drop", () => {
+    box.appendChild(image);
+    box.classList.remove("hovered");
+  });
+}); 
