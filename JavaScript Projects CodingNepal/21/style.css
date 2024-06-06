@@ -19,8 +19,8 @@ body {
 }
 .container .box {
   position: relative;
-  height: 160px;
-  width: 160px;
+  height: 200px;
+  width: 200px;
   border-radius: 12px;
   border: 2px solid #333;
 }
