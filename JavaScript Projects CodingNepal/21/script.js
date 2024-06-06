@@ -7,4 +7,8 @@ boxes.forEach((box) => {
     box.addEventListener("dragover", (e) =>
         e.preventDefault(); //Prevent default behaviour
     box.classList.add("hovered");
+  });
+  //When a draggable element leaves box element
+  box.addEventListener("dragleave", () => {
+    box.classList.remove("hovered");
   }); 
