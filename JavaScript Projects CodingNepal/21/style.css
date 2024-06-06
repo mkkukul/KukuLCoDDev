@@ -32,3 +32,6 @@ body {
   background-position: center;
   background-image: url("img.jpg");
 }
+.box.hovered {
+  border: 2px dashed #333;
+}
