@@ -62,10 +62,12 @@ body {
   background: #4070f4;
   transition: all 300ms ease;
 }
+
 .container .buttons {
   display: flex;
   gap: 20px;
 }
+
 .buttons button {
   padding: 8px 25px;
   background: #4070f4;
@@ -78,9 +80,11 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   transition: all 200ms linear;
 }
+
 .buttons button:active {
   transform: scale(0.97);
 }
+
 .buttons button:disabled {
   background: #87a5f8;
   cursor: not-allowed;
