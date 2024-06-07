@@ -43,3 +43,15 @@ body {
   transition: all 200ms ease;
   transition-delay: 0s;
 }
+.steps .circle.active {
+  transition-delay: 100ms;
+  border-color: #4070f4;
+  color: #4070f4;
+}
+.steps .progress-bar {
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #e0e0e0;
+  z-index: -1;
+}
