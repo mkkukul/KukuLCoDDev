@@ -25,3 +25,7 @@ const updateSteps = (e) => {
     buttons.forEach((button) => (button.disabled = false));
   }
 };
+// add click event listeners to all buttons
+buttons.forEach((button) => {
+  button.addEventListener("click", updateSteps);
+});
