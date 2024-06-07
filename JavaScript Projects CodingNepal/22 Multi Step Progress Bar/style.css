@@ -55,3 +55,14 @@ body {
   background: #e0e0e0;
   z-index: -1;
 }
+.progress-bar .indicator {
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  background: #4070f4;
+  transition: all 300ms ease;
+}
+.container .buttons {
+  display: flex;
+  gap: 20px;
+}
