@@ -66,3 +66,15 @@ body {
   display: flex;
   gap: 20px;
 }
+.buttons button {
+  padding: 8px 25px;
+  background: #4070f4;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  transition: all 200ms linear;
+}
