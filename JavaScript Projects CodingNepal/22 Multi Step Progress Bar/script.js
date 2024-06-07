@@ -12,3 +12,7 @@ const updateSteps = (e) => {
   circles.forEach((circle, index) => {
     circle.classList[`${index < currentStep ? "add" : "remove"}`]("active");
   });
+  // update progress bar width based on current step
+  progressBar.style.width = `${((currentStep - 1) / (circles.length - 1)) * 100}%`;
+  // check if current step is last step or first step and disable corresponding buttons
+  if (currentStep === circles.length) {
