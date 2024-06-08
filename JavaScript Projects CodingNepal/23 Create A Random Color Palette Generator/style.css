@@ -26,3 +26,11 @@ body {
   box-shadow: 0 10px 25px rgba(52, 87, 220, 0.08);
   transition: all 0.3s ease;
 }
+.container .color:active {
+  transform: scale(0.95);
+}
+.color .rect-box {
+  width: 185px;
+  height: 188px;
+  border-radius: 4px;
+}
