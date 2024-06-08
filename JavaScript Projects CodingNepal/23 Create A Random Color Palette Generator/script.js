@@ -8,3 +8,6 @@ const generatePalette = () => {
         // generating a random hex color code
         let randomHex = Math.floor(Math.random() * 0xffffff).toString(16);
         randomHex = `#${randomHex.padStart(6, "0")}`;
+        // creating a new 'li' element and inserting it to the container
+        const color = document.createElement("li");
+        color.classList.add("color");
