@@ -19,3 +19,7 @@ const generatePalette = () => {
   }
 };
 generatePalette();
+const copyColor = (elem, hexVal) => {
+    const colorElement = elem.querySelector(".hex-value");
+    // Copying the hex value, updating the text to copied, 
+    // and changing text back to original hex value after 1 second
