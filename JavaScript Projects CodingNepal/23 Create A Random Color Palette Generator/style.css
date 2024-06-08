@@ -66,6 +66,7 @@ body {
 .refresh-btn:hover {
   background: #704dff;
 }
+
 @media screen and (max-width: 500px) {
   .container {
     margin: 10px;
