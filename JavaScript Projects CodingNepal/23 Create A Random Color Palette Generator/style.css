@@ -46,3 +46,23 @@ body {
   margin: 12px 0 8px;
   text-transform: uppercase;
 }
+.refresh-btn {
+  position: fixed;
+  left: 50%;
+  bottom: 40px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  background: #8a6cff;
+  padding: 13px 20px;
+  border: 2px solid #fff;
+  transform: translateX(-50%);
+  box-shadow: 0 15px 30px rgba(52, 87, 220, 0.2);
+  transition: all 0.3s ease;
+}
+.refresh-btn:hover {
+  background: #704dff;
+}
