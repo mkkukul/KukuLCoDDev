@@ -43,3 +43,6 @@ const handlePopup = (status) => {
     popup.querySelector(".desc b").innerText = timer;
   }, 1000);
 };
+// Only if isOnline is true, check the connection status every 3 seconds
+setInterval(() => isOnline && checkConnection(), 3000);
+reconnectBtn.addEventListener("click", checkConnection);
