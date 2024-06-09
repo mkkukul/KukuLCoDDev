@@ -7,3 +7,5 @@ const popup = document.querySelector(".popup"),
 let isOnline = true,
   intervalId,
   timer = 10;
+const checkConnection = async () => {
+    try {
