@@ -3,3 +3,7 @@ const popup = document.querySelector(".popup"),
   popupTitle = document.querySelector(".popup .title"),
   popupDesc = document.querySelector(".desc"),
   reconnectBtn = document.querySelector(".reconnect");
+
+let isOnline = true,
+  intervalId,
+  timer = 10;
