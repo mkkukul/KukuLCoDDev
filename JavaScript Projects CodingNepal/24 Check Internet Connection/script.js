@@ -20,3 +20,6 @@ const checkConnection = async () => {
   clearInterval(intervalId);
   handlePopup(isOnline);
 };
+const handlePopup = (status) => {
+    if(status) { // If the status is true (online), update icon, title, and description accordingly
+        wifiIcon.className = "uil uil-wifi";
