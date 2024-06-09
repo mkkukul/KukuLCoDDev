@@ -54,3 +54,18 @@ body {
   margin: 3px 0 10px;
   font-size: 1.04rem;
 }
+.popup .reconnect {
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 8px 13px;
+  border-radius: 4px;
+  background: #5372f0;
+}
+.popup.online .reconnect {
+  background: #bfbfbf;
+  pointer-events: none;
+}
