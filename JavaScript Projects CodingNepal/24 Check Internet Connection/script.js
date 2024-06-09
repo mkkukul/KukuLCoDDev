@@ -7,6 +7,7 @@ const popup = document.querySelector(".popup"),
 let isOnline = true,
   intervalId,
   timer = 10;
+
 const checkConnection = async () => {
   try {
     // Try to fetch random data from the API. If the status code is between
@@ -20,6 +21,7 @@ const checkConnection = async () => {
   clearInterval(intervalId);
   handlePopup(isOnline);
 };
+
 const handlePopup = (status) => {
   if (status) {
     // If the status is true (online), update icon, title, and description accordingly
@@ -36,6 +38,7 @@ const handlePopup = (status) => {
   popupDesc.innerHTML =
     "Your network is unavailable. We will attempt to reconnect you in <b>10</b> seconds.";
   popup.className = "popup show";
+
   intervalId = setInterval(() => {
     // Set an interval to decrease the timer by 1 every second
     timer--;
@@ -43,6 +46,7 @@ const handlePopup = (status) => {
     popup.querySelector(".desc b").innerText = timer;
   }, 1000);
 };
+
 // Only if isOnline is true, check the connection status every 3 seconds
 setInterval(() => isOnline && checkConnection(), 3000);
 reconnectBtn.addEventListener("click", checkConnection);
