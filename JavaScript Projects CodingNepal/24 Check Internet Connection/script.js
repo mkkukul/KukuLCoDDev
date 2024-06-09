@@ -23,3 +23,8 @@ const checkConnection = async () => {
 const handlePopup = (status) => {
     if(status) { // If the status is true (online), update icon, title, and description accordingly
         wifiIcon.className = "uil uil-wifi";
+        popupTitle.innerText = "Restored Connection";
+        popupDesc.innerHTML = "Your device is now successfully connected to the internet.";
+        popup.classList.add("online");
+        return setTimeout(() => popup.classList.remove("show"), 2000);
+    }
