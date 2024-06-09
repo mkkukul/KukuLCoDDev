@@ -46,3 +46,11 @@ body {
 .popup.online .icon i {
   background: #2ecc71;
 }
+.popup .title {
+  font-size: 1.2rem;
+}
+.popup .desc {
+  color: #474747;
+  margin: 3px 0 10px;
+  font-size: 1.04rem;
+}
