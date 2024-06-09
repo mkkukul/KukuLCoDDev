@@ -28,3 +28,8 @@ const handlePopup = (status) => {
         popup.classList.add("online");
         return setTimeout(() => popup.classList.remove("show"), 2000);
     }
+    // If the status is false (offline), update the icon, title, and description accordingly
+    wifiIcon.className = "uil uil-wifi-slash";
+    popupTitle.innerText = "Lost Connection";
+    popupDesc.innerHTML = "Your network is unavailable. We will attempt to reconnect you in <b>10</b> seconds.";
+    popup.className = "popup show";
