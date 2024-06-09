@@ -9,3 +9,6 @@ let isOnline = true,
   timer = 10;
 const checkConnection = async () => {
     try {
+        // Try to fetch random data from the API. If the status code is between 
+        // 200 and 300, the network connection is considered online 
+        const response = await fetch("https://jsonplaceholder.typicode.com/posts");
