@@ -10,11 +10,25 @@ const copyColor = (elem) => {
   setTimeout(() => (elem.innerText = elem.dataset.color), 1000);
 };
 const showColor = () => {
-    if(!pickedColors.length) return; // Returning if there are no picked colors
-    colorList.innerHTML = pickedColors.map(color => `
+  if (!pickedColors.length) return; // Returning if there are no picked colors
+  colorList.innerHTML = pickedColors
+    .map(
+      (color) => `
         <li class="color">
-            <span class="rect" style="background: ${color}; border: 1px solid ${color == "#ffffff" ? "#ccc": color}"></span>
+            <span class="rect" style="background: ${color}; border: 1px solid ${
+        color == "#ffffff" ? "#ccc" : color
+      }"></span>
             <span class="value hex" data-color="${color}">${color}</span>
         </li>
-    `).join(""); // // Generating li for the picked color and adding it to the colorList
-    document.querySelector(".picked-colors").classList.remove("hide");
+    `
+    )
+    .join(""); // // Generating li for the picked color and adding it to the colorList
+  document.querySelector(".picked-colors").classList.remove("hide");
+  // Add a click event listener to each color element to copy the color code
+  document.querySelectorAll(".color").forEach((li) => {
+    li.addEventListener("click", (e) =>
+      copyColor(e.currentTarget.lastElementChild)
+    );
+  });
+};
+showColor();
