@@ -52,3 +52,11 @@ const activateEyeDropper = () => {
     document.body.style.display = "block";
   }, 10);
 };
+// Clearing all picked colors, updating local storage, and hiding the colorList element
+const clearAllColors = () => {
+  pickedColors.length = 0;
+  localStorage.setItem("picked-colors", JSON.stringify(pickedColors));
+  document.querySelector(".picked-colors").classList.add("hide");
+};
+clearAll.addEventListener("click", clearAllColors);
+colorPickerBtn.addEventListener("click", activateEyeDropper);
