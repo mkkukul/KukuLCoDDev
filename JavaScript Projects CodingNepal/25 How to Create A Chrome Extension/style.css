@@ -64,3 +64,16 @@ header .clear-all:hover {
   margin-bottom: 10px;
   width: calc(100% / 3);
 }
+.all-colors .rect {
+  height: 21px;
+  width: 21px;
+  display: block;
+  margin-right: 8px;
+  border-radius: 5px;
+}
+.all-colors .color span {
+  font-size: 0.96rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Open sans";
+}
