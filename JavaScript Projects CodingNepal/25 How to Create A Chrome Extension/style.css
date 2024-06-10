@@ -33,3 +33,6 @@
 #color-picker:hover {
   background: #2c52ed;
 }
+.picked-colors {
+  margin: 10px 15px;
+}
