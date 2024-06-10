@@ -6,3 +6,11 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+.popup {
+  width: 350px;
+  background: #fff;
+}
+.popup :where(.picker, header, .all-colors) {
+  display: flex;
+  align-items: center;
+}
