@@ -30,3 +30,6 @@
   background: #5372f0;
   transition: 0.3s ease;
 }
+#color-picker:hover {
+  background: #2c52ed;
+}
