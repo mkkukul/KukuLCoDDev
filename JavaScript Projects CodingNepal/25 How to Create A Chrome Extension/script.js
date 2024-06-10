@@ -16,4 +16,5 @@ const showColor = () => {
             <span class="rect" style="background: ${color}; border: 1px solid ${color == "#ffffff" ? "#ccc": color}"></span>
             <span class="value hex" data-color="${color}">${color}</span>
         </li>
-    
+    `).join(""); // // Generating li for the picked color and adding it to the colorList
+    document.querySelector(".picked-colors").classList.remove("hide");
