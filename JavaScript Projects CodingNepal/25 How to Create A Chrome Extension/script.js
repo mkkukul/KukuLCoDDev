@@ -32,3 +32,7 @@ const showColor = () => {
   });
 };
 showColor();
+const activateEyeDropper = () => {
+    document.body.style.display = "none";
+    setTimeout(async () => {
+        try {
