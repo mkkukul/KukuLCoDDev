@@ -9,3 +9,11 @@ const copyColor = (elem) => {
   navigator.clipboard.writeText(elem.dataset.color);
   setTimeout(() => (elem.innerText = elem.dataset.color), 1000);
 };
+const showColor = () => {
+    if(!pickedColors.length) return; // Returning if there are no picked colors
+    colorList.innerHTML = pickedColors.map(color => `
+        <li class="color">
+            <span class="rect" style="background: ${color}; border: 1px solid ${color == "#ffffff" ? "#ccc": color}"></span>
+            <span class="value hex" data-color="${color}">${color}</span>
+        </li>
+    
