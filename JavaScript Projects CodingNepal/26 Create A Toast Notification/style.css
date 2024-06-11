@@ -14,3 +14,10 @@
   --warning: #e9bd0c;
   --info: #3498db;
 }
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--dark);
+}
