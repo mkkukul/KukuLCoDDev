@@ -21,11 +21,13 @@ const toastDetails = {
     text: "Info: This is an information toast.",
   },
 };
+
 const removeToast = (toast) => {
   toast.classList.add("hide");
   if (toast.timeoutId) clearTimeout(toast.timeoutId); // Clearing the timeout for the toast
   setTimeout(() => toast.remove(), 500); // Removing the toast after 500ms
 };
+
 const createToast = (id) => {
   // Getting the icon and text for the toast based on the id passed
   const { icon, text } = toastDetails[id];
@@ -41,6 +43,7 @@ const createToast = (id) => {
   // Setting a timeout to remove the toast after the specified duration
   toast.timeoutId = setTimeout(() => removeToast(toast), toastDetails.timer);
 };
+
 // Adding a click event listener to each button to create a toast when clicked
 buttons.forEach((btn) => {
   btn.addEventListener("click", () => createToast(btn.id));
