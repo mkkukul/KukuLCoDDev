@@ -21,3 +21,8 @@ const toastDetails = {
     text: "Info: This is an information toast.",
   },
 };
+const removeToast = (toast) => {
+  toast.classList.add("hide");
+  if (toast.timeoutId) clearTimeout(toast.timeoutId); // Clearing the timeout for the toast
+  setTimeout(() => toast.remove(), 500); // Removing the toast after 500ms
+};
