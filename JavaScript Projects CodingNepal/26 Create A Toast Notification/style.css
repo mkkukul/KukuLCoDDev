@@ -21,3 +21,12 @@ body {
   min-height: 100vh;
   background: var(--dark);
 }
+.notifications {
+  position: fixed;
+  top: 30px;
+  right: 20px;
+}
+.notifications :where(.toast, .column) {
+  display: flex;
+  align-items: center;
+}
