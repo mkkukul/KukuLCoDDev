@@ -41,3 +41,34 @@ body {
     background: var(--light);
     justify-content: space-between;
     animation: show_toast 
+    @keyframes show_toast {
+        0% {
+          transform: translateX(100%);
+        }
+        40% {
+          transform: translateX(-5%);
+        }
+        80% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-10px);
+        }
+      }
+      .notifications .toast.hide {
+        animation: hide_toast 0.3s ease forwards;
+      }
+      @keyframes hide_toast {
+        0% {
+          transform: translateX(-10px);
+        }
+        40% {
+          transform: translateX(0%);
+        }
+        80% {
+          transform: translateX(-5%);
+        }
+        100% {
+          transform: translateX(calc(100% + 20px));
+        }
+      }
