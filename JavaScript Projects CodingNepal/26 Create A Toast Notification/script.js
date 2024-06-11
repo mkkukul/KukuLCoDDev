@@ -12,3 +12,7 @@ const toastDetails = {
         icon: 'fa-circle-xmark',
         text: 'Error: This is an error toast.',
     },
+    warning: {
+        icon: 'fa-triangle-exclamation',
+        text: 'Warning: This is a warning toast.',
+    },
