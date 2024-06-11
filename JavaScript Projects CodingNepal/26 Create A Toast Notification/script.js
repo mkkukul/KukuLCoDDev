@@ -8,3 +8,7 @@ const toastDetails = {
         icon: 'fa-circle-check',
         text: 'Success: This is a success toast.',
     },
+    error: {
+        icon: 'fa-circle-xmark',
+        text: 'Error: This is an error toast.',
+    },
