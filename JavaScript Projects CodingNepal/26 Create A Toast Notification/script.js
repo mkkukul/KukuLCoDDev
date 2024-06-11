@@ -41,3 +41,7 @@ const createToast = (id) => {
   // Setting a timeout to remove the toast after the specified duration
   toast.timeoutId = setTimeout(() => removeToast(toast), toastDetails.timer);
 };
+// Adding a click event listener to each button to create a toast when clicked
+buttons.forEach((btn) => {
+  btn.addEventListener("click", () => createToast(btn.id));
+});
