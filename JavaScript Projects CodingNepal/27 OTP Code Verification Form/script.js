@@ -46,3 +46,5 @@ inputs.forEach((input, index1) => {
     button.classList.remove("active");
   });
 });
+//focus the first input which index is 0 on window load
+window.addEventListener("load", () => inputs[0].focus());
