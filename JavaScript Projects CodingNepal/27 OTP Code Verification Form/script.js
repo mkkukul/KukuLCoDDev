@@ -9,3 +9,8 @@ inputs.forEach((input, index1) => {
       const currentInput = input,
       nextInput = input.nextElementSibling,
       prevInput = input.previousElementSibling;
+      // if the value has more than one character then clear it
+    if (currentInput.value.length > 1) {
+        currentInput.value = "";
+        return;
+      }
