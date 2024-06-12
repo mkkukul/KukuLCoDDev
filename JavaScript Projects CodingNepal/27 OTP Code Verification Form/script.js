@@ -26,3 +26,10 @@ inputs.forEach((input, index1) => {
     inputs.forEach((input, index2) => {
       // if the index1 of the current input is less than or equal to the index2 of the input in the outer loop
       // and the previous element exists, set the disabled attribute on the input and focus on the previous element
+      if (index1 <= index2 && prevInput) {
+        input.setAttribute("disabled", true);
+        input.value = "";
+        prevInput.focus();
+      }
+    });
+  }
