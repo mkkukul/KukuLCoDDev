@@ -26,3 +26,11 @@ body {
   row-gap: 20px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
+.container header {
+  height: 65px;
+  width: 65px;
+  background: #4070f4;
+  color: #fff;
+  font-size: 2.5rem;
+  border-radius: 50%;
+}
