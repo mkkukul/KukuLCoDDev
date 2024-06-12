@@ -1,5 +1,6 @@
 const inputs = document.querySelectorAll("input"),
   button = document.querySelector("button");
+
 // iterate over all inputs
 inputs.forEach((input, index1) => {
   input.addEventListener("keyup", (e) => {
@@ -9,6 +10,7 @@ inputs.forEach((input, index1) => {
     const currentInput = input,
       nextInput = input.nextElementSibling,
       prevInput = input.previousElementSibling;
+
     // if the value has more than one character then clear it
     if (currentInput.value.length > 1) {
       currentInput.value = "";
@@ -24,6 +26,7 @@ inputs.forEach((input, index1) => {
       nextInput.removeAttribute("disabled");
       nextInput.focus();
     }
+
     // if the backspace key is pressed
     if (e.key === "Backspace") {
       // iterate over all inputs again
@@ -46,5 +49,6 @@ inputs.forEach((input, index1) => {
     button.classList.remove("active");
   });
 });
+
 //focus the first input which index is 0 on window load
 window.addEventListener("load", () => inputs[0].focus());
