@@ -20,4 +20,9 @@ inputs.forEach((input, index1) => {
         nextInput.removeAttribute("disabled");
         nextInput.focus();
       }
-  
+  // if the backspace key is pressed
+  if (e.key === "Backspace") {
+    // iterate over all inputs again
+    inputs.forEach((input, index2) => {
+      // if the index1 of the current input is less than or equal to the index2 of the input in the outer loop
+      // and the previous element exists, set the disabled attribute on the input and focus on the previous element
