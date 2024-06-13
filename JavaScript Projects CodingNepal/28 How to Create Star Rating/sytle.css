@@ -13,3 +13,10 @@ body {
   justify-content: center;
   background: linear-gradient(45deg, #ffd195, #ffb283);
 }
+.rating-box {
+  position: relative;
+  background: #fff;
+  padding: 25px 50px 35px;
+  border-radius: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
