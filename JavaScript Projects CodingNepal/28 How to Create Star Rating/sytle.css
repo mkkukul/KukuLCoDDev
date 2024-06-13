@@ -32,3 +32,9 @@ body {
   align-items: center;
   gap: 25px;
 }
+.stars i {
+  color: #e6e6e6;
+  font-size: 35px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
