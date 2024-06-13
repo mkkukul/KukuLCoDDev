@@ -27,3 +27,8 @@ body {
   margin-bottom: 20px;
   text-align: center;
 }
+.rating-box .stars {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
