@@ -23,3 +23,7 @@ pianoKeys.forEach((key) => {
 const handleVolume = (e) => {
   audio.volume = e.target.value; // passing the range slider value as an audio volume
 };
+const showHideKeys = () => {
+  // toggling hide class from each key on the checkbox click
+  pianoKeys.forEach((key) => key.classList.toggle("hide"));
+};
