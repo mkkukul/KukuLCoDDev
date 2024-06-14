@@ -15,3 +15,8 @@ const playTune = (key) => {
     clickedKey.classList.remove("active");
   }, 150);
 };
+pianoKeys.forEach((key) => {
+  allKeys.push(key.dataset.key); // adding data-key value to the allKeys array
+  // calling playTune function with passing data-key value as an argument
+  key.addEventListener("click", () => playTune(key.dataset.key));
+});
