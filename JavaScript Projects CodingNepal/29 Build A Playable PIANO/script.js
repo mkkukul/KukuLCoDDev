@@ -20,3 +20,6 @@ pianoKeys.forEach((key) => {
   // calling playTune function with passing data-key value as an argument
   key.addEventListener("click", () => playTune(key.dataset.key));
 });
+const handleVolume = (e) => {
+  audio.volume = e.target.value; // passing the range slider value as an audio volume
+};
