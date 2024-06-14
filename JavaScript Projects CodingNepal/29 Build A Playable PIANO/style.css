@@ -36,3 +36,10 @@ body {
     margin-right: 15px;
     font-size: 1.19rem;
   }
+  header input {
+    outline: none;
+    border-radius: 30px;
+  }
+  .volume-slider input {
+    accent-color: #fff;
+  }
