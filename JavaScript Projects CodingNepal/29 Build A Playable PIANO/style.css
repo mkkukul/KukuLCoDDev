@@ -51,3 +51,15 @@ body {
     position: relative;
     background: #4B4B4B
   }
+  .keys-checkbox input::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #8c8c8c;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
