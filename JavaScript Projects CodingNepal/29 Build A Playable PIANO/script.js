@@ -9,3 +9,4 @@ let allKeys = [],
     audio.src = `tunes/${key}.wav`; // passing audio src based on key pressed 
     audio.play(); // playing audio
     const clickedKey = document.querySelector(`[data-key="${key}"]`); // getting clicked key element
+    clickedKey.classList.add("active"); // adding active class to the clicked key element
