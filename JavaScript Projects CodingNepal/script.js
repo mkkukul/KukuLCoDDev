@@ -14,3 +14,5 @@ const screenshotBtn = document.querySelector("#src-btn"),
             canvas.height = video.videoHeight;
             video.play(); // playing the video so the drawn image won't be black or blank
             // drawing an image of the captured video stream
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+            stream.getVideoTracks()[0].stop(); // terminating first video track of the stream
