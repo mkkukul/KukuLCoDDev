@@ -52,3 +52,10 @@ body {
   pointer-events: auto;
   transform: translate(-50%, -50%) scale(1);
 }
+.screenshot #close-btn {
+  position: absolute;
+  right: -25px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
