@@ -23,3 +23,14 @@ body {
   border-radius: 30px;
   background: #4a98f7;
 }
+.src-preview {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.65);
+  transition: all 0.15s ease;
+}
