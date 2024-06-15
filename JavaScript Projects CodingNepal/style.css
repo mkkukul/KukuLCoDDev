@@ -38,3 +38,12 @@ body {
   opacity: 1;
   pointer-events: auto;
 }
+.src-preview .screenshot {
+  width: 70%;
+  top: 50%;
+  opacity: 0;
+  pointer-events: none;
+  aspect-ratio: 16 / 9;
+  transition: transform 0.15s ease;
+  transform: translate(-50%, -50%) scale(0.9);
+}
