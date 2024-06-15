@@ -28,3 +28,7 @@ const captureScreen = async () => {
     alert("Failed to capture screenshot!");
   }
 };
+closeBtn.addEventListener("click", () =>
+  screenshotPreview.classList.toggle("show")
+);
+screenshotBtn.addEventListener("click", captureScreen);
