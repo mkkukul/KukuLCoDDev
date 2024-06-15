@@ -16,3 +16,5 @@ const screenshotBtn = document.querySelector("#src-btn"),
             // drawing an image of the captured video stream
             ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
             stream.getVideoTracks()[0].stop(); // terminating first video track of the stream
+            // passing canvas data url as screenshot preview src
+            screenshotPreview.querySelector("img").src = canvas.toDataURL();
