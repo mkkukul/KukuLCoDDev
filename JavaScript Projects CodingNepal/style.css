@@ -3,3 +3,12 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+body {
+  padding: 0 30px;
+}
+#src-btn,
+.screenshot {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
