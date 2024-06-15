@@ -12,3 +12,5 @@ const screenshotBtn = document.querySelector("#src-btn"),
             // passing video width & height as canvas width & height
             canvas.width = video.videoWidth;
             canvas.height = video.videoHeight;
+            video.play(); // playing the video so the drawn image won't be black or blank
+            // drawing an image of the captured video stream
