@@ -47,3 +47,8 @@ body {
   transition: transform 0.15s ease;
   transform: translate(-50%, -50%) scale(0.9);
 }
+.src-preview.show .screenshot {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
