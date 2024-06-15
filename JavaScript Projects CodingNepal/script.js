@@ -4,3 +4,4 @@ const screenshotBtn = document.querySelector("#src-btn"),
   const captureScreen = async () => {
     try {
         // asking permission to use a media input to record current tab
+        const stream = await navigator.mediaDevices.getDisplayMedia({ preferCurrentTab: true });
