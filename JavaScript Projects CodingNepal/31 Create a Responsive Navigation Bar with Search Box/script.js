@@ -34,3 +34,10 @@ body {
     font-size: 22px;
     font-weight: 500;
   }
+  .nav .nav-links {
+    column-gap: 20px;
+    list-style: none;
+  }
+  .nav .nav-links a {
+    transition: all 0.2s linear;
+  }
