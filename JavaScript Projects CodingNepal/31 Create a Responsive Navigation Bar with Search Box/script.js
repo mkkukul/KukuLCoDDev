@@ -41,3 +41,12 @@ body {
   .nav .nav-links a {
     transition: all 0.2s linear;
   }
+  .nav.openSearch .nav-links a {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .nav .search-icon {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
