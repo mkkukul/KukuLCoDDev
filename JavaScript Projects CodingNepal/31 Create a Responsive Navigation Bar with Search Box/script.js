@@ -23,3 +23,14 @@ body {
   display: flex;
   align-items: center;
 }
+.nav {
+    justify-content: space-between;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .nav .logo {
+    font-size: 22px;
+    font-weight: 500;
+  }
