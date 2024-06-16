@@ -6,3 +6,15 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+body {
+    background: #f0faff;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 200px;
+    background: #4a98f7;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
