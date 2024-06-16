@@ -18,3 +18,8 @@ body {
     background: #4a98f7;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
+  .nav,
+.nav .nav-links {
+  display: flex;
+  align-items: center;
+}
