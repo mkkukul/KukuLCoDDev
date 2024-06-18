@@ -11,3 +11,9 @@ const initTimer = () => {
     const initCounter = setInterval(() => {
         if(timer > 0) {timer--;
             return downloadBtn.innerHTML = `Your download will begin in <b>${timer}</b> seconds`;
+        }
+        clearInterval(initCounter);
+        location.href = fileLink;
+        downloadBtn.innerText = "Your file is downloading...";
+        setTimeout(() => {
+
