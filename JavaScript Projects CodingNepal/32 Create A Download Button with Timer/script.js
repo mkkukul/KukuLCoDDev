@@ -5,3 +5,5 @@ const initTimer = () => {
     if(downloadBtn.classList.contains("disable-timer")) {
         return location.href = fileLink;
     }
+    let timer = downloadBtn.dataset.timer;
+    downloadBtn.classList.add("timer");
