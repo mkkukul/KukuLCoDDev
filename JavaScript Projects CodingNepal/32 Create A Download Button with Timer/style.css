@@ -36,3 +36,14 @@ body {
   font-size: 1.6rem;
   pointer-events: none;
 }
+.download-btn.timer b {
+  color: #4a98f7;
+  padding: 0 8px;
+}
+.download-btn .icon {
+  font-size: 2rem;
+}
+.download-btn .text {
+  font-size: 1.5rem;
+  padding-left: 10px;
+}
