@@ -18,4 +18,9 @@ const initTimer = () => {
         setTimeout(() => {
             downloadBtn.classList.replace("timer", "disable-timer");
             downloadBtn.innerHTML = `<span class="icon material-symbols-rounded">vertical_align_bottom</span>
+             <span class="text">Download Again</span>`;
+        }, 3000);
+    }, 1000);
+}
+
 
