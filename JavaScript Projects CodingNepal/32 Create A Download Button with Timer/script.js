@@ -9,4 +9,5 @@ const initTimer = () => {
     downloadBtn.classList.add("timer");
     downloadBtn.innerHTML = `Your download will begin in <b>${timer}</b> seconds`;
     const initCounter = setInterval(() => {
-        if(timer > 0) {
+        if(timer > 0) {timer--;
+            return downloadBtn.innerHTML = `Your download will begin in <b>${timer}</b> seconds`;
