@@ -8,3 +8,5 @@ const initTimer = () => {
     let timer = downloadBtn.dataset.timer;
     downloadBtn.classList.add("timer");
     downloadBtn.innerHTML = `Your download will begin in <b>${timer}</b> seconds`;
+    const initCounter = setInterval(() => {
+        if(timer > 0) {
