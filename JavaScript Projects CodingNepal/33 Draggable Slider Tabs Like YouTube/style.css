@@ -85,3 +85,8 @@ body {
   user-select: none;
   pointer-events: none;
 }
+.tabs-box .tab.active {
+  color: #fff;
+  background: #5372f0;
+  border-color: transparent;
+}
