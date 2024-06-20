@@ -1,0 +1,1 @@
+const tabsBox = document.querySelector(".tabs-box"),
