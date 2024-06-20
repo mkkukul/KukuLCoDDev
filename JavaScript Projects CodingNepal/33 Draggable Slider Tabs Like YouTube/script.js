@@ -15,3 +15,5 @@ arrowIcons.forEach((icon) => {
     handleIcons(scrollWidth);
   });
 });
+allTabs.forEach(tab => {
+    tab.addEventListener("click", () => {
