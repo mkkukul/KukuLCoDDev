@@ -31,3 +31,6 @@ const dragStop = () => {
   isDragging = false;
   tabsBox.classList.remove("dragging");
 };
+tabsBox.addEventListener("mousedown", () => (isDragging = true));
+tabsBox.addEventListener("mousemove", dragging);
+document.addEventListener("mouseup", dragStop);
