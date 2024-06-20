@@ -15,5 +15,9 @@ arrowIcons.forEach((icon) => {
     handleIcons(scrollWidth);
   });
 });
-allTabs.forEach(tab => {
-    tab.addEventListener("click", () => {
+allTabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    tabsBox.querySelector(".active").classList.remove("active");
+    tab.classList.add("active");
+  });
+});
