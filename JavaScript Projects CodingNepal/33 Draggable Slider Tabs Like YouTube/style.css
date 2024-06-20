@@ -14,3 +14,11 @@ body {
   min-height: 100vh;
   background: #5372f0;
 }
+.wrapper {
+  padding: 35px;
+  position: relative;
+  overflow-x: hidden;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 13px;
+}
