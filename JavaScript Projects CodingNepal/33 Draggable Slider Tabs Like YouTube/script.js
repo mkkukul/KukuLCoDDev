@@ -4,3 +4,4 @@ const tabsBox = document.querySelector(".tabs-box"),
   let isDragging = false;
   const handleIcons = (scrollVal) => {
       let maxScrollableWidth = tabsBox.scrollWidth - tabsBox.clientWidth;
+      arrowIcons[0].parentElement.style.display = scrollVal <= 0 ? "none" : "flex";
