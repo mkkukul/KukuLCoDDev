@@ -21,3 +21,9 @@ allTabs.forEach((tab) => {
     tab.classList.add("active");
   });
 });
+const dragging = (e) => {
+  if (!isDragging) return;
+  tabsBox.classList.add("dragging");
+  tabsBox.scrollLeft -= e.movementX;
+  handleIcons(tabsBox.scrollLeft);
+};
