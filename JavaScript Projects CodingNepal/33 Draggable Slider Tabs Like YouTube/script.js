@@ -27,3 +27,7 @@ const dragging = (e) => {
   tabsBox.scrollLeft -= e.movementX;
   handleIcons(tabsBox.scrollLeft);
 };
+const dragStop = () => {
+  isDragging = false;
+  tabsBox.classList.remove("dragging");
+};
