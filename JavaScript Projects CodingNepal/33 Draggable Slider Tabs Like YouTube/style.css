@@ -22,3 +22,11 @@ body {
   background: #fff;
   border-radius: 13px;
 }
+.wrapper .icon {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
