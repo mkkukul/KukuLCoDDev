@@ -1,10 +1,10 @@
 /* Import Google font - Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-* {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 body {
   display: flex;
@@ -12,7 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #5372f0;
+  background: #5372F0;
 }
 .wrapper {
   padding: 35px;
@@ -54,10 +54,10 @@ body {
 }
 .icon:first-child i {
   margin-left: 15px;
-}
+} 
 .icon:last-child i {
   margin-right: 15px;
-}
+} 
 .wrapper .tabs-box {
   display: flex;
   gap: 12px;
@@ -78,15 +78,15 @@ body {
   border-radius: 30px;
   border: 1px solid #d8d5f2;
 }
-.tabs-box .tab:hover {
+.tabs-box .tab:hover{
   background: #efedfb;
 }
 .tabs-box.dragging .tab {
   user-select: none;
   pointer-events: none;
 }
-.tabs-box .tab.active {
+.tabs-box .tab.active{
   color: #fff;
-  background: #5372f0;
+  background: #5372F0;
   border-color: transparent;
 }
