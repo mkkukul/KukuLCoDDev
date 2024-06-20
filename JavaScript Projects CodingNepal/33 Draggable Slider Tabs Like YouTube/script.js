@@ -8,6 +8,10 @@ const handleIcons = (scrollVal) => {
   arrowIcons[1].parentElement.style.display =
     maxScrollableWidth - scrollVal <= 1 ? "none" : "flex";
 };
-arrowIcons.forEach(icon => {
-    icon.addEventListener("click", () => {
-        // if clicked icon is left, reduce 350 from tabsBox scrollLeft else add
+arrowIcons.forEach((icon) => {
+  icon.addEventListener("click", () => {
+    // if clicked icon is left, reduce 350 from tabsBox scrollLeft else add
+    let scrollWidth = (tabsBox.scrollLeft += icon.id === "left" ? -340 : 340);
+    handleIcons(scrollWidth);
+  });
+});
