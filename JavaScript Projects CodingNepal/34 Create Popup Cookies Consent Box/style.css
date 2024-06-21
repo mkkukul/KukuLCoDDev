@@ -7,10 +7,12 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   min-height: 100vh;
   background-color: #4070f4;
 }
+
 .wrapper {
   position: fixed;
   bottom: 50px;
