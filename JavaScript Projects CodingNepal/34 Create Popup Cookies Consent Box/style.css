@@ -50,3 +50,23 @@ header h2 {
   color: #4070f4;
   text-decoration: none;
 }
+.data p a:hover {
+  text-decoration: underline;
+}
+.wrapper .buttons {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buttons .button {
+  border: none;
+  color: #fff;
+  padding: 8px 0;
+  border-radius: 4px;
+  background: #4070f4;
+  cursor: pointer;
+  width: calc(100% / 2 - 10px);
+  transition: all 0.2s ease;
+}
