@@ -60,6 +60,7 @@ header h2 {
   align-items: center;
   justify-content: space-between;
 }
+
 .buttons .button {
   border: none;
   color: #fff;
@@ -70,9 +71,11 @@ header h2 {
   width: calc(100% / 2 - 10px);
   transition: all 0.2s ease;
 }
+
 .buttons #acceptBtn:hover {
   background-color: #034bf1;
 }
+
 #declineBtn {
   border: 2px solid #4070f4;
   background-color: #fff;
