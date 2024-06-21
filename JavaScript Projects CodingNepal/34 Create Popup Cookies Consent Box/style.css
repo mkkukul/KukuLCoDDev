@@ -25,14 +25,17 @@ body {
   transition: right 0.3s ease;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
+
 .wrapper.show {
   right: 20px;
 }
+
 .wrapper header {
   display: flex;
   align-items: center;
   column-gap: 15px;
 }
+
 header i {
   color: #4070f4;
   font-size: 32px;
