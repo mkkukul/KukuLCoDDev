@@ -39,3 +39,14 @@ header h2 {
   color: #4070f4;
   font-weight: 500;
 }
+.wrapper .data {
+  margin-top: 16px;
+}
+.wrapper .data p {
+  color: #333;
+  font-size: 16px;
+}
+.data p a {
+  color: #4070f4;
+  text-decoration: none;
+}
