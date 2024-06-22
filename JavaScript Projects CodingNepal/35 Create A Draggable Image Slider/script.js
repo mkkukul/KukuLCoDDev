@@ -44,3 +44,13 @@ const dragStart = (e) => {
     prevPageX = e.pageX || e.touches[0].pageX;
     prevScrollLeft = carousel.scrollLeft;
 }
+const dragging = (e) => {
+    // scrolling images/carousel to left according to mouse pointer
+    if(!isDragStart) return;
+    e.preventDefault();
+    isDragging = true;
+    carousel.classList.add("dragging");
+    positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+    carousel.scrollLeft = prevScrollLeft - positionDiff;
+    showHideIcons();
+}
