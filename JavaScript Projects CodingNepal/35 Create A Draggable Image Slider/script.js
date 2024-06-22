@@ -7,6 +7,10 @@ let isDragStart = false,
   prevScrollLeft,
   positionDiff;
 
-  const showHideIcons = () => {
-    // showing and hiding prev/next icon according to carousel scroll left value
-    let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
+const showHideIcons = () => {
+  // showing and hiding prev/next icon according to carousel scroll left value
+  let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
+  arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
+  arrowIcons[1].style.display =
+    carousel.scrollLeft == scrollWidth ? "none" : "block";
+};
