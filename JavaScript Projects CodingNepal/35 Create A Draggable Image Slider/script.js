@@ -6,3 +6,6 @@ let isDragStart = false,
   prevPageX,
   prevScrollLeft,
   positionDiff;
+
+  const showHideIcons = () => {
+    // showing and hiding prev/next icon according to carousel scroll left value
