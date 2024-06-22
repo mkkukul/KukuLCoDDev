@@ -25,3 +25,6 @@ arrowIcons.forEach(icon => {
         setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
     });
 });
+const autoSlide = () => {
+    // if there is no image left to scroll then return from here
+    if(carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
