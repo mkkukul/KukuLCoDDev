@@ -9,3 +9,4 @@ let isDragStart = false,
 
   const showHideIcons = () => {
     // showing and hiding prev/next icon according to carousel scroll left value
+    let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
