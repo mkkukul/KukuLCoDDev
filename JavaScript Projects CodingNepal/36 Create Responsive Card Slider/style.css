@@ -54,3 +54,17 @@ body {
   font-weight: 500;
   color: #4d4d4d;
 }
+.swiper-navBtn {
+  color: #000;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  border-radius: 50%;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 18px;
+}
+.swiper-pagination-bullet {
+  background-color: #000;
+}
