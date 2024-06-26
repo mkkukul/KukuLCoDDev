@@ -28,3 +28,5 @@ rangeInput.addEventListener("input", () => {
 copyIcon.addEventListener("click", () => {
     navigator.clipboard.writeText(passwordInput.value);
     copyIcon.classList.replace("uil-copy", "uil-file-check-alt"); //replace icon
+    generatePassword();
+generateButton.addEventListener("click", generatePassword);
