@@ -23,3 +23,7 @@ body {
   padding: 30px 25px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
+.wrapper .password-box {
+  position: relative;
+  height: 50px;
+}
