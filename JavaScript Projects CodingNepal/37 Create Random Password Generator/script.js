@@ -19,3 +19,7 @@ const generatePassword = () => {
   passwordInput.value = newPassword;
   copyIcon.classList.replace("uil-file-check-alt", "uil-copy"); //replace icon
 };
+rangeInput.addEventListener("input", () => {
+  sliderNumber.innerText = rangeInput.value;
+  generatePassword();
+});
