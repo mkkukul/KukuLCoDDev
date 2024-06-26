@@ -14,3 +14,12 @@ body {
   justify-content: center;
   background-color: #927dfc;
 }
+.wrapper {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
