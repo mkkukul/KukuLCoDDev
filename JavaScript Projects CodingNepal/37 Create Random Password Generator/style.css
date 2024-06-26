@@ -27,3 +27,11 @@ body {
   position: relative;
   height: 50px;
 }
+.password-box input {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  padding: 0 45px 0 15px;
+  border: 1px solid #aaa;
+  background-color: transparent;
+}
