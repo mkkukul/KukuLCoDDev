@@ -11,6 +11,7 @@ let allCharacters =
 //this function will be called on, page reload, generateButton clicked & rangeInput slide
 const generatePassword = () => {
   let newPassword = "";
+
   //for loop will run till rangeInput value
   for (let i = 0; i < rangeInput.value; i++) {
     let randomNumbers = Math.floor(Math.random() * allCharacters.length);
@@ -19,14 +20,18 @@ const generatePassword = () => {
   passwordInput.value = newPassword;
   copyIcon.classList.replace("uil-file-check-alt", "uil-copy"); //replace icon
 };
+
 rangeInput.addEventListener("input", () => {
   sliderNumber.innerText = rangeInput.value;
   generatePassword();
 });
+
 //copy passInput's value on copyIcon click
 //copy passInput's value on copyIcon click
 copyIcon.addEventListener("click", () => {
-    navigator.clipboard.writeText(passwordInput.value);
-    copyIcon.classList.replace("uil-copy", "uil-file-check-alt"); //replace icon
-    generatePassword();
+  navigator.clipboard.writeText(passwordInput.value);
+  copyIcon.classList.replace("uil-copy", "uil-file-check-alt"); //replace icon
+});
+
+generatePassword();
 generateButton.addEventListener("click", generatePassword);
