@@ -8,11 +8,14 @@ const passwordInput = document.querySelector(".password-box input"),
 let allCharacters =
   "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789^!$%&|[](){}:;.,*+-#@<>~";
 
-  //this function will be called on, page reload, generateButton clicked & rangeInput slide
+//this function will be called on, page reload, generateButton clicked & rangeInput slide
 const generatePassword = () => {
-    let newPassword = "";
-     //for loop will run till rangeInput value
+  let newPassword = "";
+  //for loop will run till rangeInput value
   for (let i = 0; i < rangeInput.value; i++) {
     let randomNumbers = Math.floor(Math.random() * allCharacters.length);
     newPassword += allCharacters[randomNumbers];
   }
+  passwordInput.value = newPassword;
+  copyIcon.classList.replace("uil-file-check-alt", "uil-copy"); //replace icon
+};
