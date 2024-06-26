@@ -23,3 +23,8 @@ rangeInput.addEventListener("input", () => {
   sliderNumber.innerText = rangeInput.value;
   generatePassword();
 });
+//copy passInput's value on copyIcon click
+//copy passInput's value on copyIcon click
+copyIcon.addEventListener("click", () => {
+    navigator.clipboard.writeText(passwordInput.value);
+    copyIcon.classList.replace("uil-copy", "uil-file-check-alt"); //replace icon
