@@ -44,3 +44,11 @@ body {
   cursor: pointer;
   transform: translateY(-50%);
 }
+.copy-icon:hover {
+  color: #826afb;
+}
+.wrapper .range-box {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
