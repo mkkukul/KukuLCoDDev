@@ -11,3 +11,8 @@ let allCharacters =
   //this function will be called on, page reload, generateButton clicked & rangeInput slide
 const generatePassword = () => {
     let newPassword = "";
+     //for loop will run till rangeInput value
+  for (let i = 0; i < rangeInput.value; i++) {
+    let randomNumbers = Math.floor(Math.random() * allCharacters.length);
+    newPassword += allCharacters[randomNumbers];
+  }
