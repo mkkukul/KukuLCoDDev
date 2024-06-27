@@ -26,3 +26,10 @@ widthInput.addEventListener("keyup", () => {
     : heightInput.value;
   heightInput.value = Math.floor(height);
 });
+heightInput.addEventListener("keyup", () => {
+  // getting width according to the ratio checkbox status
+  const width = ratioInput.checked
+    ? heightInput.value * ogImageRatio
+    : widthInput.value;
+  widthInput.value = Math.floor(width);
+});
