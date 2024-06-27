@@ -34,3 +34,6 @@ body {
   border-radius: 5px;
   border: 2px dashed #afafaf;
 }
+.wrapper.active .upload-box {
+  border: none;
+}
