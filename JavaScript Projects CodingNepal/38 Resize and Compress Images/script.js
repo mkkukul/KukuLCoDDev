@@ -1,2 +1,2 @@
-/* Import Google font - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+const uploadBox = document.querySelector(".upload-box"),
+previewImg = uploadBox.querySelector("img"),
