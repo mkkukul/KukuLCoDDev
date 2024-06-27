@@ -33,3 +33,7 @@ heightInput.addEventListener("keyup", () => {
     : widthInput.value;
   widthInput.value = Math.floor(width);
 });
+const resizeAndDownload = () => {
+    const canvas = document.createElement("canvas");
+    const a = document.createElement("a");
+    const ctx = canvas.getContext("2d");
