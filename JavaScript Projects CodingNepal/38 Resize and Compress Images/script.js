@@ -6,7 +6,9 @@ const uploadBox = document.querySelector(".upload-box"),
   ratioInput = document.querySelector(".ratio input"),
   qualityInput = document.querySelector(".quality input"),
   downloadBtn = document.querySelector(".download-btn");
+
 let ogImageRatio;
+
 const loadFile = (e) => {
   const file = e.target.files[0]; // getting first user selected file
   if (!file) return; // return if user hasn't selected any file
@@ -19,6 +21,7 @@ const loadFile = (e) => {
     document.querySelector(".wrapper").classList.add("active");
   });
 };
+
 widthInput.addEventListener("keyup", () => {
   // getting height according to the ratio checkbox status
   const height = ratioInput.checked
@@ -26,6 +29,7 @@ widthInput.addEventListener("keyup", () => {
     : heightInput.value;
   heightInput.value = Math.floor(height);
 });
+
 heightInput.addEventListener("keyup", () => {
   // getting width according to the ratio checkbox status
   const width = ratioInput.checked
@@ -33,16 +37,20 @@ heightInput.addEventListener("keyup", () => {
     : widthInput.value;
   widthInput.value = Math.floor(width);
 });
+
 const resizeAndDownload = () => {
   const canvas = document.createElement("canvas");
   const a = document.createElement("a");
   const ctx = canvas.getContext("2d");
+
   // if quality checkbox is checked, pass 0.5 to imgQuality else pass 1.0
   // 1.0 is 100% quality where 0.5 is 50% of total. you can pass from 0.1 - 1.0
   const imgQuality = qualityInput.checked ? 0.5 : 1.0;
+
   // setting canvas height & width according to the input values
   canvas.width = widthInput.value;
   canvas.height = heightInput.value;
+
   // drawing user selected image onto the canvas
   ctx.drawImage(previewImg, 0, 0, canvas.width, canvas.height);
 
@@ -51,3 +59,7 @@ const resizeAndDownload = () => {
   a.download = new Date().getTime(); // passing current time as download value
   a.click(); // clicking <a> element so the file download
 };
+
+downloadBtn.addEventListener("click", resizeAndDownload);
+fileInput.addEventListener("change", loadFile);
+uploadBox.addEventListener("click", () => fileInput.click());
