@@ -19,3 +19,10 @@ const loadFile = (e) => {
     document.querySelector(".wrapper").classList.add("active");
   });
 };
+widthInput.addEventListener("keyup", () => {
+  // getting height according to the ratio checkbox status
+  const height = ratioInput.checked
+    ? widthInput.value / ogImageRatio
+    : heightInput.value;
+  heightInput.value = Math.floor(height);
+});
