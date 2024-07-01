@@ -6,3 +6,18 @@ const daysTag = document.querySelector(".days"),
 let date = new Date(),
   currYear = date.getFullYear(),
   currMonth = date.getMonth();
+// storing full name of all months in array
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
