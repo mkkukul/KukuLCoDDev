@@ -51,3 +51,15 @@ header .current-date {
   font-size: 1.45rem;
   font-weight: 500;
 }
+.calendar {
+  padding: 20px;
+}
+.calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar .days {
+  margin-bottom: 20px;
+}
