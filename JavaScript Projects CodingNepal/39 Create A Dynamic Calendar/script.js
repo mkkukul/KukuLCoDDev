@@ -59,3 +59,5 @@ prevNextIcon.forEach(icon => { // getting prev and next icons
 
             date = new Date(currYear, currMonth, new Date().getDate());
             currYear = date.getFullYear(); // updating current year with new date year
+            currMonth = date.getMonth(); // updating current month with new date month
+        } else {
