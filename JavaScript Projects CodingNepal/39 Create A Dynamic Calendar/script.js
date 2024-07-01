@@ -56,3 +56,6 @@ prevNextIcon.forEach(icon => { // getting prev and next icons
         currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1;
         if(currMonth < 0 || currMonth > 11) { // if current month is less than 0 or greater than 11
             // creating a new date of current year & month and pass it as
+
+            date = new Date(currYear, currMonth, new Date().getDate());
+            currYear = date.getFullYear(); // updating current year with new date year
