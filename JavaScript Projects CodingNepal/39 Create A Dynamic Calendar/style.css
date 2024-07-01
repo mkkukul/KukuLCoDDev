@@ -14,3 +14,9 @@ body {
   min-height: 100vh;
   background: #9b59b6;
 }
+.wrapper {
+  width: 450px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
