@@ -45,3 +45,7 @@ const drawRect = (e) => {
     prevMouseY - e.offsetY
   );
 };
+const drawCircle = (e) => {
+  ctx.beginPath(); // creating new path to draw circle
+  // getting radius for circle according to the mouse pointer
+  let radius = Math.sqrt(Math.pow((prevMouseX - e.offsetX), 2) + Math.pow((prevMouseY - e.offsetY), 2));
