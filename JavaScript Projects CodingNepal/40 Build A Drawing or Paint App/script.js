@@ -27,3 +27,6 @@ window.addEventListener("load", () => {
   canvas.height = canvas.offsetHeight;
   setCanvasBackground();
 });
+const drawRect = (e) => {
+  // if fillColor isn't checked draw a rect with border else draw rect with background
+  if(!fillColor.checked) {
