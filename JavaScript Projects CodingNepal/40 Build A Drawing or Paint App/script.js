@@ -21,3 +21,9 @@ const setCanvasBackground = () => {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   ctx.fillStyle = selectedColor; // setting fillstyle back to the selectedColor, it'll be the brush color
 };
+window.addEventListener("load", () => {
+  // setting canvas width/height.. offsetwidth/height returns viewable width/height of an element
+  canvas.width = canvas.offsetWidth;
+  canvas.height = canvas.offsetHeight;
+  setCanvasBackground();
+});
