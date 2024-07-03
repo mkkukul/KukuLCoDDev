@@ -69,3 +69,23 @@ body{
     display: flex;
     justify-content: space-between;
   }
+  .colors .option{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-top: 3px;
+    position: relative;
+  }
+  .colors .option:nth-child(1){
+    background-color: #fff;
+    border: 1px solid #bfbfbf;
+  }
+  .colors .option:nth-child(2){
+    background-color: #000;
+  }
+  .colors .option:nth-child(3){
+    background-color: #E02020;
+  }
+  .colors .option:nth-child(4){
+    background-color: #6DD400;
+  }
