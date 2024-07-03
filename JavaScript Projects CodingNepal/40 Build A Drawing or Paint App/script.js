@@ -57,3 +57,15 @@ body{
   height: 14px;
   width: 14px;
 }
+#fill-color:checked ~ label{
+    color: #4A98F7;
+  }
+  .option #size-slider{
+    width: 100%;
+    height: 5px;
+    margin-top: 10px;
+  }
+  .colors .options{
+    display: flex;
+    justify-content: space-between;
+  }
