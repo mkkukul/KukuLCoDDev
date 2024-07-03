@@ -13,3 +13,18 @@ body{
     min-height: 100vh;
     background: #4A98F7;
   }
+  .container{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    max-width: 1050px;
+  }
+  section{
+    background: #fff;
+    border-radius: 7px;
+  }
+  .tools-board{
+    width: 210px;
+    padding: 15px 22px 0;
+  }
