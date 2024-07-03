@@ -28,3 +28,10 @@ body{
     width: 210px;
     padding: 15px 22px 0;
   }
+  .tools-board .row{
+    margin-bottom: 20px;
+  }
+  .row .options{
+    list-style: none;
+    margin: 10px 0 0 5px;
+  }
