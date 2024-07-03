@@ -35,3 +35,11 @@ body{
     list-style: none;
     margin: 10px 0 0 5px;
   }
+  .row .options .option{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .option:is(:hover, .active) img{
+    filter: invert(17%) sepia(90%) saturate(3000%) hue-rotate(900deg) brightness(100%) contrast(100%);
