@@ -54,3 +54,11 @@ const drawCircle = (e) => {
   ctx.arc(prevMouseX, prevMouseY, radius, 0, 2 * Math.PI); // creating circle according to the mouse pointer
   fillColor.checked ? ctx.fill() : ctx.stroke(); // if fillColor is checked fill circle else draw border circle
 };
+const drawTriangle = (e) => {
+  ctx.beginPath(); // creating new path to draw circle
+  ctx.moveTo(prevMouseX, prevMouseY); // moving triangle to the mouse pointer
+  ctx.lineTo(e.offsetX, e.offsetY); // creating first line according to the mouse pointer
+  ctx.lineTo(prevMouseX * 2 - e.offsetX, e.offsetY); // creating bottom line of triangle
+  ctx.closePath(); // closing path of a triangle so the third line draw automatically
+  fillColor.checked ? ctx.fill() : ctx.stroke(); // if fillColor is checked fill triangle else draw border
+};
