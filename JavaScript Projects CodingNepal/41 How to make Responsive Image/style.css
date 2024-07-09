@@ -62,3 +62,14 @@ a.button {
   margin-top: 25px;
   transition: all 0.3s ease;
 }
+a.button:hover {
+  color: #fff;
+  background-color: #c87e4f;
+}
+/* swiper button css */
+.nav-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
