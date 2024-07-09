@@ -9,3 +9,5 @@ selectMenu.addEventListener("change", () => {
 });
 saveBtn.addEventListener("click", () => {
     const blob = new Blob([textarea.value], {type: selectMenu.value});
+    const fileUrl = URL.createObjectURL(blob);
+    const link = document.createElement("a");
