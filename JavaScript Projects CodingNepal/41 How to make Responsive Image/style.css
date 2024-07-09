@@ -28,3 +28,8 @@
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
+.slide .image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
