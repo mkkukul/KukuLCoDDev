@@ -45,3 +45,9 @@ function confirmPass() {
   }
   cPassField.classList.remove("invalid");
 }
+// Calling Funtion on Form Sumbit
+form.addEventListener("submit", (e) => {
+    e.preventDefault(); //preventing form submitting
+    checkEmail();
+    createPass();
+    confirmPass();
