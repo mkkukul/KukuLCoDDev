@@ -5,3 +5,7 @@ const form = document.querySelector("form"),
   passInput = passField.querySelector(".password"),
   cPassField = form.querySelector(".confirm-password"),
   cPassInput = cPassField.querySelector(".cPassword");
+
+  // Email Validtion
+function checkEmail() {
+    const emaiPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
