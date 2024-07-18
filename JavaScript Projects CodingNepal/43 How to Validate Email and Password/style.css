@@ -21,3 +21,19 @@ body {
   border-radius: 8px;
   background-color: #fff;
 }
+.container header {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+.container form {
+  margin-top: 30px;
+}
+form .field {
+  margin-bottom: 20px;
+}
+form .input-field {
+  position: relative;
+  height: 55px;
+  width: 100%;
+}
