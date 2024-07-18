@@ -80,3 +80,17 @@ form .input-field {
 .create-password .error-icon {
   margin-top: 4px;
 }
+.button {
+  margin: 25px 0 6px;
+}
+.button input {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #4070f4;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input:hover {
+  background-color: #0e4bf1;
+}
