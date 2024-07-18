@@ -9,3 +9,6 @@ const form = document.querySelector("form"),
   // Email Validtion
 function checkEmail() {
     const emaiPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!emailInput.value.match(emaiPattern)) {
+        return emailField.classList.add("invalid"); //adding invalid class if email value do not mathced with email pattern
+      }
