@@ -17,3 +17,6 @@ function checkEmail() {
 
 // Hide and show password
 const eyeIcons = document.querySelectorAll(".show-hide");
+eyeIcons.forEach((eyeIcon) => {
+    eyeIcon.addEventListener("click", () => {
+      const pInput = eyeIcon.parentElement.querySelector("input"); 
