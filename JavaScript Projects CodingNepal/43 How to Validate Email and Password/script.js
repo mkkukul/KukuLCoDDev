@@ -14,3 +14,6 @@ function checkEmail() {
   }
   emailField.classList.remove("invalid"); //removing invalid class if email value matched with emaiPattern
 }
+
+// Hide and show password
+const eyeIcons = document.querySelectorAll(".show-hide");
