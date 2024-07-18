@@ -38,3 +38,10 @@ function createPass() {
   }
   passField.classList.remove("invalid"); //removing invalid class if password input value matched with passPattern
 }
+// Confirm Password Validtion
+function confirmPass() {
+  if (passInput.value !== cPassInput.value || cPassInput.value === "") {
+    return cPassField.classList.add("invalid");
+  }
+  cPassField.classList.remove("invalid");
+}
