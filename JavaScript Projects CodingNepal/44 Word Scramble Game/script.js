@@ -15,3 +15,19 @@ let words = [
         word: "exchange",
         hint: "The act of trading"
     },
+    {
+        word: "canvas",
+        hint: "Piece of fabric for oil painting"
+    },
+    {
+        word: "garden",
+        hint: "Space for planting flower and plant"
+    },
+    {
+        word: "position",
+        hint: "Location of someone or something"
+    },
+    {
+        word: "feather",
+        hint: "Hair like outer covering of bird"
+    },
