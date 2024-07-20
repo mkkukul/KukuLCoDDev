@@ -56,3 +56,18 @@ videoTimeline.addEventListener("click", (e) => {
   let timelineWidth = videoTimeline.clientWidth;
   mainVideo.currentTime = (e.offsetX / timelineWidth) * mainVideo.duration;
 });
+mainVideo.addEventListener("timeupdate", (e) => {
+  let { currentTime, duration } = e.target;
+  let percent = (currentTime / duration) * 100;
+  progressBar.style.width = `${percent}%`;
+  currentVidTime.innerText = formatTime(currentTime);
+});
+mainVideo.addEventListener("loadeddata", () => {
+  videoDuration.innerText = formatTime(mainVideo.duration);
+});
+const draggableProgressBar = (e) => {
+  let timelineWidth = videoTimeline.clientWidth;
+  progressBar.style.width = `${e.offsetX}px`;
+  mainVideo.currentTime = (e.offsetX / timelineWidth) * mainVideo.duration;
+  currentVidTime.innerText = formatTime(mainVideo.currentTime);
+};
