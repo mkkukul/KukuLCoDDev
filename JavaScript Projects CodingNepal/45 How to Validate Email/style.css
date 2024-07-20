@@ -6,3 +6,18 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e3f2fd;
+}
+.input-field {
+  position: relative;
+  height: 50px;
+  width: 280px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
