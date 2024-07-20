@@ -95,3 +95,39 @@ speedOptions.querySelectorAll("li").forEach((option) => {
     option.classList.add("active");
   });
 });
+document.addEventListener("click", (e) => {
+  if (
+    e.target.tagName !== "SPAN" ||
+    e.target.className !== "material-symbols-rounded"
+  ) {
+    speedOptions.classList.remove("show");
+  }
+});
+fullScreenBtn.addEventListener("click", () => {
+  container.classList.toggle("fullscreen");
+  if (document.fullscreenElement) {
+    fullScreenBtn.classList.replace("fa-compress", "fa-expand");
+    return document.exitFullscreen();
+  }
+  fullScreenBtn.classList.replace("fa-expand", "fa-compress");
+  container.requestFullscreen();
+});
+speedBtn.addEventListener("click", () => speedOptions.classList.toggle("show"));
+pipBtn.addEventListener("click", () => mainVideo.requestPictureInPicture());
+skipBackward.addEventListener("click", () => (mainVideo.currentTime -= 5));
+skipForward.addEventListener("click", () => (mainVideo.currentTime += 5));
+mainVideo.addEventListener("play", () =>
+  playPauseBtn.classList.replace("fa-play", "fa-pause")
+);
+mainVideo.addEventListener("pause", () =>
+  playPauseBtn.classList.replace("fa-pause", "fa-play")
+);
+playPauseBtn.addEventListener("click", () =>
+  mainVideo.paused ? mainVideo.play() : mainVideo.pause()
+);
+videoTimeline.addEventListener("mousedown", () =>
+  videoTimeline.addEventListener("mousemove", draggableProgressBar)
+);
+document.addEventListener("mouseup", () =>
+  videoTimeline.removeEventListener("mousemove", draggableProgressBar)
+);
