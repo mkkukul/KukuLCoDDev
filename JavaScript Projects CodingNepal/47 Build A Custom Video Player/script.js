@@ -38,7 +38,17 @@ const formatTime = (time) => {
   }
   return `${hours}:${minutes}:${seconds}`;
 };
-videoTimeline.addEventListener("mousemove", e => {
-    let timelineWidth = videoTimeline.clientWidth;
-    let offsetX = e.offsetX;
-    let percent = Math.floor((offsetX / timelineWidth) * mainVideo.duration);
+videoTimeline.addEventListener("mousemove", (e) => {
+  let timelineWidth = videoTimeline.clientWidth;
+  let offsetX = e.offsetX;
+  let percent = Math.floor((offsetX / timelineWidth) * mainVideo.duration);
+  const progressTime = videoTimeline.querySelector("span");
+  offsetX =
+    offsetX < 20
+      ? 20
+      : offsetX > timelineWidth - 20
+      ? timelineWidth - 20
+      : offsetX;
+  progressTime.style.left = `${offsetX}px`;
+  progressTime.innerText = formatTime(percent);
+});
