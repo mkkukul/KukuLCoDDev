@@ -14,3 +14,10 @@ const container = document.querySelector(".container"),
   (pipBtn = container.querySelector(".pic-in-pic span")),
   (fullScreenBtn = container.querySelector(".fullscreen i"));
 let timer;
+const hideControls = () => {
+  if (mainVideo.paused) return;
+  timer = setTimeout(() => {
+    container.classList.remove("show-controls");
+  }, 3000);
+};
+hideControls();
