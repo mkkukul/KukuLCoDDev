@@ -21,3 +21,8 @@ const hideControls = () => {
   }, 3000);
 };
 hideControls();
+container.addEventListener("mousemove", () => {
+  container.classList.add("show-controls");
+  clearTimeout(timer);
+  hideControls();
+});
