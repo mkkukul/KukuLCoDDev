@@ -52,3 +52,7 @@ videoTimeline.addEventListener("mousemove", (e) => {
   progressTime.style.left = `${offsetX}px`;
   progressTime.innerText = formatTime(percent);
 });
+videoTimeline.addEventListener("click", (e) => {
+  let timelineWidth = videoTimeline.clientWidth;
+  mainVideo.currentTime = (e.offsetX / timelineWidth) * mainVideo.duration;
+});
