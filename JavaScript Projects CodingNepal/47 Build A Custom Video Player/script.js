@@ -14,6 +14,7 @@ const container = document.querySelector(".container"),
   (pipBtn = container.querySelector(".pic-in-pic span")),
   (fullScreenBtn = container.querySelector(".fullscreen i"));
 let timer;
+
 const hideControls = () => {
   if (mainVideo.paused) return;
   timer = setTimeout(() => {
@@ -21,23 +22,28 @@ const hideControls = () => {
   }, 3000);
 };
 hideControls();
+
 container.addEventListener("mousemove", () => {
   container.classList.add("show-controls");
   clearTimeout(timer);
   hideControls();
 });
+
 const formatTime = (time) => {
   let seconds = Math.floor(time % 60),
     minutes = Math.floor(time / 60) % 60,
     hours = Math.floor(time / 3600);
+
   seconds = seconds < 10 ? `0${seconds}` : seconds;
   minutes = minutes < 10 ? `0${minutes}` : minutes;
   hours = hours < 10 ? `0${hours}` : hours;
+
   if (hours == 0) {
     return `${minutes}:${seconds}`;
   }
   return `${hours}:${minutes}:${seconds}`;
 };
+
 videoTimeline.addEventListener("mousemove", (e) => {
   let timelineWidth = videoTimeline.clientWidth;
   let offsetX = e.offsetX;
@@ -52,25 +58,30 @@ videoTimeline.addEventListener("mousemove", (e) => {
   progressTime.style.left = `${offsetX}px`;
   progressTime.innerText = formatTime(percent);
 });
+
 videoTimeline.addEventListener("click", (e) => {
   let timelineWidth = videoTimeline.clientWidth;
   mainVideo.currentTime = (e.offsetX / timelineWidth) * mainVideo.duration;
 });
+
 mainVideo.addEventListener("timeupdate", (e) => {
   let { currentTime, duration } = e.target;
   let percent = (currentTime / duration) * 100;
   progressBar.style.width = `${percent}%`;
   currentVidTime.innerText = formatTime(currentTime);
 });
+
 mainVideo.addEventListener("loadeddata", () => {
   videoDuration.innerText = formatTime(mainVideo.duration);
 });
+
 const draggableProgressBar = (e) => {
   let timelineWidth = videoTimeline.clientWidth;
   progressBar.style.width = `${e.offsetX}px`;
   mainVideo.currentTime = (e.offsetX / timelineWidth) * mainVideo.duration;
   currentVidTime.innerText = formatTime(mainVideo.currentTime);
 };
+
 volumeBtn.addEventListener("click", () => {
   if (!volumeBtn.classList.contains("fa-volume-high")) {
     mainVideo.volume = 0.5;
@@ -81,6 +92,7 @@ volumeBtn.addEventListener("click", () => {
   }
   volumeSlider.value = mainVideo.volume;
 });
+
 volumeSlider.addEventListener("input", (e) => {
   mainVideo.volume = e.target.value;
   if (e.target.value == 0) {
@@ -88,6 +100,7 @@ volumeSlider.addEventListener("input", (e) => {
   }
   volumeBtn.classList.replace("fa-volume-xmark", "fa-volume-high");
 });
+
 speedOptions.querySelectorAll("li").forEach((option) => {
   option.addEventListener("click", () => {
     mainVideo.playbackRate = option.dataset.speed;
@@ -95,6 +108,7 @@ speedOptions.querySelectorAll("li").forEach((option) => {
     option.classList.add("active");
   });
 });
+
 document.addEventListener("click", (e) => {
   if (
     e.target.tagName !== "SPAN" ||
@@ -103,6 +117,7 @@ document.addEventListener("click", (e) => {
     speedOptions.classList.remove("show");
   }
 });
+
 fullScreenBtn.addEventListener("click", () => {
   container.classList.toggle("fullscreen");
   if (document.fullscreenElement) {
@@ -112,6 +127,7 @@ fullScreenBtn.addEventListener("click", () => {
   fullScreenBtn.classList.replace("fa-expand", "fa-compress");
   container.requestFullscreen();
 });
+
 speedBtn.addEventListener("click", () => speedOptions.classList.toggle("show"));
 pipBtn.addEventListener("click", () => mainVideo.requestPictureInPicture());
 skipBackward.addEventListener("click", () => (mainVideo.currentTime -= 5));
