@@ -38,3 +38,7 @@ const formatTime = (time) => {
   }
   return `${hours}:${minutes}:${seconds}`;
 };
+videoTimeline.addEventListener("mousemove", e => {
+    let timelineWidth = videoTimeline.clientWidth;
+    let offsetX = e.offsetX;
+    let percent = Math.floor((offsetX / timelineWidth) * mainVideo.duration);
