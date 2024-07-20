@@ -71,3 +71,27 @@ const draggableProgressBar = (e) => {
   mainVideo.currentTime = (e.offsetX / timelineWidth) * mainVideo.duration;
   currentVidTime.innerText = formatTime(mainVideo.currentTime);
 };
+volumeBtn.addEventListener("click", () => {
+  if (!volumeBtn.classList.contains("fa-volume-high")) {
+    mainVideo.volume = 0.5;
+    volumeBtn.classList.replace("fa-volume-xmark", "fa-volume-high");
+  } else {
+    mainVideo.volume = 0.0;
+    volumeBtn.classList.replace("fa-volume-high", "fa-volume-xmark");
+  }
+  volumeSlider.value = mainVideo.volume;
+});
+volumeSlider.addEventListener("input", (e) => {
+  mainVideo.volume = e.target.value;
+  if (e.target.value == 0) {
+    return volumeBtn.classList.replace("fa-volume-high", "fa-volume-xmark");
+  }
+  volumeBtn.classList.replace("fa-volume-xmark", "fa-volume-high");
+});
+speedOptions.querySelectorAll("li").forEach((option) => {
+  option.addEventListener("click", () => {
+    mainVideo.playbackRate = option.dataset.speed;
+    speedOptions.querySelector(".active").classList.remove("active");
+    option.classList.add("active");
+  });
+});
