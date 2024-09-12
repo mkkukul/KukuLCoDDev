@@ -7,3 +7,8 @@ const selectBox = document.querySelector(".select-box"),
   resultBox = document.querySelector(".result-box"),
   wonText = resultBox.querySelector(".won-text"),
   replayBtn = resultBox.querySelector("button");
+window.onload = () => {
+  for (let i = 0; i < allBox.length; i++) {
+    allBox[i].setAttribute("onclick", "clickedBox(this)");
+  }
+};
