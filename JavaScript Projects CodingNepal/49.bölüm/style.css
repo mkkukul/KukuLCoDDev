@@ -45,3 +45,20 @@ nav span {
   text-align: justify;
   font-family: "Noto Sans", sans-serif;
 }
+.content h2 {
+  font-size: 45px;
+  font-family: "Open Sans", sans-serif;
+}
+.content ul {
+  padding-left: 30px;
+}
+ul li {
+  font-size: 20px;
+  font-family: "Noto Sans", sans-serif;
+}
+.content center {
+  font-size: 25px;
+  padding: 10px;
+  color: #1a1a1a;
+  font-family: "Open Sans", sans-serif;
+}
