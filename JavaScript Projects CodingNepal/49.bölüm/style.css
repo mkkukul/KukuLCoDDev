@@ -21,3 +21,27 @@ nav label {
   color: #0d0d0d;
   font-family: "Montserrat", sans-serif;
 }
+nav span {
+  color: #0089f2;
+}
+.scroll-line {
+  height: 2px;
+  background: #0089f2;
+  margin-bottom: -3px;
+  width: 0%;
+}
+.content {
+  margin-top: 90px;
+  top: 85px;
+  padding: 0 80px;
+}
+.content h2.header {
+  font-size: 55px;
+  font-family: "Open Sans", sans-serif;
+}
+.content p {
+  padding: 10px 0;
+  font-size: 18px;
+  text-align: justify;
+  font-family: "Noto Sans", sans-serif;
+}
