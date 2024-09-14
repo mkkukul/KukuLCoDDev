@@ -23,3 +23,8 @@ navigator.getBattery().then((battery) => {
   battery.addEventListener("levelchange", () => {
     updateAllBatteryInfo();
   });
+  function updateChargingInfo() {
+    if (battery.charging) {
+      charge.classList.add("active");
+      chargingTimeRef.innerText = "";
+    } else {
