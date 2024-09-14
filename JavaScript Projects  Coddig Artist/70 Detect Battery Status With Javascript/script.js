@@ -10,11 +10,11 @@ window.onload = () => {
   }
 };
 navigator.getBattery().then((battery) => {
-    function updateAllBatteryInfo() {
-      updateChargingInfo();
-      updateLevelInfo();
-    }
-    updateAllBatteryInfo();
+  function updateAllBatteryInfo() {
+    updateChargingInfo();
+    updateLevelInfo();
+  }
+  updateAllBatteryInfo();
   //When the charging status changes
   battery.addEventListener("chargingchange", () => {
     updateAllBatteryInfo();
@@ -28,7 +28,7 @@ navigator.getBattery().then((battery) => {
       charge.classList.add("active");
       chargingTimeRef.innerText = "";
     } else {
-        charge.classList.remove("active");
+      charge.classList.remove("active");
       //Display time left to discharge only when it is a integer value i.e not infinity
       if (parseInt(battery.dischargingTime)) {
         let hr = parseInt(battery.dischargingTime / 3600);
@@ -37,3 +37,10 @@ navigator.getBattery().then((battery) => {
       }
     }
   }
+  //Updating battery level
+  function updateLevelInfo() {
+    let batteryLevel = `${parseInt(battery.level * 100)}%`;
+    charge.style.width = batteryLevel;
+    chargeLevel.textContent = batteryLevel;
+  }
+});
