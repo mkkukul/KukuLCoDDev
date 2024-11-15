@@ -25,3 +25,24 @@ body {
   left: 50%;
   font-size: 16px;
 }
+.heading {
+  text-align: center;
+  margin-bottom: 4em;
+}
+.heading h1 {
+  text-shadow: var(--color-shadow);
+  font-size: 6.2em;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+.heading h3 {
+  font-size: 1.6em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: var(--color-glass);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--color-shadow);
+  padding: 8px 30px;
+  display: inline-block;
+}
