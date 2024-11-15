@@ -30,3 +30,5 @@ function countdown() {
     secBox.textContent = addZeroes(secsLeft);
   }
 }
+let i = setInterval(countdown, 1000);
+countdown();
