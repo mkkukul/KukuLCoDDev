@@ -24,4 +24,6 @@ function countdown() {
         let hrsLeft = Math.floor((remainingTime % oneDay) / oneHr);
         let minsLeft = Math.floor((remainingTime % oneHr) / oneMin);
         let secsLeft = Math.floor((remainingTime % oneMin) / 1000);
+        dayBox.textContent = addZeroes(daysLeft);
+    hrBox.textContent = addZeroes(hrsLeft);
 
