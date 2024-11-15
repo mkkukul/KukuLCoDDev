@@ -19,4 +19,6 @@ function countdown() {
     document.querySelector(
         ".countdown"
       ).innerHTML = `<h1>Countdown Has Expired</h1>`;
+    } else {
+        let daysLeft = Math.floor(remainingTime / oneDay);
 
