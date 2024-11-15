@@ -21,4 +21,6 @@ function countdown() {
       ).innerHTML = `<h1>Countdown Has Expired</h1>`;
     } else {
         let daysLeft = Math.floor(remainingTime / oneDay);
+        let hrsLeft = Math.floor((remainingTime % oneDay) / oneHr);
+        let minsLeft = Math.floor((remainingTime % oneHr) / oneMin);
 
