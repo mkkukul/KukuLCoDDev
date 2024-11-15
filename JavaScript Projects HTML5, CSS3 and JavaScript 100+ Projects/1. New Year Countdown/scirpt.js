@@ -4,3 +4,6 @@ let minBox = document.getElementById("min-box");
 let secBox = document.getElementById("sec-box");
 let endDate = new Date(2022, 0, 1, 00, 00);
 let endTime = endDate.getTime();
+
+function countdown() {
+    let todayDate = new Date();
