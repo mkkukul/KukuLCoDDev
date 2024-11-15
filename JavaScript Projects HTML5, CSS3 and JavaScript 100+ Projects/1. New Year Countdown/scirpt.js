@@ -10,6 +10,13 @@ function countdown() {
     let todayTime = todayDate.getTime();
     let remainingTime = endTime - todayTime;
     let oneMin = 60 * 1000;
-  let oneHr = 60 * oneMin;
-  let oneDay = 24 * oneHr;
+    let oneHr = 60 * oneMin;
+    let oneDay = 24 * oneHr;
+    let addZeroes = (num) => (num < 10 ? `0${num}` : num);
+    
+    if (endTime < todayTime) {
+    clearInterval(i);
+    document.querySelector(
+        ".countdown"
+      ).innerHTML = `<h1>Countdown Has Expired</h1>`;
 
