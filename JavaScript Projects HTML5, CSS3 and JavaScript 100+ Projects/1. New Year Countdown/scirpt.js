@@ -7,3 +7,5 @@ let endTime = endDate.getTime();
 
 function countdown() {
     let todayDate = new Date();
+    let todayTime = todayDate.getTime();
+  let remainingTime = endTime - todayTime;
