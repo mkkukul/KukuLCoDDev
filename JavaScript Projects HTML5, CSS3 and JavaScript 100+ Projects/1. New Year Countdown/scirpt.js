@@ -26,4 +26,6 @@ function countdown() {
         let secsLeft = Math.floor((remainingTime % oneMin) / 1000);
         dayBox.textContent = addZeroes(daysLeft);
     hrBox.textContent = addZeroes(hrsLeft);
+    minBox.textContent = addZeroes(minsLeft);
+    secBox.textContent = addZeroes(secsLeft);
 
