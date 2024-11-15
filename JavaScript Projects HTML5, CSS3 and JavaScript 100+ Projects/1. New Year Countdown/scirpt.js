@@ -9,3 +9,7 @@ function countdown() {
     let todayDate = new Date();
     let todayTime = todayDate.getTime();
     let remainingTime = endTime - todayTime;
+    let oneMin = 60 * 1000;
+  let oneHr = 60 * oneMin;
+  let oneDay = 24 * oneHr;
+
